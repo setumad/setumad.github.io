@@ -1,166 +1,4 @@
-/*.head{
-	
 
-}
-
-.common1{
-	
-	display: inline-block;
-	margin:0;
-	padding:0;
-	height:80px;
-}
-
-.logo{
-	background-color: #9e9e9e;
-	width:20%;
-	
-}	
-
-.nav{
-	background-color: #9e9e9e;
-	float:right;
-	width: 60%
-}
-
-.break{
-	display: block;
-	height:100px;
-}
-
-.body{
-	height:500px;
-	background-color: #9e9e9e;
-	width:100%;
-	display: block;
-	position: relative;
-
-}
-
-.photo{
-	height:300px;
-	width:300px;
-	left:200px;
-	top: 100px;
-	border-radius: 50%;
-	background-color: white;
-	position: absolute;
-}
-
-.about{
-	height:300px;
-	width:400px;
-	left:800px;
-	top: 100px;
-	background-color: white;
-	float: left;
-	position: absolute;
-}
-
-.break2{
-	display: block;
-	height: 100px;
-	background-color: white;
-	position: relative;
-	top: 500px;	
-}
-
-.p1{
-	width:100%;
-	height:350px;
-	padding: 25px 0;
-	position: relative;
-	top:500px;
-	margin: 0 auto;
-	display: block;
-	overflow: hidden;
-	
-}
-
-.p1_image{
-	height:350px;
-	width: 300px;
-	background-color: #9e9e9e;
-	margin-left:200px;
-	display: inline-block;
-}
-
-.p1_text{
-	height: 350px;
-	width: 500px;
-	background-color: #c3c3c3;
-	display: inline-block;
-	margin-left: 200px;
-}
-
-#project_pic{
-	width: 100%;
-	overflow: hidden;
-}
-
-.p2{
-	width:100%;
-	height:350px;
-	padding: 25px 0;
-	position: relative;
-	top:600px;
-	margin: 0 auto;
-
-}
-
-.p2_text{
-	height: 350px;
-	width: 500px;
-	background-color: #c3c3c3;
-	display: inline-block;
-	margin-left: 100px;
-}
-
-.p2_image{
-	height:350px;
-	width: 300px;
-	background-color: #9e9e9e;
-	margin-left:200px;
-	display: inline-block;
-}
-
-
-.p3{
-	width:100%;
-	height:350px;
-	padding: 25px 0;
-	position: relative;
-	top:700px;
-	margin: 0 auto;
-	
-}
-
-.p3_image{
-	height:350px;
-	width: 300px;
-	background-color: #9e9e9e;
-	margin-left:200px;
-	display: inline-block;
-}
-
-.p3_text{
-	height: 350px;
-	width: 500px;
-	background-color: #c3c3c3;
-	display: inline-block;
-	margin-left: 200px;
-}
-
-
-
-.footer{
-	height: 200px;
-	width: 100%;
-	background-color: #9e9e9e;
-	position: relative;
-	top:800px;
-}
-*/
 
 .head{
 	
@@ -234,25 +72,35 @@
 	width: 100%;
 	position: relative;
 	top: 550px;
-	margin-bottom: 100px;
+	margin-bottom: 0px;
 	
 }
 
 .p1_image{
 	height:350px;
 	width: 300px;
-	background-color: #9e9e9e;
+	/*background-color: #9e9e9e;*/
 	display: inline-block;
 	margin-left: 200px;
 
 }
 
+#happy{
+	width:200px;
+
+}
 .p1_text{
-	height: 350px;
+	margin-top: -25px;
 	width: 500px;
-	background-color: #c3c3c3;
+	/*background-color: #c3c3c3;*/
 	display: inline-block;
-	margin-left: 200px;
+	/*margin-left: 200px;*/
+	/*margin-bottom:100px;*/
+	float: right;
+	font-size: 30px;
+	font-family: Helvetica;
+	color: #cf8b06;
+	margin-right: 100px;
 }
 
 
@@ -260,8 +108,8 @@
 	height:350px;
 	width: 100%;
 	position: relative;
-	top: 650px;
-	margin-bottom: 100px;
+	top: 600px;
+	margin-bottom: 0px;
 
 
 }
@@ -269,7 +117,7 @@
 .p2_image{
 	height:350px;
 	width: 300px;
-	background-color: #9e9e9e;
+	/*background-color: #9e9e9e;*/
 	display: inline-block;
 	margin-left: 200px;
 
@@ -278,16 +126,22 @@
 .p2_text{
 	height: 350px;
 	width: 500px;
-	background-color: #c3c3c3;
+	/*background-color: #c3c3c3;*/
 	display: inline-block;
+	margin-right: 100px;
+	float: left;
+	font-size: 30px;
+	font-family: Helvetica;
+	color: #cf8b06;
 	margin-left: 100px;
+	margin-top: -25px;
 }
 
 .p3{
 	height:350px;
 	width: 100%;
 	position: relative;
-	top: 750px;
+	top: 700px;
 	margin-bottom: 100px;
 	
 }
@@ -295,18 +149,24 @@
 .p3_image{
 	height:350px;
 	width: 300px;
-	background-color: #9e9e9e;
+	/*background-color: #9e9e9e;*/
 	display: inline-block;
 	margin-left: 200px;
 
 }
 
 .p3_text{
-	height: 350px;
+	margin-top: -25px;
 	width: 500px;
-	background-color: #c3c3c3;
+	/*background-color: #c3c3c3;*/
 	display: inline-block;
-	margin-left: 200px;
+	/*margin-left: 200px;*/
+	/*margin-bottom:100px;*/
+	float: right;
+	font-size: 30px;
+	font-family: Helvetica;
+	color: #cf8b06;
+	margin-right: 100px;
 }
 
 .footer{
@@ -314,7 +174,7 @@
 	width: 100%;
 	background-color: #9e9e9e;
 	position: relative;
-	top:850px;
+	top:800px;
 }
 
 
