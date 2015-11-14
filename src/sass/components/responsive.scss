@@ -1,0 +1,98 @@
+//---------------------------------------------------------
+// Screen Sizes
+//---------------------------------------------------------
+$screen-phone-sm:    320px;
+$screen-phone-md:    375px;
+$screen-phone-lg:    414px;
+$screen-tablet:      768px;
+$screen-laptop:      1100px;
+$screen-desktop:     1440px;
+
+$screen-nav-tablet:  870px;
+$screen-nav-laptop: 1018px;
+
+// @include breakpoint
+// via http://css-tricks.com/media-queries-sass-3-2-and-codekit/
+//---------------------------------------------------------------
+// Use: @include breakpoint(variable) { *styles here* }
+//---------------------------------------------------------------
+
+@mixin breakpoint($break-width) {
+  @if $break-width == phone-md {
+    @media (min-width: $screen-phone-md) { @content; }
+  }
+  @else if $break-width == phone-lg {
+    @media (min-width: $screen-phone-lg) { @content; }
+  }
+  @else if $break-width == tablet {
+    @media (min-width: $screen-tablet) { @content; }
+  }
+  @else if $break-width == laptop {
+    @media (min-width: $screen-laptop) { @content; }
+  }
+  @else if $break-width == desktop {
+    @media (min-width: $screen-desktop) { @content; }
+  }
+  @else {
+    @media (min-width: $break-width) { @content; }
+  }
+}
+
+//---------------------------------------------------------------
+// Responsive Visibility Classes
+//---------------------------------------------------------------
+
+.visible-phone,
+.visible-tablet,
+.visible-laptop,
+.visible-desktop {
+  display: none !important;
+}
+
+.visible-phone {
+  @media (max-width: $screen-tablet - 1) {
+    display: block !important;
+  }
+}
+
+.visible-tablet {
+  @media (min-width: $screen-tablet) and (max-width: $screen-laptop - 1) {
+    display: block !important;
+  }
+}
+
+.visible-laptop {
+  @media (min-width: $screen-laptop) and (max-width: $screen-desktop - 1) {
+    display: block !important;
+  }
+}
+
+.visible-desktop {
+  @media (min-width: $screen-desktop) {
+    display: block !important;
+  }
+}
+
+.hidden-phone {
+  @media (max-width: $screen-tablet - 1) {
+    display: none !important;
+  }
+}
+
+.hidden-tablet {
+  @media (min-width: $screen-tablet) and (max-width: $screen-laptop - 1) {
+    display: none !important;
+  }
+}
+
+.hidden-laptop {
+  @media (min-width: $screen-laptop) and (max-width: $screen-desktop - 1) {
+    display: none !important;
+  }
+}
+
+.hidden-desktop {
+  @media (min-width: $screen-desktop) {
+    display: none !important;
+  }
+}

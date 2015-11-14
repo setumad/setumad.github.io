@@ -1,0 +1,12 @@
+
+$background: #263544;
+
+@import "components/responsive";
+@import "components/header";
+
+
+div{
+	background-color:$background;
+	width: 100%;
+	height: 600px;
+}
