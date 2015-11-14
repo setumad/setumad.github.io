@@ -23,7 +23,7 @@ header{
 	.nav{
 		display: inline-block;
 		float:right;
-		padding-top: 60px;
+		padding-top: 40px;
 
 		ul{
 			font-family: $font;
@@ -36,7 +36,7 @@ header{
 				list-style: none;
 				display: inline-block;
 				padding-right: 40px;
-				padding-bottom: 20px;
+				padding-bottom: 60px;
 				font-size: 25px;
 			}
 		}
@@ -44,10 +44,11 @@ header{
 }
 
 .bigname{
-	font-size: 70px;
+	font-size: 60px;
 	width: 100%;
 	position: relative;
 	display: block;
+	margin-top: 100px;
 
 	p{
 		text-align: center;
@@ -59,3 +60,19 @@ header{
 	}
 
 	}
+.headtext{
+	font-size: 40px;
+	width: 100%;
+	position: relative;
+	display: block;
+	margin-top: 100px;
+
+	p{
+		text-align: center;
+		color: $textwhite;
+
+		span{
+			color:$red;
+		}
+	}
+}
