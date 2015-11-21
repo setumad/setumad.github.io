@@ -1,6 +1,6 @@
 .projectheader{
 	width: 100%;
-	height: 90vh;
+	min-height: 100%;
 
 	.project{
 		font-family: $font1;
@@ -14,3 +14,46 @@
 		
 }
 
+.boxes{
+	background-color: none;
+	height: 400px;
+	width: 100%;
+	ul{
+		padding: 0px 0px 0px 8px;
+		.box{
+			height:400px;
+			background-color: #999999;
+			display: inline-block;
+			width:100%;
+			margin:0px 20px;
+
+			@include breakpoint(tablet){
+				width: 49%;
+			}
+
+			@include breakpoint(laptop){
+				width: 30%;
+			}
+
+
+			.pbox{
+					height: 100px;
+					width: 100%;
+					background-color: orange;
+					display: block;
+					margin: 300px 0px 0px 0px;
+
+					.project1{
+						color: $textdark;
+						text-align: center;
+						padding: 40px;
+						font-size: 25px;
+						font-weight: bold;
+						font-family:$font1 
+					}
+				}
+
+		}
+
+	}
+}

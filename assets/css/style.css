@@ -394,7 +394,7 @@ th {
 header {
   background-color: #263544;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   display: block; }
 
 .header .logo {
@@ -449,7 +449,7 @@ header {
 
 .projectheader {
   width: 100%;
-  height: 90vh; }
+  min-height: 100%; }
   .projectheader .project {
     font-family: "Source Sans Pro";
     display: inline-block;
@@ -459,10 +459,42 @@ header {
     position: relative;
     display: block; }
 
+.boxes {
+  background-color: none;
+  height: 400px;
+  width: 100%; }
+  .boxes ul {
+    padding: 0px 0px 0px 8px; }
+    .boxes ul .box {
+      height: 400px;
+      background-color: #999999;
+      display: inline-block;
+      width: 100%;
+      margin: 0px 20px; }
+      @media (min-width: 768px) {
+        .boxes ul .box {
+          width: 49%; } }
+      @media (min-width: 1100px) {
+        .boxes ul .box {
+          width: 30%; } }
+      .boxes ul .box .pbox {
+        height: 100px;
+        width: 100%;
+        background-color: orange;
+        display: block;
+        margin: 300px 0px 0px 0px; }
+        .boxes ul .box .pbox .project1 {
+          color: #2d2d2d;
+          text-align: center;
+          padding: 40px;
+          font-size: 25px;
+          font-weight: bold;
+          font-family: "Source Sans Pro"; }
+
 .footer {
   background-color: #272828;
   width: 100%;
-  height: 50vh; }
+  height: 300px; }
 
 .contact {
   font-family: "Source Sans Pro";
@@ -470,4 +502,4 @@ header {
   color: #ecf0f1;
   display: block;
   text-align: center;
-  padding-top: 20px; }
+  padding-top: 25px; }
