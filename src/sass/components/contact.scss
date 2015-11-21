@@ -6,9 +6,13 @@
 
 .contact{
 	font-family: $font1;
-	font-size: 50px;
+	font-size: 30px;
 	color: $textwhite;
 	display: block;
 	text-align: center;
 	padding-top: 25px;
+	@include breakpoint(tablet){
+		font-size: 50px;
+	}
 }
+
