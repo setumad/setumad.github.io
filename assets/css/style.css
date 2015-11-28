@@ -451,7 +451,7 @@ header {
   width: 100%;
   height: auto; }
   .projectheader .project {
-    font-family: "Source Sans Pro";
+    font-family: "Muli", sans-serif;
     display: inline-block;
     text-align: center;
     font-size: 50px;

@@ -1,8 +1,9 @@
 header{
 	background-color:$background;
 	width: 100%;
-	min-height: 20px;
+	min-height: 100px;
 	display: block;
+	
 }
 
 .header{
@@ -10,7 +11,7 @@ header{
 	.logo{
 		width:50px;
 		
-		padding:20px 0px 20px 30px;
+		padding:20px 0px 20px 60px;
 		margin: 0px auto;
 	}
 
@@ -21,23 +22,34 @@ header{
 	}
 
 	.nav{
-		display: inline-block;
-		float:right;
-		padding-top: 40px;
+		// display: block;
+		display: none;
+		padding-top: 15px;
+
+
+		@include breakpoint(phone-lg) {
+			display: inline-block;
+			float: right;
+		}
+
 
 		ul{
 			font-family: $font1;
 			color: $textwhite;
-			display: inline-block;
-			// position: absolute;
-			// right: 0;
+			display: block;
+
+			@include breakpoint(tablet) {
+				display: inline-block;
+			}	
+			
 
 			li{
 				list-style: none;
 				display: inline-block;
 				padding-right: 40px;
-				padding-bottom: 60px;
-				font-size: 25px;
+				// padding-bottom: 60px;
+				font-size: 50px;
+				margin: 0px 20px 0px 20px;
 			}
 		}
 	}

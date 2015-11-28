@@ -1,0 +1,58 @@
+.pbody{
+	display: block;
+	height: 800px;
+	width: 100%;
+	background-color: none;
+
+
+
+	.sidenav{
+		height: 75vh;
+		width: 20%;
+		display: inline-block;
+		background-color: $superlightgrey;
+		
+		.ptitle{
+			width: 100%;
+			min-height:200px;
+			background-color: $red; 
+			text-align: center;
+			margin: 0 auto;
+			p{
+				font-size: 80px;
+				margin-top:25px;
+				color: $superlightgrey;
+				
+			}
+		}
+
+		ul{
+			text-align: center;
+			padding-left: 0px;
+			margin-top: 100px;
+			.navmenu{
+				list-style: none;
+				font-size: 40px;
+				font-family: $muli;
+				margin: 60px 0 60px 0;
+				color: $textdark;
+			}
+		}
+	}
+
+	.proj_cont{
+		height: 75vh;
+		width: 80%;
+		display: inline-block;
+		background-color: $superlightgrey;
+		float: right;
+		margin-left: 0px;
+
+		.introduction{
+			margin-left: 10vh;
+			font-size: 70px;
+			font-family: $lato;
+
+		}
+	}
+}
