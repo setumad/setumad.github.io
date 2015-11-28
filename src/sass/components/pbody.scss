@@ -7,47 +7,96 @@
 
 
 	.sidenav{
-		height: 75vh;
-		width: 300px;
-		display: inline-block;
-		position: fixed;
-		
-		.ptitle{
-			width: 100%;
-			min-height:120px;
-			background-color: $red; 
-			text-align: center;
-			margin: 0 auto;
-			p{
-				font-size: 40px;
-				margin-top:25px;
-				color: $superlightgrey;
-				
+
+			.ptitle{                    //tablet and below
+				width: 100%;
+				min-height:50px;
+				background-color: $red; 
+				text-align: center;
+				margin: 0 auto;
+				p{
+					font-size: 30px;
+					margin: 0 auto;
+					padding-top: 5px;
+					color: $superlightgrey;
+					
+				}
+			}
+
+			@include breakpoint(laptop){
+				width: 300px;
+				display: inline-block;
+				position: fixed;
+
+				.ptitle{
+				width: 100%;
+				min-height:120px;
+				background-color: $red; 
+				text-align: center;
+				margin: 0 auto;
+				p{
+					font-size: 40px;
+					padding-top: 30px;
+					color: $superlightgrey;
+					
+				}
 			}
 		}
 
 		ul{
 			// text-align: center;
-			padding-left: 50px;
-			margin-top: 40px;
-			.navmenu{
-				list-style: none;
+			// background-color: green;
+			margin: 0 auto;
+			text-align: center;
+			padding: 10px;
+			li{
+				display: inline-block;
 				font-size: 24px;
 				font-family: $muli;
-				margin: 20px 0 40px 0;
 				color: $textdark;
+				// background-color: yellow;
+				padding: 0 15px;
+
+				@include breakpoint(tablet){
+					// background-color: orange;
+					padding: 0 20px 0 20px;
+					margin-left: 20px;
+				}
+
+			}
+			
+
+			@include breakpoint(laptop){
+				padding-left: 30px;
+				margin-top: 40px;
+				.navmenu{
+					list-style: none;
+					font-size: 24px;
+					font-family: $muli;
+					margin: 20px 0 40px 0;
+					color: $textdark;
+					display: block;
+					// background-color: blue;
+				}
 			}
 		}
 	}
 
 	.proj_cont{
-		width: calc(100% - 300px);
+		width: 100%;
 		display: inline-block;
-		// float: right;
-		margin-left: 300px;
+		margin-left: 00px;
+		padding-left: 20px;
+		@include breakpoint(tablet){
+			width: calc(100% - 400px);
+			padding-left: 200px;
+				}
+		@include breakpoint(laptop){
+			padding-left: 350px;
+		}
 
 		.introduction{
-			margin-left: 10vh;
+			
 			font-size: 40px;
 			font-family: $lato;
 			color: $textdark;
@@ -58,18 +107,21 @@
 			width: 100%;
 			min-height: 60vh;
 			display: table;
+
 			.intro_pic{
-				width: 100%;
 				max-width: 350px;
-				margin:0px 20px 20px 60px;
+				margin:0 auto;
 				display: block;
+				min-width: 450px;
 				// background-color: black;
 				vertical-align: top; //keep the text on top 
-				
+				margin: 0px px 0px 0px;
 
 				img{
 					width: 100%;
+
 				}
+
 				@include breakpoint(laptop){
 					width: 50%;
 					display: table-cell;
@@ -81,11 +133,12 @@
 				display: block;
 				margin-left: 0px;
 				vertical-align: top; //keep the text on top 
-				padding: 0px 15px 0px 60px;
+				padding-top: 25px;
 
 				@include breakpoint(laptop){
 					width: 30%;
 					display: table-cell;
+					padding: 0px 20px 0px 60px;
 				}
 
 				#intro_desc{
@@ -93,6 +146,7 @@
 					color: $textdark;
 					font-size: 18px;
 					font-family:$muli;
+					margin: 0px 0px 0px 0px;
 				}
 			}
 		}
