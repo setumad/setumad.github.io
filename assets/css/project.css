@@ -397,23 +397,25 @@ header {
   min-height: 70px;
   display: block; }
 
-.header .logo {
-  width: 35px;
-  padding: 20px 0px 20px 60px;
-  margin: 0px auto; }
-
 .header .img-contain {
-  padding: 0;
-  margin: 0;
-  display: inline-block; }
+  width: 35px;
+  margin: 0 auto;
+  padding: 20px 0px; }
+  @media (min-width: 768px) {
+    .header .img-contain {
+      padding: 20px 0px 20px 60px;
+      margin: 0;
+      display: inline-block; } }
+  .header .img-contain .logo {
+    width: 35px;
+    margin: 0 auto; }
 
 .header .nav {
-  display: none;
-  padding-top: 15px; }
-  @media (min-width: 414px) {
-    .header .nav {
-      display: inline-block;
-      float: right; } }
+  display: inline-block;
+  padding-top: 15px;
+  position: absolute;
+  right: 0;
+  top: 10px; }
   .header .nav ul {
     font-family: "Muli", sans-serif;
     color: #ecf0f1;
@@ -430,7 +432,6 @@ header {
 
 .pbody {
   display: block;
-  height: 800px;
   width: 100%;
   background-color: #f5f5f5; }
   .pbody .sidenav .ptitle {
@@ -468,11 +469,14 @@ header {
       font-size: 24px;
       font-family: "Muli", sans-serif;
       color: #2d2d2d;
-      padding: 0 15px; }
+      margin-top: 10px;
+      padding: 10px 15px;
+      text-decoration: underline; }
       @media (min-width: 768px) {
         .pbody .sidenav ul li {
           padding: 0 20px 0 20px;
-          margin-left: 20px; } }
+          margin-left: 20px;
+          text-decoration: none; } }
     @media (min-width: 1100px) {
       .pbody .sidenav ul {
         padding-left: 30px;
@@ -484,6 +488,55 @@ header {
           margin: 20px 0 40px 0;
           color: #2d2d2d;
           display: block; } }
+  .pbody .proj_cont {
+    width: 100%;
+    display: inline-block;
+    margin-left: 00px;
+    padding-left: 20px; }
+    @media (min-width: 768px) {
+      .pbody .proj_cont {
+        width: calc(100% - 400px);
+        padding-left: 200px; } }
+    @media (min-width: 1100px) {
+      .pbody .proj_cont {
+        padding-left: 350px; } }
+    .pbody .proj_cont .introduction {
+      font-size: 40px;
+      font-family: "Lato", sans-serif;
+      color: #2d2d2d; }
+    .pbody .proj_cont .intro_content {
+      width: 100%;
+      min-height: 60vh;
+      display: table; }
+      .pbody .proj_cont .intro_content .intro_pic {
+        max-width: 350px;
+        margin: 0 auto;
+        display: block;
+        background-color: black;
+        vertical-align: top;
+        margin: 0px 0px 0px 0px; }
+        .pbody .proj_cont .intro_content .intro_pic img {
+          width: 100%; }
+        @media (min-width: 768px) {
+          .pbody .proj_cont .intro_content .intro_pic {
+            width: 50%;
+            display: table-cell; } }
+      .pbody .proj_cont .intro_content .intro_desc {
+        width: calc(100% - 75px);
+        display: block;
+        margin-left: 0px;
+        vertical-align: top;
+        padding-top: 25px; }
+        @media (min-width: 1100px) {
+          .pbody .proj_cont .intro_content .intro_desc {
+            width: 30%;
+            display: table-cell;
+            padding: 0px 20px 0px 60px; } }
+        .pbody .proj_cont .intro_content .intro_desc #intro_desc {
+          color: #2d2d2d;
+          font-size: 18px;
+          font-family: "Muli", sans-serif;
+          margin: 0px 0px 0px 0px; }
   .pbody .proj_cont {
     width: 100%;
     display: inline-block;

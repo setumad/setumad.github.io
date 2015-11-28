@@ -8,29 +8,29 @@ header{
 
 .header{
 
-	.logo{
-		width:35px;
-		
-		padding:20px 0px 20px 60px;
-		margin: 0px auto;
-	}
-
 	.img-contain{
-		padding:0;
-		margin:0;
-		display: inline-block;
+		width: 35px;
+		margin: 0 auto;
+		padding:20px 0px;
+
+		@include breakpoint(tablet){
+			padding:20px 0px 20px 60px;
+			margin:0;
+			display: inline-block;
+		}
+
+		.logo{
+			width:35px;
+			margin: 0 auto;
+		}
 	}
 
 	.nav{
-		// display: block;
-		display: none;
+		display: inline-block;
 		padding-top: 15px;
-
-
-		@include breakpoint(phone-lg) {
-			display: inline-block;
-			float: right;
-		}
+		position: absolute;
+		right: 0;
+		top: 10px;
 
 
 		ul{

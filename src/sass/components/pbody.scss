@@ -1,6 +1,5 @@
 .pbody{
 	display: block;
-	height: 800px;
 	width: 100%;
 	background-color: $superlightgrey;
 
@@ -55,12 +54,15 @@
 				font-family: $muli;
 				color: $textdark;
 				// background-color: yellow;
-				padding: 0 15px;
+				margin-top: 10px;
+				padding: 10px 15px;
+				text-decoration: underline;
 
 				@include breakpoint(tablet){
 					// background-color: orange;
 					padding: 0 20px 0 20px;
 					margin-left: 20px;
+					text-decoration: none;
 				}
 
 			}
@@ -77,6 +79,78 @@
 					color: $textdark;
 					display: block;
 					// background-color: blue;
+				}
+			}
+		}
+	}
+
+	.proj_cont{
+		width: 100%;
+		display: inline-block;
+		margin-left: 00px;
+		padding-left: 20px;
+		@include breakpoint(tablet){
+			width: calc(100% - 400px);
+			padding-left: 200px;
+				}
+		@include breakpoint(laptop){
+			padding-left: 350px;
+		}
+
+		.introduction{
+			
+			font-size: 40px;
+			font-family: $lato;
+			color: $textdark;
+
+		}
+
+		.intro_content{
+			width: 100%;
+			min-height: 60vh;
+			display: table;
+
+			.intro_pic{
+				max-width: 350px;
+				// min-width: 250px;
+				margin:0 auto;
+				display: block;
+				background-color: black;
+				vertical-align: top; //keep the text on top 
+				margin: 0px 0px 0px 0px;
+
+
+				img{
+					width: 100%;
+
+				}
+
+				@include breakpoint(tablet){
+					width: 50%;
+					display: table-cell;
+					
+				}
+
+			}
+			.intro_desc{
+				width: calc(100% - 75px);
+				display: block;
+				margin-left: 0px;
+				vertical-align: top; //keep the text on top 
+				padding-top: 25px;
+
+				@include breakpoint(laptop){
+					width: 30%;
+					display: table-cell;
+					padding: 0px 20px 0px 60px;
+				}
+
+				#intro_desc{
+					// margin-top: 50px;
+					color: $textdark;
+					font-size: 18px;
+					font-family:$muli;
+					margin: 0px 0px 0px 0px;
 				}
 			}
 		}
