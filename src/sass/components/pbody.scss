@@ -2,24 +2,24 @@
 	display: block;
 	height: 800px;
 	width: 100%;
-	background-color: none;
+	background-color: $superlightgrey;
 
 
 
 	.sidenav{
 		height: 75vh;
-		width: 20%;
+		width: 300px;
 		display: inline-block;
-		background-color: $superlightgrey;
+		position: fixed;
 		
 		.ptitle{
 			width: 100%;
-			min-height:200px;
+			min-height:120px;
 			background-color: $red; 
 			text-align: center;
 			margin: 0 auto;
 			p{
-				font-size: 80px;
+				font-size: 40px;
 				margin-top:25px;
 				color: $superlightgrey;
 				
@@ -27,32 +27,74 @@
 		}
 
 		ul{
-			text-align: center;
-			padding-left: 0px;
-			margin-top: 100px;
+			// text-align: center;
+			padding-left: 50px;
+			margin-top: 40px;
 			.navmenu{
 				list-style: none;
-				font-size: 40px;
+				font-size: 24px;
 				font-family: $muli;
-				margin: 60px 0 60px 0;
+				margin: 20px 0 40px 0;
 				color: $textdark;
 			}
 		}
 	}
 
 	.proj_cont{
-		height: 75vh;
-		width: 80%;
+		width: calc(100% - 300px);
 		display: inline-block;
-		background-color: $superlightgrey;
-		float: right;
-		margin-left: 0px;
+		// float: right;
+		margin-left: 300px;
 
 		.introduction{
 			margin-left: 10vh;
-			font-size: 70px;
+			font-size: 40px;
 			font-family: $lato;
+			color: $textdark;
 
+		}
+
+		.intro_content{
+			width: 100%;
+			min-height: 60vh;
+			display: table;
+			.intro_pic{
+				width: 100%;
+				max-width: 350px;
+				margin:0px 20px 20px 60px;
+				display: block;
+				// background-color: black;
+				vertical-align: top; //keep the text on top 
+				
+
+				img{
+					width: 100%;
+				}
+				@include breakpoint(laptop){
+					width: 50%;
+					display: table-cell;
+				}
+
+			}
+			.intro_desc{
+				width: calc(100% - 75px);
+				display: block;
+				margin-left: 0px;
+				vertical-align: top; //keep the text on top 
+				padding: 0px 15px 0px 60px;
+
+				@include breakpoint(laptop){
+					width: 30%;
+					display: table-cell;
+				}
+
+				#intro_desc{
+					// margin-top: 50px;
+					color: $textdark;
+					font-size: 18px;
+					font-family:$muli;
+				}
+			}
 		}
 	}
 }

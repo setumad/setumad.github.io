@@ -1,7 +1,7 @@
 header{
 	background-color:$background;
 	width: 100%;
-	min-height: 100px;
+	min-height: 70px;
 	display: block;
 	
 }
@@ -9,7 +9,7 @@ header{
 .header{
 
 	.logo{
-		width:50px;
+		width:35px;
 		
 		padding:20px 0px 20px 60px;
 		margin: 0px auto;
@@ -34,7 +34,7 @@ header{
 
 
 		ul{
-			font-family: $font1;
+			font-family: $muli;
 			color: $textwhite;
 			display: block;
 
@@ -48,7 +48,7 @@ header{
 				display: inline-block;
 				padding-right: 40px;
 				// padding-bottom: 60px;
-				font-size: 50px;
+				font-size: 24px;
 				margin: 0px 20px 0px 20px;
 			}
 		}
