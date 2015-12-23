@@ -1,228 +1,237 @@
-.pbody{
-	display: block;
-	width: 100%;
-	background-color: $superlightgrey;
+body{
 
-
+	.ptitle{
+		margin-top: 88px;
+		position: absolute;
+		width: 100%;
+		height: 80px;
+		background-color: $red;
+		z-index: 25;
+		p{
+			font-size: 2rem;
+			text-align: center;
+			color: $superlightgrey;
+			margin: 20px;
+		}
+	}
 
 	.sidenav{
-
-			.ptitle{                    //tablet and below
-				width: 100%;
-				min-height:50px;
-				background-color: $red; 
-				text-align: center;
-				margin: 0 auto;
-				p{
-					font-size: 30px;
-					margin: 0 auto;
-					padding-top: 5px;
-					color: $superlightgrey;
-					
-				}
-			}
-
-			@include breakpoint(laptop){
-				width: 300px;
-				display: inline-block;
-				position: fixed;
-
-				.ptitle{
-				width: 100%;
-				min-height:120px;
-				background-color: $red; 
-				text-align: center;
-				margin: 0 auto;
-				p{
-					font-size: 40px;
-					padding-top: 30px;
-					color: $superlightgrey;
-					
-				}
-			}
-		}
-
-		ul{
-			// text-align: center;
+		margin-top: 165px;
+		position: absolute;
+		z-index: 20;
+		display: none;
+		@include breakpoint(tablet){
 			// background-color: green;
-			margin: 0 auto;
+			height: 40px;
+			width: 100%;
+			display: inline-block;
 			text-align: center;
-			padding: 10px;
-			li{
+			.navmenu{
 				display: inline-block;
-				font-size: 24px;
-				font-family: $muli;
-				color: $textdark;
-				// background-color: yellow;
-				margin-top: 10px;
-				padding: 10px 15px;
-				text-decoration: underline;
-
-				@include breakpoint(tablet){
-					// background-color: orange;
-					padding: 0 20px 0 20px;
-					margin-left: 20px;
-					text-decoration: none;
-				}
-
+				padding: 10px 10px;
 			}
 			
-
-			@include breakpoint(laptop){
-				padding-left: 30px;
-				margin-top: 40px;
-				.navmenu{
-					list-style: none;
-					font-size: 24px;
-					font-family: $muli;
-					margin: 20px 0 40px 0;
-					color: $textdark;
-					display: block;
-					// background-color: blue;
-				}
-			}
 		}
 	}
 
-	.proj_cont{
-		width: 100%;
-		display: inline-block;
-		margin-left: 00px;
-		padding-left: 20px;
-		@include breakpoint(tablet){
-			width: calc(100% - 400px);
-			padding-left: 200px;
-				}
-		@include breakpoint(laptop){
-			padding-left: 350px;
-		}
+	.maindiv{  						   //******mobile
+		background-color: white;
+		padding: 15px;
+		position: absolute;
+		text-align: center;
+		z-index: 10;
+		margin-top: 200px;
 
-		.introduction{
-			
+		.contheader{
 			font-size: 40px;
-			font-family: $lato;
+			font-family: $montserrat;
 			color: $textdark;
+		}
+
+		.picture{
+			// margin:0 auto;
+			// margin: 50px 0px;
+			// display: inline-block;
+			// margin: 0;
+			margin: 0 auto;
 
 		}
 
-		.intro_content{
-			width: 100%;
-			min-height: 60vh;
-			display: table;
+		.content{
 
-			.intro_pic{
-				max-width: 350px;
-				// min-width: 250px;
-				margin:0 auto;
-				display: block;
-				background-color: black;
-				vertical-align: top; //keep the text on top 
-				margin: 0px 0px 0px 0px;
-
-
-				img{
-					width: 100%;
-
-				}
-
-				@include breakpoint(tablet){
-					width: 50%;
-					display: table-cell;
-					
-				}
-
-			}
-			.intro_desc{
-				width: calc(100% - 75px);
-				display: block;
-				margin-left: 0px;
-				vertical-align: top; //keep the text on top 
-				padding-top: 25px;
-
-				@include breakpoint(laptop){
-					width: 30%;
-					display: table-cell;
-					padding: 0px 20px 0px 60px;
-				}
-
-				#intro_desc{
-					// margin-top: 50px;
-					color: $textdark;
-					font-size: 18px;
-					font-family:$muli;
-					margin: 0px 0px 0px 0px;
-				}
-			}
-		}
-	}
-
-	.proj_cont{
-		width: 100%;
-		display: inline-block;
-		margin-left: 00px;
-		padding-left: 20px;
-		@include breakpoint(tablet){
-			width: calc(100% - 400px);
-			padding-left: 200px;
-				}
-		@include breakpoint(laptop){
-			padding-left: 350px;
-		}
-
-		.introduction{
-			
-			font-size: 40px;
-			font-family: $lato;
-			color: $textdark;
-
-		}
-
-		.intro_content{
-			width: 100%;
-			min-height: 60vh;
-			display: table;
-
-			.intro_pic{
-				max-width: 350px;
-				margin:0 auto;
-				display: block;
-				min-width: 450px;
-				// background-color: black;
-				vertical-align: top; //keep the text on top 
-				margin: 0px px 0px 0px;
-
-				img{
-					width: 100%;
-
-				}
-
-				@include breakpoint(laptop){
-					width: 50%;
-					display: table-cell;
-				}
-
-			}
-			.intro_desc{
-				width: calc(100% - 75px);
-				display: block;
-				margin-left: 0px;
-				vertical-align: top; //keep the text on top 
-				padding-top: 25px;
-
-				@include breakpoint(laptop){
-					width: 30%;
-					display: table-cell;
-					padding: 0px 20px 0px 60px;
-				}
-
-				#intro_desc{
-					// margin-top: 50px;
-					color: $textdark;
-					font-size: 18px;
-					font-family:$muli;
-					margin: 0px 0px 0px 0px;
-				}
-			}
+			font-size: 1rem;
+			line-height: 1.7;
+			font-weight: 500;
+			font-family: $merriweather;
+			margin: 0 auto;
+			width: 88%;
 		}
 	}
 }
+
+
+
+
+
+
+
+// body{
+// 	// background-color: blue;
+// 		@include breakpoint(tablet){
+// 			margin-top: -50px;
+// 		}
+// 		// @include breakpoint(laptop){
+// 		// 	// .ptitle{
+// 		// 	// 	width: 15%;
+// 		// 	// 	position: fixed;
+// 		// 	// 	z-index: 2;
+// 		// 	// 	background-color: $red;
+// 		// 	// 	margin-top: 120px;
+// 		// 	// 	// min-height: 20px;
+// 		// 	// 	p{
+// 		// 	// 		font-size: 2.5rem;
+// 		// 	// 		text-align: center;
+// 		// 	// 		color: white;
+// 		// 	// 	}
+// 		// 	// }
+// 		// }
+
+// 		// @include breakpoint(tablet){
+			
+// 		// }
+	
+
+// 		@include breakpoint(laptop){
+
+		
+// 			.navlist{
+// 				width: 15%;
+// 				// margin-top: 30px;
+// 				position: fixed;
+// 				margin-top: 250px;
+// 				.navmenu{
+// 					font-size: 14px;
+// 					font-weight: bold;
+// 					padding: 15px 20px 20px 20px;
+// 					display: block;
+// 					text-align: left;
+// 					font-family: $merriweather;
+// 					// background-color: yellow;
+// 				}
+// 			}
+// 		}
+
+// 		// @include breakpoint(tablet){
+
+		
+// 		// 	.navlist{
+// 		// 		width: 80%;
+// 		// 		position: fixed;
+// 		// 		margin-left: 200px;
+// 		// 		display: inline-block;
+// 		// 		background-color: white;
+// 		// 		.navmenu{
+// 		// 			font-size: 20px;
+// 		// 			// top: 50px;
+// 		// 			padding: 188px 20px 20px 20px;
+// 		// 			display: block;
+// 		// 			text-align: left;
+// 		// 			display: inline-block;
+// 		// 			text-align: center;
+
+// 		// 		}
+// 		// 	}
+// 		// }
+
+// // *******Here starts the content styling*******
+
+
+// 		.maindiv{  						   //******mobile
+// 			background-color: white;
+// 			padding: 15px;
+// 			text-align: center;
+// 			margin-top: 50px;
+// 			// background-color: green;
+
+// 			.contheader{
+// 				font-size: 40px;
+// 				font-family: $montserrat;
+// 				color: $textdark;
+// 			}
+
+// 			.picture{
+// 				margin:0 auto;
+// 				margin: 50px 0px;
+// 				padding-right: 10px;	
+// 			}
+
+// 			.content{
+
+// 				font-size: 1rem;
+// 				line-height: 1.7;
+// 				font-weight: 500;
+// 				font-family: $merriweather;
+// 				margin: 0 auto;
+// 				width: 88%;
+// 			}
+// 		}
+
+// 		@include breakpoint(laptop){
+// 			.maindiv{
+// 				margin: 140px 0px 0px 300px;
+// 				position: absolute;
+// 			}
+// 		}
+
+// 		@include breakpoint(tablet){     //tablet and above
+				
+// 				.ptitle{
+// 				width: 100%;
+// 				position: fixed;
+// 				z-index: 2;
+// 				background-color: $red;
+// 				margin-top: 130px;
+// 				height: 80px;
+// 					p{
+// 						font-size: 2rem;
+// 						text-align: center;
+// 						color: $superlightgrey;
+// 						margin: 20px;
+// 					}
+// 				}
+
+
+// 				.maindiv{
+// 				background-color: white;
+// 				padding: 15px;
+// 				text-align: center;
+// 				// margin-top: 150px;
+// 				// background-color: green;
+
+// 				.contheader{
+// 					font-size: 40px;
+// 					font-family: $montserrat;
+// 					// color: $textdark;
+// 					color: blue;
+// 					margin-top: 250px;
+// 				}
+
+// 				.picture{
+// 					margin:0 auto;
+// 					margin: 80px 0px;
+// 					padding-right: 10px;	
+// 				}
+
+// 				.content{
+
+// 					font-size: 1rem;
+// 					line-height: 1.7;
+// 					font-weight: 500;
+// 					font-family: $merriweather;
+// 					margin: 0 auto;
+// 					width: 65%;
+// 				}
+// 			}
+// 		}
+
+// }

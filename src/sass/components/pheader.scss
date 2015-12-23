@@ -1,15 +1,18 @@
 header{
-	background-color:$background;
+	background-color:$superlightgrey;
 	width: 100%;
-	min-height: 70px;
+	// min-height: 50px;
 	display: block;
+	position: fixed;
+	z-index: 30;
+	margin-top: 0px;
+	// margin-top: 50px;
 	
 }
 
 .header{
-
 	.img-contain{
-		width: 35px;
+		width: 45px;
 		margin: 0 auto;
 		padding:20px 0px;
 
@@ -20,22 +23,24 @@ header{
 		}
 
 		.logo{
-			width:35px;
+			width:30px;
 			margin: 0 auto;
 		}
 	}
 
 	.nav{
 		display: inline-block;
-		padding-top: 15px;
+		// padding-top: 10px;
 		position: absolute;
 		right: 0;
-		top: 10px;
+		// top: 10px;
+		margin: 0 auto;
+		text-align: center;
 
 
 		ul{
 			font-family: $muli;
-			color: $textwhite;
+			color: $textdark;
 			display: block;
 
 			@include breakpoint(tablet) {
@@ -48,7 +53,7 @@ header{
 				display: inline-block;
 				padding-right: 40px;
 				// padding-bottom: 60px;
-				font-size: 24px;
+				font-size: 18px;
 				margin: 0px 20px 0px 20px;
 			}
 		}
