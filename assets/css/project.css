@@ -400,7 +400,7 @@ header {
   margin-top: 0px; }
 
 .header .img-contain {
-  width: 45px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px 0px; }
   @media (min-width: 768px) {
@@ -461,6 +461,7 @@ body .sidenav {
         padding: 10px 10px; } }
 
 body .maindiv {
+  width: 100%;
   background-color: white;
   padding: 15px;
   position: absolute;
