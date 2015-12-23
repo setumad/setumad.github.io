@@ -463,7 +463,6 @@ body .sidenav {
 body .maindiv {
   width: 100%;
   background-color: white;
-  padding: 15px;
   position: absolute;
   text-align: center;
   z-index: 10;
