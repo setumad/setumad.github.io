@@ -33,9 +33,10 @@ body{
 		background-color: #f9f9f9;
 	}
 	.contentbox{
-		width: 100%;
-		// background-color: white;
+		width: 90%;
+		// background-color: green;
 		text-align: center;
+		margin: 0 auto;
 		@include breakpoint(laptop){
 			width: 100%;
 			margin: 0 auto;
@@ -53,11 +54,11 @@ body{
 			padding-top: 190px;
 		}
 
-		.picture{
+		img{
 			// margin: 0px 0px 60px 0px;
+			max-width: 650px;
 			width: 100%;
-			height: auto;
-			background-size: contain;
+			
 
 		}
 

@@ -1,6 +1,6 @@
 
 	.topheader{
-		background-color:$lightcream;
+		background-color:white;
 		width: 100%;
 		position: fixed;
 		z-index: 40;
@@ -11,6 +11,7 @@
 			padding:20px 0px;
 			text-align: center;
 			@include breakpoint(tablet){
+				background-color: none;
 				padding:20px 0px 20px 60px;
 				margin:0;
 				display: inline-block;

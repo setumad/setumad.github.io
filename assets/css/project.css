@@ -392,7 +392,7 @@ th {
     display: none !important; } }
 
 .topheader {
-  background-color: #fdfbf6;
+  background-color: white;
   width: 100%;
   position: fixed;
   z-index: 40; }
@@ -403,6 +403,7 @@ th {
     text-align: center; }
     @media (min-width: 768px) {
       .topheader .img-contain {
+        background-color: none;
         padding: 20px 0px 20px 60px;
         margin: 0;
         display: inline-block;
@@ -449,8 +450,9 @@ body .contentcontainergrey {
   background-color: #f9f9f9; }
 
 body .contentbox {
-  width: 100%;
-  text-align: center; }
+  width: 90%;
+  text-align: center;
+  margin: 0 auto; }
   @media (min-width: 1100px) {
     body .contentbox {
       width: 100%;
@@ -463,10 +465,9 @@ body .contentbox {
     margin: 0px 0px 100px 0px; }
   body .contentbox #introduction {
     padding-top: 190px; }
-  body .contentbox .picture {
-    width: 100%;
-    height: auto;
-    background-size: contain; }
+  body .contentbox img {
+    max-width: 650px;
+    width: 100%; }
   body .contentbox .content {
     font-size: 1rem;
     line-height: 1.5;
