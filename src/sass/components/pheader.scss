@@ -1,6 +1,6 @@
 
 	.topheader{
-		background-color: white;
+		background-color:$lightcream;
 		width: 100%;
 		position: fixed;
 		z-index: 40;
@@ -36,7 +36,7 @@
 					font-family: $muli;
 					font-size: 18px;
 					text-align: center;
-					color: $red;
+					color: $textdark;
 				}
 			}
 		}
