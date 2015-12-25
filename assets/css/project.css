@@ -391,119 +391,89 @@ th {
   .hidden-desktop {
     display: none !important; } }
 
-header {
-  background-color: #f5f5f5;
+.topheader {
+  background-color: white;
   width: 100%;
-  display: block;
   position: fixed;
-  z-index: 30;
-  margin-top: 0px; }
-
-.header .img-contain {
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 0px; }
-  @media (min-width: 768px) {
-    .header .img-contain {
-      padding: 20px 0px 20px 60px;
-      margin: 0;
-      display: inline-block; } }
-  .header .img-contain .logo {
-    width: 30px;
-    margin: 0 auto; }
-
-.header .nav {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  margin: 0 auto;
-  text-align: center; }
-  .header .nav ul {
-    font-family: "Muli", sans-serif;
-    color: #2d2d2d;
-    display: block; }
+  z-index: 40; }
+  .topheader .img-contain {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    text-align: center; }
     @media (min-width: 768px) {
-      .header .nav ul {
-        display: inline-block; } }
-    .header .nav ul li {
+      .topheader .img-contain {
+        padding: 20px 0px 20px 60px;
+        margin: 0;
+        display: inline-block;
+        text-align: left; } }
+    .topheader .img-contain .logo {
+      width: 30px;
+      margin: 0 auto; }
+  .topheader .nav {
+    right: 0;
+    float: right; }
+    .topheader .nav ul li {
       list-style: none;
       display: inline-block;
-      padding-right: 40px;
+      padding: 10px 50px 0px 0px;
+      font-family: "Muli", sans-serif;
       font-size: 18px;
-      margin: 0px 20px 0px 20px; }
+      text-align: center;
+      color: #e74c3c; }
 
 body .ptitle {
-  margin-top: 87px;
   position: absolute;
   width: 100%;
-  height: 80px;
-  background-color: #e74c3c;
-  z-index: 25; }
-  body .ptitle p {
-    font-size: 2rem;
+  height: 140px;
+  background-color: #4b2e83;
+  margin-top: 87px; }
+  body .ptitle #projecttitle {
+    font-size: 2.5rem;
     text-align: center;
     color: #f5f5f5;
-    margin: 20px; }
+    margin: 0 auto;
+    padding-top: 10px;
+    font-family: "Muli", sans-serif;
+    font-weight: 400; }
+  body .ptitle .uwise {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    display: inline-block; }
 
-body .sidenav {
-  margin-top: 165px;
-  position: absolute;
-  z-index: 20;
-  display: none; }
-  @media (min-width: 768px) {
-    body .sidenav {
-      height: 40px;
-      width: 100%;
-      text-align: center;
-      background-color: none;
-      display: inline-block; }
-      body .sidenav .navmenu {
-        display: inline-block;
-        padding: 10px 11px; } }
-  @media (min-width: 1100px) {
-    body .sidenav {
-      position: fixed;
-      display: block;
-      width: 20%; }
-      body .sidenav .navlist {
-        text-align: left;
-        padding: 0; }
-        body .sidenav .navlist .navmenu {
-          padding: 20px 50px;
-          text-align: left;
-          text-align: center;
-          color: #2d2d2d;
-          font-family: "Muli", sans-serif; } }
+body .contentcontainerwhite {
+  background-color: white; }
 
-body .extrapadding {
-  width: 100%;
-  height: 167px;
-  background-color: none; }
+body .contentcontainergrey {
+  background-color: #f9f9f9; }
 
 body .contentbox {
   width: 100%;
-  margin-left: 18%;
-  background-color: white;
   text-align: center; }
   @media (min-width: 1100px) {
     body .contentbox {
       width: 100%;
-      margin-left: 8%; } }
+      margin: 0 auto; } }
   body .contentbox .contheader {
+    padding-top: 30px;
     font-size: 40px;
     font-family: "Montserrat", sans-serif;
     color: #2d2d2d;
-    margin: 0px 0px 50px 0px; }
+    margin: 0px 0px 100px 0px; }
+  body .contentbox #introduction {
+    padding-top: 190px; }
   body .contentbox .picture {
     margin: 0px 0px 60px 0px; }
   body .contentbox .content {
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 2;
     font-weight: 500;
     font-family: "Merriweather", serif;
     margin: 0 auto;
     width: 85%;
-    padding: 30px 0; }
+    padding: 30px 0;
+    text-align: justify; }
     @media (min-width: 1100px) {
       body .contentbox .content {
         width: 55%; } }

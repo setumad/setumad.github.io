@@ -1,266 +1,114 @@
 body{
 
 	.ptitle{
-		margin-top: 87px;
 		position: absolute;
 		width: 100%;
-		height: 80px;
-		background-color: $red;
-		z-index: 25;
-		p{
-			font-size: 2rem;
+		height: 140px;
+		background-color: $uwpurple;
+		margin-top: 87px;
+		#projecttitle{
+			font-size: 2.5rem;
 			text-align: center;
 			color: $superlightgrey;
-			margin: 20px;
+			// margin: 5px 0px 0px 20%;
+			margin: 0 auto;
+			padding-top: 10px;
+			font-family: $muli;
+			font-weight: 400;
+			// float: left;
+			// background-color: green;
 		}
-	}
-
-	.sidenav{
-		margin-top: 165px;
-		position: absolute;
-		z-index: 20;
-		display: none;
-		@include breakpoint(tablet){
-			// background-color: green;
-			height: 40px;
-			width: 100%;
-			text-align: center;
-			background-color: none;
-			// background-color: green;
-			display: inline-block;
-			.navmenu{
+		.uwise{
+				font-weight: 300;
+				font-size: 1.2rem;
+				color: $superlightgrey;
 				display: inline-block;
-				padding: 10px 11px;
 			}
-		}
-		@include breakpoint (laptop){
-			position: fixed;
-			display: block;
-			width: 20%;	
-			// background-color: yellow;
-			.navlist{
-				// background-color: green;
-				text-align: left;
-				padding: 0;
-				.navmenu{
-					padding: 20px 50px;
-					text-align: left;
-					text-align: center;
-					color: $textdark;
-					font-family: $muli;
-				}
-			}
-		}
 	}
 
-	.extrapadding{
-		width: 100%;
-		height: 167px;
-		background-color: none;
+	// .sidenav{
+	// 	margin-top: 165px;
+	// 	position: absolute;
+	// 	z-index: 20;
+	// 	display: none;
+	// 	@include breakpoint(tablet){
+	// 		// background-color: green;
+	// 		height: 40px;
+	// 		width: 100%;
+	// 		text-align: center;
+	// 		background-color: none;
+	// 		// background-color: green;
+	// 		display: inline-block;
+	// 		.navmenu{
+	// 			display: inline-block;
+	// 			padding: 10px 11px;
+	// 		}
+	// 	}
+	// 	@include breakpoint (laptop){
+	// 		position: fixed;
+	// 		display: block;
+	// 		width: 20%;	
+	// 		// background-color: yellow;
+	// 		.navlist{
+	// 			// background-color: green;
+	// 			text-align: left;
+	// 			padding: 0;
+	// 			.navmenu{
+	// 				padding: 20px 50px;
+	// 				text-align: left;
+	// 				text-align: center;
+	// 				color: $textdark;
+	// 				font-family: $muli;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	
+	.contentcontainerwhite{
+		background-color: white;
+	}
+	.contentcontainergrey{
+		background-color: #f9f9f9;
 	}
 	.contentbox{
-		// margin-top: 100px;
 		width: 100%;
-		margin-left: 18%;
-		background-color: white;
+		// background-color: white;
 		text-align: center;
-		// padding-top: 200px;
-		// margin-top: 200px;
 		@include breakpoint(laptop){
 			width: 100%;
-			margin-left: 8%;
-		}
+			margin: 0 auto;
+		}	
+
 		.contheader{
+			padding-top: 30px;
 			font-size: 40px;
 			font-family: $montserrat;
 			color: $textdark;
-			margin: 0px 0px 50px 0px;
+			margin: 0px 0px 100px 0px;
+		}
+
+		#introduction{
+			padding-top: 190px;
 		}
 
 		.picture{
-			// margin: 0 auto;
 			margin: 0px 0px 60px 0px;
 		}
 
 		.content{
 
 			font-size: 1rem;
-			line-height: 1.8;
+			line-height: 2;
 			font-weight: 500;
 			font-family: $merriweather;
 			margin: 0 auto;
 			width: 85%;
 			padding: 30px 0;
+			text-align: justify;
 			@include breakpoint(laptop){
 				width: 55%;
 			}
 		}
 	}
 }
-
-
-
-
-
-
-
-// body{
-// 	// background-color: blue;
-// 		@include breakpoint(tablet){
-// 			margin-top: -50px;
-// 		}
-// 		// @include breakpoint(laptop){
-// 		// 	// .ptitle{
-// 		// 	// 	width: 15%;
-// 		// 	// 	position: fixed;
-// 		// 	// 	z-index: 2;
-// 		// 	// 	background-color: $red;
-// 		// 	// 	margin-top: 120px;
-// 		// 	// 	// min-height: 20px;
-// 		// 	// 	p{
-// 		// 	// 		font-size: 2.5rem;
-// 		// 	// 		text-align: center;
-// 		// 	// 		color: white;
-// 		// 	// 	}
-// 		// 	// }
-// 		// }
-
-// 		// @include breakpoint(tablet){
-			
-// 		// }
-	
-
-// 		@include breakpoint(laptop){
-
-		
-// 			.navlist{
-// 				width: 15%;
-// 				// margin-top: 30px;
-// 				position: fixed;
-// 				margin-top: 250px;
-// 				.navmenu{
-// 					font-size: 14px;
-// 					font-weight: bold;
-// 					padding: 15px 20px 20px 20px;
-// 					display: block;
-// 					text-align: left;
-// 					font-family: $merriweather;
-// 					// background-color: yellow;
-// 				}
-// 			}
-// 		}
-
-// 		// @include breakpoint(tablet){
-
-		
-// 		// 	.navlist{
-// 		// 		width: 80%;
-// 		// 		position: fixed;
-// 		// 		margin-left: 200px;
-// 		// 		display: inline-block;
-// 		// 		background-color: white;
-// 		// 		.navmenu{
-// 		// 			font-size: 20px;
-// 		// 			// top: 50px;
-// 		// 			padding: 188px 20px 20px 20px;
-// 		// 			display: block;
-// 		// 			text-align: left;
-// 		// 			display: inline-block;
-// 		// 			text-align: center;
-
-// 		// 		}
-// 		// 	}
-// 		// }
-
-// // *******Here starts the content styling*******
-
-
-// 		.maindiv{  						   //******mobile
-// 			background-color: white;
-// 			padding: 15px;
-// 			text-align: center;
-// 			margin-top: 50px;
-// 			// background-color: green;
-
-// 			.contheader{
-// 				font-size: 40px;
-// 				font-family: $montserrat;
-// 				color: $textdark;
-// 			}
-
-// 			.picture{
-// 				margin:0 auto;
-// 				margin: 50px 0px;
-// 				padding-right: 10px;	
-// 			}
-
-// 			.content{
-
-// 				font-size: 1rem;
-// 				line-height: 1.7;
-// 				font-weight: 500;
-// 				font-family: $merriweather;
-// 				margin: 0 auto;
-// 				width: 88%;
-// 			}
-// 		}
-
-// 		@include breakpoint(laptop){
-// 			.maindiv{
-// 				margin: 140px 0px 0px 300px;
-// 				position: absolute;
-// 			}
-// 		}
-
-// 		@include breakpoint(tablet){     //tablet and above
-				
-// 				.ptitle{
-// 				width: 100%;
-// 				position: fixed;
-// 				z-index: 2;
-// 				background-color: $red;
-// 				margin-top: 130px;
-// 				height: 80px;
-// 					p{
-// 						font-size: 2rem;
-// 						text-align: center;
-// 						color: $superlightgrey;
-// 						margin: 20px;
-// 					}
-// 				}
-
-
-// 				.maindiv{
-// 				background-color: white;
-// 				padding: 15px;
-// 				text-align: center;
-// 				// margin-top: 150px;
-// 				// background-color: green;
-
-// 				.contheader{
-// 					font-size: 40px;
-// 					font-family: $montserrat;
-// 					// color: $textdark;
-// 					color: blue;
-// 					margin-top: 250px;
-// 				}
-
-// 				.picture{
-// 					margin:0 auto;
-// 					margin: 80px 0px;
-// 					padding-right: 10px;	
-// 				}
-
-// 				.content{
-
-// 					font-size: 1rem;
-// 					line-height: 1.7;
-// 					font-weight: 500;
-// 					font-family: $merriweather;
-// 					margin: 0 auto;
-// 					width: 65%;
-// 				}
-// 			}
-// 		}
-
-// }
