@@ -467,7 +467,7 @@ body .contentbox {
     margin: 0px 0px 60px 0px; }
   body .contentbox .content {
     font-size: 1rem;
-    line-height: 2;
+    line-height: 1.5;
     font-weight: 500;
     font-family: "Merriweather", serif;
     margin: 0 auto;
@@ -476,4 +476,5 @@ body .contentbox {
     text-align: justify; }
     @media (min-width: 1100px) {
       body .contentbox .content {
-        width: 55%; } }
+        width: 55%;
+        line-height: 2; } }
