@@ -391,125 +391,123 @@ th {
   .hidden-desktop {
     display: none !important; } }
 
-header {
-  background-color: #263544;
+.navigation {
   width: 100%;
-  min-height: 85vh;
-  display: block; }
-
-.header .logo {
-  width: 50px;
-  padding-top: 40px;
-  padding-left: 40px; }
-
-.header .img-contain {
-  padding: 0;
-  margin: 0;
-  display: inline-block; }
-
-.header .nav {
-  display: inline-block;
-  float: right;
-  padding-top: 40px; }
-  .header .nav ul {
-    font-family: "Source Sans Pro";
-    color: #ecf0f1;
-    display: inline-block; }
-    .header .nav ul li {
-      list-style: none;
-      display: inline-block;
-      padding-right: 40px;
-      padding-bottom: 60px;
-      font-size: 25px; }
-
-.bigname {
-  font-size: 60px;
-  width: 100%;
-  position: relative;
-  display: block;
-  margin-top: 100px; }
-  .bigname p {
-    text-align: center;
-    color: #ecf0f1; }
-    .bigname p span {
-      color: #e74c3c; }
-
-.headtext {
-  font-size: 40px;
-  width: 100%;
-  position: relative;
-  display: block;
-  margin-top: 100px;
-  font-family: "Source Sans Pro"; }
-  .headtext p {
-    text-align: center;
-    color: #ecf0f1; }
-    .headtext p span {
-      color: #e74c3c; }
-
-.projectheader {
-  width: 100%;
-  height: auto; }
-  .projectheader .project {
-    font-family: "Muli", sans-serif;
-    display: inline-block;
-    text-align: center;
-    font-size: 50px;
-    color: #263544;
-    position: relative;
-    display: block; }
-
-.boxes {
-  background-color: none;
-  width: 100%; }
-  .boxes ul {
-    padding: 0px 0px 0px 0px; }
-    .boxes ul .box {
-      height: 400px;
-      background-color: none;
-      display: inline-block;
-      width: 100%;
-      margin: 10px 1px; }
+  height: 130px; }
+  .navigation .navcontainer {
+    max-width: 700px;
+    margin: 0 auto;
+    height: 130px; }
+    @media (min-width: 1100px) {
+      .navigation .navcontainer {
+        max-width: 1000px; } }
+    .navigation .navcontainer .nav-list {
+      display: none; }
       @media (min-width: 768px) {
-        .boxes ul .box {
-          width: 49%; } }
-      @media (min-width: 1100px) {
-        .boxes ul .box {
-          width: 32.8%; } }
-      .boxes ul .box .pbox {
-        height: 100%;
-        width: 360px;
-        background-color: #FFA726;
-        display: block;
-        margin: 0px auto; }
-        .boxes ul .box .pbox .projectpic {
-          background-color: #2d2d2d;
-          height: 55%;
-          text-align: center;
-          padding: 40px; }
-        .boxes ul .box .pbox .projecttitle {
-          color: #2d2d2d;
-          text-align: center;
-          padding: 35px;
-          font-size: 25px;
-          font-family: "Source Sans Pro"; }
-      .boxes ul .box .pbox {
-        text-decoration: none; }
-      .boxes ul .box .pbox:hover .projecttitle {
-        font-weight: bold; }
+        .navigation .navcontainer .nav-list {
+          display: block;
+          list-style: none;
+          float: right;
+          margin: 3.5rem 0; }
+          .navigation .navcontainer .nav-list li {
+            float: left;
+            margin-left: 50px; }
+            .navigation .navcontainer .nav-list li a {
+              text-decoration: none;
+              font-family: "Open Sans", sans-serif;
+              font-size: 16px;
+              color: #aaaaaa;
+              font-weight: bold; }
+            .navigation .navcontainer .nav-list li a:hover {
+              font-weight: bolder;
+              color: #3d3d3d; } }
+    .navigation .navcontainer #logo {
+      text-align: center; }
+      @media (min-width: 768px) {
+        .navigation .navcontainer #logo {
+          text-align: left; } }
+      .navigation .navcontainer #logo img {
+        margin-top: 1.7rem;
+        max-width: 50px;
+        margin-left: 1.2rem; }
+        @media (min-width: 768px) {
+          .navigation .navcontainer #logo img {
+            margin: 1.7rem 0; } }
 
-.footer {
-  background-color: #272828;
-  width: 100%;
-  height: 300px; }
-
-.contact {
-  font-family: "Source Sans Pro";
-  font-size: 30px;
-  color: #ecf0f1;
-  display: block;
-  text-align: center;
-  padding-top: 25px; }
-  @media (min-width: 768px) {
-    .contact {
-      font-size: 50px; } }
+.bodymain {
+  width: 100%; }
+  .bodymain .container {
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      .bodymain .container {
+        max-width: 700px;
+        margin: 0 auto; } }
+    @media (min-width: 1100px) {
+      .bodymain .container {
+        max-width: 1000px; } }
+    .bodymain .container .headline {
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      color: #3d3d3d;
+      padding: 2.2rem 3rem 3.75rem 3rem;
+      font-size: 36px;
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 50px; }
+    .bodymain .container .row {
+      height: 800px;
+      margin: 0 auto;
+      max-width: 1000px; }
+      .bodymain .container .row .righthalf {
+        background-color: transparent;
+        height: 250px;
+        width: 90%;
+        margin: 0 auto; }
+        @media (min-width: 1100px) {
+          .bodymain .container .row .righthalf {
+            width: 50%;
+            float: right; } }
+        .bodymain .container .row .righthalf .biodiv {
+          margin: 0 auto;
+          max-width: 300px;
+          float: left;
+          font-size: 1.6rem;
+          font-family: "Merriweather", serif;
+          color: #aaaaaa;
+          line-height: 2.3rem; }
+          @media (min-width: 768px) {
+            .bodymain .container .row .righthalf .biodiv {
+              text-align: left;
+              float: left; } }
+          @media (min-width: 1100px) {
+            .bodymain .container .row .righthalf .biodiv {
+              text-align: left;
+              float: left;
+              padding-left: 3rem; } }
+          .bodymain .container .row .righthalf .biodiv a {
+            text-decoration: none;
+            color: #8c8c8c;
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-family: "Open Sans", sans-serif; }
+          .bodymain .container .row .righthalf .biodiv a:hover {
+            color: #3d3d3d;
+            font-weight: bolder; }
+      .bodymain .container .row .lefthalf {
+        background-color: transparent;
+        width: 90%;
+        margin: 0 auto; }
+        @media (min-width: 1100px) {
+          .bodymain .container .row .lefthalf {
+            width: 50%;
+            float: left; } }
+        .bodymain .container .row .lefthalf .projectbox {
+          width: 100%;
+          height: 400px;
+          background-color: #c7aafe; }
+          @media (min-width: 1100px) {
+            .bodymain .container .row .lefthalf .projectbox {
+              float: right;
+              width: 75%; } }
+          .bodymain .container .row .lefthalf .projectbox .uwise {
+            height: 300px; }

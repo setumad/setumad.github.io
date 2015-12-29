@@ -1,79 +1,162 @@
-header{
-	background-color:$background;
+.navigation{
 	width: 100%;
-	min-height: 85vh;
-	display: block;
-}
-
-.header{
-
-	.logo{
-		width:50px;
-		padding-top:40px;
-		padding-left:40px;
-
-	}
-
-	.img-contain{
-		padding:0;
-		margin:0;
-		display: inline-block;
-	}
-
-	.nav{
-		display: inline-block;
-		float:right;
-		padding-top: 40px;
-
-		ul{
-			font-family: $font1;
-			color: $textwhite;
-			display: inline-block;
-			// position: absolute;
-			// right: 0;
-
-			li{
+	// background-color: blue;
+	height: 130px;
+	.navcontainer{
+		max-width: 700px;
+		margin: 0 auto;
+		height: 130px;
+		
+		@include breakpoint(laptop){
+			max-width: 1000px;
+		}
+		.nav-list{
+			display: none;
+			@include breakpoint(tablet){
+				display: block;
 				list-style: none;
-				display: inline-block;
-				padding-right: 40px;
-				padding-bottom: 60px;
-				font-size: 25px;
+				float: right;
+				margin: 3.5rem 0;
+				// background-color: green;
+				li{
+					float: left;
+					margin-left: 50px;
+					a{
+						text-decoration: none;
+						font-family: $open-sans;
+						font-size: 16px;
+						color: $lightgrey;
+						font-weight: bold;
+					}
+					a:hover{
+						font-weight: bolder;
+						color: $textdark;
+					}
+
+				}
+			}
+		}	
+		#logo{
+			text-align: center;
+			@include breakpoint(tablet){
+				text-align: left;
+			}
+			img{
+				// width: 100%;
+				margin-top: 1.7rem;
+				max-width: 50px;
+				margin-left: 1.2rem;
+				// margin: 0 auto;
+				@include breakpoint(tablet){
+					margin: 1.7rem 0;
+				}
+
 			}
 		}
 	}
 }
 
-.bigname{
-	font-size: 60px;
-	width: 100%;
-	position: relative;
-	display: block;
-	margin-top: 100px;
 
-	p{
-		text-align: center;
-		color: $textwhite;
 
-		span{
-			color:$red;
-		}
-	}
 
-	}
-.headtext{
-	font-size: 40px;
-	width: 100%;
-	position: relative;
-	display: block;
-	margin-top: 100px;
-	font-family: $font1;
 
-	p{
-		text-align: center;
-		color: $textwhite;
 
-		span{
-			color:$red;
-		}
-	}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************
+// ********************ALL OLD CSS BELOW********************
+// *********************************************************
+
+
+
+
+// header{
+// 	background-color:$background;
+// 	width: 100%;
+// 	min-height: 85vh;
+// 	display: block;
+// }
+
+// .header{
+
+// 	.logo{
+// 		width:50px;
+// 		padding-top:40px;
+// 		padding-left:40px;
+
+// 	}
+
+// 	.img-contain{
+// 		padding:0;
+// 		margin:0;
+// 		display: inline-block;
+// 	}
+
+// 	.nav{
+// 		display: inline-block;
+// 		float:right;
+// 		padding-top: 40px;
+
+// 		ul{
+// 			font-family: $font1;
+// 			color: $textwhite;
+// 			display: inline-block;
+// 			// position: absolute;
+// 			// right: 0;
+
+// 			li{
+// 				list-style: none;
+// 				display: inline-block;
+// 				padding-right: 40px;
+// 				padding-bottom: 60px;
+// 				font-size: 25px;
+// 			}
+// 		}
+// 	}
+// }
+
+// .bigname{
+// 	font-size: 60px;
+// 	width: 100%;
+// 	position: relative;
+// 	display: block;
+// 	margin-top: 100px;
+
+// 	p{
+// 		text-align: center;
+// 		color: $textwhite;
+
+// 		span{
+// 			color:$red;
+// 		}
+// 	}
+
+// 	}
+// .headtext{
+// 	font-size: 40px;
+// 	width: 100%;
+// 	position: relative;
+// 	display: block;
+// 	margin-top: 100px;
+// 	font-family: $font1;
+
+// 	p{
+// 		text-align: center;
+// 		color: $textwhite;
+
+// 		span{
+// 			color:$red;
+// 		}
+// 	}
+// }
