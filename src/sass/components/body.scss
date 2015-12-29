@@ -92,6 +92,25 @@
 					float: right;
 					width: 75%;
 					}
+
+					img{
+						display: block;
+						text-align: center;
+						// background-color: green;
+						width: 100%;
+						max-width: 235px;
+						padding-left: 3.4rem;
+
+						@include breakpoint(tablet){
+							padding-left: 11rem;
+							padding-top: 1.5rem;
+						
+						}
+						@include breakpoint(laptop){
+							max-width: 235px;
+							padding-left: 3.4rem;
+						}
+					}
 					
 					.uwise{
 						width: 60%;
@@ -106,6 +125,7 @@
 						.uwise_desc{
 							font-family: $merriweather;
 							font-size: 1.2rem;
+
 						}
 						a{
 							text-decoration: none;
@@ -115,19 +135,7 @@
 							color: $uwpurple;
 							font-weight: bolder;
 						}
-						img{
-							width: 100%;
-							max-width: 235px;
-							padding-left: 3.4rem;
-							@include breakpoint(tablet){
-							padding-left: 11rem;
-							padding-top: 1.5rem;
-							}
-							@include breakpoint(laptop){
-							max-width: 235px;
-							padding-left: 3.4rem;
-							}
-						}
+						
 					}
 
 				}

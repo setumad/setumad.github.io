@@ -510,6 +510,20 @@ th {
             .bodymain .container .row .lefthalf .projectbox {
               float: right;
               width: 75%; } }
+          .bodymain .container .row .lefthalf .projectbox img {
+            display: block;
+            text-align: center;
+            width: 100%;
+            max-width: 235px;
+            padding-left: 3.4rem; }
+            @media (min-width: 768px) {
+              .bodymain .container .row .lefthalf .projectbox img {
+                padding-left: 11rem;
+                padding-top: 1.5rem; } }
+            @media (min-width: 1100px) {
+              .bodymain .container .row .lefthalf .projectbox img {
+                max-width: 235px;
+                padding-left: 3.4rem; } }
           .bodymain .container .row .lefthalf .projectbox .uwise {
             width: 60%;
             padding-left: 1.4rem;
@@ -527,15 +541,3 @@ th {
             .bodymain .container .row .lefthalf .projectbox .uwise a:hover {
               color: #4b2e83;
               font-weight: bolder; }
-            .bodymain .container .row .lefthalf .projectbox .uwise img {
-              width: 100%;
-              max-width: 235px;
-              padding-left: 3.4rem; }
-              @media (min-width: 768px) {
-                .bodymain .container .row .lefthalf .projectbox .uwise img {
-                  padding-left: 11rem;
-                  padding-top: 1.5rem; } }
-              @media (min-width: 1100px) {
-                .bodymain .container .row .lefthalf .projectbox .uwise img {
-                  max-width: 235px;
-                  padding-left: 3.4rem; } }
