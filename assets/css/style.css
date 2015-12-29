@@ -400,7 +400,7 @@ th {
     height: 130px; }
     @media (min-width: 1100px) {
       .navigation .navcontainer {
-        max-width: 1000px; } }
+        max-width: 780px; } }
     .navigation .navcontainer .nav-list {
       display: none; }
       @media (min-width: 768px) {
@@ -510,4 +510,21 @@ th {
               float: right;
               width: 75%; } }
           .bodymain .container .row .lefthalf .projectbox .uwise {
-            height: 300px; }
+            width: 60%;
+            padding-left: 1.4rem; }
+            .bodymain .container .row .lefthalf .projectbox .uwise .uwise_title {
+              font-size: 1.5rem;
+              font-family: "Open Sans", sans-serif;
+              font-weight: bold; }
+            .bodymain .container .row .lefthalf .projectbox .uwise .uwise_desc {
+              font-family: "Merriweather", serif;
+              font-size: 1.2rem; }
+            .bodymain .container .row .lefthalf .projectbox .uwise a {
+              text-decoration: none;
+              color: #ffffff; }
+            .bodymain .container .row .lefthalf .projectbox .uwise a:hover {
+              color: #4b2e83;
+              font-weight: bolder; }
+            .bodymain .container .row .lefthalf .projectbox .uwise img {
+              max-width: 235px;
+              padding-left: 3.4rem; }
