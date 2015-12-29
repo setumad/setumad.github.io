@@ -96,6 +96,7 @@
 					.uwise{
 						width: 60%;
 						padding-left: 1.4rem;
+						padding-top: 0.4rem;
 
 						.uwise_title{
 							font-size: 1.5rem;
@@ -115,9 +116,17 @@
 							font-weight: bolder;
 						}
 						img{
+							width: 100%;
+							max-width: 235px;
+							padding-left: 5.8rem;
+							@include breakpoint(tablet){
+							padding-left: 11rem;
+							padding-top: 1.5rem;
+							}
+							@include breakpoint(laptop){
 							max-width: 235px;
 							padding-left: 3.4rem;
-
+							}
 						}
 					}
 

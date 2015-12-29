@@ -427,6 +427,7 @@ th {
         .navigation .navcontainer #logo {
           text-align: left; } }
       .navigation .navcontainer #logo img {
+        width: 100%;
         margin-top: 1.7rem;
         max-width: 50px;
         margin-left: 1.2rem; }
@@ -511,7 +512,8 @@ th {
               width: 75%; } }
           .bodymain .container .row .lefthalf .projectbox .uwise {
             width: 60%;
-            padding-left: 1.4rem; }
+            padding-left: 1.4rem;
+            padding-top: 0.4rem; }
             .bodymain .container .row .lefthalf .projectbox .uwise .uwise_title {
               font-size: 1.5rem;
               font-family: "Open Sans", sans-serif;
@@ -526,5 +528,14 @@ th {
               color: #4b2e83;
               font-weight: bolder; }
             .bodymain .container .row .lefthalf .projectbox .uwise img {
+              width: 100%;
               max-width: 235px;
-              padding-left: 3.4rem; }
+              padding-left: 5.8rem; }
+              @media (min-width: 768px) {
+                .bodymain .container .row .lefthalf .projectbox .uwise img {
+                  padding-left: 11rem;
+                  padding-top: 1.5rem; } }
+              @media (min-width: 1100px) {
+                .bodymain .container .row .lefthalf .projectbox .uwise img {
+                  max-width: 235px;
+                  padding-left: 3.4rem; } }
