@@ -95,20 +95,22 @@
 
 					img{
 						display: block;
+						margin: 0 auto;
 						text-align: center;
 						// background-color: green;
 						width: 100%;
 						max-width: 235px;
-						padding-left: 3.4rem;
 
 						@include breakpoint(tablet){
-							padding-left: 11rem;
+							display: block;
+							margin: 0 auto;
 							padding-top: 1.5rem;
 						
 						}
 						@include breakpoint(laptop){
 							max-width: 235px;
-							padding-left: 3.4rem;
+							display: block;
+							margin: 0 auto;
 						}
 					}
 					
