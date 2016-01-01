@@ -3,9 +3,9 @@ body{
 	.ptitle{
 		position: absolute;
 		width: 100%;
-		height: 140px;
-		background-color: $uwpurple;
-		margin-top: 87px;
+		height: 150px;
+		background-color: $darkgreenexcel;
+		// margin-top: 87px;
 		#projecttitle{
 			font-size: 2.5rem;
 			text-align: center;
@@ -18,12 +18,20 @@ body{
 			// float: left;
 			// background-color: green;
 		}
-		.uwise{
+		.dr{
 				font-weight: 300;
 				font-size: 1.2rem;
 				color: $superlightgrey;
 				display: inline-block;
 			}
+		.role{
+			font-size: 0.9rem;
+			color: $superlightgrey;
+			@include breakpoint(tablet){
+				font-size: 1.2rem;
+				color: $superlightgrey;
+			}
+		}
 	}
 	
 	.contentcontainerwhite{
@@ -46,12 +54,12 @@ body{
 			padding-top: 30px;
 			font-size: 40px;
 			font-family: $open-sans;
-			color: $textdark;
+			color: $darkgreenexcel;
 			margin: 0px 0px 100px 0px;
 		}
 
 		#introduction{
-			padding-top: 190px;
+			padding-top: 140px;
 		}
 
 		img{
@@ -72,15 +80,14 @@ body{
 			width: 85%;
 			padding: 30px 0;
 			text-align: justify;
-			.boldtext{
-				font-weight: 700;
-				color: $uwpurple;
-			}
+			line-height: 1.8;
+			// background-color: green;
+
 			@include breakpoint(tablet){
 				line-height: 2;
 			}
 			@include breakpoint(laptop){
-				width: 55%;
+				width: 40%;
 				line-height: 2;
 			}
 		}

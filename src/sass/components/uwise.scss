@@ -1,0 +1,139 @@
+body{
+
+	.ptitle{
+		position: absolute;
+		width: 100%;
+		height: 190px;
+		background-color: $uwpurple;
+		// margin-top: 87px;
+		#projecttitle{
+			font-size: 2.5rem;
+			text-align: center;
+			color: $superlightgrey;
+			// margin: 5px 0px 0px 20%;
+			margin: 0 auto;
+			padding-top: 10px;
+			font-family: $open-sans;
+			font-weight: 400;
+			// float: left;
+			// background-color: green;
+		}
+		.uwise{
+				font-weight: 300;
+				font-size: 1.2rem;
+				color: $superlightgrey;
+				display: inline-block;
+			}
+		.role{
+			font-size: 0.9rem;
+			color: $lightgrey;
+			// background-color: green;
+			@include breakpoint(tablet){
+				font-size: 1.2rem;
+				color: $lightgrey;
+			}
+		}
+	}
+	
+	.contentcontainerwhite{
+		background-color: white;
+	}
+	.contentcontainergrey{
+		background-color: #f9f9f9;
+	}
+	.contentbox{
+		width: 90%;
+		// background-color: green;
+		text-align: center;
+		margin: 0 auto;
+		@include breakpoint(laptop){
+			width: 100%;
+			margin: 0 auto;
+		}	
+
+		.contheader{
+			padding-top: 30px;
+			font-size: 40px;
+			font-family: $open-sans;
+			color: $uwpurple;
+			margin: 0px 0px 100px 0px;
+		}
+
+		#introduction{
+			padding-top: 140px;
+		}
+
+		img{
+			// margin: 0px 0px 60px 0px;
+			max-width: 650px;
+			width: 100%;
+			
+
+		}
+
+		.content{
+
+			font-size: 1rem;
+			line-height: 1.5;
+			font-weight: 400;
+			font-family: $merriweather;
+			margin: 0 auto;
+			width: 85%;
+			padding: 30px 0;
+			text-align: justify;
+			line-height: 1.8;
+			.boldtext{
+				font-weight: 700;
+				color: $uwpurple;
+			}
+			@include breakpoint(tablet){
+				line-height: 2;
+			}
+			@include breakpoint(laptop){
+				width: 40%;
+				line-height: 2;
+			}
+		}
+	}
+}
+
+
+
+	// .sidenav{
+	// 	margin-top: 165px;
+	// 	position: absolute;
+	// 	z-index: 20;
+	// 	display: none;
+	// 	@include breakpoint(tablet){
+	// 		// background-color: green;
+	// 		height: 40px;
+	// 		width: 100%;
+	// 		text-align: center;
+	// 		background-color: none;
+	// 		// background-color: green;
+	// 		display: inline-block;
+	// 		.navmenu{
+	// 			display: inline-block;
+	// 			padding: 10px 11px;
+	// 		}
+	// 	}
+	// 	@include breakpoint (laptop){
+	// 		position: fixed;
+	// 		display: block;
+	// 		width: 20%;	
+	// 		// background-color: yellow;
+	// 		.navlist{
+	// 			// background-color: green;
+	// 			text-align: left;
+	// 			padding: 0;
+	// 			.navmenu{
+	// 				padding: 20px 50px;
+	// 				text-align: left;
+	// 				text-align: center;
+	// 				color: $textdark;
+	// 				font-family: $muli;
+	// 			}
+	// 		}
+	// 	}
+	// }
+

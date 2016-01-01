@@ -1,7 +1,7 @@
 .navigation{
 	width: 100%;
 	// background-color: blue;
-	height: 130px;
+	height: 100px;
 	.navcontainer{
 		max-width: 700px;
 		margin: 0 auto;
@@ -16,7 +16,7 @@
 				display: block;
 				list-style: none;
 				float: right;
-				margin: 3.5rem 0;
+				margin: 2.5rem 0;
 				// background-color: green;
 				li{
 					float: left;
@@ -44,7 +44,7 @@
 			img{
 				width: 100%;
 				margin-top: 1.7rem;
-				max-width: 50px;
+				max-width: 35px;
 				margin-left: 1.2rem;
 				// margin: 0 auto;
 				@include breakpoint(tablet){

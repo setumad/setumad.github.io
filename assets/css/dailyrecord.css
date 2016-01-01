@@ -435,140 +435,71 @@ th {
           .navigation .navcontainer #logo img {
             margin: 1.7rem 0; } }
 
-.bodymain {
-  width: 100%; }
-  .bodymain .container {
-    margin: 0 auto; }
+body .ptitle {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  background-color: #1a7446; }
+  body .ptitle #projecttitle {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #f5f5f5;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400; }
+  body .ptitle .dr {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    display: inline-block; }
+  body .ptitle .role {
+    font-size: 0.9rem;
+    color: #f5f5f5; }
     @media (min-width: 768px) {
-      .bodymain .container {
-        max-width: 700px;
-        margin: 0 auto; } }
+      body .ptitle .role {
+        font-size: 1.2rem;
+        color: #f5f5f5; } }
+
+body .contentcontainerwhite {
+  background-color: white; }
+
+body .contentcontainergrey {
+  background-color: #f9f9f9; }
+
+body .contentbox {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto; }
+  @media (min-width: 1100px) {
+    body .contentbox {
+      width: 100%;
+      margin: 0 auto; } }
+  body .contentbox .contheader {
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    color: #1a7446;
+    margin: 0px 0px 100px 0px; }
+  body .contentbox #introduction {
+    padding-top: 140px; }
+  body .contentbox img {
+    max-width: 650px;
+    width: 100%; }
+  body .contentbox .content {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Merriweather", serif;
+    margin: 0 auto;
+    width: 85%;
+    padding: 30px 0;
+    text-align: justify;
+    line-height: 1.8; }
+    @media (min-width: 768px) {
+      body .contentbox .content {
+        line-height: 2; } }
     @media (min-width: 1100px) {
-      .bodymain .container {
-        max-width: 1000px; } }
-    .bodymain .container .headline {
-      text-align: center;
-      font-family: "Open Sans", sans-serif;
-      color: #3d3d3d;
-      padding: 2.2rem 3rem 3rem 3rem;
-      font-size: 36px;
-      max-width: 750px;
-      margin: 0 auto;
-      line-height: 50px; }
-    .bodymain .container .row {
-      height: 800px;
-      margin: 0 auto;
-      max-width: 1000px; }
-      .bodymain .container .row .righthalf {
-        background-color: transparent;
-        height: 250px;
-        width: 90%;
-        margin: 0 auto; }
-        @media (min-width: 1100px) {
-          .bodymain .container .row .righthalf {
-            width: 50%;
-            float: right; } }
-        .bodymain .container .row .righthalf .biodiv {
-          margin: 0 auto;
-          max-width: 300px;
-          float: left;
-          font-size: 1.6rem;
-          font-family: "Merriweather", serif;
-          color: #aaaaaa;
-          line-height: 2.3rem;
-          width: 80%; }
-          @media (min-width: 768px) {
-            .bodymain .container .row .righthalf .biodiv {
-              text-align: left;
-              float: left; } }
-          @media (min-width: 1100px) {
-            .bodymain .container .row .righthalf .biodiv {
-              text-align: right;
-              float: right;
-              padding-left: 3rem; } }
-          .bodymain .container .row .righthalf .biodiv a {
-            text-decoration: none;
-            color: #8c8c8c;
-            font-weight: bold;
-            font-size: 1.2rem;
-            font-family: "Open Sans", sans-serif; }
-          .bodymain .container .row .righthalf .biodiv a:hover {
-            color: #3d3d3d;
-            font-weight: bolder; }
-        .bodymain .container .row .righthalf .drprojectbox {
-          height: 400px;
-          margin: 0 auto;
-          background-color: #c4dec2;
-          margin-top: 4rem; }
-          @media (min-width: 1100px) {
-            .bodymain .container .row .righthalf .drprojectbox {
-              float: right;
-              width: 85%;
-              margin-top: 0; } }
-          .bodymain .container .row .righthalf .drprojectbox .dailyrecord {
-            width: 60%;
-            padding-right: 1.4rem;
-            padding-top: 0.4rem;
-            float: right;
-            text-align: right; }
-            .bodymain .container .row .righthalf .drprojectbox .dailyrecord .dr_title {
-              font-size: 1.5rem;
-              font-family: "Open Sans", sans-serif;
-              font-weight: bold; }
-            .bodymain .container .row .righthalf .drprojectbox .dailyrecord .dr_desc {
-              font-family: "Merriweather", serif;
-              font-size: 1.2rem; }
-            .bodymain .container .row .righthalf .drprojectbox .dailyrecord a {
-              text-decoration: none;
-              color: #ffffff; }
-            .bodymain .container .row .righthalf .drprojectbox .dailyrecord a:hover {
-              color: #1a7446; }
-      .bodymain .container .row .lefthalf {
-        background-color: transparent;
-        width: 90%;
-        margin: 0 auto; }
-        @media (min-width: 1100px) {
-          .bodymain .container .row .lefthalf {
-            width: 50%;
-            float: left; } }
-        .bodymain .container .row .lefthalf .uwiseprojectbox {
-          height: 400px;
-          margin: 0 auto;
-          background-color: #c7aafe; }
-          @media (min-width: 1100px) {
-            .bodymain .container .row .lefthalf .uwiseprojectbox {
-              float: right;
-              width: 85%; } }
-          .bodymain .container .row .lefthalf .uwiseprojectbox img {
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-            width: 100%;
-            max-width: 225px; }
-            @media (min-width: 768px) {
-              .bodymain .container .row .lefthalf .uwiseprojectbox img {
-                display: block;
-                margin: 0 auto;
-                padding-top: 2rem;
-                max-width: 225px; } }
-            @media (min-width: 1100px) {
-              .bodymain .container .row .lefthalf .uwiseprojectbox img {
-                max-width: 225px;
-                display: block;
-                margin: 0 auto; } }
-          .bodymain .container .row .lefthalf .uwiseprojectbox .uwise {
-            width: 60%;
-            padding-left: 1.4rem;
-            padding-top: 0.4rem; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox .uwise .uwise_title {
-              font-size: 1.5rem;
-              font-family: "Open Sans", sans-serif;
-              font-weight: bold; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox .uwise .uwise_desc {
-              font-family: "Merriweather", serif;
-              font-size: 1.2rem; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox .uwise a {
-              text-decoration: none;
-              color: #ffffff; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox .uwise a:hover {
-              color: #4b2e83; }
+      body .contentbox .content {
+        width: 40%;
+        line-height: 2; } }
