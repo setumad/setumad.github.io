@@ -500,7 +500,8 @@ th {
           margin: 0 auto;
           background-color: #c4dec2;
           margin: 4rem 0;
-          transition: 0.3s all ease-in-out; }
+          transition: 0.3s all ease-in-out;
+          margin-bottom: 6rem; }
           @media (min-width: 1100px) {
             .bodymain .container .row .righthalf .drprojectbox {
               float: right;
@@ -563,7 +564,8 @@ th {
           height: 400px;
           margin: 0 auto;
           background-color: #c7aafe;
-          transition: 0.3s all ease-in-out; }
+          transition: 0.3s all ease-in-out;
+          margin-bottom: 6rem; }
           @media (min-width: 1100px) {
             .bodymain .container .row .lefthalf .uwiseprojectbox {
               float: right;
@@ -588,8 +590,8 @@ th {
               display: block;
               margin: 0 auto;
               width: 100%;
-              max-width: 205px;
-              padding-top: 15px;
+              max-width: 175px;
+              padding: 36px 0;
               transition: 0.5s all ease-in-out;
               position: relative;
               bottom: 0; }
