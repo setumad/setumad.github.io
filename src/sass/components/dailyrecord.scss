@@ -51,23 +51,73 @@ body{
 		}	
 
 		.contheader{
-			padding-top: 30px;
-			font-size: 40px;
+			padding: 1rem 0 2rem 0;
+			font-size: 50px;
 			font-family: $open-sans;
 			color: $darkgreenexcel;
-			margin: 0px 0px 100px 0px;
 		}
 
 		#introduction{
-			padding-top: 140px;
+			padding-top: 10rem;
+			// background-color: yellow;
 		}
 
-		img{
-			// margin: 0px 0px 60px 0px;
-			max-width: 650px;
-			width: 100%;
-			
+		hr.thin {
+			margin-top: 3em;
+			margin-bottom: 3em;
+			height: 1px;
+			border: 20;
+			background-color: #bcbbba;
+			color: #bcbbba;
+			width: 10%;
+			opacity: 0.4;
+			} 
 
+		.picture_intro{
+			img{
+				width: 100%;
+				max-width: 650px;
+				// box-shadow: 0px 0px 20px grey;
+			}
+		}
+
+		.picture_research{
+			img{
+				width: 100%;
+				max-width: 850px;
+			}
+		}
+
+		.picture_ideation{
+			display: block;
+			.ideapic1{
+				width: 100%;
+				max-width: 400px;
+				padding-bottom: 4rem;
+				display: block;
+				margin: 0 auto;
+				@include breakpoint(tablet){
+					display: block;
+					margin: 0 auto;
+					max-width: 500px;
+				}
+				@include breakpoint(laptop){
+					padding: 0rem 2rem;
+					display: inline-block;
+
+				}
+			}
+			.ideapic2{
+				width: 100%;
+				max-width: 400px;
+				@include breakpoint(tablet){
+					max-width: 500px;
+				}
+				@include breakpoint(laptop){
+					padding: 0rem 2rem;
+					max-width: 500px;
+				}
+			}
 		}
 
 		.content{

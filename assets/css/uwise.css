@@ -479,8 +479,7 @@ body .contentbox {
     padding: 1rem 0 2rem 0;
     font-size: 50px;
     font-family: "Open Sans", sans-serif;
-    color: #4b2e83;
-    margin: 0px 0px 0px 0px; }
+    color: #4b2e83; }
   body .contentbox #introduction {
     margin-top: 7rem; }
   body .contentbox hr.thin {
@@ -524,7 +523,7 @@ body .contentbox {
     max-width: 650px; }
   body .contentbox .picture_mockups img {
     width: 100%;
-    max-width: 950px; }
+    max-width: 1150px; }
   body .contentbox #introduction {
     padding-top: 140px; }
   body .contentbox .content {
