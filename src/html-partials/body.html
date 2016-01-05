@@ -17,22 +17,23 @@
 
 			<div class="lefthalf">
 				<div class="uwiseprojectbox">
-					<div class="uwise">
-						<a href="">
-						<p><span class="uwise_title">UW-ISE<br><br></span><span class="uwise_desc">Find reliable off-campus accommodation easily</span></p>
-						</a>
-					</div>
-					<img src="assets/img/uwise_phone.png"/>
+					<a id="uwisealink"href="uwise.html">
+						<div class="uwise">
+							<p><span class="uwise_title">UW-ISE<br><br></span><span class="uwise_desc">Find reliable off-campus<br> accommodation easily</span></p>
+						</div>
+						<img id="uwisephone" src="assets/img/uwise_phone.png"/>
+					</a>
 				</div>
 			</div>
 
 			<div class="righthalf">
 				<div class="drprojectbox">
-					<div class="dailyrecord">
-						<a href="">
-						<p><span class="dr_title">Daily Record<br><br></span><span class="dr_desc">Easy project database management tool</span></p>
-						</a>
-					</div>
+					<a id="dailyrecordalink" href="dailyrecord.html">
+						<div class="dailyrecord">
+							<p><span class="dr_title">Daily Record<br><br></span><span class="dr_desc">Easy project database<br>management tool</span></p>
+						</div>
+						<img id="drmac" src="assets/img/dr_macbook.png"/>
+					</a>
 				</div>
 			</div>
 
@@ -44,8 +45,15 @@
 	
 
 
+<script>
 
+	$(".uwiseprojectbox").hover(function(){
+		$("#uwisephone").animate({
+			marginBottom: "20px"
+		},300);
+	});
 
+</script>
 
 
 

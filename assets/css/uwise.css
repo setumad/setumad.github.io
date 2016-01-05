@@ -476,16 +476,34 @@ body .contentbox {
       width: 100%;
       margin: 0 auto; } }
   body .contentbox .contheader {
-    padding-top: 30px;
+    padding: 3.2rem 0 2rem 0;
     font-size: 40px;
     font-family: "Open Sans", sans-serif;
     color: #4b2e83;
-    margin: 0px 0px 100px 0px; }
+    margin: 0px 0px 0px 0px; }
+  body .contentbox hr.thin {
+    margin-top: 3em;
+    height: 1px;
+    border: 20;
+    background-color: #bcbbba;
+    color: #bcbbba;
+    width: 15%;
+    opacity: 0.4; }
+  body .contentbox .pic_uwintro {
+    display: inline-block; }
+    body .contentbox .pic_uwintro #pic1 {
+      width: 100%;
+      max-width: 750px;
+      display: block;
+      float: left; }
+  body .contentbox .picture_problem img {
+    width: 100%;
+    max-width: 650px; }
+  body .contentbox .picture_target img {
+    width: 100%;
+    max-width: 450px; }
   body .contentbox #introduction {
     padding-top: 140px; }
-  body .contentbox img {
-    max-width: 650px;
-    width: 100%; }
   body .contentbox .content {
     font-size: 1rem;
     line-height: 1.5;

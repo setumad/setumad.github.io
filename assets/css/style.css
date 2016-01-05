@@ -499,30 +499,58 @@ th {
           height: 400px;
           margin: 0 auto;
           background-color: #c4dec2;
-          margin-top: 4rem; }
+          margin: 4rem 0;
+          transition: 0.3s all ease-in-out; }
           @media (min-width: 1100px) {
             .bodymain .container .row .righthalf .drprojectbox {
               float: right;
               width: 85%;
               margin-top: 0; } }
-          .bodymain .container .row .righthalf .drprojectbox .dailyrecord {
-            width: 60%;
-            padding-right: 1.4rem;
-            padding-top: 0.4rem;
-            float: right;
-            text-align: right; }
-            .bodymain .container .row .righthalf .drprojectbox .dailyrecord .dr_title {
-              font-size: 1.5rem;
-              font-family: "Open Sans", sans-serif;
-              font-weight: bold; }
-            .bodymain .container .row .righthalf .drprojectbox .dailyrecord .dr_desc {
-              font-family: "Merriweather", serif;
-              font-size: 1.2rem; }
-            .bodymain .container .row .righthalf .drprojectbox .dailyrecord a {
-              text-decoration: none;
-              color: #ffffff; }
-            .bodymain .container .row .righthalf .drprojectbox .dailyrecord a:hover {
+          .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink {
+            text-decoration: none;
+            color: #ffffff;
+            transition: 0.3s all ease-in-out; }
+            .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink .dailyrecord {
+              width: 60%;
+              padding-right: 1.4rem;
+              padding-top: 0.4rem;
+              float: right;
+              text-align: right; }
+              .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink .dailyrecord .dr_title {
+                font-size: 1.5rem;
+                font-family: "Open Sans", sans-serif;
+                font-weight: bold; }
+              .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink .dailyrecord .dr_desc {
+                font-family: "Merriweather", serif;
+                font-size: 1.2rem; }
+            .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink #drmac {
+              display: block;
+              margin: 0 auto;
+              width: 100%;
+              max-width: 350px;
+              padding: 60px 0;
+              transition: 0.5s all ease-in-out;
+              position: relative;
+              bottom: 0; }
+              @media (min-width: 768px) {
+                .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink #drmac {
+                  display: block;
+                  margin: 0 auto;
+                  max-width: 375px;
+                  padding: 45px 0; } }
+              @media (min-width: 1100px) {
+                .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink #drmac {
+                  max-width: 375px;
+                  display: block;
+                  margin: 0 auto;
+                  padding: 45px 0; } }
+            .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover {
               color: #1a7446; }
+              .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover #drmac {
+                bottom: 12px; }
+                @media (min-width: 768px) {
+                  .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover #drmac {
+                    bottom: 11px; } }
       .bodymain .container .row .lefthalf {
         background-color: transparent;
         width: 90%;
@@ -534,41 +562,48 @@ th {
         .bodymain .container .row .lefthalf .uwiseprojectbox {
           height: 400px;
           margin: 0 auto;
-          background-color: #c7aafe; }
+          background-color: #c7aafe;
+          transition: 0.3s all ease-in-out; }
           @media (min-width: 1100px) {
             .bodymain .container .row .lefthalf .uwiseprojectbox {
               float: right;
               width: 85%; } }
-          .bodymain .container .row .lefthalf .uwiseprojectbox img {
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-            width: 100%;
-            max-width: 215px; }
-            @media (min-width: 768px) {
-              .bodymain .container .row .lefthalf .uwiseprojectbox img {
-                display: block;
-                margin: 0 auto;
-                padding-top: 2rem;
-                max-width: 225px; } }
-            @media (min-width: 1100px) {
-              .bodymain .container .row .lefthalf .uwiseprojectbox img {
-                max-width: 225px;
-                display: block;
-                margin: 0 auto; } }
-          .bodymain .container .row .lefthalf .uwiseprojectbox .uwise {
-            width: 60%;
-            padding-left: 1.4rem;
-            padding-top: 0.4rem; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox .uwise .uwise_title {
-              font-size: 1.5rem;
-              font-family: "Open Sans", sans-serif;
-              font-weight: bold; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox .uwise .uwise_desc {
-              font-family: "Merriweather", serif;
-              font-size: 1.2rem; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox .uwise a {
-              text-decoration: none;
-              color: #ffffff; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox .uwise a:hover {
+          .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink {
+            text-decoration: none;
+            color: #ffffff;
+            transition: 0.3s all ease-in-out; }
+            .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink .uwise {
+              width: 60%;
+              padding-left: 1.4rem;
+              padding-top: 0.4rem; }
+              .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink .uwise .uwise_title {
+                font-size: 1.5rem;
+                font-family: "Open Sans", sans-serif;
+                font-weight: bold; }
+              .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink .uwise .uwise_desc {
+                font-family: "Merriweather", serif;
+                font-size: 1.2rem;
+                text-decoration: none; }
+            .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink #uwisephone {
+              display: block;
+              margin: 0 auto;
+              width: 100%;
+              max-width: 205px;
+              padding-top: 15px;
+              transition: 0.5s all ease-in-out;
+              position: relative;
+              bottom: 0; }
+              @media (min-width: 768px) {
+                .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink #uwisephone {
+                  display: block;
+                  margin: 0 auto;
+                  max-width: 205px; } }
+              @media (min-width: 1100px) {
+                .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink #uwisephone {
+                  max-width: 205px;
+                  display: block;
+                  margin: 0 auto; } }
+            .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover {
               color: #4b2e83; }
+              .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover #uwisephone {
+                bottom: 15px; }
