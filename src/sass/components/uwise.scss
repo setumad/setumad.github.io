@@ -52,20 +52,25 @@ body{
 		}	
 
 		.contheader{
-			padding: 3.2rem 0 2rem 0;
-			font-size: 40px;
+			padding: 1rem 0 2rem 0;
+			font-size: 50px;
 			font-family: $open-sans;
 			color: $uwpurple;
 			margin: 0px 0px 0px 0px;
 		}
+		#introduction{
+			// background-color: yellow;
+			margin-top: 7rem;
+		}
 
 		hr.thin {
 			margin-top: 3em;
+			margin-bottom: 3em;
 			height: 1px;
 			border: 20;
 			background-color: #bcbbba;
 			color: #bcbbba;
-			width: 15%;
+			width: 10%;
 			opacity: 0.4;
 			} 
 
@@ -75,8 +80,6 @@ body{
 			#pic1{
 				width: 100%;
 				max-width: 750px;
-				display: block;
-				float: left;
 			}
 		}
 
@@ -84,6 +87,7 @@ body{
 			img{
 				width: 100%;
 				max-width: 650px;
+				// box-shadow: 0px 0px 20px grey;
 			}
 		}
 
@@ -91,6 +95,56 @@ body{
 			img{
 				width: 100%;
 				max-width: 450px;
+				// box-shadow: 0px 0px 20px grey;
+			}
+		}
+
+		.picture_research{
+			img{
+				width: 100%;
+				max-width: 1250px;
+				// box-shadow: 0px 0px 20px grey;
+			}
+		}
+
+		.picture_personas{
+			img{
+				width: 100%;
+				max-width: 1250px;
+				padding: 25px 0;
+			}
+			.personapic2{
+				max-width: 1000px;
+				box-shadow: 0px 0px 10px grey;
+			}
+		}
+
+		.picture_ideation{
+			img{
+				width: 100%;
+				max-width: 850px;
+				// box-shadow: 0px 0px 20px grey;
+			}
+
+			#ideationpic2{
+				max-width: 800px;
+				margin: 1rem 0 3rem 0;
+			}
+		}
+
+		.picture_wireframes{
+			img{
+				width: 100%;
+				max-width: 650px;
+				// box-shadow: 0px 0px 20px grey;
+			}
+		}
+
+		.picture_mockups{
+			img{
+				width: 100%;
+				max-width: 950px;
+				// box-shadow: 0px 0px 20px grey;
 			}
 		}
 
@@ -114,7 +168,7 @@ body{
 			font-family: $merriweather;
 			margin: 0 auto;
 			width: 85%;
-			padding: 30px 0;
+			padding: 20px 0;
 			text-align: justify;
 			line-height: 1.8;
 			.boldtext{
@@ -122,11 +176,11 @@ body{
 				color: $uwpurple;
 			}
 			@include breakpoint(tablet){
-				line-height: 2;
+				line-height: 2.5;
 			}
 			@include breakpoint(laptop){
 				width: 40%;
-				line-height: 2;
+				line-height: 2.5;
 			}
 		}
 	}
