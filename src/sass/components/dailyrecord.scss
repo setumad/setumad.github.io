@@ -55,6 +55,9 @@ body{
 			font-size: 50px;
 			font-family: $open-sans;
 			color: $darkgreenexcel;
+			#research_heading{
+				padding-bottom: -10px;
+			}
 		}
 
 		#introduction{
@@ -120,6 +123,48 @@ body{
 			}
 		}
 
+		.picture_wireframes{
+			display: block;
+			padding-left: 2rem;
+			padding-right: 2rem;
+			.wfpic1{
+				width: 100%;
+				max-width: 80%;
+				padding-bottom: 5rem;
+			}
+
+			.wfpic2{
+				width: 100%;
+				max-width: 300px;
+				@include breakpoint(tablet){
+					max-width: 40%;
+				}
+			}
+		}
+
+		.picture_usability{
+			img{
+				width: 100%;
+				max-width: 850px;
+			}
+		}
+
+		.picture_dr2{
+			img{
+				width: 100%;
+				max-width: 850px;
+			}
+		}
+
+		.picture_final{
+			img{
+				width: 100%;
+				max-width: 1000px;
+				padding-bottom: 4rem;
+			}
+		}
+
+
 		.content{
 
 			font-size: 1rem;
@@ -131,6 +176,15 @@ body{
 			padding: 30px 0;
 			text-align: justify;
 			line-height: 1.8;
+			.boldtext{
+				font-weight: 700;
+				color: $darkgreenexcel;
+			}
+			.iframe{
+				display: block;
+				margin:0 auto;
+				width: 100%;
+			}
 			// background-color: green;
 
 			@include breakpoint(tablet){

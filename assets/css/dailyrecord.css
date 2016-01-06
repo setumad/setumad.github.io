@@ -480,6 +480,8 @@ body .contentbox {
     font-size: 50px;
     font-family: "Open Sans", sans-serif;
     color: #1a7446; }
+    body .contentbox .contheader #research_heading {
+      padding-bottom: -10px; }
   body .contentbox #introduction {
     padding-top: 10rem; }
   body .contentbox hr.thin {
@@ -524,6 +526,30 @@ body .contentbox {
         body .contentbox .picture_ideation .ideapic2 {
           padding: 0rem 2rem;
           max-width: 500px; } }
+  body .contentbox .picture_wireframes {
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    body .contentbox .picture_wireframes .wfpic1 {
+      width: 100%;
+      max-width: 80%;
+      padding-bottom: 5rem; }
+    body .contentbox .picture_wireframes .wfpic2 {
+      width: 100%;
+      max-width: 300px; }
+      @media (min-width: 768px) {
+        body .contentbox .picture_wireframes .wfpic2 {
+          max-width: 40%; } }
+  body .contentbox .picture_usability img {
+    width: 100%;
+    max-width: 850px; }
+  body .contentbox .picture_dr2 img {
+    width: 100%;
+    max-width: 850px; }
+  body .contentbox .picture_final img {
+    width: 100%;
+    max-width: 1000px;
+    padding-bottom: 4rem; }
   body .contentbox .content {
     font-size: 1rem;
     line-height: 1.5;
@@ -534,6 +560,13 @@ body .contentbox {
     padding: 30px 0;
     text-align: justify;
     line-height: 1.8; }
+    body .contentbox .content .boldtext {
+      font-weight: 700;
+      color: #1a7446; }
+    body .contentbox .content .iframe {
+      display: block;
+      margin: 0 auto;
+      width: 100%; }
     @media (min-width: 768px) {
       body .contentbox .content {
         line-height: 2; } }
