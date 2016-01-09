@@ -2,6 +2,7 @@
 	width: 100%;
 	// background-color: blue;
 	height: 100px;
+	box-shadow: 0px 0px 12px;
 	.navcontainer{
 		max-width: 700px;
 		margin: 0 auto;
@@ -32,7 +33,6 @@
 						font-weight: bolder;
 						color: $textdark;
 					}
-
 				}
 			}
 		}	
@@ -50,7 +50,32 @@
 				@include breakpoint(tablet){
 					margin: 1.7rem 0 0 4.8rem;
 				}
+			}
+		}
+		.myname{
 
+			display: none;
+			
+
+			@include breakpoint(laptop){
+				display: block;
+				float: right;
+				left: -210px;
+				position: relative;
+				padding-top: 2rem;
+				font-size: 1.9rem;
+				font-family: $open-sans;
+				font-weight: 600;
+				color: $superlightgrey;
+				transition: 0.1s all ease-in-out;
+			}
+		}
+		.myname:hover{
+			transition: 0.1s all ease-in-out;
+			color: $lightgrey;
+			.setu{
+				transition: 0.1s all ease-in-out;
+				color: $textdark;
 			}
 		}
 	}

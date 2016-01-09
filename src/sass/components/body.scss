@@ -22,6 +22,19 @@
 			max-width: 750px;
 			margin: 0 auto;
 			line-height: 50px;
+			.myname{
+				font-size: 2.0rem;
+				font-family: $open-sans;
+				font-weight: 600;
+				color: $lightgrey;
+				.setu{
+				transition: 0.1s all ease-in-out;
+				color: $textdark;
+				}
+				@include breakpoint (laptop){
+					display: none;
+				}
+			}
 		}
 
 		.row{
@@ -42,35 +55,55 @@
 					float: right;
 				}
 				.biodiv{
-					
-					// background-color: blue;
+
+					height: 200px;
 					margin: 0 auto;
-					max-width: 300px;
-					float: left;
-					font-size: 1.6rem;
-					font-family: $merriweather;
-					color: $lightgrey;
-					line-height: 2.3rem;
-					width: 80%;
-					@include breakpoint(tablet){
-						text-align: left;
-						float: left;
-					}
+					background-color: $superlightgrey;
+					margin: 2rem 0;
+					transition: 0.3s all ease-in-out;
+					margin-bottom: 6rem;
+
 					@include breakpoint(laptop){
-						text-align: right;
-						float: right;
-						padding-left: 3rem;
+					float: right;
+					width: 85%;
+					margin-top: 0;
 					}
-					a{
-						text-decoration: none;
-						color: $mediumgrey;
-						font-weight: bold;
-						font-size: 1.2rem;
-						font-family: $open-sans;
-					}
-					a:hover{
-						color: $textdark;
-						font-weight: bolder;
+
+
+					.smallbio{
+
+						// background-color: blue;
+						max-width: 300px;
+						font-size: 1.6rem;
+						font-family: $merriweather;
+						color: $lightgrey;
+						line-height: 2.3rem;
+						padding-left: 1.4rem;
+						padding-top: 1.5rem;
+						@include breakpoint(tablet){
+							text-align: left;
+							float: left;
+							padding-left: 1.4rem;
+							padding-top: 1.6rem;
+						}
+						@include breakpoint(laptop){
+							text-align: right;
+							float: right;
+							padding-right: 1.4rem;
+							padding-top: 1.5rem;
+
+						}
+						a{
+							text-decoration: none;
+							color: $mediumgrey;
+							font-weight: bold;
+							font-size: 1.2rem;
+							font-family: $open-sans;
+						}
+						a:hover{
+							color: $textdark;
+							font-weight: bolder;
+						}
 					}
 				}
 
