@@ -1,0 +1,158 @@
+.headerimage{
+	padding-top: 6.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	.dp{
+		margin: 0 auto;
+		max-width: 1000px;
+		display: block;
+		width: 100%;
+	}
+	.myname{
+		font-size: 1.4rem;
+		font-family: $open-sans;
+		font-weight: 600;
+		color: $lightgrey;
+		text-align: center;
+		width: 100%;
+		padding: 2rem 0 3.5rem 0;
+		@include breakpoint(tablet){
+			font-size: 2.5rem;
+		}
+		.setu{
+		transition: 0.1s all ease-in-out;
+		color: $textdark;
+		}
+		@include breakpoint (laptop){
+			display: none;
+		}
+	}
+}
+
+.aboutcontainer{
+	// height: 1500px;
+	max-width: 1000px;
+	// background-color: red;
+	margin: 0 auto;
+	padding: 0 2rem;
+
+	.left{
+		// background-color: yellow;		
+		@include breakpoint(laptop){
+			width: 30%;
+			
+
+		}
+		
+		.bigskillbox{
+			// background-color: green;
+			max-width: 85%;
+			margin: 0 auto;
+			#skilltext{
+				font-size: 2rem;
+				text-align: center;
+				padding-top: 3rem;
+				font-family: $open-sans;
+				font-weight: 700;
+				color: $textdark;
+				// background-color: yellow;
+			}
+			.skillbox{
+				@include breakpoint(tablet){
+					display: inline-block;
+					max-width: 26%;
+					width: 75%;
+					vertical-align: top;
+					// background-color: yellow;
+					padding-left: 34px;
+
+				}
+				@include breakpoint(laptop){
+					display: block;
+					max-width: 100%;
+					margin: 0 auto;
+				}
+				
+				.icon{
+					max-width: 3rem;
+					width: 100%;
+					display: block;
+					margin: 0 auto;
+					padding: 2rem 0;
+				}
+				.brush{
+					max-width: 2rem;
+					margin: 0 auto;
+					display: block;
+					padding: 2.3rem 0;
+				}
+				.code{
+					max-width: 4rem;
+					margin: 0 auto;
+					display: block;
+					padding: 2.9rem 0;
+				}
+				.skills{
+					text-align: center;
+					margin: 0;
+					padding: 0;
+				}
+				.content{
+					font-size: 1.2rem;
+					@include breakpoint(laptop){
+						font-size: 1rem;
+					}
+					line-height: 1.5;
+					font-weight: 400;
+					font-family: $merriweather;
+					margin: 0 auto;
+					width: 85%;
+					line-height: 1.8;
+					color: $textdark;
+				}
+			}
+		}
+			
+	}
+	.right{
+		// background-color: blue;
+		@include breakpoint(laptop){
+			width: 70%;
+			float: right;
+			// background-color: blue;
+		}
+		#storytext{
+			font-size: 1.9rem;
+			text-align: center;
+			font-family: $open-sans;
+			font-weight: 700;
+			color: $textdark;
+			@include breakpoint(tablet){
+				padding-top: 2rem;
+			}
+		}
+		.storycontent{
+			font-size: 1.1rem;
+			line-height: 1.8;
+			font-weight: 300;
+			font-family: $open-sans;
+			margin: 0 auto;
+			width: 85%;
+			padding: 30px 0;
+			text-align: justify;
+			@include breakpoint(tablet){
+				width: 73%;
+				font-size: 1.2rem;
+			}
+			@include breakpoint(laptop){
+				width: 85%;
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+
+
+

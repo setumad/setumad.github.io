@@ -15,6 +15,7 @@ header{
 			max-width: 700px;
 			margin: 0 auto;
 			height: 130px;
+			// background-color: yellow;
 			
 			@include breakpoint(laptop){
 				max-width: 1000px;
@@ -53,10 +54,11 @@ header{
 					width: 100%;
 					margin-top: 1.7rem;
 					max-width: 35px;
-					margin-left: 1.2rem;
-					// margin: 0 auto;
 					@include breakpoint(tablet){
-						margin: 1.7rem 0 0 4.8rem;
+						margin: 1.7rem 0 0 2.2rem;
+					}
+					@include breakpoint(laptop){
+						margin: 1.7rem 0 0 0rem;
 					}
 				}
 			}
@@ -68,12 +70,12 @@ header{
 				@include breakpoint(laptop){
 					display: block;
 					float: right;
-					left: -210px;
+					left: -270px;
 					position: relative;
-					padding-top: 2rem;
+					padding-top: 2.2rem;
 					font-size: 1.9rem;
-					font-family: $open-sans;
-					font-weight: 600;
+					font-family: $worksans;
+					font-weight: 700;
 					color: $superlightgrey;
 					transition: 0.1s all ease-in-out;
 				}
@@ -98,98 +100,3 @@ header{
 
 
 
-
-
-
-
-
-
-
-
-
-// *********************************************************
-// ********************ALL OLD CSS BELOW********************
-// *********************************************************
-
-
-
-
-// header{
-// 	background-color:$background;
-// 	width: 100%;
-// 	min-height: 85vh;
-// 	display: block;
-// }
-
-// .header{
-
-// 	.logo{
-// 		width:50px;
-// 		padding-top:40px;
-// 		padding-left:40px;
-
-// 	}
-
-// 	.img-contain{
-// 		padding:0;
-// 		margin:0;
-// 		display: inline-block;
-// 	}
-
-// 	.nav{
-// 		display: inline-block;
-// 		float:right;
-// 		padding-top: 40px;
-
-// 		ul{
-// 			font-family: $font1;
-// 			color: $textwhite;
-// 			display: inline-block;
-// 			// position: absolute;
-// 			// right: 0;
-
-// 			li{
-// 				list-style: none;
-// 				display: inline-block;
-// 				padding-right: 40px;
-// 				padding-bottom: 60px;
-// 				font-size: 25px;
-// 			}
-// 		}
-// 	}
-// }
-
-// .bigname{
-// 	font-size: 60px;
-// 	width: 100%;
-// 	position: relative;
-// 	display: block;
-// 	margin-top: 100px;
-
-// 	p{
-// 		text-align: center;
-// 		color: $textwhite;
-
-// 		span{
-// 			color:$red;
-// 		}
-// 	}
-
-// 	}
-// .headtext{
-// 	font-size: 40px;
-// 	width: 100%;
-// 	position: relative;
-// 	display: block;
-// 	margin-top: 100px;
-// 	font-family: $font1;
-
-// 	p{
-// 		text-align: center;
-// 		color: $textwhite;
-
-// 		span{
-// 			color:$red;
-// 		}
-// 	}
-// }

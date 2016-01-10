@@ -1,7 +1,6 @@
 .bodymain{
 	width: 100%;
 	padding-top: 8rem;
-	height: 2000px;
 	// background-color: yellow;
 	.container{
 		// width: 85%;
@@ -47,9 +46,7 @@
 			max-width: 1000px;
 			.righthalf{
 				background-color: transparent;
-				
-				// position: relative;
-				height: 250px;
+				height: 300px;
 				width: 90%;
 				margin: 0 auto;
 				@include breakpoint(laptop){
@@ -157,6 +154,7 @@
 							
 
 							@include breakpoint(tablet){
+								position: relative;
 								display: block;
 								margin: 0 auto;
 								max-width: 375px;
@@ -164,6 +162,7 @@
 								
 							}
 							@include breakpoint(laptop){
+								position: relative;
 								max-width: 375px;
 								display: block;
 								margin: 0 auto;
@@ -186,6 +185,7 @@
 			}
 			.lefthalf{
 				background-color: transparent;
+				height: 500px;
 				width: 90%;
 				margin: 0 auto;
 
@@ -201,7 +201,7 @@
 					margin-bottom: 6rem;
 
 					@include breakpoint(laptop){
-						float: right;
+						float: left;
 						width: 85%;
 					}
 
@@ -227,6 +227,7 @@
 							}
 						}
 						#uwisephone{
+							position: relative;
 							display: block;
 							margin: 0 auto;
 							width: 100%;
@@ -236,11 +237,13 @@
 							bottom:0;
 
 							@include breakpoint(tablet){
+								position: relative;
 								display: block;
 								margin: 0 auto;
 								max-width: 205px;
 							}
 							@include breakpoint(laptop){
+								position: relative;
 								max-width: 205px;
 								display: block;
 								margin: 0 auto;
@@ -266,7 +269,7 @@
 	
 
 					@include breakpoint(laptop){
-						float: right;
+						float: left;
 						width: 85%;
 						margin-top: 0;
 					}
@@ -293,6 +296,7 @@
 							}
 						}
 						#phone{
+							position: relative;
 							display: block;
 							margin: 0 auto;
 							width: 100%;
@@ -301,11 +305,13 @@
 							bottom:0;
 
 							@include breakpoint(tablet){
+								position: relative;
 								display: block;
 								margin: 0 auto;
 								max-width: 205px;
 							}
 							@include breakpoint(laptop){
+								position: relative;
 								max-width: 155px;
 								display: block;
 								margin: 0 auto;
@@ -323,7 +329,7 @@
 						}
 						&:hover{
 							color: $eventosaurblue;
-							#uwisephone{
+							#phone{
 								bottom: 15px;
 							}
 						}
