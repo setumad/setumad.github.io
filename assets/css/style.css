@@ -400,8 +400,11 @@ header {
   z-index: 100; }
   header .navigation {
     width: 100%;
-    height: 100px;
+    height: 70px;
     box-shadow: 0px 0px 20px #aaaaaa; }
+    @media (min-width: 768px) {
+      header .navigation {
+        height: 100px; } }
     header .navigation .navcontainer {
       max-width: 700px;
       margin: 0 auto;
@@ -436,14 +439,16 @@ header {
             text-align: left; } }
         header .navigation .navcontainer #logo img {
           width: 100%;
-          margin-top: 1.7rem;
-          max-width: 35px; }
+          margin-top: 0.85rem;
+          max-width: 30px; }
           @media (min-width: 768px) {
             header .navigation .navcontainer #logo img {
-              margin: 1.7rem 0 0 2.2rem; } }
+              margin: 1.7rem 0 0 2.2rem;
+              max-width: 35px; } }
           @media (min-width: 1100px) {
             header .navigation .navcontainer #logo img {
-              margin: 1.7rem 0 0 0rem; } }
+              margin: 1.7rem 0 0 0rem;
+              max-width: 35px; } }
       header .navigation .navcontainer .myname {
         display: none; }
         @media (min-width: 1100px) {
@@ -455,9 +460,11 @@ header {
             padding-top: 2.2rem;
             font-size: 1.9rem;
             font-family: "Work Sans", sans-serif;
-            font-weight: 700;
+            font-weight: 300;
             color: #f5f5f5;
-            transition: 0.1s all ease-in-out; } }
+            transition: 0.1s all ease-in-out; }
+            header .navigation .navcontainer .myname .setu {
+              font-weight: 700; } }
       header .navigation .navcontainer .myname:hover {
         transition: 0.1s all ease-in-out;
         color: #aaaaaa; }
@@ -488,17 +495,18 @@ header {
       line-height: 50px; }
       .bodymain .container .headline .myname {
         font-size: 2.0rem;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 600;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 300;
         color: #aaaaaa; }
         .bodymain .container .headline .myname .setu {
           transition: 0.1s all ease-in-out;
-          color: #3d3d3d; }
+          color: #3d3d3d;
+          font-weight: 700; }
         @media (min-width: 1100px) {
           .bodymain .container .headline .myname {
             display: none; } }
     .bodymain .container .row {
-      height: 800px;
+      height: 900px;
       margin: 0 auto;
       max-width: 1000px; }
       .bodymain .container .row .righthalf {
@@ -611,7 +619,6 @@ header {
                     bottom: 11px; } }
       .bodymain .container .row .lefthalf {
         background-color: transparent;
-        height: 500px;
         width: 90%;
         margin: 0 auto; }
         @media (min-width: 1100px) {
@@ -730,3 +737,64 @@ header {
               color: #1b75bc; }
               .bodymain .container .row .lefthalf .newprojectbox #newlink:hover #phone {
                 bottom: 15px; }
+
+.myfoot {
+  clear: both; }
+  .myfoot .footercontainer {
+    width: 100%;
+    height: 100px;
+    background-color: #aaaaaa; }
+    .myfoot .footercontainer .socialbox {
+      position: relative;
+      width: 100%;
+      margin: 0 auto; }
+      .myfoot .footercontainer .socialbox .contactme {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 100;
+        font-size: 1.8rem;
+        float: left;
+        color: gray;
+        padding: 2.2rem 0 0 21rem;
+        cursor: default;
+        clear: both; }
+      .myfoot .footercontainer .socialbox .socialul {
+        width: 39%;
+        margin: 0 auto; }
+      .myfoot .footercontainer .socialbox li {
+        padding: 25px 70px;
+        list-style: none;
+        float: left; }
+        .myfoot .footercontainer .socialbox li .iconcircletw {
+          background-color: #aaaaaa;
+          width: 50px;
+          height: 50px;
+          border-radius: 250px; }
+          .myfoot .footercontainer .socialbox li .iconcircletw .tw {
+            margin: 12px;
+            width: 28px;
+            padding-top: 2px; }
+        .myfoot .footercontainer .socialbox li .iconcircletw:hover {
+          transition: all 0.35s ease-in-out;
+          background-color: #00b5f4; }
+        .myfoot .footercontainer .socialbox li .iconcircleem {
+          background-color: #aaaaaa;
+          width: 50px;
+          height: 50px;
+          border-radius: 250px; }
+          .myfoot .footercontainer .socialbox li .iconcircleem .em {
+            margin: 14px 0 0 11px;
+            width: 28px; }
+        .myfoot .footercontainer .socialbox li .iconcircleem:hover {
+          transition: all 0.35s ease-in-out;
+          background-color: #f62918; }
+        .myfoot .footercontainer .socialbox li .iconcirclein {
+          background-color: #aaaaaa;
+          width: 50px;
+          height: 50px;
+          border-radius: 300px; }
+          .myfoot .footercontainer .socialbox li .iconcirclein .in {
+            margin: 10px 0 0 15px;
+            width: 23px; }
+        .myfoot .footercontainer .socialbox li .iconcirclein:hover {
+          transition: all 0.35s ease-in-out;
+          background-color: #0077b5; }
