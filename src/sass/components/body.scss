@@ -266,7 +266,8 @@
 					float: left;
 					width: 100%;
 					margin-top: 15rem;
-	
+					margin-bottom: 10rem;
+
 
 					@include breakpoint(laptop){
 						float: left;
@@ -303,6 +304,7 @@
 							max-width: 175px;
 							transition: 0.5s all ease-in-out;
 							bottom:0;
+
 
 							@include breakpoint(tablet){
 								position: relative;

@@ -582,63 +582,82 @@ body {
           width: 40%;
           line-height: 2; } }
 
-.myfoot {
-  clear: both; }
-  .myfoot .footercontainer {
-    width: 100%;
-    height: 100px;
-    background-color: #aaaaaa; }
-    .myfoot .footercontainer .socialbox {
-      position: relative;
+.footercontainer {
+  height: 170px;
+  clear: both;
+  margin-top: 3rem; }
+  .footercontainer .line {
+    max-width: 1000px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #3d3d3d;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 2rem; }
+    .footercontainer .line .contactme {
+      padding-top: 1rem;
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #3d3d3d;
+      text-align: center;
       width: 100%;
-      margin: 0 auto; }
-      .myfoot .footercontainer .socialbox .contactme {
-        font-family: "Work Sans", sans-serif;
-        font-weight: 100;
-        font-size: 1.8rem;
-        float: left;
-        color: gray;
-        padding: 2.2rem 0 0 21rem;
-        cursor: default;
-        clear: both; }
-      .myfoot .footercontainer .socialbox .socialul {
-        width: 39%;
-        margin: 0 auto; }
-      .myfoot .footercontainer .socialbox li {
-        padding: 25px 70px;
+      cursor: default; }
+      @media (min-width: 768px) {
+        .footercontainer .line .contactme {
+          padding: 2rem 1rem 0 0;
+          display: inline-block;
+          width: 28%;
+          text-align: center; } }
+    .footercontainer .line .vline {
+      display: none; }
+      @media (min-width: 768px) {
+        .footercontainer .line .vline {
+          width: 2px;
+          display: inline-block;
+          position: relative;
+          top: 2.5rem; } }
+    .footercontainer .line .copyright {
+      font-size: 0.6rem;
+      padding-top: 2rem;
+      text-align: center;
+      color: #aaaaaa; }
+    .footercontainer .line .socialbox {
+      padding-top: 2rem; }
+      .footercontainer .line .socialbox ul {
+        width: 100%;
         list-style: none;
-        float: left; }
-        .myfoot .footercontainer .socialbox li .iconcircletw {
-          background-color: #aaaaaa;
-          width: 50px;
-          height: 50px;
-          border-radius: 250px; }
-          .myfoot .footercontainer .socialbox li .iconcircletw .tw {
-            margin: 12px;
-            width: 28px;
-            padding-top: 2px; }
-        .myfoot .footercontainer .socialbox li .iconcircletw:hover {
-          transition: all 0.35s ease-in-out;
-          background-color: #00b5f4; }
-        .myfoot .footercontainer .socialbox li .iconcircleem {
-          background-color: #aaaaaa;
-          width: 50px;
-          height: 50px;
-          border-radius: 250px; }
-          .myfoot .footercontainer .socialbox li .iconcircleem .em {
-            margin: 14px 0 0 11px;
-            width: 28px; }
-        .myfoot .footercontainer .socialbox li .iconcircleem:hover {
-          transition: all 0.35s ease-in-out;
-          background-color: #f62918; }
-        .myfoot .footercontainer .socialbox li .iconcirclein {
-          background-color: #aaaaaa;
-          width: 50px;
-          height: 50px;
-          border-radius: 300px; }
-          .myfoot .footercontainer .socialbox li .iconcirclein .in {
-            margin: 10px 0 0 15px;
-            width: 23px; }
-        .myfoot .footercontainer .socialbox li .iconcirclein:hover {
-          transition: all 0.35s ease-in-out;
-          background-color: #0077b5; }
+        margin: 0 auto;
+        display: table;
+        padding: 0; }
+        @media (min-width: 768px) {
+          .footercontainer .line .socialbox ul {
+            width: 80%; } }
+        .footercontainer .line .socialbox ul li {
+          text-align: center;
+          margin: 0 auto;
+          display: table-cell; }
+          .footercontainer .line .socialbox ul li .twit {
+            width: 30px;
+            fill: #3d3d3d; }
+          .footercontainer .line .socialbox ul li .twit:hover {
+            transition: all 0.25s ease-in-out;
+            fill: #00b5f4; }
+          .footercontainer .line .socialbox ul li .mail {
+            width: 30px;
+            fill: #3d3d3d; }
+          .footercontainer .line .socialbox ul li .mail:hover {
+            transition: all 0.25s ease-in-out;
+            fill: #f62918; }
+          .footercontainer .line .socialbox ul li .in {
+            width: 25px;
+            fill: #3d3d3d; }
+          .footercontainer .line .socialbox ul li .in:hover {
+            transition: all 0.25s ease-in-out;
+            fill: #0077b5; }
+      @media (min-width: 768px) {
+        .footercontainer .line .socialbox {
+          width: 60%;
+          padding-right: 3rem;
+          padding-top: 4.5rem;
+          float: right; } }

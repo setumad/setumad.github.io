@@ -54,7 +54,7 @@ body{
 
 		.contheader{
 			padding: 1rem 0 2rem 0;
-			font-size: 50px;
+			font-size: 3rem;
 			font-family: $open-sans;
 			color: $darkgreenexcel;
 			#research_heading{
@@ -205,6 +205,7 @@ body{
 
 			@include breakpoint(tablet){
 				line-height: 2;
+				font-size: 1.2rem;
 			}
 			@include breakpoint(laptop){
 				width: 40%;
