@@ -150,12 +150,10 @@
 							max-width: 350px;
 							padding: 60px 0;
 							transition: 0.5s all ease-in-out;
-							// position: relative;
 							bottom:0;
 							
 
 							@include breakpoint(tablet){
-								position: relative;
 								display: block;
 								margin: 0 auto;
 								max-width: 375px;
@@ -163,7 +161,6 @@
 								
 							}
 							@include breakpoint(laptop){
-								position: relative;
 								max-width: 375px;
 								display: block;
 								margin: 0 auto;
@@ -227,7 +224,6 @@
 							}
 						}
 						#uwisephone{
-							position: relative;
 							display: block;
 							margin: 0 auto;
 							width: 100%;
@@ -237,13 +233,11 @@
 							bottom:0;
 
 							@include breakpoint(tablet){
-								position: relative;
 								display: block;
 								margin: 0 auto;
 								max-width: 205px;
 							}
 							@include breakpoint(laptop){
-								position: relative;
 								max-width: 205px;
 								display: block;
 								margin: 0 auto;
@@ -297,7 +291,6 @@
 							}
 						}
 						#phone{
-							position: relative;
 							display: block;
 							margin: 0 auto;
 							width: 100%;
@@ -307,28 +300,17 @@
 
 
 							@include breakpoint(tablet){
-								position: relative;
 								display: block;
 								margin: 0 auto;
 								max-width: 205px;
 							}
 							@include breakpoint(laptop){
-								position: relative;
 								max-width: 155px;
 								display: block;
 								margin: 0 auto;
 							}
 						}
-						#spin{
-							width: 20px;
-							position: relative;
-							top: -3rem;
-							display: none;
-							
-							@include breakpoint(laptop){
-								left: 12.7rem;
-							}
-						}
+						
 						&:hover{
 							color: $eventosaurblue;
 							#phone{

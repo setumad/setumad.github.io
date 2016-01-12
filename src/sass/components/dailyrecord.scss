@@ -3,21 +3,17 @@ body{
 	padding-top: 6.3rem;
 
 	.ptitle{
-		position: absolute;
 		width: 100%;
 		height: 150px;
 		background-color: $darkgreenexcel;
-		// margin-top: 87px;
 		#projecttitle{
 			font-size: 2.5rem;
 			text-align: center;
 			color: $superlightgrey;
-			// margin: 5px 0px 0px 20%;
 			margin: 0 auto;
 			padding-top: 10px;
 			font-family: $open-sans;
 			font-weight: 400;
-			// float: left;
 			// background-color: green;
 		}
 		.dr{
@@ -57,14 +53,7 @@ body{
 			font-size: 3rem;
 			font-family: $open-sans;
 			color: $darkgreenexcel;
-			#research_heading{
-				padding-bottom: -10px;
-			}
-		}
-
-		#introduction{
-			padding-top: 10rem;
-			// background-color: yellow;
+			
 		}
 
 		hr.thin {
@@ -169,10 +158,9 @@ body{
 
 		.content{
 
-			font-size: 0.8rem;
+			font-size: 1rem;
 			font-weight: 300;
-			// font-family: $merriweather;
-			font-family: $open-sans;
+			font-family: $worksans;
 			margin: 0 auto;
 			width: 85%;
 			padding: 30px 0;
@@ -216,42 +204,4 @@ body{
 }
 
 
-
-	// .sidenav{
-	// 	margin-top: 165px;
-	// 	position: absolute;
-	// 	z-index: 20;
-	// 	display: none;
-	// 	@include breakpoint(tablet){
-	// 		// background-color: green;
-	// 		height: 40px;
-	// 		width: 100%;
-	// 		text-align: center;
-	// 		background-color: none;
-	// 		// background-color: green;
-	// 		display: inline-block;
-	// 		.navmenu{
-	// 			display: inline-block;
-	// 			padding: 10px 11px;
-	// 		}
-	// 	}
-	// 	@include breakpoint (laptop){
-	// 		position: fixed;
-	// 		display: block;
-	// 		width: 20%;	
-	// 		// background-color: yellow;
-	// 		.navlist{
-	// 			// background-color: green;
-	// 			text-align: left;
-	// 			padding: 0;
-	// 			.navmenu{
-	// 				padding: 20px 50px;
-	// 				text-align: left;
-	// 				text-align: center;
-	// 				color: $textdark;
-	// 				font-family: $muli;
-	// 			}
-	// 		}
-	// 	}
-	// }
 

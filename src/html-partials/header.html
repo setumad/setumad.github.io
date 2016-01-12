@@ -1,4 +1,4 @@
-<header class="nav-down">
+<header>
 	<div class="navigation">
 		<div class="navcontainer">
 
@@ -7,10 +7,9 @@
 				<li><a href="about.html">ABOUT</a></li>
 				<!-- <li><a href="">BLOG</a></li> -->
 			</ul>
-
 			<a href="index.html">
 				<div class="myname">
-					<span class="setu">Setumadhava</span> Kathawate
+					<span class="setu"><span class="setu4char">Setu</span>madhava</span> Kathawate
 				</div>
 			</a>
 			<div id="logo">
@@ -18,6 +17,46 @@
 					<img src="assets/img/logo.png"/></a>
 			</div>
 
+
+			<div class="mobile-menu">
+				<div onclick="myFunction('dropdown')" class="menubtn"><a href="#"><img src="assets/img/hamburger.svg"/></a></div>
+				
+				<div id="dropdown">
+					<a href="#">
+						<div class="firstnav">
+							PROJECTS
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="secondnav">
+							ABOUT
+						</div>
+					</a>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </header>
+
+
+
+
+<!-- 
+**************DROPDOWN JAVASCRIPT************** -->
+
+
+
+<script>
+function myFunction(x) {
+	var panel=document.getElementById(x), maxH="108px";
+	if(panel.style.height==maxH){
+		panel.style.height="0px";
+	}
+	else{
+		panel.style.height=maxH;
+	}
+}
+
+</script>

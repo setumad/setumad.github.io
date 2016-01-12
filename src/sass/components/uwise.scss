@@ -3,21 +3,17 @@ body{
 	padding-top: 6.3rem;
 	
 	.ptitle{
-		position: absolute;
 		width: 100%;
 		height: 190px;
 		background-color: $uwpurple;
-		// margin-top: 87px;
 		#projecttitle{
 			font-size: 2.5rem;
 			text-align: center;
 			color: $superlightgrey;
-			// margin: 5px 0px 0px 20%;
 			margin: 0 auto;
 			padding-top: 10px;
 			font-family: $open-sans;
 			font-weight: 400;
-			// float: left;
 			// background-color: green;
 		}
 		.uwise{
@@ -32,7 +28,7 @@ body{
 			// background-color: green;
 			@include breakpoint(tablet){
 				font-size: 1.2rem;
-				color: $lightgrey;
+				color: $superlightgrey;
 			}
 		}
 	}
@@ -55,13 +51,11 @@ body{
 
 		.contheader{
 			padding: 1rem 0 2rem 0;
-			font-size: 50px;
+			font-size: 3rem;
 			font-family: $open-sans;
 			color: $uwpurple;
 		}
-		#introduction{
-			margin-top: 7rem;
-		}
+		
 
 		hr.thin {
 			margin-top: 3em;
@@ -148,26 +142,14 @@ body{
 			}
 		}
 
-		#introduction{
-			padding-top: 140px;
-		}
-
-		// img{
-		// 	// margin: 0px 0px 60px 0px;
-		// 	max-width: 650px;
-		// 	width: 100%;
-			
-
-		// }
-
 		.content{
 
-			font-size: 1.2rem;
+			font-size: 1rem;
 			font-weight: 300;
-			font-family: $open-sans;
+			font-family: $worksans;
 			margin: 0 auto;
 			width: 85%;
-			padding: 20px 0;
+			padding: 30px 0;
 			text-align: justify;
 			line-height: 1.8;
 			.boldtext{
@@ -175,10 +157,12 @@ body{
 				color: $uwpurple;
 			}
 			@include breakpoint(tablet){
+				font-size: 1.2rem;
 				line-height: 2;
 			}
 			@include breakpoint(laptop){
 				width: 40%;
+				font-size: 1.2rem;
 				line-height: 2;
 			}
 		}
