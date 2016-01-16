@@ -5,19 +5,21 @@ header{
     width: 100%;
     background: white;	
     z-index: 100;
+    height: 90px;
 
 	.navigation{
 		width: 100%;
 		// background-color: blue;
-		height: 70px;
+		height: 90px;
 		box-shadow: 0px 0px 20px $lightgrey;
+		// border-bottom: 1px solid red;
 		@include breakpoint(tablet){
-				height: 100px;
+				height: 90px;
 			}
 		.navcontainer{
 			max-width: 700px;
 			margin: 0 auto;
-			height: 130px;
+			height: 80px;
 			// background-color: yellow;
 			
 			@include breakpoint(laptop){
@@ -29,7 +31,7 @@ header{
 					display: block;
 					list-style: none;
 					float: right;
-					margin: 2.5rem 0;
+					margin: 2rem 0;
 					// background-color: green;
 					li{
 						float: left;
@@ -128,11 +130,11 @@ header{
 					margin-top: 0.85rem;
 					max-width: 30px;
 					@include breakpoint(tablet){
-						margin: 1.7rem 0 0 2.2rem;
+						margin: 1rem 0 0 0rem;
 						max-width: 35px;
 					}
 					@include breakpoint(laptop){
-						margin: 1.7rem 0 0 0rem;
+						margin: 1rem 0 0 0rem;
 						max-width: 35px;
 					}
 				}
@@ -151,7 +153,7 @@ header{
 					float: right;
 					left: -280px;
 					position: relative;
-					padding-top: 2.2rem;
+					padding-top: 1.2rem;
 					font-size: 1.9rem;
 					font-family: $open-sans;
 					color: $superlightgrey;
