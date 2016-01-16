@@ -396,7 +396,8 @@ header {
   transition: top 0.2s ease-in-out;
   position: fixed;
   width: 100%;
-  background: white; }
+  background: white;
+  z-index: 100; }
   header .navigation {
     width: 100%;
     height: 70px;
@@ -641,16 +642,13 @@ header {
               bottom: 0; }
               @media (min-width: 768px) {
                 .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink #drmac {
-                  display: block;
-                  margin: 0 auto;
+                  position: relative;
                   max-width: 375px;
                   padding: 45px 0; } }
               @media (min-width: 1100px) {
                 .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink #drmac {
                   max-width: 375px;
-                  display: block;
-                  margin: 0 auto;
-                  padding: 45px 0; } }
+                  position: relative; } }
             .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover {
               color: #1a7446; }
               .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover #drmac {
@@ -702,14 +700,12 @@ header {
               bottom: 0; }
               @media (min-width: 768px) {
                 .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink #uwisephone {
-                  display: block;
-                  margin: 0 auto;
+                  position: relative;
                   max-width: 205px; } }
               @media (min-width: 1100px) {
                 .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink #uwisephone {
                   max-width: 205px;
-                  display: block;
-                  margin: 0 auto; } }
+                  position: relative; } }
             .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover {
               color: #4b2e83; }
               .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover #uwisephone {
@@ -753,14 +749,12 @@ header {
               bottom: 0; }
               @media (min-width: 768px) {
                 .bodymain .container .row .lefthalf .newprojectbox #newlink #phone {
-                  display: block;
-                  margin: 0 auto;
+                  position: relative;
                   max-width: 205px; } }
               @media (min-width: 1100px) {
                 .bodymain .container .row .lefthalf .newprojectbox #newlink #phone {
                   max-width: 155px;
-                  display: block;
-                  margin: 0 auto; } }
+                  position: relative; } }
             .bodymain .container .row .lefthalf .newprojectbox #newlink:hover {
               color: #1b75bc; }
               .bodymain .container .row .lefthalf .newprojectbox #newlink:hover #phone {

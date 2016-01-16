@@ -154,17 +154,15 @@
 							
 
 							@include breakpoint(tablet){
-								display: block;
-								margin: 0 auto;
+								position: relative;
 								max-width: 375px;
 								padding: 45px 0;
 								
 							}
 							@include breakpoint(laptop){
 								max-width: 375px;
-								display: block;
-								margin: 0 auto;
-								padding: 45px 0;
+								position: relative;
+								
 								
 							}
 						}
@@ -233,14 +231,12 @@
 							bottom:0;
 
 							@include breakpoint(tablet){
-								display: block;
-								margin: 0 auto;
+								position: relative;
 								max-width: 205px;
 							}
 							@include breakpoint(laptop){
 								max-width: 205px;
-								display: block;
-								margin: 0 auto;
+								position: relative;
 							}
 						}
 						&:hover{
@@ -300,14 +296,12 @@
 
 
 							@include breakpoint(tablet){
-								display: block;
-								margin: 0 auto;
+								position: relative;
 								max-width: 205px;
 							}
 							@include breakpoint(laptop){
 								max-width: 155px;
-								display: block;
-								margin: 0 auto;
+								position: relative;
 							}
 						}
 						
