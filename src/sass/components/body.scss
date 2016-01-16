@@ -50,6 +50,7 @@
 				height: 300px;
 				width: 90%;
 				margin: 0 auto;
+				margin-bottom: 2rem;
 				@include breakpoint(laptop){
 					width: 50%;
 					float: right;
@@ -183,13 +184,14 @@
 				background-color: transparent;
 				width: 90%;
 				margin: 0 auto;
+				margin-bottom: 3rem;
 
 				@include breakpoint(laptop){
 					width: 50%;
 					float: left;
 				}
 				.uwiseprojectbox{
-					height: 400px;
+					height: 420px;
 					margin: 0 auto;
 					background-color: $lightpurple;
 					transition: 0.3s all ease-in-out;
@@ -198,6 +200,7 @@
 					@include breakpoint(laptop){
 						float: left;
 						width: 85%;
+						// margin-bottom: 8rem;
 					}
 
 					#uwisealink{
@@ -249,7 +252,7 @@
 				}
 
 				.newprojectbox{
-					height: 230px;
+					height: 310px;
 					margin: 0 auto;
 					background-color: $lighteventosaur;
 					transition: 0.3s all ease-in-out;
@@ -290,7 +293,7 @@
 							display: block;
 							margin: 0 auto;
 							width: 100%;
-							max-width: 175px;
+							max-width: 150px;
 							transition: 0.5s all ease-in-out;
 							bottom:0;
 
@@ -300,7 +303,7 @@
 								max-width: 205px;
 							}
 							@include breakpoint(laptop){
-								max-width: 155px;
+								max-width: 120px;
 								position: relative;
 							}
 						}

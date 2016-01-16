@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 50.3 26.2" enable-background="new 0 0 50.3 26.2" xml:space="preserve">
+<svg  class="top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 116.5 115.6" enable-background="new 0 0 116.5 115.6" xml:space="preserve">
 <g>
-	<polygon fill="#333333" stroke="#333333" stroke-miterlimit="10" points="24.8,0.6 25.4,0 50.3,25.6 49.7,26.2 	"/>
-	<polygon fill="#333333" stroke="#333333" stroke-miterlimit="10" points="25.9,0.6 25.3,0 0.4,25.6 1,26.2 	"/>
+	
+		<rect x="22.6" y="48.5" transform="matrix(0.7062 -0.708 0.708 0.7062 -24.8072 47.7551)" fill="#333333" width="45.1" height="10.6"/>
+	
+		<rect x="47.1" y="48.5" transform="matrix(-0.7062 -0.708 0.708 -0.7062 80.7004 141.0239)" fill="#333333" width="45.1" height="10.6"/>
+	<circle fill="none" stroke="#1A1A1A" stroke-width="12" stroke-miterlimit="10" cx="59.1" cy="57" r="50.6"/>
 </g>
 </svg>

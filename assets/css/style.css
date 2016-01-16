@@ -500,7 +500,7 @@ header {
           header .navigation .navcontainer .myname {
             display: block;
             float: right;
-            left: -270px;
+            left: -280px;
             position: relative;
             padding-top: 2.2rem;
             font-size: 1.9rem;
@@ -557,7 +557,8 @@ header {
         background-color: transparent;
         height: 300px;
         width: 90%;
-        margin: 0 auto; }
+        margin: 0 auto;
+        margin-bottom: 2rem; }
         @media (min-width: 1100px) {
           .bodymain .container .row .righthalf {
             width: 50%;
@@ -659,13 +660,14 @@ header {
       .bodymain .container .row .lefthalf {
         background-color: transparent;
         width: 90%;
-        margin: 0 auto; }
+        margin: 0 auto;
+        margin-bottom: 3rem; }
         @media (min-width: 1100px) {
           .bodymain .container .row .lefthalf {
             width: 50%;
             float: left; } }
         .bodymain .container .row .lefthalf .uwiseprojectbox {
-          height: 400px;
+          height: 420px;
           margin: 0 auto;
           background-color: #c7aafe;
           transition: 0.3s all ease-in-out;
@@ -711,7 +713,7 @@ header {
               .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover #uwisephone {
                 bottom: 15px; }
         .bodymain .container .row .lefthalf .newprojectbox {
-          height: 230px;
+          height: 310px;
           margin: 0 auto;
           background-color: #9fcef3;
           transition: 0.3s all ease-in-out;
@@ -744,7 +746,7 @@ header {
               display: block;
               margin: 0 auto;
               width: 100%;
-              max-width: 175px;
+              max-width: 150px;
               transition: 0.5s all ease-in-out;
               bottom: 0; }
               @media (min-width: 768px) {
@@ -753,7 +755,7 @@ header {
                   max-width: 205px; } }
               @media (min-width: 1100px) {
                 .bodymain .container .row .lefthalf .newprojectbox #newlink #phone {
-                  max-width: 155px;
+                  max-width: 120px;
                   position: relative; } }
             .bodymain .container .row .lefthalf .newprojectbox #newlink:hover {
               color: #1b75bc; }
