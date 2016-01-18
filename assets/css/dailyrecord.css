@@ -455,7 +455,7 @@ header {
         header .navigation .navcontainer .mobile-menu #dropdown {
           height: 0;
           position: relative;
-          top: 0.9rem;
+          top: 1.5rem;
           width: 100%;
           overflow: auto;
           background-color: #3d3d3d;
@@ -485,7 +485,7 @@ header {
             text-align: left; } }
         header .navigation .navcontainer #logo img {
           width: 100%;
-          margin-top: 0.85rem;
+          margin-top: 1.5rem;
           max-width: 30px; }
           @media (min-width: 768px) {
             header .navigation .navcontainer #logo img {
@@ -657,27 +657,31 @@ body {
           line-height: 2; } }
 
 .arrows {
-  opacity: .4; }
-  .arrows ul {
-    list-style: none;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 0 3.2rem 10rem 0; }
-    .arrows ul .right {
-      width: 30px; }
-      .arrows ul .right a:hover {
-        fill: #1a7446;
-        width: 25px; }
-    .arrows ul .top {
-      width: 30px;
-      padding: 2.2rem 0; }
-      .arrows ul .top a:hover {
-        fill: #1a7446; }
-    .arrows ul .left {
-      width: 30px; }
-      .arrows ul .left a:hover {
-        fill: #1a7446; }
+  display: none; }
+  @media (min-width: 1100px) {
+    .arrows {
+      display: block;
+      opacity: .4; }
+      .arrows ul {
+        list-style: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 0 3.2rem 18rem 0; }
+        .arrows ul .right {
+          width: 30px; }
+          .arrows ul .right a:hover {
+            fill: #1a7446;
+            width: 25px; }
+        .arrows ul .top {
+          width: 30px;
+          padding: 2.2rem 0; }
+          .arrows ul .top a:hover {
+            fill: #1a7446; }
+        .arrows ul .left {
+          width: 30px; }
+          .arrows ul .left a:hover {
+            fill: #1a7446; } }
 
 .footercontainer {
   height: 170px;

@@ -455,7 +455,7 @@ header {
         header .navigation .navcontainer .mobile-menu #dropdown {
           height: 0;
           position: relative;
-          top: 0.9rem;
+          top: 1.5rem;
           width: 100%;
           overflow: auto;
           background-color: #3d3d3d;
@@ -485,7 +485,7 @@ header {
             text-align: left; } }
         header .navigation .navcontainer #logo img {
           width: 100%;
-          margin-top: 0.85rem;
+          margin-top: 1.5rem;
           max-width: 30px; }
           @media (min-width: 768px) {
             header .navigation .navcontainer #logo img {

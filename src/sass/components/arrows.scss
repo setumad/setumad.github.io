@@ -1,36 +1,38 @@
 .arrows{
-	opacity: .4;
-	ul{
-		list-style: none;
-		position: fixed;
-		bottom: 0;
-		right: 0;
-		padding:0 3.2rem 10rem 0;
-		.right{
-		width: 30px;
-		// fill: yellow;
-		a:hover{
-			fill:$darkgreenexcel;
-			width: 25px;
-		}
-
-		}
-		
-		.top{
+	display: none;
+	@include breakpoint(laptop){
+		display: block;
+		opacity: .4;
+		ul{
+			list-style: none;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			padding:0 3.2rem 18rem 0;
+			.right{
 			width: 30px;
-			padding: 2.2rem 0;
+			// fill: yellow;
 			a:hover{
 				fill:$darkgreenexcel;
+				width: 25px;
 			}
-		}
 
-		.left{
-			width: 30px;
-			a:hover{
-				fill:$darkgreenexcel;
+			}
+			
+			.top{
+				width: 30px;
+				padding: 2.2rem 0;
+				a:hover{
+					fill:$darkgreenexcel;
+				}
+			}
+
+			.left{
+				width: 30px;
+				a:hover{
+					fill:$darkgreenexcel;
+				}
 			}
 		}
 	}
-
-	
 }

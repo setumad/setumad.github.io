@@ -82,7 +82,7 @@ header{
 				#dropdown{
 					height: 0;
 					position: relative;
-					top: 0.9rem;
+					top: 1.5rem;
 					width: 100%;
 					overflow: auto;
 					background-color: $textdark;
@@ -127,7 +127,7 @@ header{
 				}
 				img{
 					width: 100%;
-					margin-top: 0.85rem;
+					margin-top: 1.5rem;
 					max-width: 30px;
 					@include breakpoint(tablet){
 						margin: 1rem 0 0 0rem;
