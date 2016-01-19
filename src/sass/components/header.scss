@@ -67,13 +67,11 @@ header{
 			    	display: none;
 			    }
 			    .dropbtn {
-				    color: white;
-				    border: none;
 				    cursor: pointer;
-				    width: 40px;
+				    width: 30px;
 				    position: relative;
 				    float: right;
-				    top:-2.5em;
+				    top:-2.3em;
 				}
 				.dropdown-content {
 				    display: none;
@@ -146,7 +144,7 @@ header{
 				@include breakpoint(laptop){
 					display: block;
 					float: right;
-					left: -280px;
+					left: -155px;
 					position: relative;
 					padding-top: 2rem;
 					font-size: 1.9rem;

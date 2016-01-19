@@ -460,13 +460,11 @@ header {
           header .navigation .navcontainer .dropdown {
             display: none; } }
         header .navigation .navcontainer .dropdown .dropbtn {
-          color: white;
-          border: none;
           cursor: pointer;
-          width: 40px;
+          width: 30px;
           position: relative;
           float: right;
-          top: -2.5em; }
+          top: -2.3em; }
         header .navigation .navcontainer .dropdown .dropdown-content {
           display: none;
           position: relative;
@@ -514,7 +512,7 @@ header {
           header .navigation .navcontainer .myname {
             display: block;
             float: right;
-            left: -280px;
+            left: -155px;
             position: relative;
             padding-top: 2rem;
             font-size: 1.9rem;

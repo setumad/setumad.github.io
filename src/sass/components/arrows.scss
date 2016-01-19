@@ -4,11 +4,39 @@
 		display: block;
 		opacity: .4;
 		ul{
+			.button{
+				border: 3px solid $lightgrey;
+				width: 80px;
+				height: 40px;
+				border-radius: 10px;
+
+				.arrow{
+					width: 50px;
+					fill: $lightgrey;
+					padding-left: 1em;
+					padding-top: .3em;
+					stroke:$lightgrey;
+				}
+				.arrow:hover{
+					transition: all 0.25s ease-in-out;
+					fill: $textdark;
+					stroke:red;
+				}
+			}
+			.button:hover{
+				transition: all 0.25s ease-in-out;
+				border: 3px solid $setured;
+				.arrow{
+					transition: all 0.25s ease-in-out;
+					fill: $textdark;
+					stroke:$setured;
+				}
+			}
 			list-style: none;
 			position: fixed;
 			bottom: 0;
 			right: 0;
-			padding:0 3.2rem 18rem 0;
+			padding:0 3.2rem 8rem 0;
 			.right{
 			width: 30px;
 			// fill: yellow;

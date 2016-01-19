@@ -460,13 +460,11 @@ header {
           header .navigation .navcontainer .dropdown {
             display: none; } }
         header .navigation .navcontainer .dropdown .dropbtn {
-          color: white;
-          border: none;
           cursor: pointer;
-          width: 40px;
+          width: 30px;
           position: relative;
           float: right;
-          top: -2.5em; }
+          top: -2.3em; }
         header .navigation .navcontainer .dropdown .dropdown-content {
           display: none;
           position: relative;
@@ -514,7 +512,7 @@ header {
           header .navigation .navcontainer .myname {
             display: block;
             float: right;
-            left: -280px;
+            left: -155px;
             position: relative;
             padding-top: 2rem;
             font-size: 1.9rem;
@@ -535,28 +533,29 @@ body {
   padding-top: 5.7rem; }
   body .ptitle {
     width: 100%;
-    height: 190px;
+    height: 180px;
     background-color: #4b2e83; }
     body .ptitle #projecttitle {
       font-size: 2.5rem;
       text-align: center;
       color: #f5f5f5;
       margin: 0 auto;
-      padding-top: 10px;
-      font-family: "Work Sans", sans-serif;
-      font-weight: 400; }
+      padding-top: 0.5em;
+      font-family: "gothambook", sans-serif; }
     body .ptitle .uwise {
+      line-height: 1.6em;
       font-weight: 300;
       font-size: 1.2rem;
       color: #f5f5f5;
       display: inline-block; }
     body .ptitle .role {
-      font-size: 0.9rem;
+      font-family: gothamlight;
+      font-size: 0.8rem;
       color: #aaaaaa; }
       @media (min-width: 768px) {
         body .ptitle .role {
-          font-size: 1.2rem;
-          color: #f5f5f5; } }
+          font-size: 1rem;
+          color: #aaaaaa; } }
   body .contentcontainerwhite {
     background-color: white; }
   body .contentcontainergrey {
@@ -637,6 +636,55 @@ body {
           width: 40%;
           font-size: 1.2rem;
           line-height: 2; } }
+
+.arrows {
+  display: none; }
+  @media (min-width: 1100px) {
+    .arrows {
+      display: block;
+      opacity: .4; }
+      .arrows ul {
+        list-style: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 0 3.2rem 8rem 0; }
+        .arrows ul .button {
+          border: 3px solid #aaaaaa;
+          width: 80px;
+          height: 40px;
+          border-radius: 10px; }
+          .arrows ul .button .arrow {
+            width: 50px;
+            fill: #aaaaaa;
+            padding-left: 1em;
+            padding-top: .3em;
+            stroke: #aaaaaa; }
+          .arrows ul .button .arrow:hover {
+            transition: all 0.25s ease-in-out;
+            fill: #3d3d3d;
+            stroke: red; }
+        .arrows ul .button:hover {
+          transition: all 0.25s ease-in-out;
+          border: 3px solid #ef4b33; }
+          .arrows ul .button:hover .arrow {
+            transition: all 0.25s ease-in-out;
+            fill: #3d3d3d;
+            stroke: #ef4b33; }
+        .arrows ul .right {
+          width: 30px; }
+          .arrows ul .right a:hover {
+            fill: #1a7446;
+            width: 25px; }
+        .arrows ul .top {
+          width: 30px;
+          padding: 2.2rem 0; }
+          .arrows ul .top a:hover {
+            fill: #1a7446; }
+        .arrows ul .left {
+          width: 30px; }
+          .arrows ul .left a:hover {
+            fill: #1a7446; } }
 
 .footercontainer {
   height: 170px;
