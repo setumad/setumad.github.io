@@ -23,7 +23,7 @@
 
 	.myname{
 		font-size: 1.4rem;
-		font-family: $open-sans;
+		font-family: $gothambold;
 		font-weight: 600;
 		color: $lightgrey;
 		text-align: center;
@@ -63,7 +63,7 @@
 				font-size: 2rem;
 				text-align: center;
 				padding-top: 3rem;
-				font-family: $worksans;
+				font-family: $gothambold;
 				font-weight: 700;
 				color: $textdark;
 				padding-bottom: 1rem;
@@ -78,7 +78,7 @@
 				max-width: 1000px;
 				font-size: 1.1rem;
 				font-weight: 300;
-				font-family: $worksans;
+				font-family: $gothamlight;
 				color: $textdark;
 				line-height: 1.8rem;
 
@@ -179,7 +179,7 @@
 		#storytext{
 			font-size: 1.9rem;
 			text-align: center;
-			font-family: $worksans;
+			font-family: $gothambold;
 			font-weight: 700;
 			color: $textdark;
 			@include breakpoint(tablet){
@@ -190,7 +190,7 @@
 			font-size: 1rem;
 			line-height: 1.8;
 			font-weight: 300;
-			font-family: $worksans;
+			font-family: $gothamlight;
 			margin: 0 auto;
 			width: 85%;
 			padding: 30px 0;

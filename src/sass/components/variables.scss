@@ -32,11 +32,35 @@ $in:#0077b5;
 
 // $font1: 'Source Sans Pro';
 // $lato:'Lato', sans-serif;
-// $muli:'Muli', sans-serif;
-$open-sans:'Open Sans', sans-serif;
-$merriweather:'Merriweather', serif;
-$worksans: 'Work Sans', sans-serif;
-// $montserrat:'Montserrat', sans-serif;
+
+$worksans: 'Work Sans', sans-serif;  //headings
+
+$gothambold:'gothambold',sans-serif;   
+$gothamthin:'gothamthin',sans-serif;
+$gothamlight:'gothamlight',sans-serif;
+$gothammedium:'gothammedium',sans-serif;
+$gothambook:'gothambook',sans-serif;   
+
+@font-face{
+	font-family: gothambold;
+	src:url("fonts/GOTHAM-BOLD.TTF");
+}
+@font-face{
+	font-family: gothamlight;
+	src:url("fonts/GOTHAM-LIGHT.TTF");
+}
+@font-face{
+	font-family: gothamthin;
+	src:url("fonts/GOTHAM-THIN.TTF");
+}
+@font-face{
+	font-family: gothammedium;
+	src:url("fonts/GOTHAM-MEDIUM.TTF");
+}
+@font-face{
+	font-family: gothambook;
+	src:url("fonts/GOTHAM-BOOK.TTF");
+}
 
 
 
