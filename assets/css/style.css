@@ -433,51 +433,44 @@ header {
               header .navigation .navcontainer .nav-list li a:hover {
                 font-weight: bolder;
                 color: #3d3d3d; } }
-      header .navigation .navcontainer .mobile-menu {
-        font-size: 1.2rem;
-        font-family: "Work Sans", sans-serif;
-        color: #3d3d3d;
-        text-align: center;
-        padding: 0 0.5rem;
-        margin-top: -2rem; }
+      header .navigation .navcontainer .dropdown {
+        width: 90%;
+        margin: 0 auto; }
         @media (min-width: 768px) {
-          header .navigation .navcontainer .mobile-menu {
+          header .navigation .navcontainer .dropdown {
             display: none; } }
-        header .navigation .navcontainer .mobile-menu .menubtn {
-          width: 2rem;
-          float: right;
-          padding-right: 2rem;
-          top: -5px;
-          position: relative; }
-          header .navigation .navcontainer .mobile-menu .menubtn a {
-            text-decoration: none;
-            color: #3d3d3d; }
-        header .navigation .navcontainer .mobile-menu #dropdown {
-          height: 0;
+        header .navigation .navcontainer .dropdown .dropbtn {
+          color: white;
+          border: none;
+          cursor: pointer;
+          width: 40px;
           position: relative;
-          top: 1.5rem;
-          width: 100%;
-          overflow: auto;
-          background-color: #3d3d3d;
+          float: right;
+          top: -2.5em; }
+        header .navigation .navcontainer .dropdown .dropdown-content {
+          display: none;
+          position: relative;
+          background-color: #8c8c8c;
+          min-width: 100%;
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          transition: height 0.3s ease-in-out; }
-          header .navigation .navcontainer .mobile-menu #dropdown a {
+          text-align: center;
+          top: 1.2em; }
+          header .navigation .navcontainer .dropdown .dropdown-content #nav1 {
+            padding-left: 2.8em;
+            border-bottom: 1px solid #3d3d3d; }
+          header .navigation .navcontainer .dropdown .dropdown-content a {
+            font-size: 1.2em;
+            color: white;
+            font-family: "Work Sans", sans-serif;
+            padding: 12px 16px;
             text-decoration: none;
-            color: #f5f5f5;
-            font-family: "Work Sans", sans-serif;
+            display: block;
             font-weight: 300; }
-            header .navigation .navcontainer .mobile-menu #dropdown a .firstnav {
-              padding: 1rem 0;
-              border-bottom: 1px solid grey; }
-            header .navigation .navcontainer .mobile-menu #dropdown a .secondnav {
-              padding: 1rem 0; }
-          header .navigation .navcontainer .mobile-menu #dropdown a div:hover {
-            background-color: #f5f5f5;
-            color: #3d3d3d;
-            font-family: "Work Sans", sans-serif;
-            font-weight: 700; }
-          header .navigation .navcontainer .mobile-menu #dropdown .show {
-            display: block; }
+          header .navigation .navcontainer .dropdown .dropdown-content a:hover {
+            background-color: #3d3d3d;
+            font-weight: 500; }
+        header .navigation .navcontainer .dropdown .show {
+          display: block; }
       header .navigation .navcontainer #logo {
         text-align: center; }
         @media (min-width: 768px) {
@@ -697,7 +690,7 @@ header {
               display: block;
               margin: 0 auto;
               width: 100%;
-              max-width: 175px;
+              max-width: 195px;
               padding: 36px 0;
               transition: 0.5s all ease-in-out;
               bottom: 0; }
@@ -714,7 +707,7 @@ header {
               .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover #uwisephone {
                 bottom: 15px; }
         .bodymain .container .row .lefthalf .newprojectbox {
-          height: 310px;
+          height: 350px;
           margin: 0 auto;
           background-color: #9fcef3;
           transition: 0.3s all ease-in-out;
@@ -753,10 +746,10 @@ header {
               @media (min-width: 768px) {
                 .bodymain .container .row .lefthalf .newprojectbox #newlink #phone {
                   position: relative;
-                  max-width: 205px; } }
+                  max-width: 150px; } }
               @media (min-width: 1100px) {
                 .bodymain .container .row .lefthalf .newprojectbox #newlink #phone {
-                  max-width: 120px;
+                  max-width: 150px;
                   position: relative; } }
             .bodymain .container .row .lefthalf .newprojectbox #newlink:hover {
               color: #1b75bc; }

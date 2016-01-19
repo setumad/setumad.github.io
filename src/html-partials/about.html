@@ -1,5 +1,5 @@
 <body>
-<div class="headerimage">
+<div class="headerimage" onclick="bodyfunction()">
 	<img class="dp" src="assets/img/about/dp.png"/>
 	<div class="roopkund"><p>Roopkund, Oct 2014</p></div>
 	<!-- <div class="dialogue">
@@ -8,7 +8,7 @@
 	<div class="myname"><span class="setu">Setumadhava </span>Kathawate</div>
 </div>
 
-<div class="aboutcontainer">
+<div class="aboutcontainer" onclick="bodyfunction()">
 	<div class="right">&nbsp;
 		<div id="storytext">My Story<br><br></div>
 			<div class="storycontent">
@@ -55,5 +55,12 @@
 
 </div>
 
+<script>
+	function bodyfunction(){
+		console.log("body problem");
+		document.getElementById("myDropdown").classList.remove("show");
+	}
+
+</script>
 
 </body>

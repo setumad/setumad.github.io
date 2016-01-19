@@ -56,67 +56,62 @@ header{
 // **************** MOBILE NAV *****************
 // **************** MOBILE NAV *****************
 
-		
-			.mobile-menu{
-				font-size: 1.2rem;
-				font-family: $worksans;
-				color: $textdark;
-				text-align: center;
-				padding:0 0.5rem;
-				margin-top: -2rem;
-				@include breakpoint(tablet){
-					display: none;
+			.dropdown {
+			    // position: relative;
+			    // display: inline-block;
+			    // float: right;
+			    width: 90%;
+			    margin: 0 auto;
+			   
+			    @include breakpoint(tablet){
+			    	display: none;
+			    }
+			    .dropbtn {
+				    color: white;
+				    border: none;
+				    cursor: pointer;
+				    width: 40px;
+				    position: relative;
+				    float: right;
+				    top:-2.5em;
 				}
-				.menubtn{
-					width: 2rem;
-					float: right;
-					padding-right: 2rem;
-					top: -5px;
-					position: relative;
+				.dropdown-content {
+				    display: none;
+				    position: relative;
+				    background-color: $mediumgrey;
+				    min-width: 100%;
+				    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				    text-align: center;
+				    top:1.2em;
+				    #nav1{
+				    	padding-left: 2.8em;
+						border-bottom: 1px solid $textdark;
+				    }
+				    a {
+					    font-size: 1.2em;
+					    color: white;
+					    font-family: $worksans;
+					    padding: 12px 16px;
+					    text-decoration: none;
+					    display: block;
+					    font-weight: 300;
+					}
+					a:hover {
+						background-color: $textdark;
+						font-weight: 500;
 
-					a{		
-						text-decoration: none;
-						color: $textdark;	
-					}
-				}
-				#dropdown{
-					height: 0;
-					position: relative;
-					top: 1.5rem;
-					width: 100%;
-					overflow: auto;
-					background-color: $textdark;
-					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-					transition: height 0.3s ease-in-out;
-					a{		
-						text-decoration: none;
-						color: $superlightgrey;
-						font-family: $worksans;
-						font-weight: 300;
-						.firstnav{
-							padding: 1rem 0;
-							border-bottom: 1px solid grey;
-						}
-						.secondnav{
-							padding: 1rem 0;
-						}
-					}
-					a div:hover{
-						background-color: $superlightgrey;
-						color: $textdark;
-						font-family: $worksans;
-						font-weight: 700;
-					}
-					.show{
-						display: block;
 					}
 				}
-			}	
+				.show {display:block;}
+			}
 
 
 
 
 
+
+// **************** MOBILE NAV END *****************
+// **************** MOBILE NAV END*****************
 
 
 
@@ -177,12 +172,6 @@ header{
 		}
 	}
 }
-
-
-
-
-
-
 
 
 

@@ -18,21 +18,14 @@
 			</div>
 
 
-			<div class="mobile-menu">
-				<div onclick="myFunction('dropdown')" class="menubtn"><img src="assets/img/hamburger.svg"/></div>
-				
-				<div id="dropdown">
-					<a href="#">
-						<div class="firstnav">
-							PROJECTS
-						</div>
-					</a>
+			<div class="dropdown">
 
-					<a href="#">
-						<div class="secondnav">
-							ABOUT
-						</div>
-					</a>
+				<div onclick="myFunction()" class="dropbtn"><img src="assets/img/hamburger.svg"/>
+				</div>
+				
+				<div id="myDropdown" class="dropdown-content">
+					<a id="nav1" href="index.html">PROJECTS</a>
+					<a href="about.html">ABOUT</a>
 				</div>
 			</div>
 
@@ -49,13 +42,9 @@
 
 
 <script>
-function myFunction(x) {
-	var panel=document.getElementById(x), maxH="108px";
-	if(panel.style.height==maxH){
-		panel.style.height="0px";
-	}
-	else{
-		panel.style.height=maxH;
-	}
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    console.log("In Myfunction");
 }
 </script>
+

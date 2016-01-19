@@ -228,7 +228,7 @@
 							display: block;
 							margin: 0 auto;
 							width: 100%;
-							max-width: 175px;
+							max-width: 195px;
 							padding: 36px 0;
 							transition: 0.5s all ease-in-out;
 							bottom:0;
@@ -252,7 +252,7 @@
 				}
 
 				.newprojectbox{
-					height: 310px;
+					height: 350px;
 					margin: 0 auto;
 					background-color: $lighteventosaur;
 					transition: 0.3s all ease-in-out;
@@ -300,10 +300,10 @@
 
 							@include breakpoint(tablet){
 								position: relative;
-								max-width: 205px;
+								max-width: 150px;
 							}
 							@include breakpoint(laptop){
-								max-width: 120px;
+								max-width: 150px;
 								position: relative;
 							}
 						}

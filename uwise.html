@@ -27,16 +27,9 @@
 						<div id="logo">
 							<a href="index.html"> <img src="assets/img/logo.png" /></a>
 						</div>
-						<div class="mobile-menu">
-							<div onclick="myFunction('dropdown')" class="menubtn"><img src="assets/img/hamburger.svg" /></div>
-							<div id="dropdown">
-								<a href="#">
-									<div class="firstnav"> PROJECTS </div>
-								</a>
-								<a href="#">
-									<div class="secondnav"> ABOUT </div>
-								</a>
-							</div>
+						<div class="dropdown">
+							<div onclick="myFunction()" class="dropbtn"><img src="assets/img/hamburger.svg" /> </div>
+							<div id="myDropdown" class="dropdown-content"> <a id="nav1" href="index.html">PROJECTS</a> <a href="about.html">ABOUT</a> </div>
 						</div>
 					</div>
 				</div>
@@ -44,18 +37,10 @@
 			<!-- 
 **************DROPDOWN JAVASCRIPT************** -->
 			<script>
-				function myFunction(x)
+				function myFunction()
 				{
-					var panel = document.getElementById(x),
-						maxH = "108px";
-					if (panel.style.height == maxH)
-					{
-						panel.style.height = "0px";
-					}
-					else
-					{
-						panel.style.height = maxH;
-					}
+					document.getElementById("myDropdown").classList.toggle("show");
+					console.log("In Myfunction");
 				}
 			</script>
 
@@ -66,7 +51,7 @@
 						<br> <span class="role">User Research &#9675 Ideation &#9675 Prototyping
 				&#9675 Usabiity Testing</span></p>
 				</div>
-				<div class="maindiv">
+				<div class="maindiv" onclick="bodyfunction()">
 					<div class="contentcontainerwhite">
 						<div class="contentbox">
 							<div class="contheader">
@@ -252,6 +237,13 @@
 						</div>
 					</div>
 				</div>
+				<script>
+					function bodyfunction()
+					{
+						console.log("body problem");
+						document.getElementById("myDropdown").classList.remove("show");
+					}
+				</script>
 			</body>
 		</div>
 	</body>

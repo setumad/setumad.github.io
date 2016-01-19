@@ -6,7 +6,7 @@
 			
 	</div>
 
-	<div class="maindiv">
+	<div class="maindiv" onclick="bodyfunction()">
 		<div class="contentcontainerwhite">
 			<div class="contentbox">
 				<div class="contheader">
@@ -244,4 +244,10 @@
 			</div>
 		</div>
 	</div>
+	<script>
+	function bodyfunction(){
+		console.log("body problem");
+		document.getElementById("myDropdown").classList.remove("show");
+	}
+	</script>
 </body>

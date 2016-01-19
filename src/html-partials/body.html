@@ -1,5 +1,5 @@
 
-<div class="bodymain">
+<div class="bodymain" onclick="bodyfunction()">
 
 	<div class="container">
 
@@ -60,12 +60,10 @@
 
 
 <script>
-
-	$(".uwiseprojectbox").hover(function(){
-		$("#uwisephone").animate({
-			marginBottom: "20px"
-		},300);
-	});
+	function bodyfunction(){
+		console.log("body problem");
+		document.getElementById("myDropdown").classList.remove("show");
+	}
 
 </script>
 
