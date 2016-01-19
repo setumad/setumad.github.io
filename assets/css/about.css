@@ -531,8 +531,6 @@ header {
 
 .headerimage {
   padding-top: 5.8rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
   position: relative;
   left: 0;
   top: 0;
@@ -544,10 +542,14 @@ header {
     display: block;
     width: 100%; }
   .headerimage .roopkund {
-    font-family: "Work Sans", sans-serif;
-    font-size: .8rem;
+    font-family: "gothamlight", sans-serif;
+    font-size: .6rem;
     font-style: italic;
     text-align: right; }
+    @media (min-width: 768px) {
+      .headerimage .roopkund {
+        font-size: .8rem;
+        font-family: "gothamlight", sans-serif; } }
   .headerimage .myname {
     font-size: 1.4rem;
     font-family: "gothambold", sans-serif;

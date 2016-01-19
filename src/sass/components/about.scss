@@ -1,7 +1,7 @@
 .headerimage{
 	padding-top: 5.8rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	// padding-left: 2rem;
+	// padding-right: 2rem;
 	position: relative;
 	left: 0;
 	top: 0;
@@ -15,10 +15,14 @@
 		width: 100%;
 	}	
 	.roopkund{
-		font-family: $worksans;
-		font-size: .8rem;
+		font-family: $gothamlight;
+		font-size: .6rem;
 		font-style: italic;
 		text-align: right;
+		@include breakpoint(tablet){
+			font-size: .8rem;
+			font-family: $gothamlight;
+		}
 	}
 
 	.myname{
