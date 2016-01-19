@@ -99,7 +99,7 @@
 						width: 30px;
 						padding-bottom: 2rem;
 						@include breakpoint(tablet){
-							padding-bottom: 2rem;
+							padding-bottom: 0rem;
 						}
 
 					}
@@ -108,7 +108,7 @@
 						margin: 0 auto;
 						position: relative;
 						@include breakpoint(tablet){
-							top:.5rem;
+							top:2.6rem;
 						}
 
 					}

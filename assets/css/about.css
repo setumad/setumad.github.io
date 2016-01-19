@@ -612,14 +612,14 @@ header {
           padding-bottom: 2rem; }
           @media (min-width: 768px) {
             .aboutcontainer .left .bigskillbox .skillcontainer .skillbox1 .brush {
-              padding-bottom: 2rem; } }
+              padding-bottom: 0rem; } }
         .aboutcontainer .left .bigskillbox .skillcontainer .skillbox1 .skills {
           width: 75%;
           margin: 0 auto;
           position: relative; }
           @media (min-width: 768px) {
             .aboutcontainer .left .bigskillbox .skillcontainer .skillbox1 .skills {
-              top: .5rem; } }
+              top: 2.6rem; } }
       .aboutcontainer .left .bigskillbox .skillcontainer .skillbox2 {
         padding: 4rem 0; }
         @media (min-width: 768px) {
