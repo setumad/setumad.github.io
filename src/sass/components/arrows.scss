@@ -25,18 +25,18 @@
 			}
 			.button:hover{
 				transition: all 0.25s ease-in-out;
-				border: 3px solid $setured;
+				border: 3px solid $textdark;
 				.arrow{
 					transition: all 0.25s ease-in-out;
 					fill: $textdark;
-					stroke:$setured;
+					stroke:$textdark;
 				}
 			}
 			list-style: none;
 			position: fixed;
 			bottom: 0;
 			right: 0;
-			padding:0 3.2rem 8rem 0;
+			padding:0 3.2rem 5rem 0;
 			.right{
 			width: 30px;
 			// fill: yellow;

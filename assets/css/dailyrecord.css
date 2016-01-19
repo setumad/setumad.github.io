@@ -681,7 +681,7 @@ body {
         position: fixed;
         bottom: 0;
         right: 0;
-        padding: 0 3.2rem 8rem 0; }
+        padding: 0 3.2rem 5rem 0; }
         .arrows ul .button {
           border: 3px solid #aaaaaa;
           width: 80px;
@@ -699,11 +699,11 @@ body {
             stroke: red; }
         .arrows ul .button:hover {
           transition: all 0.25s ease-in-out;
-          border: 3px solid #ef4b33; }
+          border: 3px solid #3d3d3d; }
           .arrows ul .button:hover .arrow {
             transition: all 0.25s ease-in-out;
             fill: #3d3d3d;
-            stroke: #ef4b33; }
+            stroke: #3d3d3d; }
         .arrows ul .right {
           width: 30px; }
           .arrows ul .right a:hover {
