@@ -535,7 +535,7 @@ header {
           transition: 0.3s all ease-in-out;
           background-color: grey;
           font-family: "gothambold", sans-serif;
-          font-size: 1.4em; }
+          font-size: 1.2em; }
       header .navigation .dropdown .show {
         display: block; }
 
