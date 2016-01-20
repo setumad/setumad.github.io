@@ -51,68 +51,6 @@ header{
 				}
 			}
 
-
-// **************** MOBILE NAV *****************
-// **************** MOBILE NAV *****************
-// **************** MOBILE NAV *****************
-
-			.dropdown {
-			    // position: relative;
-			    // display: inline-block;
-			    // float: right;
-			    width: 90%;
-			    margin: 0 auto;
-			   
-			    @include breakpoint(tablet){
-			    	display: none;
-			    }
-			    .dropbtn {
-				    cursor: pointer;
-				    width: 30px;
-				    position: relative;
-				    float: right;
-				    top:-2.3em;
-				}
-				.dropdown-content {
-				    display: none;
-				    position: relative;
-				    background-color: $mediumgrey;
-				    min-width: 100%;
-				    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-				    text-align: center;
-				    top:1.2em;
-				    #nav1{
-				    	padding-left: 2.8em;
-						border-bottom: 1px solid $textdark;
-				    }
-				    a {
-					    font-size: 1.2em;
-					    color: white;
-					    font-family: $worksans;
-					    padding: 12px 16px;
-					    text-decoration: none;
-					    display: block;
-					    font-weight: 300;
-					}
-					a:hover {
-						background-color: $textdark;
-						font-weight: 500;
-
-					}
-				}
-				.show {display:block;}
-			}
-
-
-
-
-
-
-// **************** MOBILE NAV END *****************
-// **************** MOBILE NAV END*****************
-
-
-
 			#logo{
 				text-align: center;
 				@include breakpoint(tablet){
@@ -169,6 +107,82 @@ header{
 				}
 			}
 		}
+
+
+// **************** MOBILE NAV *****************
+// **************** MOBILE NAV *****************
+// **************** MOBILE NAV *****************
+
+			.dropdown {
+			    // position: relative;
+			    // display: inline-block;
+			    // float: right;
+			    width: 100%;
+			    opacity: 0.9;
+			    margin: 0 auto;
+			   
+			    @include breakpoint(tablet){
+			    	display: none;
+			    }
+			    .dropbtn {
+				    cursor: pointer;
+				    width: 35px;
+				    position: relative;
+				    float: right;
+				    top:-3em;
+				    padding-right: 1.5em;
+
+				}
+				.dropdown-content {
+				    display: none;
+				    position: relative;
+				    background-color: $textdark;
+				    min-width: 100%;
+				    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				    text-align: center;
+				    top:0.6em;
+				    transition: 0.3s all ease-in-out;
+				    #projects{
+				    	margin-top: 0.5em;
+				    	padding-bottom: 0.5em;
+				    	padding-left: 2.2em;
+				    }
+				    #about{
+				    	margin-top: 0.5em;
+				    	padding-bottom: 0.5em;
+				    }
+				    
+				    a {
+				    	border-bottom: 1px solid black;
+					    font-size: 1.2em;
+					    color: white;
+					    font-family: $gothambook;
+					    padding: 12px 16px;
+					    text-decoration: none;
+					    display: block;
+					    font-weight: 300;
+					}
+					a:hover {
+
+						transition: 0.3s all ease-in-out;
+						background-color: grey;
+						font-family: $gothambold;
+						font-size: 1.4em;
+
+					}
+				}
+				.show {display:block;}
+			}
+
+
+
+
+
+
+// **************** MOBILE NAV END *****************
+// **************** MOBILE NAV END*****************
+
+
 	}
 }
 

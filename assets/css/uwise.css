@@ -453,42 +453,6 @@ header {
               header .navigation .navcontainer .nav-list li a:hover {
                 font-weight: bolder;
                 color: #3d3d3d; } }
-      header .navigation .navcontainer .dropdown {
-        width: 90%;
-        margin: 0 auto; }
-        @media (min-width: 768px) {
-          header .navigation .navcontainer .dropdown {
-            display: none; } }
-        header .navigation .navcontainer .dropdown .dropbtn {
-          cursor: pointer;
-          width: 30px;
-          position: relative;
-          float: right;
-          top: -2.3em; }
-        header .navigation .navcontainer .dropdown .dropdown-content {
-          display: none;
-          position: relative;
-          background-color: #8c8c8c;
-          min-width: 100%;
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          text-align: center;
-          top: 1.2em; }
-          header .navigation .navcontainer .dropdown .dropdown-content #nav1 {
-            padding-left: 2.8em;
-            border-bottom: 1px solid #3d3d3d; }
-          header .navigation .navcontainer .dropdown .dropdown-content a {
-            font-size: 1.2em;
-            color: white;
-            font-family: "Work Sans", sans-serif;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-weight: 300; }
-          header .navigation .navcontainer .dropdown .dropdown-content a:hover {
-            background-color: #3d3d3d;
-            font-weight: 500; }
-        header .navigation .navcontainer .dropdown .show {
-          display: block; }
       header .navigation .navcontainer #logo {
         text-align: center; }
         @media (min-width: 768px) {
@@ -528,6 +492,52 @@ header {
         header .navigation .navcontainer .myname:hover .setu {
           transition: 0.1s all ease-in-out;
           color: #3d3d3d; }
+    header .navigation .dropdown {
+      width: 100%;
+      opacity: 0.9;
+      margin: 0 auto; }
+      @media (min-width: 768px) {
+        header .navigation .dropdown {
+          display: none; } }
+      header .navigation .dropdown .dropbtn {
+        cursor: pointer;
+        width: 35px;
+        position: relative;
+        float: right;
+        top: -3em;
+        padding-right: 1.5em; }
+      header .navigation .dropdown .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #3d3d3d;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        top: 0.6em;
+        transition: 0.3s all ease-in-out; }
+        header .navigation .dropdown .dropdown-content #projects {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em;
+          padding-left: 2.2em; }
+        header .navigation .dropdown .dropdown-content #about {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        header .navigation .dropdown .dropdown-content a {
+          border-bottom: 1px solid black;
+          font-size: 1.2em;
+          color: white;
+          font-family: "gothambook", sans-serif;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          font-weight: 300; }
+        header .navigation .dropdown .dropdown-content a:hover {
+          transition: 0.3s all ease-in-out;
+          background-color: grey;
+          font-family: "gothambold", sans-serif;
+          font-size: 1.4em; }
+      header .navigation .dropdown .show {
+        display: block; }
 
 body {
   padding-top: 5.7rem; }
