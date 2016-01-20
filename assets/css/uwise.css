@@ -616,7 +616,7 @@ body {
       width: 100%;
       max-width: 1150px; }
     body .contentbox .content {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 300;
       font-family: "gothamlight", sans-serif;
       margin: 0 auto;
