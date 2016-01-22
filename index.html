@@ -17,7 +17,7 @@
 						<ul class="nav-list">
 							<li><a href="index.html">PROJECTS</a></li>
 							<li><a href="about.html">ABOUT</a></li>
-							<li><a href="https://drive.google.com/open?id=0B9lEE9VtwakxYUtwVGN3aEd6TVU" target="_blank">RESUME</a></li>
+							<li><a href="Setumadhava_G_Kathawate_CV.pdf" target="_blank">RESUME</a></li>
 							<!-- <li><a href="">BLOG</a></li> -->
 						</ul>
 						<a href="index.html">
@@ -48,6 +48,16 @@
 					document.getElementById("myDropdown").classList.toggle("show");
 					console.log("In Myfunction");
 				}
+			</script>
+			<script type="text/javascript" src="pdfobject.js"></script>
+			<script type="text/javascript">
+				window.onload = function()
+				{
+					var success = new PDFObject(
+					{
+						url: "Setumadhava_G_Kathawate_CV.pdf"
+					}).embed();
+				};
 			</script>
 			<div class="bodymain" onclick="bodyfunction()">
 				<div class="container">
