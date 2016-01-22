@@ -4,15 +4,19 @@ body{
 	
 	.ptitle{
 		width: 100%;
-		height: 180px;
+		height: 250px;
 		background-color: $uwpurple;
+		@include breakpoint(tablet){
+			height: 210px;
+		}
 		#projecttitle{
-			font-size: 2.5rem;
+			font-size: 2.8rem;
 			text-align: center;
 			color: $superlightgrey;
 			margin: 0 auto;
 			padding-top: 0.5em;
-			font-family: $gothambook;
+			letter-spacing: 0.5px;
+			font-family: $lato;
 			// font-weight: 400;
 			// background-color: green;
 		}
@@ -24,8 +28,9 @@ body{
 				display: inline-block;
 			}
 		.role{
-			font-family: gothamlight;
+			font-family: $lato;
 			font-size: 0.8rem;
+			letter-spacing: 0.8px;
 			color: $lightgrey;
 			@include breakpoint(tablet){
 				font-size: 1rem;
@@ -52,8 +57,8 @@ body{
 
 		.contheader{
 			padding: 1rem 0 2rem 0;
-			font-size: 3rem;
-			font-family: $worksans;
+			font-size: 2.2rem;
+			font-family: $lato;
 			color: $uwpurple;
 		}
 		
@@ -146,25 +151,48 @@ body{
 		.content{
 
 			font-size: 0.9rem;
-			font-weight: 300;
-			font-family: $gothamlight;
+			font-family: $lato;
+			letter-spacing: 0.5px;
+			word-spacing: 1.2px;
+			font-weight: $light;
 			margin: 0 auto;
 			width: 85%;
 			padding: 30px 0;
 			text-align: justify;
 			line-height: 1.8;
 			.boldtext{
-				font-weight: 700;
-				color: $uwpurple;
+				font-weight: 600;
+				color: $darkgreenexcel;
 			}
+			.iframe{
+				display: block;
+				margin:0 auto;
+				width: 100%;
+			}
+
+			.hugetext{
+				font-size: 2rem;
+				font-weight: bold;
+				line-height: 3.2rem;
+				color: $darkgreenexcel;
+				text-align: center;
+			}
+
+			.demotext{
+				font-weight: bold;
+				text-align: center;
+				color: $textdark;
+			}
+			// background-color: green;
+
 			@include breakpoint(tablet){
-				font-size: 1.2rem;
 				line-height: 2;
+				font-size: 1.2rem;
 			}
 			@include breakpoint(laptop){
+				font-size: 1.2em;
 				width: 40%;
-				font-size: 1.2rem;
-				line-height: 2;
+				line-height: 1.8;
 			}
 		}
 	}

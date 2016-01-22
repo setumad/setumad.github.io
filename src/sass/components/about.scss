@@ -1,5 +1,5 @@
 .headerimage{
-	padding-top: 5.8rem;
+	padding-top: 5.7rem;
 	// padding-left: 2rem;
 	// padding-right: 2rem;
 	position: relative;
@@ -15,21 +15,28 @@
 		width: 100%;
 	}	
 	.roopkund{
-		font-family: $gothamlight;
+		font-family: $lato;
 		font-size: .6rem;
 		font-style: italic;
 		text-align: right;
+		padding-right: 1em;
 		@include breakpoint(tablet){
 			font-size: .8rem;
-			font-family: $gothamlight;
+			font-family: $lato;
 		}
 	}
 
 	.myname{
-		font-size: 1.4rem;
-		font-family: $gothambold;
-		font-weight: 600;
+		// font-size: 1.4rem;
+		// font-family: $gothambold;
+		// font-weight: 600;
+		// color: $lightgrey;
+		font-size: 2rem;
+		font-family: $lato;
+		font-weight: $thin;
+		letter-spacing: 1.2px;
 		color: $lightgrey;
+		padding:0 1em 1em 1em;
 		text-align: center;
 		width: 100%;
 		padding: 2rem 0 3.5rem 0;
@@ -39,6 +46,7 @@
 		.setu{
 		transition: 0.1s all ease-in-out;
 		color: $textdark;
+		font-weight: $bold;
 		}
 		@include breakpoint (laptop){
 			display: none;
@@ -81,8 +89,9 @@
 				text-align: center;
 				max-width: 1000px;
 				font-size: 1.1rem;
-				font-weight: 300;
-				font-family: $gothamlight;
+				font-weight: $bold;
+				font-family: $lato;
+				letter-spacing: 0.8px;
 				color: $textdark;
 				line-height: 1.8rem;
 
@@ -107,6 +116,10 @@
 						width: 75%;
 						margin: 0 auto;
 						position: relative;
+						font-family: $lato;
+						font-weight: $thin;
+						letter-spacing: 0.8px;
+						// font-size: 0.9em;
 						@include breakpoint(tablet){
 							top:2.6rem;
 						}
@@ -133,6 +146,10 @@
 						width: 65%;
 						margin: 0 auto;
 						position: relative;
+						font-family: $lato;
+						font-weight: $thin;
+						letter-spacing: 0.8px;
+						// font-size: 0.9em;
 						@include breakpoint(laptop){
 							top:-1rem;
 						}
@@ -161,6 +178,10 @@
 						width: 75%;
 						margin: 0 auto;
 						position: relative;
+						font-family: $lato;
+						font-weight: $thin;
+						letter-spacing: 0.8px;
+						// font-size: 0.9em;
 						@include breakpoint(laptop){
 							top:-1rem;
 						}
@@ -183,9 +204,10 @@
 		#storytext{
 			font-size: 1.9rem;
 			text-align: center;
-			font-family: $gothambold;
-			font-weight: 700;
+			font-family: $lato;
+			font-weight: $bold;
 			color: $textdark;
+			letter-spacing: 0.8px;
 			@include breakpoint(tablet){
 				padding-top: 2rem;
 			}
@@ -194,7 +216,9 @@
 			font-size: 1rem;
 			line-height: 1.8;
 			font-weight: 300;
-			font-family: $gothamlight;
+			// font-family: $gothamlight;
+			font-family: $lato;
+			letter-spacing: 0.8px;
 			margin: 0 auto;
 			width: 85%;
 			padding: 30px 0;

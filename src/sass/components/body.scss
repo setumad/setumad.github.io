@@ -16,23 +16,25 @@
 		}
 		.headline{
 			text-align: center;
-			font-family: $gothambook;
-			font-weight: 600;
+			font-family: $lato;
+			font-weight: $normal;
 			color: $textdark;
-			padding: 2.2rem 3rem 3rem 3rem;
+			padding: 2rem 3rem 2rem 3rem;
 			font-size: 1.8em;
 			max-width: 750px;
 			margin: 0 auto;
 			line-height: 50px;
 			.myname{
-				font-size: 2.2rem;
-				font-family: $worksans;
-				font-weight: 300;
+				font-size: 2.4rem;
+				font-family: $lato;
+				font-weight: $thin;
+				letter-spacing: 1.2px;
 				color: $lightgrey;
+				padding-bottom: 1em;
 				.setu{
 				transition: 0.1s all ease-in-out;
 				color: $textdark;
-				font-weight: 700;
+				font-weight: $bold;
 				}
 				@include breakpoint (laptop){
 					display: none;
@@ -51,7 +53,6 @@
 				height: 300px;
 				width: 90%;
 				margin: 0 auto;
-				margin-bottom: 2rem;
 				@include breakpoint(laptop){
 					width: 50%;
 					float: right;
@@ -63,11 +64,10 @@
 					background-color: $superlightgrey;
 					margin: 2rem 0;
 					transition: 0.3s all ease-in-out;
-					margin-bottom: 6rem;
 
 					@include breakpoint(laptop){
 					float: right;
-					width: 85%;
+					width: 90%;
 					margin-top: 0;
 					}
 
@@ -77,7 +77,8 @@
 						// background-color: blue;
 						max-width: 330px;
 						font-size: 1.3rem;
-						font-family:$gothambook;;
+						font-family:$lato;
+						letter-spacing: 0.5px;
 						color: $lightgrey;
 						line-height: 2.3rem;
 						padding-left: 1.4rem;
@@ -99,12 +100,12 @@
 							text-decoration: none;
 							color: $mediumgrey;
 							font-size: 1.3rem;
-							font-family: $gothammedium;
-							font-weight: 600;
+							font-family:$lato;
+							font-weight: $bolder;
+							letter-spacing: 0.5px;	
 						}
 						a:hover{
 							color: $textdark;
-							font-weight: bolder;
 						}
 					}
 				}
@@ -119,7 +120,7 @@
 
 					@include breakpoint(laptop){
 					float: right;
-					width: 85%;
+					width: 90%;
 					margin-top: 0;
 					}
 
@@ -127,7 +128,13 @@
 						text-decoration: none;
 						color: #ffffff;
 						transition: 0.3s all ease-in-out;
-
+						.uiux{
+							float: left;
+							padding: 1.6em 0 0 1em;
+							font-size: 1.1em;
+							font-family: $lato;
+							opacity: 0.5;
+						}
 						.dailyrecord{
 							width: 60%;
 							padding-right: 1.4rem;
@@ -137,13 +144,15 @@
 
 							.dr_title{
 								font-size: 1.5rem;
-								font-family: $worksans;
+								font-family: $lato;
+								letter-spacing: 0.8px;
 								font-weight: 600;
 							}
 							.dr_desc{
 								font-size: 1.1rem;
 								line-height: 1.5em;
-								font-family: $gothambook;
+								font-family: $lato;
+								letter-spacing: 0.8px;
 							}
 						}
 						#drmac{
@@ -151,7 +160,7 @@
 							margin: 0 auto;
 							width: 100%;
 							max-width: 350px;
-							padding: 60px 0;
+							padding: 3.5em 0;
 							transition: 0.5s all ease-in-out;
 							bottom:0;
 							
@@ -159,7 +168,7 @@
 							@include breakpoint(tablet){
 								position: relative;
 								max-width: 375px;
-								padding: 45px 0;
+								padding: 3em 0;
 								
 							}
 							@include breakpoint(laptop){
@@ -177,6 +186,10 @@
 									bottom: 11px;
 								}
 							}
+							.uiux{
+								color: $darkgreenexcel;
+								opacity: 1;
+							}
 						}
 					}
 				}
@@ -186,7 +199,6 @@
 				background-color: transparent;
 				width: 90%;
 				margin: 0 auto;
-				margin-bottom: 3rem;
 
 				@include breakpoint(laptop){
 					width: 50%;
@@ -201,7 +213,7 @@
 
 					@include breakpoint(laptop){
 						float: left;
-						width: 85%;
+						width: 90%;
 						// margin-bottom: 8rem;
 					}
 
@@ -209,6 +221,14 @@
 						text-decoration: none;
 						color: #ffffff;
 						transition: 0.3s all ease-in-out;
+						.uiux{
+							float: right;
+							padding: 1.6em 1em 0 0;
+							font-size: 1.1em;
+							font-family: $lato;
+							opacity: 0.5;
+						}
+
 						.uwise{
 							width: 60%;
 							padding-left: 1.4rem;
@@ -217,44 +237,52 @@
 
 							.uwise_title{
 								font-size: 1.5rem;
-								font-family: $worksans;
+								font-family: $lato;
+								letter-spacing: 0.8px;
 								font-weight: 600;
 							}
 							.uwise_desc{
 								font-size: 1.1rem;
 								line-height: 1.5em;
-								font-family: $gothambook;
+								font-family: $lato;
+								letter-spacing: 0.8px;
 							}
+
 						}
+
 						#uwisephone{
 							display: block;
 							margin: 0 auto;
 							width: 100%;
-							max-width: 195px;
-							padding: 36px 0;
+							max-width: 150px;
+							padding: 1em 0;
 							transition: 0.5s all ease-in-out;
 							bottom:0;
 
 							@include breakpoint(tablet){
 								position: relative;
-								max-width: 205px;
+								max-width: 150px;
 							}
 							@include breakpoint(laptop){
-								max-width: 205px;
+								max-width: 150px;
 								position: relative;
 							}
 						}
 						&:hover{
 							color: $uwpurple;
 							#uwisephone{
-								bottom: 15px;
+								bottom: 1em;
+							}
+							.uiux{
+								color: $uwpurple;
+								opacity: 1;
 							}
 						}
 					}
 				}
 
 				.newprojectbox{
-					height: 350px;
+					height: 335px;
 					margin: 0 auto;
 					background-color: $lighteventosaur;
 					transition: 0.3s all ease-in-out;
@@ -266,7 +294,7 @@
 
 					@include breakpoint(laptop){
 						float: left;
-						width: 85%;
+						width: 90%;
 						margin-top: 0;
 					}
 
@@ -282,30 +310,32 @@
 
 							.new_title{
 								font-size: 1.5rem;
-								font-family: $worksans;
+								font-family: $lato;
+								letter-spacing: 0.8px;
 								font-weight: 600;
 							}
 							.new_desc{
-								font-family: $gothambook;
-								font-size: 1.2rem;
-								text-decoration: none;
+								font-size: 1.1rem;
+								line-height: 1.5em;
+								font-family: $lato;
+								letter-spacing: 0.8px;
 							}
 						}
 						#phone{
 							display: block;
 							margin: 0 auto;
 							width: 100%;
-							max-width: 150px;
+							max-width: 140px;
 							transition: 0.5s all ease-in-out;
 							bottom:0;
 
 
 							@include breakpoint(tablet){
 								position: relative;
-								max-width: 150px;
+								max-width: 140px;
 							}
 							@include breakpoint(laptop){
-								max-width: 150px;
+								max-width: 140px;
 								position: relative;
 							}
 						}
@@ -313,7 +343,7 @@
 						&:hover{
 							color: $eventosaurblue;
 							#phone{
-								bottom: 15px;
+								bottom: 1em;
 							}
 						}
 					}

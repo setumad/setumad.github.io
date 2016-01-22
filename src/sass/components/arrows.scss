@@ -1,66 +1,66 @@
-.arrows{
-	display: none;
-	@include breakpoint(laptop){
-		display: block;
-		opacity: .4;
-		ul{
-			.button{
-				border: 3px solid $lightgrey;
-				width: 80px;
-				height: 40px;
-				border-radius: 10px;
+// .arrows{
+// 	display: none;
+// 	@include breakpoint(laptop){
+// 		display: block;
+// 		opacity: .4;
+// 		ul{
+// 			.button{
+// 				border: 3px solid $lightgrey;
+// 				width: 80px;
+// 				height: 40px;
+// 				border-radius: 10px;
 
-				.arrow{
-					width: 50px;
-					fill: $lightgrey;
-					padding-left: 1em;
-					padding-top: .3em;
-					stroke:$lightgrey;
-				}
-				.arrow:hover{
-					transition: all 0.25s ease-in-out;
-					fill: $textdark;
-					stroke:red;
-				}
-			}
-			.button:hover{
-				transition: all 0.25s ease-in-out;
-				border: 3px solid $textdark;
-				.arrow{
-					transition: all 0.25s ease-in-out;
-					fill: $textdark;
-					stroke:$textdark;
-				}
-			}
-			list-style: none;
-			position: fixed;
-			bottom: 0;
-			right: 0;
-			padding:0 3.2rem 5rem 0;
-			.right{
-			width: 30px;
-			// fill: yellow;
-			a:hover{
-				fill:$darkgreenexcel;
-				width: 25px;
-			}
+// 				.arrow{
+// 					width: 50px;
+// 					fill: $lightgrey;
+// 					padding-left: 1em;
+// 					padding-top: .3em;
+// 					stroke:$lightgrey;
+// 				}
+// 				.arrow:hover{
+// 					transition: all 0.25s ease-in-out;
+// 					fill: $textdark;
+// 					stroke:red;
+// 				}
+// 			}
+// 			.button:hover{
+// 				transition: all 0.25s ease-in-out;
+// 				border: 3px solid $textdark;
+// 				.arrow{
+// 					transition: all 0.25s ease-in-out;
+// 					fill: $textdark;
+// 					stroke:$textdark;
+// 				}
+// 			}
+// 			list-style: none;
+// 			position: fixed;
+// 			bottom: 0;
+// 			right: 0;
+// 			padding:0 3.2rem 5rem 0;
+// 			.right{
+// 			width: 30px;
+// 			// fill: yellow;
+// 			a:hover{
+// 				fill:$darkgreenexcel;
+// 				width: 25px;
+// 			}
 
-			}
+// 			}
 			
-			.top{
-				width: 30px;
-				padding: 2.2rem 0;
-				a:hover{
-					fill:$darkgreenexcel;
-				}
-			}
+// 			.top{
+// 				width: 30px;
+// 				padding: 2.2rem 0;
+// 				a:hover{
+// 					fill:$darkgreenexcel;
+// 				}
+// 			}
 
-			.left{
-				width: 30px;
-				a:hover{
-					fill:$darkgreenexcel;
-				}
-			}
-		}
-	}
-}
+// 			.left{
+// 				width: 30px;
+// 				a:hover{
+// 					fill:$darkgreenexcel;
+// 				}
+// 			}
+// 		}
+// 	}
+// }

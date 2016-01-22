@@ -19,15 +19,15 @@
 						<ul class="nav-list">
 							<li><a href="index.html">PROJECTS</a></li>
 							<li><a href="about.html">ABOUT</a></li>
-							<li><a href="Setumadhava_G_Kathawate_CV.pdf" target="_blank">RESUME</a></li>
+							<li><a href="assets/cv/Setumadhava_G_Kathawate_CV.pdf" target="_blank">RESUME</a></li>
 							<!-- <li><a href="">BLOG</a></li> -->
 						</ul>
 						<a href="index.html">
-							<div class="myname"> <span class="setu"><span class="setu4char"><b>Setu</b></span>madhava</span> Kathawate </div>
+							<div class="myname"> <span class="setu"><span class="setu4char">Setu</span>madhava Kathawate </div>
 						</a>
-						<div id="logo">
-							<a href="index.html"> <img src="assets/img/logo.png" /></a>
-						</div>
+						<a href="index.html">
+							<div id="logo"> <img src="assets/img/logo.png" /> </div>
+						</a>
 					</div>
 					<div class="dropdown">
 						<div onclick="myFunction()" class="dropbtn"><img src="assets/img/hamburger.svg" /> </div>
@@ -57,9 +57,22 @@
 				{
 					var success = new PDFObject(
 					{
-						url: "Setumadhava_G_Kathawate_CV.pdf"
+						url: "assets/cv/Setumadhava_G_Kathawate_CV.pdf"
 					}).embed();
 				};
+			</script>
+			<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+			<script>
+				$(function()
+				{
+					$('a').each(function()
+					{
+						if ($(this).prop('href') == window.location.href)
+						{
+							$(this).addClass('currentpage');
+						}
+					});
+				});
 			</script>
 
 			<body>
@@ -94,7 +107,7 @@
 								<p>We started out to solve the problem of finding authentic home-food and food of individual’s preference more easily in Seattle, because it was a problem I personally faced in the initial few days. Being a vegetarian, it was relatively harder for
 									me to find food of my choice. However, as we started doing the research, we realized that although food is a concern for students, there was a bigger problem which affected almost every one of them: Finding off-campus accommodation.
 									<br>
-									<br> With so many listing and real-estate webistes advertising homes, it is difficult for students to make choice and verify the places they were seeing online. We hence designed UW-ISE, an app to help international students find reliable off-campus
+									<br> With so many listing and real-estate websites advertising homes, it is difficult for students to make choice and verify the places they were seeing online. We hence designed UW-ISE, an app to help international students find reliable off-campus
 									accommodation, which are verified and reviewed by students. </p>
 							</div>
 						</div>
@@ -263,23 +276,21 @@
 					}
 				</script>
 			</body>
+			<!-- <body>
+	<div class="arrows">
+		<ul>
 
-			<body>
-				<div class="arrows">
-					<ul>
-						<li>
-							<a href="#">
-								<div class="button">
-									<svg class="arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70.1 38" enable-background="new 0 0 70.1 38" xml:space="preserve">
-										<polygon stroke-width="3" stroke-miterlimit="10" points="2.3,34.5 35.2,2 67.7,34.5 66.6,35.7 
-					35,4.1 3.4,35.7 " /> </svg>
-								</div>
-							</a>
-						</li>
-						<!-- temp fix -->
-						<!-- 	************************* Arrows *************************
+			<li><a href="#"><div class="button">
+				<svg class="arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 70.1 38" enable-background="new 0 0 70.1 38" xml:space="preserve">
+				<polygon  stroke-width="3" stroke-miterlimit="10" points="2.3,34.5 35.2,2 67.7,34.5 66.6,35.7 
+					35,4.1 3.4,35.7 "/>
+				</svg>
+
+			</div></a></li>   <!-- temp fix -->
+			<!-- 	************************* Arrows *************************
 			************************* Arrows ************************* -->
-						<!-- <li><a href="uwise.html"><svg class="right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			<!-- <li><a href="uwise.html"><svg class="right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 116.5 115.6" enable-background="new 0 0 116.5 115.6" xml:space="preserve">
 			<g>
 				
@@ -289,17 +300,17 @@
 				<circle class="circle" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-miterlimit="10" cx="59.1" cy="57" r="50.6"/>
 			</g>
 			</svg></a></li> -->
-						<li>
-							<a href="#">
-								<svg class="top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 116.5 115.6" enable-background="new 0 0 116.5 115.6" xml:space="preserve">
-									<g>
-										<rect x="22.6" y="48.5" transform="matrix(0.7062 -0.708 0.708 0.7062 -24.8072 47.7551)" fill="#333333" width="45.1" height="10.6" />
-										<rect x="47.1" y="48.5" transform="matrix(-0.7062 -0.708 0.708 -0.7062 80.7004 141.0239)" fill="#333333" width="45.1" height="10.6" />
-										<circle fill="none" stroke="#1A1A1A" stroke-width="12" stroke-miterlimit="10" cx="59.1" cy="57" r="50.6" /> </g>
-								</svg>
-							</a>
-						</li>
-						<!-- <li><a href="body.html"><svg class="left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			<!-- <li><a href="#"><svg  class="top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 116.5 115.6" enable-background="new 0 0 116.5 115.6" xml:space="preserve">
+			<g>
+				
+					<rect x="22.6" y="48.5" transform="matrix(0.7062 -0.708 0.708 0.7062 -24.8072 47.7551)" fill="#333333" width="45.1" height="10.6"/>
+				
+					<rect x="47.1" y="48.5" transform="matrix(-0.7062 -0.708 0.708 -0.7062 80.7004 141.0239)" fill="#333333" width="45.1" height="10.6"/>
+				<circle fill="none" stroke="#1A1A1A" stroke-width="12" stroke-miterlimit="10" cx="59.1" cy="57" r="50.6"/>
+			</g>
+			</svg></a></li> -->
+			<!-- <li><a href="body.html"><svg class="left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 116.5 115.6" enable-background="new 0 0 116.5 115.6" xml:space="preserve">
 			<g>
 				
@@ -309,10 +320,9 @@
 				<circle fill="none" stroke="#1A1A1A" stroke-width="12" stroke-miterlimit="10" cx="59.1" cy="57" r="50.6"/>
 			</g>
 			</svg></a></li> -->
-					</ul>
-				</div>
-			</body>
+			</ul>
 		</div>
+	</body> --> </div>
 	</body>
 	<footer class="myfoot">
 		<div class="footercontainer">

@@ -5,18 +5,19 @@
 			<ul class="nav-list">
 				<li><a href="index.html">PROJECTS</a></li>
 				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="Setumadhava_G_Kathawate_CV.pdf" target="_blank">RESUME</a></li>
+				<li><a href="assets/cv/Setumadhava_G_Kathawate_CV.pdf" target="_blank">RESUME</a></li>
 				<!-- <li><a href="">BLOG</a></li> -->
 			</ul>
 			<a href="index.html">
 				<div class="myname">
-					<span class="setu"><span class="setu4char"><b>Setu</b></span>madhava</span> Kathawate
+					<span class="setu"><span class="setu4char">Setu</span>madhava Kathawate
 				</div>
 			</a>
-			<div id="logo">
-				<a href="index.html">
-					<img src="assets/img/logo.png"/></a>
-			</div>
+			<a href="index.html">
+				<div id="logo">
+					<img src="assets/img/logo.png"/>
+				</div>
+			</a>
 		</div>
 		<div class="dropdown">
 
@@ -49,6 +50,17 @@ function myFunction() {
 <script type="text/javascript" src="pdfobject.js"></script>
 <script type="text/javascript">
       window.onload = function (){
-        var success = new PDFObject({ url: "Setumadhava_G_Kathawate_CV.pdf" }).embed();
+        var success = new PDFObject({ url: "assets/cv/Setumadhava_G_Kathawate_CV.pdf" }).embed();
       };
+</script>
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('currentpage');
+    }
+  });
+});
 </script>

@@ -41,7 +41,22 @@ $gothambold:'gothambold',sans-serif;
 $gothamthin:'gothamthin',sans-serif;
 $gothamlight:'gothamlight',sans-serif;
 $gothammedium:'gothammedium',sans-serif;
-$gothambook:'gothambook',sans-serif;   
+$gothambook:'gothambook',sans-serif; 
+
+$lato: 'Lato', sans-serif;
+$thin: 100;
+$light: 300;
+$normal:400;
+$bold:700;
+$bolder:900;
+
+
+
+// body 
+// font-size: 1.2em;
+// letter-spacing: 0.5px;
+// word-spacing: 1.2px;
+
 
 @font-face{
 	font-family: gothambold;
@@ -63,7 +78,6 @@ $gothambook:'gothambook',sans-serif;
 	font-family: gothambook;
 	src:url("fonts/GOTHAM-BOOK.TTF");
 }
-
 
 
 // 10px	0.625rem
