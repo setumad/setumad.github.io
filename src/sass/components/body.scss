@@ -180,16 +180,18 @@
 						}
 						&:hover{
 							color: $darkgreenexcel;
+							.uiux{
+								opacity: 1;
+								color: $darkgreenexcel;
+								transition: 0.3s all ease-in-out;
+							}
 							#drmac{
 								bottom: 12px;
 								@include breakpoint (tablet){
 									bottom: 11px;
 								}
 							}
-							.uiux{
-								color: $darkgreenexcel;
-								opacity: 1;
-							}
+							
 						}
 					}
 				}
@@ -270,12 +272,13 @@
 						}
 						&:hover{
 							color: $uwpurple;
+							.uiux{
+								opacity: 1;
+								color: $uwpurple;
+								transition: 0.3s all ease-in-out;
+							}
 							#uwisephone{
 								bottom: 1em;
-							}
-							.uiux{
-								color: $uwpurple;
-								opacity: 1;
 							}
 						}
 					}

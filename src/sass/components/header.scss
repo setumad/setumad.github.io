@@ -40,7 +40,34 @@ header{
 					li{
 						float: left;
 						margin-left: 50px;
+						.line1{
+							display: none;
+							width: 85px;
+							height: 3px;
+							background-color: $setured;
+						    animation-name: example;
+						    animation-duration: 1s;
+						}
+						.line2{
+							display: none;
+							width: 55px;
+							height: 3px;
+							background-color: $setured;
+						    animation-name: example;
+						    animation-duration: 1s;
+						}
+						.line3{
+							display: none;
+							width: 68px;
+							height: 3px;
+							background-color: $setured;
+						    animation-name: example;
+						    animation-duration: 1s;
+						}
+
 						a{
+
+							transition: 0.2s all ease-in-out;
 							text-decoration: none;
 							font-family: $worksans;
 							font-weight: bold;
@@ -48,8 +75,30 @@ header{
 							color: $lightgrey;
 						}
 						a:hover{
+
 							font-weight: bolder;
 							color: $textdark;
+							.line1{
+								display: block;
+								@-webkit-keyframes example {
+								    from {opacity: 0;}
+								    to{opacity: 1;}
+								}
+							}
+							.line2{
+								display: block;
+								@-webkit-keyframes example {
+								    from {opacity: 0;}
+								    to{opacity: 1;}
+								}
+							}
+							.line3{
+								display: block;
+								@-webkit-keyframes example {
+								    from {opacity: 0;}
+								    to{opacity: 1;}
+								}
+							}
 						}
 						.currentpage{
 							color: $textdark;
@@ -98,10 +147,10 @@ header{
 				}
 			}
 			.myname:hover{
-				transition: 0.1s all ease-in-out;
+				// transition: 0.2s all ease-in-out;
 				color: $lightgrey;
 				.setu{
-					transition: 0.1s all ease-in-out;
+					transition: 0.3s all ease-in-out;
 					color: $textdark;
 				}
 			}

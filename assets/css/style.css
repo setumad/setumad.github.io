@@ -448,7 +448,35 @@ header {
             header .navigation .navcontainer .nav-list li {
               float: left;
               margin-left: 50px; }
+              header .navigation .navcontainer .nav-list li .line1 {
+                display: none;
+                width: 85px;
+                height: 3px;
+                background-color: #ef4b33;
+                -webkit-animation-name: example;
+                animation-name: example;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s; }
+              header .navigation .navcontainer .nav-list li .line2 {
+                display: none;
+                width: 55px;
+                height: 3px;
+                background-color: #ef4b33;
+                -webkit-animation-name: example;
+                animation-name: example;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s; }
+              header .navigation .navcontainer .nav-list li .line3 {
+                display: none;
+                width: 68px;
+                height: 3px;
+                background-color: #ef4b33;
+                -webkit-animation-name: example;
+                animation-name: example;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s; }
               header .navigation .navcontainer .nav-list li a {
+                transition: 0.2s all ease-in-out;
                 text-decoration: none;
                 font-family: "Work Sans", sans-serif;
                 font-weight: bold;
@@ -457,6 +485,27 @@ header {
               header .navigation .navcontainer .nav-list li a:hover {
                 font-weight: bolder;
                 color: #3d3d3d; }
+                header .navigation .navcontainer .nav-list li a:hover .line1 {
+                  display: block; }
+          @-webkit-keyframes example {
+            from {
+              opacity: 0; }
+            to {
+              opacity: 1; } }
+                header .navigation .navcontainer .nav-list li a:hover .line2 {
+                  display: block; }
+          @-webkit-keyframes example {
+            from {
+              opacity: 0; }
+            to {
+              opacity: 1; } }
+                header .navigation .navcontainer .nav-list li a:hover .line3 {
+                  display: block; }
+          @-webkit-keyframes example {
+            from {
+              opacity: 0; }
+            to {
+              opacity: 1; } }
               header .navigation .navcontainer .nav-list li .currentpage {
                 color: #3d3d3d; } }
       header .navigation .navcontainer #logo {
@@ -494,10 +543,9 @@ header {
               font-family: "Work Sans", sans-serif;
               font-weight: bold; } }
       header .navigation .navcontainer .myname:hover {
-        transition: 0.1s all ease-in-out;
         color: #aaaaaa; }
         header .navigation .navcontainer .myname:hover .setu {
-          transition: 0.1s all ease-in-out;
+          transition: 0.3s all ease-in-out;
           color: #3d3d3d; }
     header .navigation .dropdown {
       width: 100%;
@@ -701,14 +749,15 @@ header {
                   position: relative; } }
             .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover {
               color: #1a7446; }
+              .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover .uiux {
+                opacity: 1;
+                color: #1a7446;
+                transition: 0.3s all ease-in-out; }
               .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover #drmac {
                 bottom: 12px; }
                 @media (min-width: 768px) {
                   .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover #drmac {
                     bottom: 11px; } }
-              .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover .uiux {
-                color: #1a7446;
-                opacity: 1; }
       .bodymain .container .row .lefthalf {
         background-color: transparent;
         width: 90%;
@@ -769,11 +818,12 @@ header {
                   position: relative; } }
             .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover {
               color: #4b2e83; }
+              .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover .uiux {
+                opacity: 1;
+                color: #4b2e83;
+                transition: 0.3s all ease-in-out; }
               .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover #uwisephone {
                 bottom: 1em; }
-              .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover .uiux {
-                color: #4b2e83;
-                opacity: 1; }
         .bodymain .container .row .lefthalf .newprojectbox {
           height: 335px;
           margin: 0 auto;
