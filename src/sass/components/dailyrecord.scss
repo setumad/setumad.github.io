@@ -205,6 +205,38 @@ body{
 				line-height: 1.8;
 			}
 		}
+
+		.nextprojectlink{
+			text-decoration: none;
+			font-family: $lato;
+			color: $lightpurple;
+			.nextproj{
+			width: 13em;
+			height: 4em;
+			border: 2px solid $lightpurple;
+			margin: 0 auto;
+			cursor: pointer;
+			transition: all 0.2s linear 0s;
+				#nexttext{
+					position: relative;
+					top: 0.5em;
+					font-size: 0.8em;
+					padding: 0;
+					margin: 0;
+				}
+				#drtext{
+					position: relative;
+					bottom: 0.5em;
+					font-size: 1.4em;
+				}
+			}
+			.nextproj:hover{
+				border: 2px solid $uwpurple ;
+				color: $uwpurple;
+				font-weight: bold;
+				transition: all 0.2s linear 0s;
+			}
+		}
 	}
 }
 

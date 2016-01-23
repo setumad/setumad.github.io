@@ -1,6 +1,8 @@
 body{
-
-	padding-top: 5.7rem;
+	padding-top:4.7em; 
+	@include breakpoint(tablet){
+		padding-top: 5.7rem;
+	}
 	
 	.ptitle{
 		width: 100%;
@@ -282,16 +284,24 @@ body{
 				    transition: opacity 0.3s linear 0s;
 				}
 				.line1{
+					margin: 0 auto;
 					width: 145px;
+					margin-top: 0.5em;
 				}
 				.line2{
+					margin: 0 auto;
 					width: 135px;
+					margin-top: 0.5em;
 				}
-				.line3{					
+				.line3{	
+					margin: 0 auto;				
 					width: 105px;
+					margin-top: 0.5em;
 				}
 				.line4{
+					margin: 0 auto;
 					width: 215px;
+					margin-top: 0.5em;
 				}
 			}
 			a:hover{
@@ -311,6 +321,39 @@ body{
 				}
 			}
 				
+		}
+		.nextprojectlink{
+			text-decoration: none;
+			font-family: $lato;
+			color: $lightgreenexcel;
+			cursor: pointer;
+			.nextproj{
+			width: 13em;
+			height: 4em;
+			border: 2px solid $lightgreenexcel;
+			margin: 0 auto;
+			cursor: pointer;
+			margin-top: 4em;
+			transition: all 0.2s linear 0s;
+				#nexttext{
+					position: relative;
+					top: 0.5em;
+					font-size: 0.8em;
+					padding: 0;
+					margin: 0;
+				}
+				#drtext{
+					position: relative;
+					bottom: 0.5em;
+					font-size: 1.4em;
+				}
+			}
+			.nextproj:hover{
+				border: 2px solid $darkgreenexcel ;
+				color: $darkgreenexcel;
+				font-weight: bold;
+				transition: all 0.2s linear 0s;
+			}
 		}
 	}
 }

@@ -580,7 +580,10 @@ th {
         display: block; }
 
 body {
-  padding-top: 5.7rem; }
+  padding-top: 4.7em; }
+  @media (min-width: 768px) {
+    body {
+      padding-top: 5.7rem; } }
   body .ptitle {
     width: 100%;
     height: 250px;
@@ -775,13 +778,21 @@ body {
         background-color: #ef4b33;
         transition: opacity 0.3s linear 0s; }
       body .contentbox .teammates a .line1 {
-        width: 145px; }
+        margin: 0 auto;
+        width: 145px;
+        margin-top: 0.5em; }
       body .contentbox .teammates a .line2 {
-        width: 135px; }
+        margin: 0 auto;
+        width: 135px;
+        margin-top: 0.5em; }
       body .contentbox .teammates a .line3 {
-        width: 105px; }
+        margin: 0 auto;
+        width: 105px;
+        margin-top: 0.5em; }
       body .contentbox .teammates a .line4 {
-        width: 215px; }
+        margin: 0 auto;
+        width: 215px;
+        margin-top: 0.5em; }
     body .contentbox .teammates a:hover {
       color: #4b2e83;
       font-weight: 700; }
@@ -793,6 +804,34 @@ body {
         opacity: 1; }
       body .contentbox .teammates a:hover .line4 {
         opacity: 1; }
+    body .contentbox .nextprojectlink {
+      text-decoration: none;
+      font-family: "Lato", sans-serif;
+      color: #c4dec2;
+      cursor: pointer; }
+      body .contentbox .nextprojectlink .nextproj {
+        width: 13em;
+        height: 4em;
+        border: 2px solid #c4dec2;
+        margin: 0 auto;
+        cursor: pointer;
+        margin-top: 4em;
+        transition: all 0.2s linear 0s; }
+        body .contentbox .nextprojectlink .nextproj #nexttext {
+          position: relative;
+          top: 0.5em;
+          font-size: 0.8em;
+          padding: 0;
+          margin: 0; }
+        body .contentbox .nextprojectlink .nextproj #drtext {
+          position: relative;
+          bottom: 0.5em;
+          font-size: 1.4em; }
+      body .contentbox .nextprojectlink .nextproj:hover {
+        border: 2px solid #1a7446;
+        color: #1a7446;
+        font-weight: bold;
+        transition: all 0.2s linear 0s; }
 
 .footercontainer {
   height: 170px;
