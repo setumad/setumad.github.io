@@ -411,124 +411,95 @@ th {
   .hidden-desktop {
     display: none !important; } }
 
-header {
+#header {
   top: 0;
-  transition: top 0.2s ease-in-out;
+  left: 0;
   position: fixed;
   width: 100%;
   background: white;
-  z-index: 100;
-  height: 75px; }
+  z-index: 1000;
+  height: 75px;
+  transition: opacity 0.3s linear 0s; }
   @media (min-width: 768px) {
-    header {
+    #header {
       height: 95px; } }
-  header .navigation {
+  #header .navigation {
     width: 100%;
     height: 70px;
     border-bottom: 1px solid #f5f5f5;
     border-top: 4px solid #ef4b33; }
     @media (min-width: 768px) {
-      header .navigation {
+      #header .navigation {
         height: 90px; } }
-    header .navigation .navcontainer {
+    #header .navigation .navcontainer {
       max-width: 700px;
       margin: 0 auto;
       height: 70px; }
       @media (min-width: 1100px) {
-        header .navigation .navcontainer {
+        #header .navigation .navcontainer {
           max-width: 1000px; } }
-      header .navigation .navcontainer .nav-list {
+      #header .navigation .navcontainer .nav-list {
         display: none; }
         @media (min-width: 768px) {
-          header .navigation .navcontainer .nav-list {
+          #header .navigation .navcontainer .nav-list {
             display: block;
             list-style: none;
             float: right;
             margin: 2rem 0; }
-            header .navigation .navcontainer .nav-list li {
+            #header .navigation .navcontainer .nav-list li {
               float: left;
               margin-left: 50px; }
-              header .navigation .navcontainer .nav-list li .line1 {
-                display: none;
-                width: 85px;
-                height: 3px;
-                background-color: #ef4b33;
-                -webkit-animation-name: example;
-                animation-name: example;
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s; }
-              header .navigation .navcontainer .nav-list li .line2 {
-                display: none;
-                width: 55px;
-                height: 3px;
-                background-color: #ef4b33;
-                -webkit-animation-name: example;
-                animation-name: example;
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s; }
-              header .navigation .navcontainer .nav-list li .line3 {
-                display: none;
-                width: 68px;
-                height: 3px;
-                background-color: #ef4b33;
-                -webkit-animation-name: example;
-                animation-name: example;
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s; }
-              header .navigation .navcontainer .nav-list li a {
+              #header .navigation .navcontainer .nav-list li a {
                 transition: 0.2s all ease-in-out;
                 text-decoration: none;
                 font-family: "Work Sans", sans-serif;
                 font-weight: bold;
                 font-size: 16px;
                 color: #aaaaaa; }
-              header .navigation .navcontainer .nav-list li a:hover {
+                #header .navigation .navcontainer .nav-list li a .line {
+                  opacity: 0;
+                  height: 3px;
+                  margin-top: 0.6em;
+                  background-color: #ef4b33;
+                  transition: opacity 0.3s linear 0s; }
+                #header .navigation .navcontainer .nav-list li a .line1 {
+                  width: 85px; }
+                #header .navigation .navcontainer .nav-list li a .line2 {
+                  width: 55px; }
+                #header .navigation .navcontainer .nav-list li a .line3 {
+                  width: 68px; }
+              #header .navigation .navcontainer .nav-list li a:hover {
                 font-weight: bolder;
                 color: #3d3d3d; }
-                header .navigation .navcontainer .nav-list li a:hover .line1 {
-                  display: block; }
-          @-webkit-keyframes example {
-            from {
-              opacity: 0; }
-            to {
-              opacity: 1; } }
-                header .navigation .navcontainer .nav-list li a:hover .line2 {
-                  display: block; }
-          @-webkit-keyframes example {
-            from {
-              opacity: 0; }
-            to {
-              opacity: 1; } }
-                header .navigation .navcontainer .nav-list li a:hover .line3 {
-                  display: block; }
-          @-webkit-keyframes example {
-            from {
-              opacity: 0; }
-            to {
-              opacity: 1; } }
-              header .navigation .navcontainer .nav-list li .currentpage {
+                #header .navigation .navcontainer .nav-list li a:hover .line1 {
+                  opacity: 1; }
+                #header .navigation .navcontainer .nav-list li a:hover .line2 {
+                  opacity: 1; }
+                #header .navigation .navcontainer .nav-list li a:hover .line3 {
+                  opacity: 1; }
+              #header .navigation .navcontainer .nav-list li .currentpage {
                 color: #3d3d3d; } }
-      header .navigation .navcontainer #logo {
+      #header .navigation .navcontainer #logo {
         text-align: center; }
         @media (min-width: 768px) {
-          header .navigation .navcontainer #logo {
+          #header .navigation .navcontainer #logo {
             text-align: left; } }
-        header .navigation .navcontainer #logo img {
+        #header .navigation .navcontainer #logo img {
           width: 100%;
           margin-top: 1rem;
           max-width: 30px; }
           @media (min-width: 768px) {
-            header .navigation .navcontainer #logo img {
+            #header .navigation .navcontainer #logo img {
               margin: 1rem 0 0 0rem;
               max-width: 35px; } }
           @media (min-width: 1100px) {
-            header .navigation .navcontainer #logo img {
+            #header .navigation .navcontainer #logo img {
               margin: 1rem 0 0 0rem;
               max-width: 35px; } }
-      header .navigation .navcontainer .myname {
+      #header .navigation .navcontainer .myname {
         display: none; }
         @media (min-width: 1100px) {
-          header .navigation .navcontainer .myname {
+          #header .navigation .navcontainer .myname {
             display: block;
             float: right;
             left: -155px;
@@ -538,23 +509,23 @@ header {
             font-family: "Work Sans", sans-serif;
             color: #f5f5f5;
             transition: 0.1s all ease-in-out; }
-            header .navigation .navcontainer .myname .setu4char {
+            #header .navigation .navcontainer .myname .setu4char {
               color: #3d3d3d;
               font-family: "Work Sans", sans-serif;
               font-weight: bold; } }
-      header .navigation .navcontainer .myname:hover {
+      #header .navigation .navcontainer .myname:hover {
         color: #aaaaaa; }
-        header .navigation .navcontainer .myname:hover .setu {
+        #header .navigation .navcontainer .myname:hover .setu {
           transition: 0.3s all ease-in-out;
           color: #3d3d3d; }
-    header .navigation .dropdown {
+    #header .navigation .dropdown {
       width: 100%;
       opacity: 0.9;
       margin: 0 auto; }
       @media (min-width: 768px) {
-        header .navigation .dropdown {
+        #header .navigation .dropdown {
           display: none; } }
-      header .navigation .dropdown .dropbtn {
+      #header .navigation .dropdown .dropbtn {
         cursor: pointer;
         width: 35px;
         position: relative;
@@ -562,14 +533,14 @@ header {
         top: -3em;
         padding-right: 1.5em; }
         @media (min-width: 768px) {
-          header .navigation .dropdown .dropbtn {
+          #header .navigation .dropdown .dropbtn {
             cursor: pointer;
             width: 35px;
             position: relative;
             float: right;
             top: -3em;
             padding-right: 1.5em; } }
-      header .navigation .dropdown .dropdown-content {
+      #header .navigation .dropdown .dropdown-content {
         display: none;
         position: relative;
         background-color: #3d3d3d;
@@ -578,14 +549,14 @@ header {
         text-align: center;
         top: 0.6em;
         transition: 0.3s all ease-in-out; }
-        header .navigation .dropdown .dropdown-content #projects {
+        #header .navigation .dropdown .dropdown-content #projects {
           margin-top: 0.5em;
           padding-bottom: 0.5em;
           padding-left: 2.2em; }
-        header .navigation .dropdown .dropdown-content #about {
+        #header .navigation .dropdown .dropdown-content #about {
           margin-top: 0.5em;
           padding-bottom: 0.5em; }
-        header .navigation .dropdown .dropdown-content a {
+        #header .navigation .dropdown .dropdown-content a {
           border-bottom: 1px solid black;
           font-size: 1.2em;
           color: white;
@@ -594,12 +565,12 @@ header {
           text-decoration: none;
           display: block;
           font-weight: 300; }
-        header .navigation .dropdown .dropdown-content a:hover {
+        #header .navigation .dropdown .dropdown-content a:hover {
           transition: 0.3s all ease-in-out;
           background-color: grey;
           font-family: "gothambold", sans-serif;
           font-size: 1.2em; }
-      header .navigation .dropdown .show {
+      #header .navigation .dropdown .show {
         display: block; }
 
 body {
@@ -617,7 +588,6 @@ body {
       color: #f5f5f5;
       margin: 0 auto;
       padding-top: 0.5em;
-      letter-spacing: 0.5px;
       font-family: "Lato", sans-serif; }
     body .ptitle .uwise {
       line-height: 1.6em;
@@ -628,7 +598,6 @@ body {
     body .ptitle .role {
       font-family: "Lato", sans-serif;
       font-size: 0.8rem;
-      letter-spacing: 0.8px;
       color: #aaaaaa; }
       @media (min-width: 768px) {
         body .ptitle .role {
@@ -748,9 +717,7 @@ body {
     body .contentbox .content {
       font-size: 0.9rem;
       font-family: "Lato", sans-serif;
-      letter-spacing: 0.5px;
-      word-spacing: 1.2px;
-      font-weight: 300;
+      font-weight: 100;
       margin: 0 auto;
       width: 85%;
       padding: 30px 0;
@@ -782,28 +749,44 @@ body {
           font-size: 1.2em;
           width: 40%;
           line-height: 1.8; } }
-    body .contentbox .teammates {
-      margin: 0 auto;
-      width: 100%;
-      text-align: center; }
-      body .contentbox .teammates a {
-        color: blue;
-        width: 13em;
-        margin: 0 auto;
-        font-family: "Lato", sans-serif;
-        font-weight: 100;
-        text-decoration: none;
-        font-size: 1.2em;
-        padding: 1em 2em;
-        display: block; }
-        @media (min-width: 768px) {
-          body .contentbox .teammates a {
-            display: inline-block;
-            font-size: 1.1em;
-            padding-top: 0; } }
-      body .contentbox .teammates a {
-        text-decoration: none;
-        cursor: pointer; }
+    body .contentbox .teammates a {
+      text-decoration: none;
+      font-size: 1em;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      display: block;
+      padding: 1.5em;
+      color: #3d3d3d; }
+      @media (min-width: 768px) {
+        body .contentbox .teammates a {
+          display: inline-block;
+          font-size: 1.2em;
+          padding: 1em; } }
+      body .contentbox .teammates a .line {
+        opacity: 0;
+        height: 3px;
+        margin-top: 0.6em;
+        background-color: #ef4b33;
+        transition: opacity 0.3s linear 0s; }
+      body .contentbox .teammates a .line1 {
+        width: 145px; }
+      body .contentbox .teammates a .line2 {
+        width: 135px; }
+      body .contentbox .teammates a .line3 {
+        width: 105px; }
+      body .contentbox .teammates a .line4 {
+        width: 215px; }
+    body .contentbox .teammates a:hover {
+      color: #4b2e83;
+      font-weight: 700; }
+      body .contentbox .teammates a:hover .line1 {
+        opacity: 1; }
+      body .contentbox .teammates a:hover .line2 {
+        opacity: 1; }
+      body .contentbox .teammates a:hover .line3 {
+        opacity: 1; }
+      body .contentbox .teammates a:hover .line4 {
+        opacity: 1; }
 
 .footercontainer {
   height: 170px;

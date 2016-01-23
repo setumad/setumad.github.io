@@ -11,13 +11,13 @@
 
 	<body>
 		<div class="container">
-			<header>
+			<header id="header">
 				<div class="navigation">
 					<div class="navcontainer">
 						<ul class="nav-list">
-							<li><a href="index.html">PROJECTS<div class="line1">&nbsp;</div></a> </li>
-							<li><a href="about.html">ABOUT<div class="line2">&nbsp;</div></a> </li>
-							<li><a href="assets/cv/Setumadhava_G_Kathawate_CV.pdf" target="_blank">RESUME<div class="line3">&nbsp;</div></a> </li>
+							<li><a href="index.html">PROJECTS <div class=" line line1">&nbsp;</div></a> </li>
+							<li><a href="about.html">ABOUT<div class="line line2">&nbsp;</div></a> </li>
+							<li><a href="assets/cv/Setumadhava_G_Kathawate_CV.pdf" target="_blank">RESUME<div class="line line3">&nbsp;</div></a> </li>
 							<!-- <li><a href="">BLOG</a></li> -->
 						</ul>
 						<a href="index.html">
@@ -69,6 +69,27 @@
 						}
 					});
 				});
+			</script>
+			<!-- Hide header on scroll. 
+
+	explanation: http://www.yourwebtech.info/tutorial/how-to-detect-vertical-scroll-direction-using-javascript/ -->
+			<script>
+				var lastScrollPosition = 0;
+				window.onscroll = function()
+				{
+					pagetop = document.getElementById('header');
+					var newScrollPosition = window.scrollY;
+					// alert(window.scrollY);
+					if (newScrollPosition < lastScrollPosition)
+					{
+						pagetop.style.opacity = "1";
+					}
+					else
+					{
+						pagetop.style.opacity = "0";
+					}
+					lastScrollPosition = newScrollPosition;
+				}
 			</script>
 			<div class="bodymain" onclick="bodyfunction()">
 				<div class="container">

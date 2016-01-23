@@ -1,11 +1,13 @@
-header{
+#header{
 	top: 0;
-    transition: top 0.2s ease-in-out;
+	left: 0;
     position: fixed;
     width: 100%;
     background: white;	
-    z-index: 100;
+    z-index: 1000;
     height: 75px;
+    transition: opacity 0.3s linear 0s;
+    // background-color: yellow;
     @include breakpoint(tablet){
     	height: 95px;
     }
@@ -40,32 +42,23 @@ header{
 					li{
 						float: left;
 						margin-left: 50px;
-						.line1{
-							display: none;
-							width: 85px;
-							height: 3px;
-							background-color: $setured;
-						    animation-name: example;
-						    animation-duration: 1s;
-						}
-						.line2{
-							display: none;
-							width: 55px;
-							height: 3px;
-							background-color: $setured;
-						    animation-name: example;
-						    animation-duration: 1s;
-						}
-						.line3{
-							display: none;
-							width: 68px;
-							height: 3px;
-							background-color: $setured;
-						    animation-name: example;
-						    animation-duration: 1s;
-						}
-
 						a{
+							.line{
+								opacity: 0;
+								height: 3px;
+								margin-top: 0.6em;
+								background-color: $setured;
+							    transition: opacity 0.3s linear 0s;
+							}
+							.line1{
+								width: 85px;
+							}
+							.line2{
+								width: 55px;
+							}
+							.line3{
+								width: 68px;
+							}
 
 							transition: 0.2s all ease-in-out;
 							text-decoration: none;
@@ -79,25 +72,13 @@ header{
 							font-weight: bolder;
 							color: $textdark;
 							.line1{
-								display: block;
-								@-webkit-keyframes example {
-								    from {opacity: 0;}
-								    to{opacity: 1;}
-								}
+								opacity: 1;
 							}
 							.line2{
-								display: block;
-								@-webkit-keyframes example {
-								    from {opacity: 0;}
-								    to{opacity: 1;}
-								}
+								opacity: 1;
 							}
 							.line3{
-								display: block;
-								@-webkit-keyframes example {
-								    from {opacity: 0;}
-								    to{opacity: 1;}
-								}
+								opacity: 1;
 							}
 						}
 						.currentpage{

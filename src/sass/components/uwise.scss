@@ -15,7 +15,7 @@ body{
 			color: $superlightgrey;
 			margin: 0 auto;
 			padding-top: 0.5em;
-			letter-spacing: 0.5px;
+			// letter-spacing: 0.5px;
 			font-family: $lato;
 			// font-weight: 400;
 			// background-color: green;
@@ -30,7 +30,7 @@ body{
 		.role{
 			font-family: $lato;
 			font-size: 0.8rem;
-			letter-spacing: 0.8px;
+			// letter-spacing: 0.8px;
 			color: $lightgrey;
 			@include breakpoint(tablet){
 				font-size: 1rem;
@@ -216,9 +216,9 @@ body{
 
 			font-size: 0.9rem;
 			font-family: $lato;
-			letter-spacing: 0.5px;
-			word-spacing: 1.2px;
-			font-weight: $light;
+			// letter-spacing: 0.5px;
+			// word-spacing: 1.2px;
+			font-weight: $thin;
 			margin: 0 auto;
 			width: 85%;
 			padding: 30px 0;
@@ -260,28 +260,55 @@ body{
 			}
 		}
 		.teammates{
-			margin: 0 auto;
-			width: 100%;
-			text-align: center;
 			a{
-				color: blue;
-				width: 13em;
-				margin: 0 auto;
-				font-family: $lato;
-				font-weight: $thin;
 				text-decoration: none;
-				font-size: 1.2em;
-				padding: 1em 2em;
+				font-size: 1em;
+				font-family: $lato;
+				font-weight: $light;
 				display: block;
-				@include breakpoint(tablet){
+				padding: 1.5em;
+				color: $textdark;
+				@include breakpoint (tablet){
 					display: inline-block;
-					font-size: 1.1em;
-					padding-top: 0;
+					font-size: 1.2em;
+					padding: 1em;
+				}
+
+				.line{
+					opacity: 0;
+					height: 3px;
+					margin-top: 0.6em;
+					background-color: $setured;
+				    transition: opacity 0.3s linear 0s;
+				}
+				.line1{
+					width: 145px;
+				}
+				.line2{
+					width: 135px;
+				}
+				.line3{					
+					width: 105px;
+				}
+				.line4{
+					width: 215px;
 				}
 			}
-			a{
-				text-decoration: none;
-				cursor: pointer;
+			a:hover{
+				color: $uwpurple;
+				font-weight: $bold;
+				.line1{
+					opacity: 1;
+				}
+				.line2{
+					opacity: 1;
+				}
+				.line3{
+					opacity: 1;
+				}
+				.line4{
+					opacity: 1;
+				}
 			}
 				
 		}
