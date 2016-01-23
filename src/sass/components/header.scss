@@ -147,7 +147,7 @@
 			    // display: inline-block;
 			    // float: right;
 			    width: 100%;
-			    opacity: 0.9;
+			    opacity: 0.8;
 			    margin: 0 auto;
 			   
 			    @include breakpoint(tablet){
@@ -155,7 +155,7 @@
 			    }
 			    .dropbtn {
 				    cursor: pointer;
-				    width: 35px;
+				    width: 30px;
 				    position: relative;
 				    float: right;
 				    top:-3em;
@@ -182,6 +182,16 @@
 				    	margin-top: 0.5em;
 				    	padding-bottom: 0.5em;
 				    	padding-left: 2.2em;
+				    }
+				    #uwise{
+				    	margin-top: 0.5em;
+				    	padding-bottom: 0.5em;
+				    	// padding-left: 2.2em;
+				    }
+				    #dr{
+				    	margin-top: 0.5em;
+				    	padding-bottom: 0.5em;
+				    	// padding-left: 2.2em;
 				    }
 				    #about{
 				    	margin-top: 0.5em;

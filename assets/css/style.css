@@ -520,14 +520,14 @@ th {
           color: #3d3d3d; }
     #header .navigation .dropdown {
       width: 100%;
-      opacity: 0.9;
+      opacity: 0.8;
       margin: 0 auto; }
       @media (min-width: 768px) {
         #header .navigation .dropdown {
           display: none; } }
       #header .navigation .dropdown .dropbtn {
         cursor: pointer;
-        width: 35px;
+        width: 30px;
         position: relative;
         float: right;
         top: -3em;
@@ -553,6 +553,12 @@ th {
           margin-top: 0.5em;
           padding-bottom: 0.5em;
           padding-left: 2.2em; }
+        #header .navigation .dropdown .dropdown-content #uwise {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #dr {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
         #header .navigation .dropdown .dropdown-content #about {
           margin-top: 0.5em;
           padding-bottom: 0.5em; }
