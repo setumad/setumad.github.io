@@ -97,10 +97,14 @@
 						pagetop.style.opacity = "0";
 					}
 					lastScrollPosition = newScrollPosition;
+					return false;
+					//     $('#lengthtracker').text((window.scrollY/135).toFixed(0).toString()+"% Read");
+					// return false;
 				}
 			</script>
 
 			<body>
+				<div id="lengthtracker">0% Read</div>
 				<div class="ptitle">
 					<p id="projecttitle">UW-ISE
 						<br><span class="uwise">(University of Washington International Students Exchange)</span>
@@ -343,6 +347,25 @@
 			{
 				console.log("body problem");
 				document.getElementById("myDropdown").classList.remove("show");
+			}
+			var lastScrollPosition = 0;
+			window.onscroll = function()
+			{
+				pagetop = document.getElementById('header');
+				var newScrollPosition = window.scrollY;
+				// alert(window.scrollY);
+				if (newScrollPosition < lastScrollPosition)
+				{
+					pagetop.style.opacity = "1";
+				}
+				else if (newScrollPosition - lastScrollPosition > 20)
+				{
+					pagetop.style.opacity = "0";
+				}
+				lastScrollPosition = newScrollPosition;
+				// $('#lengthtracker').text(window.scrollY);
+				$('#lengthtracker').text((window.scrollY / 136.34).toFixed(0).toString() + "% Read");
+				return false;
 			}
 		</script>
 		</body>

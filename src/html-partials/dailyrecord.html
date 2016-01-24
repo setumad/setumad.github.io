@@ -1,5 +1,5 @@
 <body>
-
+	<div id="lengthtracker">0% Read</div>
 	<div class="ptitle"> 
 		<p id="projecttitle">DailyRecord<br><br>
 			<span class="role">User Research &#9675 Ideation &#9675 Prototyping &#9675 Usabiity Testing &#9675 Development</span></p>
@@ -260,5 +260,26 @@
 		console.log("body problem");
 		document.getElementById("myDropdown").classList.remove("show");
 	}
+    var lastScrollPosition = 0;
+    window.onscroll = function() {
+        pagetop = document.getElementById('header');
+        var newScrollPosition = window.scrollY;
+        // alert(window.scrollY);
+        if (newScrollPosition < lastScrollPosition){
+            pagetop.style.opacity= "1";
+        }else if (newScrollPosition - lastScrollPosition>20){
+            pagetop.style.opacity = "0";
+        }
+        lastScrollPosition = newScrollPosition;
+
+        $('#lengthtracker').text((window.scrollY/135).toFixed(0).toString()+"% Read");
+		  return false;
+    }
+
+
 	</script>
+	
+
+
+
 </body>
