@@ -15,7 +15,7 @@ body{
 	    position: fixed;
 	    z-index: 9999;
 	  }
-	  
+
 	.ptitle{
 		width: 100%;
 		height: 250px;
@@ -365,7 +365,8 @@ body{
 				border: 2px solid $darkgreenexcel ;
 				color: $darkgreenexcel;
 				font-weight: bold;
-				transition: all 0.2s linear 0s;
+				background-color: $lightgreenexcel;
+				transition: all 0.3s linear 0s;
 			}
 		}
 	}

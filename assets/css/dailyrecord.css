@@ -585,7 +585,7 @@ body {
       padding-top: 5.7rem; } }
   body #lengthtracker {
     font-size: 1.5em;
-    text-align: right;
+    text-align: center;
     font-family: "Lato", sans-serif;
     color: #aaaaaa;
     top: 38em;
@@ -763,6 +763,7 @@ body {
       body .contentbox .nextprojectlink .nextproj:hover {
         border: 2px solid #4b2e83;
         color: #4b2e83;
+        background-color: #c7aafe;
         font-weight: bold;
         transition: all 0.2s linear 0s; }
 

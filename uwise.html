@@ -104,7 +104,7 @@
 			</script>
 
 			<body>
-				<div id="lengthtracker">0% Read</div>
+				<!-- <div id="lengthtracker">0% Read</div> -->
 				<div class="ptitle">
 					<p id="projecttitle">UW-ISE
 						<br><span class="uwise">(University of Washington International Students Exchange)</span>
@@ -363,9 +363,9 @@
 					pagetop.style.opacity = "0";
 				}
 				lastScrollPosition = newScrollPosition;
-				// $('#lengthtracker').text(window.scrollY);
-				$('#lengthtracker').text((window.scrollY / 136.34).toFixed(0).toString() + "% Read");
-				return false;
+				browserWindowheight = ($(window).height()) / 10;
+				// pageHeight=window.scrollY/100;
+				$('#lengthtracker').text((window.scrollY / browserWindowheight).toFixed(0).toString() + "% Read");
 			}
 		</script>
 		</body>

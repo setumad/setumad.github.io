@@ -7,7 +7,7 @@ body{
 
 	#lengthtracker{
 	    font-size: 1.5em;
-	    text-align: right;
+	    text-align: center;
 	    font-family: $lato;
 	    color: $lightgrey;
 	    top: 38em;
@@ -247,6 +247,7 @@ body{
 			.nextproj:hover{
 				border: 2px solid $uwpurple ;
 				color: $uwpurple;
+				background-color: $lightpurple;
 				font-weight: bold;
 				transition: all 0.2s linear 0s;
 			}

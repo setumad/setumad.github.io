@@ -841,7 +841,8 @@ body {
         border: 2px solid #1a7446;
         color: #1a7446;
         font-weight: bold;
-        transition: all 0.2s linear 0s; }
+        background-color: #c4dec2;
+        transition: all 0.3s linear 0s; }
 
 .footercontainer {
   height: 170px;
