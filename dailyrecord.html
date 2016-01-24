@@ -362,8 +362,8 @@
 							pagetop.style.opacity = "0";
 						}
 						lastScrollPosition = newScrollPosition;
-						$('#lengthtracker').text((window.scrollY / 135).toFixed(0).toString() + "% Read");
-						return false;
+						//     $('#lengthtracker').text((window.scrollY/135).toFixed(0).toString()+"% Read");
+						// return false;  this code isnt responsive friendly. window.scrollY changes as the screen size changes and I haven't figured out a way to automatically capture that.
 					}
 				</script>
 			</body>
