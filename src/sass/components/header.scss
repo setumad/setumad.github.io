@@ -17,7 +17,7 @@
 		// background-color: blue;
 		height: 70px;
 		// box-shadow: 0px 0px 30px $setured;
-		border-bottom: 1px solid $superlightgrey;
+		border-bottom: 1px solid red;
 		border-top: 4px solid $setured;
 		@include breakpoint(tablet){
 				height: 90px;
@@ -176,7 +176,6 @@
 				    min-width: 100%;
 				    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 				    text-align: center;
-				    top:0.6em;
 				    transition: 0.3s all ease-in-out;
 				    #projects{
 				    	margin-top: 0.5em;
