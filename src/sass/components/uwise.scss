@@ -270,6 +270,7 @@ body{
 				display: block;
 				padding: 1.5em;
 				color: $textdark;
+				cursor: pointer;
 				@include breakpoint (tablet){
 					display: inline-block;
 					font-size: 1.2em;
