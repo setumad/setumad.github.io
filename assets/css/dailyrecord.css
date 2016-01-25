@@ -684,14 +684,10 @@ body {
       padding-right: 2rem; }
       body .contentbox .picture_wireframes .wfpic1 {
         width: 100%;
-        max-width: 100%;
-        padding-bottom: 5rem; }
-      body .contentbox .picture_wireframes .wfpic2 {
-        width: 50%;
-        max-width: 300px; }
-        @media (min-width: 768px) {
-          body .contentbox .picture_wireframes .wfpic2 {
-            max-width: 40%; } }
+        max-width: 700px;
+        padding-bottom: 5rem;
+        padding-left: 1em;
+        padding-right: 1em; }
     body .contentbox .picture_usability img {
       width: 100%;
       max-width: 850px; }
@@ -762,7 +758,7 @@ body {
           font-size: 1.4em; }
       body .contentbox .nextprojectlink .nextproj:hover {
         border: 2px solid #4b2e83;
-        color: #4b2e83;
+        color: white;
         background-color: #c7aafe;
         font-weight: bold;
         transition: all 0.2s linear 0s; }

@@ -169,11 +169,22 @@ body{
 				// box-shadow: 0px 0px 20px grey;
 			}
 			
+			#ideationpic1{
+				max-width: 700px;
+				margin: 1rem 0 3rem 0;
+				padding-right: 1em;
+			}
 
 			#ideationpic2{
-				max-width: 800px;
+				max-width: 700px;
+				margin: 1rem 0 3rem 0;
+				padding-left: 1em;
+			}
+			#ideationpic3{
+				max-width: 700px;
 				margin: 1rem 0 3rem 0;
 			}
+
 			.pictureintrotop{
 				font-size: 1.2em;
 				font-family: $lato;
@@ -363,7 +374,7 @@ body{
 			}
 			.nextproj:hover{
 				border: 2px solid $darkgreenexcel ;
-				color: $darkgreenexcel;
+				color: white;
 				font-weight: bold;
 				background-color: $lightgreenexcel;
 				transition: all 0.3s linear 0s;

@@ -695,8 +695,16 @@ body {
     body .contentbox .picture_ideation img {
       width: 100%;
       max-width: 850px; }
+    body .contentbox .picture_ideation #ideationpic1 {
+      max-width: 700px;
+      margin: 1rem 0 3rem 0;
+      padding-right: 1em; }
     body .contentbox .picture_ideation #ideationpic2 {
-      max-width: 800px;
+      max-width: 700px;
+      margin: 1rem 0 3rem 0;
+      padding-left: 1em; }
+    body .contentbox .picture_ideation #ideationpic3 {
+      max-width: 700px;
       margin: 1rem 0 3rem 0; }
     body .contentbox .picture_ideation .pictureintrotop {
       font-size: 1.2em;
@@ -839,7 +847,7 @@ body {
           font-size: 1.4em; }
       body .contentbox .nextprojectlink .nextproj:hover {
         border: 2px solid #1a7446;
-        color: #1a7446;
+        color: white;
         font-weight: bold;
         background-color: #c4dec2;
         transition: all 0.3s linear 0s; }

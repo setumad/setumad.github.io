@@ -136,16 +136,10 @@ body{
 			padding-right: 2rem;
 			.wfpic1{
 				width: 100%;
-				max-width: 100%;
+				max-width: 700px;
 				padding-bottom: 5rem;
-			}
-
-			.wfpic2{
-				width: 50%;
-				max-width: 300px;
-				@include breakpoint(tablet){
-					max-width: 40%;
-				}
+				padding-left: 1em;
+				padding-right: 1em;
 			}
 		}
 
@@ -246,7 +240,7 @@ body{
 			}
 			.nextproj:hover{
 				border: 2px solid $uwpurple ;
-				color: $uwpurple;
+				color: white;
 				background-color: $lightpurple;
 				font-weight: bold;
 				transition: all 0.2s linear 0s;
