@@ -39,7 +39,7 @@ body{
 		.role{
 			position: relative;
 			top: -3em;
-			font-family: $lato;
+			font-family: $muli;
 			letter-spacing: 0.8px;
 			font-weight: $light;
 			font-size: 0.8rem;
@@ -169,7 +169,7 @@ body{
 		.content{
 
 			font-size: 0.9rem;
-			font-family: $lato;
+			font-family: $muli;
 			letter-spacing: 0.5px;
 			word-spacing: 1.2px;
 			font-weight: $light;
@@ -208,9 +208,7 @@ body{
 				font-size: 1.2rem;
 			}
 			@include breakpoint(laptop){
-				font-size: 1.2em;
 				width: 40%;
-				line-height: 1.8;
 			}
 		}
 
