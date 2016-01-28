@@ -14,9 +14,7 @@
 
 	.navigation{
 		width: 100%;
-		// background-color: blue;
 		height: 70px;
-		// box-shadow: 0px 0px 30px $setured;
 		border-bottom: 1px solid $superlightgrey;
 		border-top: 4px solid $setured;
 		@include breakpoint(tablet){
@@ -62,7 +60,7 @@
 
 							transition: 0.2s all ease-in-out;
 							text-decoration: none;
-							font-family: $worksans;
+							font-family: $lato;
 							font-weight: bold;
 							font-size: 16px;
 							color: $lightgrey;
