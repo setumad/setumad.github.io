@@ -191,10 +191,26 @@ body{
 			.hugetext{
 				font-size: 2rem;
 				font-weight: bold;
+				font-family: $crimson;
 				line-height: 3.2rem;
 				color: $darkgreenexcel;
 				text-align: center;
+				margin: 0;
+				padding: 0;
 			}
+			
+			hr.thin2 {
+			position: relative;
+			top: -1.6em;
+			width: 15%;
+			margin-top: 2em;
+			} 
+			hr.thin3 {
+			position: relative;
+			top: -1.6em;
+			width: 15%;
+			margin-top: 0em;
+			} 
 
 			.demotext{
 				font-weight: bold;

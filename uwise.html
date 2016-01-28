@@ -5,83 +5,344 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>UW-ISE | Setu</title>
 		<link type="text/css" rel="stylesheet" href="assets/css/uwise.css">
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'> </head>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
-	<body>
-		<div class="container">
-			<header id="header">
-				<div class="navigation">
-					<div class="navcontainer">
-						<ul class="nav-list">
-							<li><a href="\">PROJECTS <div class=" line line1">&nbsp;</div></a> </li>
-							<li><a href="about.html">ABOUT<div class="line line2">&nbsp;</div></a> </li>
-							<li><a href="assets/CV/Setumadhava_G_Kathawate_CV.pdf" target="_blank">RESUME<div class="line line3">&nbsp;</div></a> </li>
-							<!-- <li><a href="">BLOG</a></li> -->
-						</ul>
-						<a href="\">
-							<div class="myname"> <span class="setu"><span class="setu4char">Setu</span>madhava Kathawate </div>
-						</a>
-						<div id="logo">
-							<a href="\"><img id="logo" src="assets/img/logo.png" /></a>
+		<body>
+			<div class="container">
+				<header id="header">
+					<div class="navigation">
+						<div class="navcontainer">
+							<ul class="nav-list">
+								<li><a href="\">PROJECTS <div class=" line line1">&nbsp;</div></a> </li>
+								<li><a href="about.html">ABOUT<div class="line line2">&nbsp;</div></a> </li>
+								<li><a href="assets/CV/Setumadhava_G_Kathawate_CV.pdf" target="_blank">RESUME<div class="line line3">&nbsp;</div></a> </li>
+								<!-- <li><a href="">BLOG</a></li> -->
+							</ul>
+							<a href="\">
+								<div class="myname"> <span class="setu"><span class="setu4char">Setu</span>madhava Kathawate </div>
+							</a>
+							<div id="logo">
+								<a href="\"><img id="logo" src="assets/img/logo.png" /></a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<div onclick="myFunction()" class="dropbtn"><img src="assets/img/hamburger.svg" /> </div>
+							<div id="myDropdown" class="dropdown-content">
+								<a href="index.html">
+									<div id="projects">PROJECTS</div>
+								</a>
+								<a href="uwise.html">
+									<div id="uwise">UW-ISE</div>
+								</a>
+								<a href="dailyrecord.html">
+									<div id="dr">DAILY RECORD</div>
+								</a>
+								<a href="about.html">
+									<div id="about">ABOUT</div>
+								</a>
+							</div>
 						</div>
 					</div>
-					<div class="dropdown">
-						<div onclick="myFunction()" class="dropbtn"><img src="assets/img/hamburger.svg" /> </div>
-						<div id="myDropdown" class="dropdown-content">
-							<a href="index.html">
-								<div id="projects">PROJECTS</div>
-							</a>
-							<a href="uwise.html">
-								<div id="uwise">UW-ISE</div>
-							</a>
-							<a href="dailyrecord.html">
-								<div id="dr">DAILY RECORD</div>
-							</a>
-							<a href="about.html">
-								<div id="about">ABOUT</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</header>
-			<script>
-				function myFunction()
-				{
-					document.getElementById("myDropdown").classList.toggle("show");
-					console.log("In Myfunction");
-				}
-			</script>
-			<script type="text/javascript" src="pdfobject.js"></script>
-			<script type="text/javascript">
-				window.onload = function()
-				{
-					var success = new PDFObject(
+				</header>
+				<script>
+					function myFunction()
 					{
-						url: "assets/CV/Setumadhava_G_Kathawate_CV.pdf"
-					}).embed();
-				};
-			</script>
-			<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-			<script>
-				$(function()
-				{
-					$('a').each(function()
+						document.getElementById("myDropdown").classList.toggle("show");
+						console.log("In Myfunction");
+					}
+				</script>
+				<script type="text/javascript" src="pdfobject.js"></script>
+				<script type="text/javascript">
+					window.onload = function()
 					{
-						if ($(this).prop('href') == window.location.href)
+						var success = new PDFObject(
 						{
-							$(this).addClass('currentpage');
-						}
+							url: "assets/CV/Setumadhava_G_Kathawate_CV.pdf"
+						}).embed();
+					};
+				</script>
+				<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+				<script>
+					$(function()
+					{
+						$('a').each(function()
+						{
+							if ($(this).prop('href') == window.location.href)
+							{
+								$(this).addClass('currentpage');
+							}
+						});
 					});
-				});
-			</script>
-			<!-- Hide header on scroll. 
+				</script>
+				<!-- Hide header on scroll. 
 
 	explanation: http://www.yourwebtech.info/tutorial/how-to-detect-vertical-scroll-direction-using-javascript/ -->
+				<script>
+					var lastScrollPosition = 0;
+					window.onscroll = function()
+					{
+						pagetop = document.getElementById('header');
+						var newScrollPosition = window.scrollY;
+						// alert(window.scrollY);
+						if (newScrollPosition < lastScrollPosition)
+						{
+							pagetop.style.opacity = "1";
+						}
+						else if (newScrollPosition - lastScrollPosition > 20)
+						{
+							pagetop.style.opacity = "0";
+						}
+						lastScrollPosition = newScrollPosition;
+						return false;
+						//     $('#lengthtracker').text((window.scrollY/135).toFixed(0).toString()+"% Read");
+						// return false;
+					}
+				</script>
+
+				<body>
+					<!-- <div id="lengthtracker">0% Read</div> -->
+					<div class="ptitle">
+						<p id="projecttitle">UW-ISE
+							<br><span class="uwise">(University of Washington International Students Exchange)</span>
+							<br> <span class="role">User Research &#9675 Ideation &#9675 Prototyping
+				&#9675 Usabiity Testing</span></p>
+					</div>
+					<div class="maindiv" onclick="bodyfunction()">
+						<div class="contentcontainerwhite">
+							<div class="contentbox">
+								<div class="contheader">
+									<p id="introduction">Introduction</p>
+								</div>
+								<div class="pic_uwintro"> <img id="pic1" src="assets/img/uwise/uwise_intro.png" /> </div>
+								<hr class="thin">
+								<div class="content">
+									<p>Every year Hundreds of International students from all over the world move to the University of Washington to pursue their higher education. There are several problems these students face during the transition period owing to the sudden cultural
+										and social changes. Having faced these problems ourselves, we aimed to help solve a few of those problems students face to make their transition and stay more comfortable. </p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainergrey">
+							<div class="contentbox">
+								<div class="contheader">
+									<p>The Problem</p>
+								</div>
+								<div class="picture_problem"> <img src="assets/img/uwise/problem.png" />
+									<p class="pictureintro">There are many real-estate and home-search websites, and yet it's difficult for students to find suitable accommodation.</p>
+								</div>
+								<hr class="thin">
+								<div class="content">
+									<p>We started out to solve the problem of finding authentic home-food and food of individual’s preference more easily in Seattle, because it was a problem I personally faced in the initial few days. Being a vegetarian, it was relatively harder for
+										me to find food of my choice. However, as we started doing the research, we realized that although food is a concern for students, there was a bigger problem which affected almost every one of them: Finding off-campus accommodation.
+										<br>
+										<br> With so many listing and real-estate websites advertising homes, it is difficult for students to make choice and verify the places they were seeing online. We hence designed UW-ISE, an app to help international students find reliable off-campus
+										accommodation, which are verified and reviewed by students. </p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainerwhite">
+							<div class="contentbox">
+								<div class="contheader">
+									<p>Target Users</p>
+								</div>
+								<div class="picture_target"> <img src="assets/img/uwise/flags2.png" />
+									<p class="pictureintro">International students who are looking for off-campus accommodation were our target users.</p>
+								</div>
+								<hr class="thin">
+								<div class="content">
+									<p><span class="boldtext">Primary Target Users</span>: International students looking for off-campus accommodation
+										<br>
+										<br> <span class="boldtext">Secondary Target Users</span>: Senior students living in Seattle who can mentor new students </p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainergrey">
+							<div class="contentbox">
+								<div class="contheader">
+									<p>Research</p>
+								</div>
+								<div class="picture_research"> <img class="research1" src="assets/img/uwise/research1.png" /> <img class="research2" src="assets/img/uwise/research2.png" />
+									<p class="pictureintro">From the data collected, we created a word clod to find out where exactly the problem lies.</p>
+								</div>
+								<hr class="thin">
+								<div class="content">
+									<p>Although the idea of helping students find good food, of their preference sounded like a good idea when we started, we wanted validation from the target users. We conducted Surveys, Focus group studies and interviews to understand their problems
+										and validate our idea. With the data we collected from the focus group of first year graduate students, interviewing 4 students from as many different countries and over 30 survey responses, we were able to see patterns and gauge the commonness
+										in the problems faced by the international students.
+										<br>
+										<br> Findings: We realized that, although managing food was one of the problems, it wasn't the biggest problem. The most common problem faced by the students was finding accommodation. And this was a problem that affected students more who chose
+										off-campus accommodation. The existing process to find off-campus accommodation, viz. via craigslist and padmapper weren't the most reliable way. Having no contact here to verify the places they searched online added to the problem. </p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainerwhite">
+							<div class="contentbox">
+								<div class="contheader">
+									<p>Personas</p>
+								</div>
+								<div class="picture_personas"> <img class="personapic2" src="assets/img/uwise/persona2.png" />
+									<p class="pictureintro">Mapping out characteristics & problems faced by the users.</p> <img src="assets/img/uwise/personas.png" />
+									<p class="pictureintro">We created 3 personas that reflected the goals, motivation & behaviours of out target users.</p>
+								</div>
+								<hr class="thin">
+								<div class="content">
+									<p>From the data gathered we created three personas - Two primary personas, Satish and Amira, who represented the group of new international students, moving to Seattle for the first time; A secondary persona, Hari, who represented the group of
+										senior students who mentored new students like Satish and Amira by answering their queries and providing tips about the university and the life in Seattle.
+										<br>
+										<br> The personas helped us focus on the problem and kept the design process on the track. While ideating and sketching the app, we knew who we were designing for and we always had the personas in mind whenever the discussion of a new feature came
+										up. Creating personas helped us stay clear of ‘feature-creeping’. </p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainergrey">
+							<div class="contentbox">
+								<div class="contheader">
+									<p>Ideation</p>
+								</div>
+								<div class="picture_ideation">
+									<p class="pictureintrotop">We began ideating on various possible solutions to solve the problem of helping international students find off-campus accommodation.</p> <img src="assets/img/uwise/ideation.png" />
+									<p class="pictureintro">Sketching helped us quickly ideate and iterate.</p>
+								</div>
+								<hr class="thin">
+								<div class="content">
+									<p>Knowing what the problem is, who the target users are and what the solution is, we started ideating and sketching. Initially we started with 5 unique design solutions:
+										<br>
+										<br>
+									</p>
+									<ul>
+										<li>Finding Temporary accommodation
+											<br>
+										</li>
+										<li>Finding mentors
+											<br>
+										</li>
+										<li>Finding roommates
+											<br>
+										</li>
+										<li>Finding Permanent accommodation
+											<br>
+										</li>
+										<li>Travel help
+											<br>
+											<br>
+										</li>
+									</ul> Although all the five features were related to helping international students with their initial relocation and finding off-campus accommodation, we narrowed down to three most important features:
+									<br>
+									<br>
+									<ul>
+										<li> Finding Permanent Off-Campus accommodation
+											<br>
+										</li>
+										<li> Finding Roommates
+											<br>
+										</li>
+										<li> Finding &amp; Contacting Mentors </p>
+										</li>
+									</ul>
+								</div>
+								<hr class="thin">
+								<div class="picture_ideation"> <img id="ideationpic1" src="assets/img/uwise/temporary.png" /> <img id="ideationpic2" src="assets/img/uwise/permanent.png" /> <img id="ideationpic3" src="assets/img/uwise/mentor.png" />
+									<p class="pictureintrobottom">Sketching helped us quickly ideate and iterate.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contentcontainerwhite">
+						<div class="contentbox">
+							<div class="contheader">
+								<p>Sketching And Prototyping</p>
+							</div>
+							<div class="picture_wireframes">
+								<p class="pictureintrotop">Once our ideas were concrete, started making paper prototypes to conduct usability testing.</p> <img src="assets/img/uwise/wireframes.png" />
+								<p class="pictureintro">Paper prototypes of the UW-ISE app</p>
+							</div>
+							<hr class="thin">
+							<div class="content">
+								<p>For each of the three features we created wireframes and paper prototypes. We wanted to iterate and test fast and using paper and pencil was the fastest way to do so. Everyone in the team sketched multiple variations of the aforementioned three
+									features. We had a large pool of sketches out of which we picked the most elegant solutions and finally created paper prototypes for a single use case - Finding Roommates. </p>
+							</div>
+						</div>
+					</div>
+					<div class="contentcontainergrey">
+						<div class="contentbox">
+							<div class="contheader">
+								<p>Usability Testing</p>
+							</div>
+							<div class="content">
+								<p>We conducted 5 usability tests with the paper prototypes, each of which revealed several loopholes in the design. We had assumed several interactions and use-cases which the participants could not understand and they ended up getting confused.
+									<br>
+									<br> During each of the test, we carefully observed how the participants interacted with the prototype, what was easy for them and what was not, what delighted them and what didn’t and made a note of all the observations. We iterated some of the
+									most evident issues between iterations while we waited out for those interactions which were subjective, to get a general consensus. </p>
+							</div>
+						</div>
+					</div>
+					<div class="contentcontainerwhite">
+						<div class="contentbox">
+							<div class="contheader">
+								<p>Mockups</p>
+							</div>
+							<div class="picture_mockups"> <img src="assets/img/uwise/mockups.png" />
+								<p class="pictureintro">High-fidelity mock-ups of the UW-ISE app</p>
+							</div>
+							<hr class="thin">
+							<div class="content">
+								<p>We created high-fidelity mock up screen for the three features using Sketch and Adobe Illustrator. For every feature, we demonstrated a specific use case to make it easy for users and developers to understand the thinking behind the design. </p>
+							</div>
+						</div>
+					</div>
+					<div class="contentcontainergrey">
+						<div class="contentbox">
+							<div class="contheader">
+								<p>Conclusions & Learnings</p>
+							</div>
+							<div class="content">
+								<p>I learned a great deal about design thinking from this project. Some of the most important take aways for me are:
+									<br>
+									<br> <span class="boldtext">“What we assume is the problem will not always be the problem with the users”</span>
+									<br>
+									<br> We started out thinking finding food was the most important problem, which wasn’t the case when we spoke to the users. Which brings me to the second learning.
+									<br>
+									<br> <span class="boldtext">“Talk to the users a lot. Listen more.”</span>
+									<br>
+									<br> Talking to them very often and understanding what problems they face helps us define the define the problem accurately. Also, Keeping the target users in the loop throughout the entire design process helps us stay focused and design it for the
+									right people and this taught me the next thing.
+									<br>
+									<br> <span class="boldtext">“Personas are a designer’s best friends”</span>
+									<br>
+									<br> Before I started I was under the impression that we could get by without making personas, after all we know who our users are and the problem they are facing. But then I realized creating Personas and developing with them in mind, made our lives
+									so much more easier.
+									<br>
+									<br> <span class="boldtext">“Usability testing is a god-sent gift”</span>
+									<br>
+									<br> I was surprised at the large gap that exists between what we think is the solution and what users accept as a solution and usability test is that bridge between the gap. Testing with users made us aware of some of the very basic issues that
+									we had easily overlooked and helped us improve our design.
+									<br>
+									<br> <span class="boldtext">“Team work is everything”</span>
+									<br>
+									<br> Lastly, during the project I got to work with some of the best team mates I could’ve asked for. Although I knew what had to be done, I couldn’t have done this project by myself. Working with a team of individuals with different perspective and
+									ideas made it possible to come up with a satisfying and accurate design solution to the problem. </p>
+							</div>
+						</div>
+					</div>
+					<div class="contentcontainerwhite">
+						<div class="contentbox">
+							<div class="contheader">
+								<p>The Team</p>
+							</div>
+							<div class="teammates"> <a href="https://www.linkedin.com/in/nvenk" target="_blank">Nikhil Venkatesh <div class=" line line1">&nbsp;</div></a> <a href="">Nathan Ormsby<div class="line line2">&nbsp;</div></a> <a href="">Shilpa Gupta<div class="line line3">&nbsp;</div></a>								<a href="about.html">Setumadhava Kathawate<div class="line line4">&nbsp;</div></a> </div>
+							<a class="nextprojectlink" href="dailyrecord.html">
+								<div class="nextproj">
+									<p id="nexttext">Next Project</p>
+									<p id="drtext">Daily Record</p>
+								</div>
+							</a>
+						</div>
+					</div>
+			</div>
 			<script>
+				function bodyfunction()
+				{
+					console.log("body problem");
+					document.getElementById("myDropdown").classList.remove("show");
+				}
 				var lastScrollPosition = 0;
 				window.onscroll = function()
 				{
@@ -97,279 +358,13 @@
 						pagetop.style.opacity = "0";
 					}
 					lastScrollPosition = newScrollPosition;
-					return false;
-					//     $('#lengthtracker').text((window.scrollY/135).toFixed(0).toString()+"% Read");
-					// return false;
+					browserWindowheight = ($(window).height()) / 10;
+					// pageHeight=window.scrollY/100;
+					$('#lengthtracker').text((window.scrollY / browserWindowheight).toFixed(0).toString() + "% Read");
 				}
 			</script>
-
-			<body>
-				<!-- <div id="lengthtracker">0% Read</div> -->
-				<div class="ptitle">
-					<p id="projecttitle">UW-ISE
-						<br><span class="uwise">(University of Washington International Students Exchange)</span>
-						<br> <span class="role">User Research &#9675 Ideation &#9675 Prototyping
-				&#9675 Usabiity Testing</span></p>
-				</div>
-				<div class="maindiv" onclick="bodyfunction()">
-					<div class="contentcontainerwhite">
-						<div class="contentbox">
-							<div class="contheader">
-								<p id="introduction">Introduction</p>
-							</div>
-							<div class="pic_uwintro"> <img id="pic1" src="assets/img/uwise/uwise_intro.png" /> </div>
-							<hr class="thin">
-							<div class="content">
-								<p>Every year Hundreds of International students from all over the world move to the University of Washington to pursue their higher education. There are several problems these students face during the transition period owing to the sudden cultural
-									and social changes. Having faced these problems ourselves, we aimed to help solve a few of those problems students face to make their transition and stay more comfortable. </p>
-							</div>
-						</div>
-					</div>
-					<div class="contentcontainergrey">
-						<div class="contentbox">
-							<div class="contheader">
-								<p>The Problem</p>
-							</div>
-							<div class="picture_problem"> <img src="assets/img/uwise/problem.png" />
-								<p class="pictureintro">There are many real-estate and home-search websites, and yet it's difficult for students to find suitable accommodation.</p>
-							</div>
-							<hr class="thin">
-							<div class="content">
-								<p>We started out to solve the problem of finding authentic home-food and food of individual’s preference more easily in Seattle, because it was a problem I personally faced in the initial few days. Being a vegetarian, it was relatively harder for
-									me to find food of my choice. However, as we started doing the research, we realized that although food is a concern for students, there was a bigger problem which affected almost every one of them: Finding off-campus accommodation.
-									<br>
-									<br> With so many listing and real-estate websites advertising homes, it is difficult for students to make choice and verify the places they were seeing online. We hence designed UW-ISE, an app to help international students find reliable off-campus
-									accommodation, which are verified and reviewed by students. </p>
-							</div>
-						</div>
-					</div>
-					<div class="contentcontainerwhite">
-						<div class="contentbox">
-							<div class="contheader">
-								<p>Target Users</p>
-							</div>
-							<div class="picture_target"> <img src="assets/img/uwise/flags2.png" />
-								<p class="pictureintro">International students who are looking for off-campus accommodation were our target users.</p>
-							</div>
-							<hr class="thin">
-							<div class="content">
-								<p><span class="boldtext">Primary Target Users</span>: International students looking for off-campus accommodation
-									<br>
-									<br> <span class="boldtext">Secondary Target Users</span>: Senior students living in Seattle who can mentor new students </p>
-							</div>
-						</div>
-					</div>
-					<div class="contentcontainergrey">
-						<div class="contentbox">
-							<div class="contheader">
-								<p>Research</p>
-							</div>
-							<div class="picture_research"> <img class="research1" src="assets/img/uwise/research1.png" /> <img class="research2" src="assets/img/uwise/research2.png" />
-								<p class="pictureintro">From the data collected, we created a word clod to find out where exactly the problem lies.</p>
-							</div>
-							<hr class="thin">
-							<div class="content">
-								<p>Although the idea of helping students find good food, of their preference sounded like a good idea when we started, we wanted validation from the target users. We conducted Surveys, Focus group studies and interviews to understand their problems
-									and validate our idea. With the data we collected from the focus group of first year graduate students, interviewing 4 students from as many different countries and over 30 survey responses, we were able to see patterns and gauge the commonness
-									in the problems faced by the international students.
-									<br>
-									<br> Findings: We realized that, although managing food was one of the problems, it wasn't the biggest problem. The most common problem faced by the students was finding accommodation. And this was a problem that affected students more who chose
-									off-campus accommodation. The existing process to find off-campus accommodation, viz. via craigslist and padmapper weren't the most reliable way. Having no contact here to verify the places they searched online added to the problem. </p>
-							</div>
-						</div>
-					</div>
-					<div class="contentcontainerwhite">
-						<div class="contentbox">
-							<div class="contheader">
-								<p>Personas</p>
-							</div>
-							<div class="picture_personas"> <img class="personapic2" src="assets/img/uwise/persona2.png" />
-								<p class="pictureintro">Mapping out characteristics & problems faced by the users.</p> <img src="assets/img/uwise/personas.png" />
-								<p class="pictureintro">We created 3 personas that reflected the goals, motivation & behaviours of out target users.</p>
-							</div>
-							<hr class="thin">
-							<div class="content">
-								<p>From the data gathered we created three personas - Two primary personas, Satish and Amira, who represented the group of new international students, moving to Seattle for the first time; A secondary persona, Hari, who represented the group of senior
-									students who mentored new students like Satish and Amira by answering their queries and providing tips about the university and the life in Seattle.
-									<br>
-									<br> The personas helped us focus on the problem and kept the design process on the track. While ideating and sketching the app, we knew who we were designing for and we always had the personas in mind whenever the discussion of a new feature came
-									up. Creating personas helped us stay clear of ‘feature-creeping’. </p>
-							</div>
-						</div>
-					</div>
-					<div class="contentcontainergrey">
-						<div class="contentbox">
-							<div class="contheader">
-								<p>Ideation</p>
-							</div>
-							<div class="picture_ideation">
-								<p class="pictureintrotop">We began ideating on various possible solutions to solve the problem of helping international students find off-campus accommodation.</p> <img src="assets/img/uwise/ideation.png" />
-								<p class="pictureintro">Sketching helped us quickly ideate and iterate.</p>
-							</div>
-							<hr class="thin">
-							<div class="content">
-								<p>Knowing what the problem is, who the target users are and what the solution is, we started ideating and sketching. Initially we started with 5 unique design solutions:
-									<br>
-									<br>
-								</p>
-								<ul>
-									<li>Finding Temporary accommodation
-										<br>
-									</li>
-									<li>Finding mentors
-										<br>
-									</li>
-									<li>Finding roommates
-										<br>
-									</li>
-									<li>Finding Permanent accommodation
-										<br>
-									</li>
-									<li>Travel help
-										<br>
-										<br>
-									</li>
-								</ul> Although all the five features were related to helping international students with their initial relocation and finding off-campus accommodation, we narrowed down to three most important features:
-								<br>
-								<br>
-								<ul>
-									<li> Finding Permanent Off-Campus accommodation
-										<br>
-									</li>
-									<li> Finding Roommates
-										<br>
-									</li>
-									<li> Finding &amp; Contacting Mentors </p>
-									</li>
-								</ul>
-							</div>
-							<hr class="thin">
-							<div class="picture_ideation"> <img id="ideationpic1" src="assets/img/uwise/temporary.png" /> <img id="ideationpic2" src="assets/img/uwise/permanent.png" /> <img id="ideationpic3" src="assets/img/uwise/mentor.png" />
-								<p class="pictureintrobottom">Sketching helped us quickly ideate and iterate.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="contentcontainerwhite">
-					<div class="contentbox">
-						<div class="contheader">
-							<p>Sketching And Prototyping</p>
-						</div>
-						<div class="picture_wireframes">
-							<p class="pictureintrotop">Once our ideas were concrete, started making paper prototypes to conduct usability testing.</p> <img src="assets/img/uwise/wireframes.png" />
-							<p class="pictureintro">Paper prototypes of the UW-ISE app</p>
-						</div>
-						<hr class="thin">
-						<div class="content">
-							<p>For each of the three features we created wireframes and paper prototypes. We wanted to iterate and test fast and using paper and pencil was the fastest way to do so. Everyone in the team sketched multiple variations of the aforementioned three
-								features. We had a large pool of sketches out of which we picked the most elegant solutions and finally created paper prototypes for a single use case - Finding Roommates. </p>
-						</div>
-					</div>
-				</div>
-				<div class="contentcontainergrey">
-					<div class="contentbox">
-						<div class="contheader">
-							<p>Usability Testing</p>
-						</div>
-						<div class="content">
-							<p>We conducted 5 usability tests with the paper prototypes, each of which revealed several loopholes in the design. We had assumed several interactions and use-cases which the participants could not understand and they ended up getting confused.
-								<br>
-								<br> During each of the test, we carefully observed how the participants interacted with the prototype, what was easy for them and what was not, what delighted them and what didn’t and made a note of all the observations. We iterated some of the most
-								evident issues between iterations while we waited out for those interactions which were subjective, to get a general consensus. </p>
-						</div>
-					</div>
-				</div>
-				<div class="contentcontainerwhite">
-					<div class="contentbox">
-						<div class="contheader">
-							<p>Mockups</p>
-						</div>
-						<div class="picture_mockups"> <img src="assets/img/uwise/mockups.png" />
-							<p class="pictureintro">High-fidelity mock-ups of the UW-ISE app</p>
-						</div>
-						<hr class="thin">
-						<div class="content">
-							<p>We created high-fidelity mock up screen for the three features using Sketch and Adobe Illustrator. For every feature, we demonstrated a specific use case to make it easy for users and developers to understand the thinking behind the design. </p>
-						</div>
-					</div>
-				</div>
-				<div class="contentcontainergrey">
-					<div class="contentbox">
-						<div class="contheader">
-							<p>Conclusions & Learnings</p>
-						</div>
-						<div class="content">
-							<p>I learned a great deal about design thinking from this project. Some of the most important take aways for me are:
-								<br>
-								<br> <span class="boldtext">“What we assume is the problem will not always be the problem with the users”</span>
-								<br>
-								<br> We started out thinking finding food was the most important problem, which wasn’t the case when we spoke to the users. Which brings me to the second learning.
-								<br>
-								<br> <span class="boldtext">“Talk to the users a lot. Listen more.”</span>
-								<br>
-								<br> Talking to them very often and understanding what problems they face helps us define the define the problem accurately. Also, Keeping the target users in the loop throughout the entire design process helps us stay focused and design it for the
-								right people and this taught me the next thing.
-								<br>
-								<br> <span class="boldtext">“Personas are a designer’s best friends”</span>
-								<br>
-								<br> Before I started I was under the impression that we could get by without making personas, after all we know who our users are and the problem they are facing. But then I realized creating Personas and developing with them in mind, made our lives
-								so much more easier.
-								<br>
-								<br> <span class="boldtext">“Usability testing is a god-sent gift”</span>
-								<br>
-								<br> I was surprised at the large gap that exists between what we think is the solution and what users accept as a solution and usability test is that bridge between the gap. Testing with users made us aware of some of the very basic issues that we
-								had easily overlooked and helped us improve our design.
-								<br>
-								<br> <span class="boldtext">“Team work is everything”</span>
-								<br>
-								<br> Lastly, during the project I got to work with some of the best team mates I could’ve asked for. Although I knew what had to be done, I couldn’t have done this project by myself. Working with a team of individuals with different perspective and
-								ideas made it possible to come up with a satisfying and accurate design solution to the problem. </p>
-						</div>
-					</div>
-				</div>
-				<div class="contentcontainerwhite">
-					<div class="contentbox">
-						<div class="contheader">
-							<p>The Team</p>
-						</div>
-						<div class="teammates"> <a href="https://www.linkedin.com/in/nvenk" target="_blank">Nikhil Venkatesh <div class=" line line1">&nbsp;</div></a> <a href="">Nathan Ormsby<div class="line line2">&nbsp;</div></a> <a href="">Shilpa Gupta<div class="line line3">&nbsp;</div></a>							<a href="about.html">Setumadhava Kathawate<div class="line line4">&nbsp;</div></a> </div>
-						<a class="nextprojectlink" href="dailyrecord.html">
-							<div class="nextproj">
-								<p id="nexttext">Next Project</p>
-								<p id="drtext">Daily Record</p>
-							</div>
-						</a>
-					</div>
-				</div>
-		</div>
-		<script>
-			function bodyfunction()
-			{
-				console.log("body problem");
-				document.getElementById("myDropdown").classList.remove("show");
-			}
-			var lastScrollPosition = 0;
-			window.onscroll = function()
-			{
-				pagetop = document.getElementById('header');
-				var newScrollPosition = window.scrollY;
-				// alert(window.scrollY);
-				if (newScrollPosition < lastScrollPosition)
-				{
-					pagetop.style.opacity = "1";
-				}
-				else if (newScrollPosition - lastScrollPosition > 20)
-				{
-					pagetop.style.opacity = "0";
-				}
-				lastScrollPosition = newScrollPosition;
-				browserWindowheight = ($(window).height()) / 10;
-				// pageHeight=window.scrollY/100;
-				$('#lengthtracker').text((window.scrollY / browserWindowheight).toFixed(0).toString() + "% Read");
-			}
-		</script>
-		</body>
-		<!-- <body>
+			</body>
+			<!-- <body>
 	<div class="arrows">
 		<ul>
 
@@ -381,9 +376,9 @@
 				</svg>
 
 			</div></a></li>   <!-- temp fix -->
-		<!-- 	************************* Arrows *************************
+			<!-- 	************************* Arrows *************************
 			************************* Arrows ************************* -->
-		<!-- <li><a href="uwise.html"><svg class="right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			<!-- <li><a href="uwise.html"><svg class="right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 116.5 115.6" enable-background="new 0 0 116.5 115.6" xml:space="preserve">
 			<g>
 				
@@ -393,7 +388,7 @@
 				<circle class="circle" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-miterlimit="10" cx="59.1" cy="57" r="50.6"/>
 			</g>
 			</svg></a></li> -->
-		<!-- 	<li><a href="#"><svg  class="top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			<!-- 	<li><a href="#"><svg  class="top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 116.5 115.6" enable-background="new 0 0 116.5 115.6" xml:space="preserve">
 			<g>
 				
@@ -403,7 +398,7 @@
 				<circle fill="none" stroke="#1A1A1A" stroke-width="12" stroke-miterlimit="10" cx="59.1" cy="57" r="50.6"/>
 			</g>
 			</svg></a></li> -->
-		<!-- <li><a href="body.html"><svg class="left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			<!-- <li><a href="body.html"><svg class="left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 116.5 115.6" enable-background="new 0 0 116.5 115.6" xml:space="preserve">
 			<g>
 				
@@ -413,65 +408,65 @@
 				<circle fill="none" stroke="#1A1A1A" stroke-width="12" stroke-miterlimit="10" cx="59.1" cy="57" r="50.6"/>
 			</g>
 			</svg></a></li> -->
-		<!-- 	</ul>
+			<!-- 	</ul>
 	</div>
 </body>   -->
-		</div>
-	</body>
-	<footer class="myfoot">
-		<div class="footercontainer">
-			<div class="line">
-				<div class="contactme">
-					<p>Let's Get In Touch</p>
-				</div>
-				<div class="vline"><img src="assets/img/footer/vline.svg" /></div>
-				<div class="socialbox">
-					<ul>
-						<li>
-							<a href="http://www.twitter.com/setumad" target="_blank">
-								<svg class="twit" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 294 245.5" enable-background="new 0 0 294 245.5" xml:space="preserve">
-									<path d="M294,28.5c-10.8,4.8-22.4,8.1-34.6,9.6c12.5-7.5,22-19.4,26.5-33.6c-11.7,7-24.6,12-38.3,14.7
+			</div>
+		</body>
+		<footer class="myfoot">
+			<div class="footercontainer">
+				<div class="line">
+					<div class="contactme">
+						<p>Let's Get In Touch</p>
+					</div>
+					<div class="vline"><img src="assets/img/footer/vline.svg" /></div>
+					<div class="socialbox">
+						<ul>
+							<li>
+								<a href="http://www.twitter.com/setumad" target="_blank">
+									<svg class="twit" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 294 245.5" enable-background="new 0 0 294 245.5" xml:space="preserve">
+										<path d="M294,28.5c-10.8,4.8-22.4,8.1-34.6,9.6c12.5-7.5,22-19.4,26.5-33.6c-11.7,7-24.6,12-38.3,14.7
 						C236.6,7.4,220.9,0,203.6,0c-33.3,0-60.3,27.2-60.3,60.7c0,4.8,0.5,9.4,1.6,13.8C94.7,72,50.2,47.8,20.5,11.1
 						c-5.2,9-8.2,19.4-8.2,30.5c0,21.1,10.6,39.6,26.8,50.5c-9.9-0.3-19.2-3-27.3-7.6c0,0.3,0,0.5,0,0.8c0,29.4,20.8,53.9,48.4,59.5
 						c-5.1,1.4-10.4,2.1-15.9,2.1c-3.9,0-7.7-0.4-11.3-1.1c7.7,24.1,30,41.6,56.3,42.1c-20.6,16.3-46.7,26-74.9,26
 						c-4.9,0-9.7-0.3-14.4-0.8c26.7,17.2,58.4,27.3,92.5,27.3c110.9,0,171.6-92.5,171.6-172.6c0-2.6-0.1-5.2-0.2-7.9
 						C275.7,51.3,285.9,40.6,294,28.5z" /> </svg>
-							</a>
-						</li>
-						<li>
-							<a href="mailto:setugk@uw.edu">
-								<svg class="mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 143.1 114.4" enable-background="new 0 0 143.1 114.4" xml:space="preserve">
-									<g>
-										<polygon points="42.1,62.6 0.2,13.7 42.1,62.6 14.5,90.2 	" />
-										<path d="M132.3,113.8c0.1,0,0.1,0,0.2,0l-5.8-5.7l-25.6-25.4l-9.3-9.3L79.7,87.6L71.6,97L51.5,73.4l-7.9,7.9
+								</a>
+							</li>
+							<li>
+								<a href="mailto:setugk@uw.edu">
+									<svg class="mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 143.1 114.4" enable-background="new 0 0 143.1 114.4" xml:space="preserve">
+										<g>
+											<polygon points="42.1,62.6 0.2,13.7 42.1,62.6 14.5,90.2 	" />
+											<path d="M132.3,113.8c0.1,0,0.1,0,0.2,0l-5.8-5.7l-25.6-25.4l-9.3-9.3L79.7,87.6L71.6,97L51.5,73.4l-7.9,7.9
 						l-32.7,32.5c0.1,0,0.1,0,0.2,0l-0.2,0.2l0.2-0.2c1.1,0.3,2.3,0.2,3.5,0.2h114.3C130,114,131.2,114.1,132.3,113.8l0.2,0.2
 						c0,0,0,0,0,0L132.3,113.8z" />
-										<polygon points="71.6,75 134.6,1.5 71.6,75 29.7,26 	" />
-										<path d="M14.5,90.2l27.7-27.6l-42-48.9C0.1,14,0,14.3,0,14.6v85.7c0,1.3,0.3,2.5,0.6,3.7l0.1-0.1c0,0,0,0,0,0.1l0,0
+											<polygon points="71.6,75 134.6,1.5 71.6,75 29.7,26 	" />
+											<path d="M14.5,90.2l27.7-27.6l-42-48.9C0.1,14,0,14.3,0,14.6v85.7c0,1.3,0.3,2.5,0.6,3.7l0.1-0.1c0,0,0,0,0,0.1l0,0
 						c0,0,0,0,0-0.1L14.5,90.2z" />
-										<path d="M29.7,26l42,49l63-73.5c-1.8-0.8-3.8-1.4-5.8-1.4H14.5c-2,0-4,0.6-5.8,1.4l0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0
+											<path d="M29.7,26l42,49l63-73.5c-1.8-0.8-3.8-1.4-5.8-1.4H14.5c-2,0-4,0.6-5.8,1.4l0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0
 						L29.7,26z" />
-										<path d="M143,13.7l-41.9,48.9l41.4,41.4c0.3-1.2,0.5-2.4,0.5-3.7l0-85.7C143.1,14.3,143.1,14,143,13.7z" />
-										<polygon points="0.7,104 0.7,104 14.5,90.2 	" />
-										<path d="M29.7,26L8.7,1.5c0,0,0,0,0,0L29.7,26z" />
-										<path d="M132.5,114L132.5,114c-1.2,0.3-2.4,0.4-3.7,0.4C130.1,114.4,131.3,114.3,132.5,114z" />
-									</g>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/setumadhavagk" target="_blank">
-								<svg class="in" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 165.4 183.8" enable-background="new 0 0 165.4 183.8" xml:space="preserve">
-									<path d="M36.8,183.8H0V55.1h36.8V183.8z M18.4,36.8C8.2,36.8,0,28.5,0,18.4S8.2,0,18.4,0s18.4,8.2,18.4,18.4
+											<path d="M143,13.7l-41.9,48.9l41.4,41.4c0.3-1.2,0.5-2.4,0.5-3.7l0-85.7C143.1,14.3,143.1,14,143,13.7z" />
+											<polygon points="0.7,104 0.7,104 14.5,90.2 	" />
+											<path d="M29.7,26L8.7,1.5c0,0,0,0,0,0L29.7,26z" />
+											<path d="M132.5,114L132.5,114c-1.2,0.3-2.4,0.4-3.7,0.4C130.1,114.4,131.3,114.3,132.5,114z" />
+										</g>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/setumadhavagk" target="_blank">
+									<svg class="in" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 165.4 183.8" enable-background="new 0 0 165.4 183.8" xml:space="preserve">
+										<path d="M36.8,183.8H0V55.1h36.8V183.8z M18.4,36.8C8.2,36.8,0,28.5,0,18.4S8.2,0,18.4,0s18.4,8.2,18.4,18.4
 						S28.5,36.8,18.4,36.8z M165.4,183.8h-36.8v-73.5c0-10.1-8.2-18.4-18.4-18.4s-18.4,8.2-18.4,18.4v73.5H55.1V55.1h36.8v22.8
 						C99.5,67.5,111,55.1,124,55.1c22.8,0,41.3,20.6,41.3,45.9L165.4,183.8L165.4,183.8z" /> </svg>
-							</a>
-						</li>
-					</ul>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="copyright">Copyright © 2016 Setumadhava G Kathawate</div>
 				</div>
-				<div class="copyright">Copyright © 2016 Setumadhava G Kathawate</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
 
 </html>

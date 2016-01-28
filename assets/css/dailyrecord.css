@@ -719,9 +719,22 @@ body {
       body .contentbox .content .hugetext {
         font-size: 2rem;
         font-weight: bold;
+        font-family: "Crimson Text", serif;
         line-height: 3.2rem;
         color: #1a7446;
-        text-align: center; }
+        text-align: center;
+        margin: 0;
+        padding: 0; }
+      body .contentbox .content hr.thin2 {
+        position: relative;
+        top: -1.6em;
+        width: 15%;
+        margin-top: 2em; }
+      body .contentbox .content hr.thin3 {
+        position: relative;
+        top: -1.6em;
+        width: 15%;
+        margin-top: 0em; }
       body .contentbox .content .demotext {
         font-weight: bold;
         text-align: center;
