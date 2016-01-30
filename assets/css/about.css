@@ -654,7 +654,7 @@ th {
         width: 80%;
         margin: 0 auto;
         position: relative;
-        top: 3em; }
+        top: 3.5em; }
         @media (min-width: 768px) {
           .aboutcontainer .left .bigskillbox .skillcontainer .skillbox1 {
             width: 32%;
@@ -666,14 +666,10 @@ th {
           font-family: "Muli", sans-serif;
           font-weight: 300; }
       .aboutcontainer .left .bigskillbox .skillcontainer .skillbox2 {
-        padding-top: 5rem;
-        position: relative; }
-        .aboutcontainer .left .bigskillbox .skillcontainer .skillbox2 h2 {
-          position: relative;
-          top: 0em; }
+        padding-top: 4em;
+        vertical-align: top; }
         @media (min-width: 768px) {
           .aboutcontainer .left .bigskillbox .skillcontainer .skillbox2 {
-            position: relative;
             width: 32%;
             display: inline-block; } }
         .aboutcontainer .left .bigskillbox .skillcontainer .skillbox2 .skills {
@@ -683,7 +679,15 @@ th {
           font-family: "Muli", sans-serif;
           font-weight: 300; }
       .aboutcontainer .left .bigskillbox .skillcontainer .skillbox3 {
-        padding-top: 3em; }
+        padding-top: 3em;
+        position: relative;
+        top: 1em; }
+        @media (min-width: 700px) {
+          .aboutcontainer .left .bigskillbox .skillcontainer .skillbox3 {
+            top: -1em; } }
+        @media (min-width: 800px) {
+          .aboutcontainer .left .bigskillbox .skillcontainer .skillbox3 {
+            top: 1em; } }
         @media (min-width: 768px) {
           .aboutcontainer .left .bigskillbox .skillcontainer .skillbox3 {
             width: 32%;

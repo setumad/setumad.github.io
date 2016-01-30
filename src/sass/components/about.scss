@@ -96,7 +96,7 @@
 					margin: 0 auto;
 					// padding-top: 2rem;
 					position: relative;
-					top: 3em;
+					top: 3.5em;
 					@include breakpoint(tablet){
 						width: 32%;
 						display: inline-block;
@@ -120,27 +120,13 @@
 				}
 
 				.skillbox2{
-					h2{
-						position: relative;
-						top: 0em;
-					}
-					padding-top: 5rem;
-					position: relative;
+					padding-top: 4em;
+					vertical-align: top;
 					@include breakpoint(tablet){
-						
-						position: relative;
 						width: 32%;
 						display: inline-block;
 					}
-					// .code{
-					// 	padding: 1rem 0;
-					// 	width: 50px;
-					// 	padding-bottom: 2rem;
-					// 	@include breakpoint(tablet){
-					// 		padding-bottom: 2rem;
-					// 	}
-
-					// }
+					
 					.skills{
 						width: 75%;
 						margin: 0 auto;
@@ -153,6 +139,15 @@
 
 				.skillbox3{
 					padding-top: 3em;
+					position: relative;
+					top: 1em;
+					@include breakpoint (700px){
+						top:-1em;
+					}
+					@include breakpoint (800px){
+						top:1em;
+					}
+					
 					@include breakpoint(tablet){
 						width: 32%;
 						display: inline-block;
