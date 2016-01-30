@@ -10,7 +10,7 @@
 
 	.dp{
 		margin: 0 auto;
-		max-width: 1250px;
+		max-width: 935px;
 		display: block;
 		width: 100%;
 	}	
@@ -46,7 +46,17 @@
 	// background-color: red;
 	margin: 0 auto;
 	padding: 0rem 2rem 4rem 2rem;
-
+	.aboutme{
+		width: 100%;
+		max-width: 85%;
+		margin: 0 auto;
+		padding: 2em 0;
+		font-family: $muli;
+		font-size: 1.2em;
+		text-align: justify;
+		line-height: 1.8;
+		color: $textdark;
+	}
 	.left{
 		// background-color: yellow;	
 		@include breakpoint(laptop){
@@ -84,96 +94,83 @@
 				.skillbox1{
 					width: 80%;
 					margin: 0 auto;
-					padding-top: 2rem;
+					// padding-top: 2rem;
+					position: relative;
+					top: 3em;
 					@include breakpoint(tablet){
 						width: 32%;
 						display: inline-block;
 					}
-					.brush{
-						padding: 1rem 0;
-						width: 30px;
-						padding-bottom: 2rem;
-						@include breakpoint(tablet){
-							padding-bottom: 0rem;
-						}
+					// .brush{
+					// 	padding: 1rem 0;
+					// 	width: 30px;
+					// 	// padding-bottom: 2rem;
+					// 	@include breakpoint(tablet){
+					// 		padding-bottom: 0rem;
+					// 	}
 
-					}
+					// }
 					.skills{
 						width: 75%;
 						margin: 0 auto;
 						position: relative;
 						font-family: $muli;
 						font-weight: $light;
-						// letter-spacing: 0.8px;
-						// font-size: 0.9em;
-						@include breakpoint(tablet){
-							top:2.6rem;
-						}
-
 					}
 				}
 
 				.skillbox2{
-					padding: 4rem 0;
+					h2{
+						position: relative;
+						top: 0em;
+					}
+					padding-top: 5rem;
+					position: relative;
 					@include breakpoint(tablet){
+						
+						position: relative;
 						width: 32%;
 						display: inline-block;
 					}
-					.code{
-						padding: 1rem 0;
-						width: 50px;
-						padding-bottom: 2rem;
-						@include breakpoint(tablet){
-							padding-bottom: 4rem;
-						}
+					// .code{
+					// 	padding: 1rem 0;
+					// 	width: 50px;
+					// 	padding-bottom: 2rem;
+					// 	@include breakpoint(tablet){
+					// 		padding-bottom: 2rem;
+					// 	}
 
-					}
+					// }
 					.skills{
-						width: 65%;
+						width: 75%;
 						margin: 0 auto;
 						position: relative;
 						font-family: $muli;
 						font-weight: $light;
-						// letter-spacing: 0.8px;
-						// font-size: 0.9em;
-						@include breakpoint(laptop){
-							top:-1rem;
-						}
-						@include breakpoint(tablet){
-							top:-1rem;
-						}
-						
 					}
 				}
 
 
 				.skillbox3{
+					padding-top: 3em;
 					@include breakpoint(tablet){
 						width: 32%;
 						display: inline-block;
 					}
-					.research{
-						padding: 1rem 0;
-						width: 40px;
-						padding-bottom: 2rem;
-						@include breakpoint(tablet){
-							padding-bottom: 3rem;
-						}
-					}
+					// .research{
+					// 	padding: 1rem 0;
+					// 	width: 40px;
+					// 	padding-bottom: 2rem;
+					// 	@include breakpoint(tablet){
+					// 		padding-bottom: 3rem;
+					// 	}
+					// }
 					.skills{
 						width: 75%;
 						margin: 0 auto;
 						position: relative;
 						font-family: $muli;
 						font-weight: $light;
-						// letter-spacing: 0.8px;
-						// font-size: 0.9em;
-						@include breakpoint(laptop){
-							top:-1rem;
-						}
-						@include breakpoint(tablet){
-							top:-1rem;
-						}
 					}
 				}
 			}
@@ -207,8 +204,13 @@
 			padding: 30px 0;
 			text-align: justify;
 			overflow: auto;
+			a{
+				text-decoration: none;
+				color: $darkgreenexcel;
+				font-weight: bold;
+			}
 			@include breakpoint(tablet){
-				width: 73%;
+				width: 85%;
 				font-size: 1.1rem;
 			}
 			@include breakpoint(laptop){
