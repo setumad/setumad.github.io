@@ -459,15 +459,21 @@ th {
                 #header .navigation .navcontainer .nav-list li a .line {
                   opacity: 0;
                   height: 3px;
-                  margin-top: 0.6em;
+                  margin-top: 2.25em;
                   background-color: #ef4b33;
                   transition: opacity 0.3s linear 0s; }
                 #header .navigation .navcontainer .nav-list li a .line1 {
-                  width: 85px; }
+                  width: 85px;
+                  left: -0.15em;
+                  position: relative; }
                 #header .navigation .navcontainer .nav-list li a .line2 {
-                  width: 55px; }
+                  width: 59px;
+                  left: -0.15em;
+                  position: relative; }
                 #header .navigation .navcontainer .nav-list li a .line3 {
-                  width: 68px; }
+                  width: 68px;
+                  left: -0.15em;
+                  position: relative; }
               #header .navigation .navcontainer .nav-list li a:hover {
                 font-weight: bolder;
                 color: #3d3d3d; }
@@ -558,6 +564,9 @@ th {
         #header .navigation .dropdown .dropdown-content #dr {
           margin-top: 0.5em;
           padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #hb {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
         #header .navigation .dropdown .dropdown-content #about {
           margin-top: 0.5em;
           padding-bottom: 0.5em; }
@@ -582,7 +591,7 @@ body {
   padding-top: 4.7em; }
   @media (min-width: 768px) {
     body {
-      padding-top: 5.7rem; } }
+      padding-top: 6rem; } }
   body #lengthtracker {
     font-size: 1.5em;
     text-align: right;
@@ -599,13 +608,13 @@ body {
     background-color: #4b2e83; }
     @media (min-width: 768px) {
       body .ptitle {
-        height: 210px; } }
+        height: 280px; } }
     body .ptitle #projecttitle {
       font-size: 2.8rem;
       text-align: center;
       color: #f5f5f5;
       margin: 0 auto;
-      padding-top: 0.5em;
+      padding-top: 1.5em;
       font-family: "Lato", sans-serif; }
     body .ptitle .uwise {
       line-height: 1.6em;
@@ -826,12 +835,12 @@ body {
     body .contentbox .nextprojectlink {
       text-decoration: none;
       font-family: "Lato", sans-serif;
-      color: #c4dec2;
+      color: #dceada;
       cursor: pointer; }
       body .contentbox .nextprojectlink .nextproj {
-        width: 13em;
-        height: 4em;
-        border: 2px solid #c4dec2;
+        width: 15em;
+        height: 5em;
+        border: 2px solid #dceada;
         margin: 0 auto;
         cursor: pointer;
         margin-top: 4em;
@@ -845,12 +854,12 @@ body {
         body .contentbox .nextprojectlink .nextproj #drtext {
           position: relative;
           bottom: 0.5em;
-          font-size: 1.4em; }
+          font-size: 1.6em; }
       body .contentbox .nextprojectlink .nextproj:hover {
         border: 2px solid #1a7446;
         color: white;
         font-weight: bold;
-        background-color: #c4dec2;
+        background-color: #dceada;
         transition: all 0.3s linear 0s; }
 
 .footercontainer {

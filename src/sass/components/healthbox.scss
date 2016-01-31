@@ -19,7 +19,7 @@ body{
 	.ptitle{
 		width: 100%;
 		height: 220px;
-		background-color: $darkgreenexcel;
+		background-color: $hbdarkred;
 		@include breakpoint(tablet){
 			height: 280px;
 			transition: 0.2s all ease-in-out;
@@ -73,95 +73,35 @@ body{
 			padding: 1rem 0 2rem 0;
 			font-size: 2.2rem;
 			font-family: $lato;
-			color: $darkgreenexcel;
+			color: $hbdarkred;
 			
 		}
 
 		hr.thin {
-			margin-top: 3em;
+			margin-top: 0.5em;
 			margin-bottom: 3em;
 			width: 10%;
-			} 
+			}
+
+		hr.thin2 {
+			margin-top: 3.5em;
+			margin-bottom: 3em;
+			width: 10%;
+			}  
 
 		.picture_intro{
 			img{
 				width: 100%;
-				max-width: 650px;
+				max-width: 550px;
 				// box-shadow: 0px 0px 20px grey;
 			}
 		}
 
-		.picture_research{
+		.picture_interaction{
 			img{
 				width: 100%;
 				max-width: 850px;
-			}
-		}
-
-		.picture_ideation{
-			display: block;
-			.ideapic1{
-				width: 100%;
-				max-width: 400px;
-				padding-bottom: 4rem;
-				display: block;
-				margin: 0 auto;
-				@include breakpoint(tablet){
-					display: block;
-					margin: 0 auto;
-					max-width: 500px;
-				}
-				@include breakpoint(laptop){
-					padding: 0rem 2rem;
-					display: inline-block;
-
-				}
-			}
-			.ideapic2{
-				width: 100%;
-				max-width: 400px;
-				@include breakpoint(tablet){
-					max-width: 500px;
-				}
-				@include breakpoint(laptop){
-					padding: 0rem 2rem;
-					max-width: 500px;
-				}
-			}
-		}
-
-		.picture_wireframes{
-			display: block;
-			padding-left: 2rem;
-			padding-right: 2rem;
-			.wfpic1{
-				width: 100%;
-				max-width: 700px;
-				padding-bottom: 5rem;
-				padding-left: 1em;
-				padding-right: 1em;
-			}
-		}
-
-		.picture_usability{
-			img{
-				width: 100%;
-				max-width: 850px;
-			}
-		}
-
-		.picture_dr2{
-			img{
-				width: 100%;
-				max-width: 850px;
-			}
-		}
-
-		.picture_final{
-			img{
-				width: 100%;
-				max-width: 1000px;
-				padding-bottom: 4rem;
+				padding-top: 2em;
 			}
 		}
 
@@ -178,37 +118,11 @@ body{
 			line-height: 1.8;
 			.boldtext{
 				font-weight: 600;
-				color: $darkgreenexcel;
-			}
-			.iframe{
-				display: block;
-				margin:0 auto;
-				width: 100%;
-			}
-
-			.hugetext{
-				font-size: 2rem;
-				font-weight: bold;
-				font-family: $crimson;
-				line-height: 3.2rem;
-				color: $darkgreenexcel;
-				text-align: center;
-				margin: 0;
-				padding: 0;
+				color: $hbdarkred;
 			}
 			
-			hr.thin2 {
-			position: relative;
-			top: -1.6em;
-			width: 15%;
-			margin-top: 2em;
-			} 
-			hr.thin3 {
-			position: relative;
-			top: -1.6em;
-			width: 15%;
-			margin-top: 0em;
-			} 
+			
+			
 
 			.demotext{
 				font-weight: bold;
@@ -229,14 +143,15 @@ body{
 		.nextprojectlink{
 			text-decoration: none;
 			font-family: $lato;
-			color: $hblightred;
+			color: $lightpurple;
 			.nextproj{
-			width: 17em;
-			height: 5.5em;
-			border: 2px solid $hblightred;
+			width: 14em;
+			height: 5em;
+			border: 2px solid $lightpurple;
 			margin: 0 auto;
 			cursor: pointer;
 			transition: all 0.2s linear 0s;
+			margin-top: 3em;
 				#nexttext{
 					position: relative;
 					top: 0.5em;
@@ -244,16 +159,16 @@ body{
 					padding: 0;
 					margin: 0;
 				}
-				#hbtext{
+				#drtext{
 					position: relative;
-					bottom: 0.2em;
+					bottom: 0.4em;
 					font-size: 1.6em;
 				}
 			}
 			.nextproj:hover{
-				border: 2px solid $hbdarkred ;
+				border: 2px solid $uwpurple ;
 				color: white;
-				background-color: $hblightred;
+				background-color: $lightpurple;
 				font-weight: bold;
 				transition: all 0.2s linear 0s;
 			}

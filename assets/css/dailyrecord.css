@@ -459,15 +459,21 @@ th {
                 #header .navigation .navcontainer .nav-list li a .line {
                   opacity: 0;
                   height: 3px;
-                  margin-top: 0.6em;
+                  margin-top: 2.25em;
                   background-color: #ef4b33;
                   transition: opacity 0.3s linear 0s; }
                 #header .navigation .navcontainer .nav-list li a .line1 {
-                  width: 85px; }
+                  width: 85px;
+                  left: -0.15em;
+                  position: relative; }
                 #header .navigation .navcontainer .nav-list li a .line2 {
-                  width: 55px; }
+                  width: 59px;
+                  left: -0.15em;
+                  position: relative; }
                 #header .navigation .navcontainer .nav-list li a .line3 {
-                  width: 68px; }
+                  width: 68px;
+                  left: -0.15em;
+                  position: relative; }
               #header .navigation .navcontainer .nav-list li a:hover {
                 font-weight: bolder;
                 color: #3d3d3d; }
@@ -558,6 +564,9 @@ th {
         #header .navigation .dropdown .dropdown-content #dr {
           margin-top: 0.5em;
           padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #hb {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
         #header .navigation .dropdown .dropdown-content #about {
           margin-top: 0.5em;
           padding-bottom: 0.5em; }
@@ -582,7 +591,7 @@ body {
   padding-top: 4.7em; }
   @media (min-width: 768px) {
     body {
-      padding-top: 5.7rem; } }
+      padding-top: 6rem; } }
   body #lengthtracker {
     font-size: 1.5em;
     text-align: center;
@@ -599,14 +608,14 @@ body {
     background-color: #1a7446; }
     @media (min-width: 768px) {
       body .ptitle {
-        height: 180px;
+        height: 280px;
         transition: 0.2s all ease-in-out; } }
     body .ptitle #projecttitle {
       font-size: 2.8rem;
       text-align: center;
       color: #f5f5f5;
       margin: 0 auto;
-      padding-top: 0.8em;
+      padding-top: 1.8em;
       letter-spacing: 0.8px;
       font-family: "Lato", sans-serif;
       font-weight: 700; }
@@ -747,11 +756,11 @@ body {
     body .contentbox .nextprojectlink {
       text-decoration: none;
       font-family: "Lato", sans-serif;
-      color: #c7aafe; }
+      color: #f7c9c9; }
       body .contentbox .nextprojectlink .nextproj {
-        width: 13em;
-        height: 4em;
-        border: 2px solid #c7aafe;
+        width: 17em;
+        height: 5.5em;
+        border: 2px solid #f7c9c9;
         margin: 0 auto;
         cursor: pointer;
         transition: all 0.2s linear 0s; }
@@ -761,14 +770,14 @@ body {
           font-size: 0.8em;
           padding: 0;
           margin: 0; }
-        body .contentbox .nextprojectlink .nextproj #drtext {
+        body .contentbox .nextprojectlink .nextproj #hbtext {
           position: relative;
-          bottom: 0.5em;
-          font-size: 1.4em; }
+          bottom: 0.2em;
+          font-size: 1.6em; }
       body .contentbox .nextprojectlink .nextproj:hover {
-        border: 2px solid #4b2e83;
+        border: 2px solid #fd110e;
         color: white;
-        background-color: #c7aafe;
+        background-color: #f7c9c9;
         font-weight: bold;
         transition: all 0.2s linear 0s; }
 

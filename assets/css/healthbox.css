@@ -587,278 +587,135 @@ th {
       #header .navigation .dropdown .show {
         display: block; }
 
-.bodymain {
-  width: 100%;
-  padding-top: 8rem; }
-  .bodymain .container {
-    margin: 0 auto; }
+body {
+  padding-top: 4.7em; }
+  @media (min-width: 768px) {
+    body {
+      padding-top: 6rem; } }
+  body #lengthtracker {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: #aaaaaa;
+    top: 38em;
+    right: 2em;
+    width: 100%;
+    position: fixed;
+    z-index: 9999; }
+  body .ptitle {
+    width: 100%;
+    height: 220px;
+    background-color: #fd110e; }
     @media (min-width: 768px) {
-      .bodymain .container {
-        max-width: 700px;
-        margin: 0 auto; } }
-    @media (min-width: 1100px) {
-      .bodymain .container {
-        max-width: 1000px; } }
-    .bodymain .container .headline {
+      body .ptitle {
+        height: 280px;
+        transition: 0.2s all ease-in-out; } }
+    body .ptitle #projecttitle {
+      font-size: 2.8rem;
       text-align: center;
+      color: #f5f5f5;
+      margin: 0 auto;
+      padding-top: 1.8em;
+      letter-spacing: 0.8px;
       font-family: "Lato", sans-serif;
-      font-weight: 400;
-      color: #3d3d3d;
-      padding: 2rem 3rem 2rem 3rem;
-      font-size: 1.8em;
-      max-width: 750px;
+      font-weight: 700; }
+    body .ptitle .role {
+      position: relative;
+      top: -3em;
+      font-family: "Muli", sans-serif;
+      letter-spacing: 0.8px;
+      font-weight: 300;
+      font-size: 0.8rem;
+      transition: 0.2s all ease-in-out;
+      color: #f5f5f5; }
+      @media (min-width: 768px) {
+        body .ptitle .role {
+          transition: 0.2s all ease-in-out;
+          font-size: 1rem;
+          color: #f5f5f5; } }
+  body .contentcontainerwhite {
+    background-color: white; }
+  body .contentcontainergrey {
+    background-color: #f9f9f9; }
+  body .contentbox {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto; }
+    @media (min-width: 1100px) {
+      body .contentbox {
+        width: 100%;
+        margin: 0 auto; } }
+    body .contentbox .contheader {
+      padding: 1rem 0 2rem 0;
+      font-size: 2.2rem;
+      font-family: "Lato", sans-serif;
+      color: #fd110e; }
+    body .contentbox hr.thin {
+      margin-top: 0.5em;
+      margin-bottom: 3em;
+      width: 10%; }
+    body .contentbox hr.thin2 {
+      margin-top: 3.5em;
+      margin-bottom: 3em;
+      width: 10%; }
+    body .contentbox .picture_intro img {
+      width: 100%;
+      max-width: 550px; }
+    body .contentbox .picture_interaction img {
+      width: 100%;
+      max-width: 850px;
+      padding-top: 2em; }
+    body .contentbox .content {
+      font-size: 0.9rem;
+      font-family: "Muli", sans-serif;
+      font-weight: 300;
       margin: 0 auto;
-      line-height: 50px; }
-      .bodymain .container .headline .myname {
-        font-size: 2.4rem;
-        font-family: "Lato", sans-serif;
-        font-weight: 100;
-        letter-spacing: 1.2px;
-        color: #aaaaaa;
-        padding-bottom: 1em; }
-        .bodymain .container .headline .myname .setu {
-          transition: 0.1s all ease-in-out;
-          color: #3d3d3d;
-          font-weight: 700; }
-        @media (min-width: 1100px) {
-          .bodymain .container .headline .myname {
-            display: none; } }
-    .bodymain .container .row {
-      height: 900px;
-      margin: 0 auto;
-      max-width: 1000px; }
-      .bodymain .container .row .righthalf {
-        background-color: transparent;
-        height: 300px;
-        width: 90%;
-        margin: 0 auto; }
-        @media (min-width: 1100px) {
-          .bodymain .container .row .righthalf {
-            width: 50%;
-            float: right; } }
-        .bodymain .container .row .righthalf .biodiv {
-          height: 200px;
-          margin: 0 auto;
-          background-color: #f5f5f5;
-          margin: 2rem 0;
-          transition: 0.3s all ease-in-out; }
-          @media (min-width: 1100px) {
-            .bodymain .container .row .righthalf .biodiv {
-              float: right;
-              width: 90%;
-              margin-top: 0; } }
-          .bodymain .container .row .righthalf .biodiv .smallbio {
-            max-width: 330px;
-            font-size: 1.3rem;
-            font-family: "Muli", sans-serif;
-            color: #3d3d3d;
-            line-height: 2.3rem;
-            padding-left: 1.4rem;
-            padding-top: 1.5rem; }
-            @media (min-width: 768px) {
-              .bodymain .container .row .righthalf .biodiv .smallbio {
-                text-align: left;
-                float: left;
-                padding-left: 1.4rem;
-                padding-top: 1.6rem; } }
-            @media (min-width: 1100px) {
-              .bodymain .container .row .righthalf .biodiv .smallbio {
-                text-align: right;
-                float: right;
-                padding-right: 1.4rem;
-                padding-top: 1.5rem; } }
-            .bodymain .container .row .righthalf .biodiv .smallbio a {
-              text-decoration: none;
-              color: #3d3d3d;
-              font-size: 1.3rem;
-              font-family: "Muli", sans-serif;
-              font-weight: 900; }
-            .bodymain .container .row .righthalf .biodiv .smallbio a:hover {
-              color: #ef4b33; }
-        .bodymain .container .row .righthalf .drprojectbox {
-          height: 400px;
-          margin: 0 auto;
-          background-color: #dceada;
-          margin: 4rem 0;
-          transition: 0.3s all ease-in-out;
-          margin-bottom: 6rem; }
-          @media (min-width: 1100px) {
-            .bodymain .container .row .righthalf .drprojectbox {
-              float: right;
-              width: 90%;
-              margin-top: 0; } }
-          .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink {
-            text-decoration: none;
-            color: #ffffff;
-            transition: 0.3s all ease-in-out; }
-            .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink .uiux {
-              float: left;
-              padding: 1.6em 0 0 1em;
-              font-size: 1.1em;
-              font-family: "Muli", sans-serif;
-              opacity: 0.5; }
-            .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink .dailyrecord {
-              width: 60%;
-              padding-right: 1.4rem;
-              padding-top: 0.4rem;
-              float: right;
-              text-align: right; }
-              .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink .dailyrecord .dr_title {
-                font-size: 1.5rem;
-                font-family: "Lato", sans-serif;
-                letter-spacing: 0.8px;
-                font-weight: 600; }
-              .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink .dailyrecord .dr_desc {
-                font-size: 1.1rem;
-                line-height: 1.5em;
-                font-family: "Muli", sans-serif; }
-            .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink #drmac {
-              display: block;
-              margin: 0 auto;
-              width: 100%;
-              max-width: 350px;
-              padding: 4.2em 0;
-              transition: 0.5s all ease-in-out;
-              bottom: 0; }
-              @media (min-width: 768px) {
-                .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink #drmac {
-                  position: relative;
-                  max-width: 375px;
-                  padding: 3em 0; } }
-              @media (min-width: 1100px) {
-                .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink #drmac {
-                  max-width: 375px;
-                  position: relative; } }
-            .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover {
-              color: #1a7446; }
-              .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover .uiux {
-                opacity: 1;
-                color: #1a7446;
-                transition: 0.3s all ease-in-out; }
-              .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover #drmac {
-                bottom: 12px; }
-                @media (min-width: 768px) {
-                  .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover #drmac {
-                    bottom: 11px; } }
-      .bodymain .container .row .lefthalf {
-        background-color: transparent;
-        width: 90%;
-        margin: 0 auto; }
-        @media (min-width: 1100px) {
-          .bodymain .container .row .lefthalf {
-            width: 50%;
-            float: left; } }
-        .bodymain .container .row .lefthalf .uwiseprojectbox {
-          height: 420px;
-          margin: 0 auto;
-          background-color: #d5c9f4;
-          transition: 0.3s all ease-in-out;
-          margin-bottom: 6rem; }
-          @media (min-width: 1100px) {
-            .bodymain .container .row .lefthalf .uwiseprojectbox {
-              float: left;
-              width: 90%; } }
-          .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink {
-            text-decoration: none;
-            color: #ffffff;
-            transition: 0.3s all ease-in-out; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink .uiux {
-              float: right;
-              padding: 1.6em 1em 0 0;
-              font-size: 1.1em;
-              font-family: "Muli", sans-serif;
-              opacity: 0.5; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink .uwise {
-              width: 60%;
-              padding-left: 1.4rem;
-              padding-top: 0.4rem; }
-              .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink .uwise .uwise_title {
-                font-size: 1.5rem;
-                font-family: "Lato", sans-serif;
-                letter-spacing: 0.8px;
-                font-weight: 600; }
-              .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink .uwise .uwise_desc {
-                font-size: 1.1rem;
-                line-height: 1.5em;
-                font-family: "Muli", sans-serif; }
-            .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink #uwisephone {
-              display: block;
-              margin: 0 auto;
-              width: 100%;
-              max-width: 150px;
-              padding: 1em 0;
-              transition: 0.5s all ease-in-out;
-              bottom: 0; }
-              @media (min-width: 768px) {
-                .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink #uwisephone {
-                  position: relative;
-                  max-width: 150px; } }
-              @media (min-width: 1100px) {
-                .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink #uwisephone {
-                  max-width: 150px;
-                  position: relative; } }
-            .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover {
-              color: #4b2e83; }
-              .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover .uiux {
-                opacity: 1;
-                color: #4b2e83;
-                transition: 0.3s all ease-in-out; }
-              .bodymain .container .row .lefthalf .uwiseprojectbox #uwisealink:hover #uwisephone {
-                bottom: 1em; }
-        .bodymain .container .row .lefthalf .healthboxbox {
-          height: 400px;
-          margin: 0 auto;
-          background-color: #f7c9c9;
-          transition: 0.3s all ease-in-out;
-          float: left;
-          width: 100%;
-          margin-top: 12rem;
-          margin-bottom: 10rem; }
-          @media (min-width: 1100px) {
-            .bodymain .container .row .lefthalf .healthboxbox {
-              float: left;
-              width: 90%;
-              margin-top: 0; } }
-          .bodymain .container .row .lefthalf .healthboxbox #hblink {
-            text-decoration: none;
-            color: #ffffff;
-            transition: 0.3s all ease-in-out; }
-            .bodymain .container .row .lefthalf .healthboxbox #hblink .uiux {
-              float: right;
-              padding: 1.6em 1em 0 0;
-              font-size: 1.1em;
-              font-family: "Muli", sans-serif;
-              opacity: 0.5;
-              width: 80px; }
-            .bodymain .container .row .lefthalf .healthboxbox #hblink .hbtext {
-              width: 60%;
-              padding-left: 1.4rem;
-              padding-top: 0.4rem; }
-              .bodymain .container .row .lefthalf .healthboxbox #hblink .hbtext .hb_title {
-                font-size: 1.5rem;
-                font-family: "Lato", sans-serif;
-                letter-spacing: 0.8px;
-                font-weight: 600; }
-              .bodymain .container .row .lefthalf .healthboxbox #hblink .hbtext .hb_desc {
-                font-size: 1.1rem;
-                line-height: 1.5em;
-                font-family: "Muli", sans-serif; }
-            .bodymain .container .row .lefthalf .healthboxbox #hblink #hbkit {
-              display: block;
-              margin: 0 auto;
-              width: 100%;
-              max-width: 140px;
-              transition: 0.5s all ease-in-out;
-              bottom: 0; }
-              @media (min-width: 768px) {
-                .bodymain .container .row .lefthalf .healthboxbox #hblink #hbkit {
-                  position: relative;
-                  max-width: 280px;
-                  padding-top: 4.7em; } }
-            .bodymain .container .row .lefthalf .healthboxbox #hblink:hover {
-              color: #fd110e; }
-              .bodymain .container .row .lefthalf .healthboxbox #hblink:hover #hbkit {
-                bottom: 1em; }
+      width: 85%;
+      padding: 30px 0;
+      text-align: justify;
+      line-height: 1.8; }
+      body .contentbox .content .boldtext {
+        font-weight: 600;
+        color: #fd110e; }
+      body .contentbox .content .demotext {
+        font-weight: bold;
+        text-align: center;
+        color: #3d3d3d; }
+      @media (min-width: 768px) {
+        body .contentbox .content {
+          line-height: 1.8;
+          font-size: 1rem; } }
+      @media (min-width: 1100px) {
+        body .contentbox .content {
+          width: 40%; } }
+    body .contentbox .nextprojectlink {
+      text-decoration: none;
+      font-family: "Lato", sans-serif;
+      color: #d5c9f4; }
+      body .contentbox .nextprojectlink .nextproj {
+        width: 14em;
+        height: 5em;
+        border: 2px solid #d5c9f4;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: all 0.2s linear 0s;
+        margin-top: 3em; }
+        body .contentbox .nextprojectlink .nextproj #nexttext {
+          position: relative;
+          top: 0.5em;
+          font-size: 0.8em;
+          padding: 0;
+          margin: 0; }
+        body .contentbox .nextprojectlink .nextproj #drtext {
+          position: relative;
+          bottom: 0.4em;
+          font-size: 1.6em; }
+      body .contentbox .nextprojectlink .nextproj:hover {
+        border: 2px solid #4b2e83;
+        color: white;
+        background-color: #d5c9f4;
+        font-weight: bold;
+        transition: all 0.2s linear 0s; }
 
 .footercontainer {
   height: 170px;

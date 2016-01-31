@@ -1,7 +1,7 @@
 body{
 	padding-top:4.7em; 
 	@include breakpoint(tablet){
-		padding-top: 5.7rem;
+		padding-top: 6rem;
 	}
 	
 	#lengthtracker{
@@ -21,14 +21,14 @@ body{
 		height: 250px;
 		background-color: $uwpurple;
 		@include breakpoint(tablet){
-			height: 210px;
+			height: 280px;
 		}
 		#projecttitle{
 			font-size: 2.8rem;
 			text-align: center;
 			color: $superlightgrey;
 			margin: 0 auto;
-			padding-top: 0.5em;
+			padding-top: 1.5em;
 			// letter-spacing: 0.5px;
 			font-family: $lato;
 			// font-weight: 400;
@@ -351,8 +351,8 @@ body{
 			color: $lightgreenexcel;
 			cursor: pointer;
 			.nextproj{
-			width: 13em;
-			height: 4em;
+			width: 15em;
+			height: 5em;
 			border: 2px solid $lightgreenexcel;
 			margin: 0 auto;
 			cursor: pointer;
@@ -368,7 +368,7 @@ body{
 				#drtext{
 					position: relative;
 					bottom: 0.5em;
-					font-size: 1.4em;
+					font-size: 1.6em;
 				}
 			}
 			.nextproj:hover{

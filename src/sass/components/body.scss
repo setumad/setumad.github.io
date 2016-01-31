@@ -280,10 +280,10 @@
 					}
 				}
 
-				.newprojectbox{
-					height: 335px;
+				.healthboxbox{
+					height: 400px;
 					margin: 0 auto;
-					background-color: $lighteventosaur;
+					background-color: $hblightred;
 					transition: 0.3s all ease-in-out;
 					float: left;
 					width: 100%;
@@ -297,29 +297,37 @@
 						margin-top: 0;
 					}
 
-					#newlink{
+					#hblink{
 						text-decoration: none;
 						color: #ffffff;
 						transition: 0.3s all ease-in-out;
-						.newtext{
+						.uiux{
+							float: right;
+							padding: 1.6em 1em 0 0;
+							font-size: 1.1em;
+							font-family: $muli;
+							opacity: 0.5;
+							width: 80px;
+						}
+						.hbtext{
 							width: 60%;
 							padding-left: 1.4rem;
 							padding-top: 0.4rem;
 							// padding-bottom: 0.5rem;
 
-							.new_title{
+							.hb_title{
 								font-size: 1.5rem;
 								font-family: $lato;
 								letter-spacing: 0.8px;
 								font-weight: 600;
 							}
-							.new_desc{
+							.hb_desc{
 								font-size: 1.1rem;
 								line-height: 1.5em;
 								font-family: $muli;
 							}
 						}
-						#phone{
+						#hbkit{
 							display: block;
 							margin: 0 auto;
 							width: 100%;
@@ -330,17 +338,18 @@
 
 							@include breakpoint(tablet){
 								position: relative;
-								max-width: 140px;
+								max-width: 280px;
+								padding-top: 4.7em;
 							}
-							@include breakpoint(laptop){
-								max-width: 140px;
-								position: relative;
-							}
+							// @include breakpoint(laptop){
+							// 	max-width: 140px;
+							// 	position: relative;
+							// }
 						}
 						
 						&:hover{
-							color: $eventosaurblue;
-							#phone{
+							color: $hbdarkred;
+							#hbkit{
 								bottom: 1em;
 							}
 						}

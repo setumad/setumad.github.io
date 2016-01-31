@@ -459,15 +459,21 @@ th {
                 #header .navigation .navcontainer .nav-list li a .line {
                   opacity: 0;
                   height: 3px;
-                  margin-top: 0.6em;
+                  margin-top: 2.25em;
                   background-color: #ef4b33;
                   transition: opacity 0.3s linear 0s; }
                 #header .navigation .navcontainer .nav-list li a .line1 {
-                  width: 85px; }
+                  width: 85px;
+                  left: -0.15em;
+                  position: relative; }
                 #header .navigation .navcontainer .nav-list li a .line2 {
-                  width: 55px; }
+                  width: 59px;
+                  left: -0.15em;
+                  position: relative; }
                 #header .navigation .navcontainer .nav-list li a .line3 {
-                  width: 68px; }
+                  width: 68px;
+                  left: -0.15em;
+                  position: relative; }
               #header .navigation .navcontainer .nav-list li a:hover {
                 font-weight: bolder;
                 color: #3d3d3d; }
@@ -556,6 +562,9 @@ th {
           margin-top: 0.5em;
           padding-bottom: 0.5em; }
         #header .navigation .dropdown .dropdown-content #dr {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #hb {
           margin-top: 0.5em;
           padding-bottom: 0.5em; }
         #header .navigation .dropdown .dropdown-content #about {
