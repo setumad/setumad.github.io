@@ -422,7 +422,7 @@ th {
   transition: opacity 0.3s linear 0s; }
   @media (min-width: 768px) {
     #header {
-      height: 95px; } }
+      height: 93px; } }
   #header .navigation {
     width: 100%;
     height: 70px;
@@ -678,7 +678,7 @@ th {
         .bodymain .container .row .righthalf .drprojectbox {
           height: 400px;
           margin: 0 auto;
-          background-color: #dceada;
+          background-color: #c8e4c4;
           margin: 4rem 0;
           transition: 0.3s all ease-in-out;
           margin-bottom: 6rem; }
@@ -730,10 +730,10 @@ th {
                   max-width: 375px;
                   position: relative; } }
             .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover {
-              color: #1a7446; }
+              color: #246742; }
               .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover .uiux {
                 opacity: 1;
-                color: #1a7446;
+                color: #246742;
                 transition: 0.3s all ease-in-out; }
               .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover #drmac {
                 bottom: 12px; }

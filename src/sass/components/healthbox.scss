@@ -225,6 +225,7 @@ body{
 			cursor: pointer;
 			transition: all 0.2s linear 0s;
 			margin-top: 3em;
+			border-radius: 4px;
 				#nexttext{
 					position: relative;
 					top: 0.5em;
@@ -236,13 +237,12 @@ body{
 					position: relative;
 					bottom: 0.4em;
 					font-size: 1.6em;
+					font-weight: bold;
 				}
 			}
 			.nextproj:hover{
 				border: 2px solid $uwpurple ;
-				color: white;
-				background-color: $lightpurple;
-				font-weight: bold;
+				color: $uwpurple;
 				transition: all 0.2s linear 0s;
 			}
 		}

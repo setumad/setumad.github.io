@@ -422,7 +422,7 @@ th {
   transition: opacity 0.3s linear 0s; }
   @media (min-width: 768px) {
     #header {
-      height: 95px; } }
+      height: 93px; } }
   #header .navigation {
     width: 100%;
     height: 70px;
@@ -772,7 +772,7 @@ body {
         font-size: 2rem;
         font-weight: bold;
         line-height: 3.2rem;
-        color: #1a7446;
+        color: #246742;
         text-align: center; }
       body .contentbox .content .demotext {
         font-weight: bold;
@@ -837,16 +837,17 @@ body {
     body .contentbox .nextprojectlink {
       text-decoration: none;
       font-family: "Lato", sans-serif;
-      color: #dceada;
+      color: #c8e4c4;
       cursor: pointer; }
       body .contentbox .nextprojectlink .nextproj {
         width: 15em;
         height: 5em;
-        border: 2px solid #dceada;
+        border: 2px solid #c8e4c4;
         margin: 0 auto;
         cursor: pointer;
         margin-top: 4em;
-        transition: all 0.2s linear 0s; }
+        transition: all 0.2s linear 0s;
+        border-radius: 4px; }
         body .contentbox .nextprojectlink .nextproj #nexttext {
           position: relative;
           top: 0.5em;
@@ -856,12 +857,11 @@ body {
         body .contentbox .nextprojectlink .nextproj #drtext {
           position: relative;
           bottom: 0.5em;
-          font-size: 1.6em; }
+          font-size: 1.6em;
+          font-weight: bold; }
       body .contentbox .nextprojectlink .nextproj:hover {
-        border: 2px solid #1a7446;
-        color: white;
-        font-weight: bold;
-        background-color: #dceada;
+        border: 2px solid #246742;
+        color: #246742;
         transition: all 0.3s linear 0s; }
 
 .footercontainer {
