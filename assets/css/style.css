@@ -648,7 +648,7 @@ th {
               width: 90%;
               margin-top: 0; } }
           .bodymain .container .row .righthalf .biodiv .smallbio {
-            max-width: 330px;
+            max-width: 366px;
             font-size: 1.3rem;
             font-family: "Muli", sans-serif;
             color: #3d3d3d;
@@ -847,9 +847,10 @@ th {
               display: block;
               margin: 0 auto;
               width: 100%;
-              max-width: 140px;
+              max-width: 280px;
               transition: 0.5s all ease-in-out;
-              bottom: 0; }
+              bottom: 0;
+              padding-top: 4.7em; }
               @media (min-width: 768px) {
                 .bodymain .container .row .lefthalf .healthboxbox #hblink #hbkit {
                   position: relative;

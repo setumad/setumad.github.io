@@ -75,7 +75,7 @@
 					.smallbio{
 
 						// background-color: blue;
-						max-width: 330px;
+						max-width: 366px;
 						font-size: 1.3rem;
 						font-family:$muli;
 						color: $textdark;
@@ -331,9 +331,10 @@
 							display: block;
 							margin: 0 auto;
 							width: 100%;
-							max-width: 140px;
+							max-width: 280px;
 							transition: 0.5s all ease-in-out;
 							bottom:0;
+							padding-top: 4.7em;
 
 
 							@include breakpoint(tablet){
