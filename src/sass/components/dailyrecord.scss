@@ -64,6 +64,7 @@ body{
 		// background-color: green;
 		text-align: center;
 		margin: 0 auto;
+
 		@include breakpoint(laptop){
 			width: 100%;
 			margin: 0 auto;
@@ -259,6 +260,9 @@ body{
 			}
 		}
 	}
+	.learnings{
+				margin-bottom: 7em;
+			}
 }
 
 

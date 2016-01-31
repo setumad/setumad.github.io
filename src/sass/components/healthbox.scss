@@ -25,7 +25,7 @@ body{
 			transition: 0.2s all ease-in-out;
 		}
 		#projecttitle{
-			font-size: 2.8rem;
+			font-size: 1.8rem;
 			text-align: center;
 			color: $superlightgrey;
 			margin: 0 auto;
@@ -33,7 +33,7 @@ body{
 			letter-spacing: 0.8px;
 			font-family: $lato;
 			font-weight: $bold;
-			// background-color: green;
+
 		}
 		
 		.role{
@@ -46,10 +46,15 @@ body{
 			transition: 0.2s all ease-in-out;
 			color: $superlightgrey;
 			@include breakpoint(tablet){
+				top: 1em;
 				transition: 0.2s all ease-in-out;
 				font-size: 1rem;
 				color: $superlightgrey;
 			}
+		}
+		.inprogress{
+			font-size: 0.45em;
+			font-family: $muli;
 		}
 	}
 	
@@ -138,6 +143,70 @@ body{
 			@include breakpoint(laptop){
 				width: 40%;
 			}
+		}
+
+		.teammates{
+			margin-bottom: 7em;
+			a{
+				text-decoration: none;
+				font-size: 1em;
+				font-family: $muli;
+				font-weight: $light;
+				display: block;
+				padding: 1.5em;
+				color: $textdark;
+				cursor: pointer;
+				@include breakpoint (tablet){
+					display: inline-block;
+					font-size: 1.2em;
+					padding: 1em;
+				}
+
+				.line{
+					opacity: 0;
+					height: 3px;
+					margin-top: 0.6em;
+					background-color: $setured;
+				    transition: opacity 0.3s linear 0s;
+				}
+				.line1{
+					margin: 0 auto;
+					width: 145px;
+					margin-top: 0.5em;
+				}
+				.line2{
+					margin: 0 auto;
+					width: 135px;
+					margin-top: 0.5em;
+				}
+				.line3{	
+					margin: 0 auto;				
+					width: 105px;
+					margin-top: 0.5em;
+				}
+				.line4{
+					margin: 0 auto;
+					width: 215px;
+					margin-top: 0.5em;
+				}
+			}
+			a:hover{
+				color: $hbdarkred;
+				font-weight: $bold;
+				.line1{
+					opacity: 1;
+				}
+				.line2{
+					opacity: 1;
+				}
+				.line3{
+					opacity: 1;
+				}
+				.line4{
+					opacity: 1;
+				}
+			}
+				
 		}
 
 		.nextprojectlink{

@@ -780,6 +780,8 @@ body {
         background-color: #f7c9c9;
         font-weight: bold;
         transition: all 0.2s linear 0s; }
+  body .learnings {
+    margin-bottom: 7em; }
 
 .footercontainer {
   height: 170px;
