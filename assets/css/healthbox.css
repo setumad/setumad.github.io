@@ -678,6 +678,9 @@ body {
       padding: 30px 0;
       text-align: justify;
       line-height: 1.8; }
+      body .contentbox .content a {
+        text-decoration: none;
+        color: #fd110e; }
       body .contentbox .content .boldtext {
         font-weight: 600;
         color: #fd110e; }
