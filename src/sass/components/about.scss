@@ -17,14 +17,15 @@
 		font-family: $lato;
 		font-weight: $thin;
 		color: $lightgrey;
-		padding:0 1em 1em 1em;
 		text-align: center;
 		width: 100%;
+		max-width: 300px;
 		padding: 2rem 0 3.5rem 0;
 		margin:0 auto;
-		@include breakpoint(tablet){
+		@include breakpoint(405px){
 			font-size: 2.5rem;
-			width: 500px;
+			max-width: 600px;
+			// color: red;
 		}
 		.setu{
 		transition: 0.1s all ease-in-out;

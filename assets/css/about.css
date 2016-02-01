@@ -604,15 +604,15 @@ th {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     color: #aaaaaa;
-    padding: 0 1em 1em 1em;
     text-align: center;
     width: 100%;
+    max-width: 300px;
     padding: 2rem 0 3.5rem 0;
     margin: 0 auto; }
-    @media (min-width: 768px) {
+    @media (min-width: 405px) {
       .headerimage .myname {
         font-size: 2.5rem;
-        width: 500px; } }
+        max-width: 600px; } }
     .headerimage .myname .setu {
       transition: 0.1s all ease-in-out;
       color: #3d3d3d;
