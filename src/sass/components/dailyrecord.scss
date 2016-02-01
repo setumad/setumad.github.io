@@ -123,6 +123,7 @@ body{
 				max-width: 400px;
 				@include breakpoint(tablet){
 					max-width: 500px;
+					// margin-bottom: 1em;
 				}
 				@include breakpoint(laptop){
 					padding: 0rem 2rem;
