@@ -147,9 +147,6 @@
 // **************** MOBILE NAV *****************
 
 			.dropdown {
-			    // position: relative;
-			    // display: inline-block;
-			    // float: right;
 			    width: 100%;
 			    opacity: 0.8;
 			    margin: 0 auto;
@@ -163,7 +160,7 @@
 				    position: relative;
 				    float: right;
 				    top:-3em;
-				    padding-right: 1.5em;
+				    right: 1.5em;
 				    @include breakpoint(tablet){
 			    		cursor: pointer;
 					    width: 35px;
