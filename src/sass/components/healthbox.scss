@@ -25,6 +25,7 @@ body{
 			font-weight: $bold;
 			img{
 				width: 100%;
+				max-width: 600px;
 			}
 
 		}
@@ -46,9 +47,17 @@ body{
 			}
 		}
 		.inprogress{
-			font-size: 0.45em;
+			font-size: 0.8em;
 			font-family: $muli;
-		}
+			text-align: center;
+			position: relative;
+			bottom: 5em;
+			color: $superlightgrey;
+			font-weight: $light;
+			@include breakpoint(tablet){
+				top: 0em;
+			}
+		}	
 	}
 	
 	.contentcontainerwhite{
