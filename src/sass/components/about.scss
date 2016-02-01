@@ -158,7 +158,7 @@
 				@include breakpoint(laptop){
 					display: inline-block;
 					// display: table-cell;
-					width: calc(100% / 3.04);
+					width: calc(100% / 3.06);
 					height: 280px;
 				}
 			}
@@ -175,7 +175,7 @@
 				@include breakpoint(laptop){
 					display: inline-block;
 					// display: table-cell;
-					width: calc(100% / 3.04);
+					width: calc(100% / 3.06);
 					margin: 0;
 					height: 280px
 				}
@@ -188,7 +188,7 @@
 				@include breakpoint(laptop){
 					display: inline-block;
 					// display: table-cell;
-					width: calc(100% / 3.05);
+					width: calc(100% / 3.06);
 					height: 280px;
 				}
 			}

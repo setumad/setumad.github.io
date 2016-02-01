@@ -727,7 +727,7 @@ th {
         @media (min-width: 1100px) {
           .skillgreybox .bigskillbox2 .wrapper .design {
             display: inline-block;
-            width: calc(100% / 3.04);
+            width: calc(100% / 3.06);
             height: 280px; } }
       .skillgreybox .bigskillbox2 .wrapper .research {
         vertical-align: top;
@@ -738,7 +738,7 @@ th {
         @media (min-width: 1100px) {
           .skillgreybox .bigskillbox2 .wrapper .research {
             display: inline-block;
-            width: calc(100% / 3.04);
+            width: calc(100% / 3.06);
             margin: 0;
             height: 280px; } }
       .skillgreybox .bigskillbox2 .wrapper .code {
@@ -748,7 +748,7 @@ th {
         @media (min-width: 1100px) {
           .skillgreybox .bigskillbox2 .wrapper .code {
             display: inline-block;
-            width: calc(100% / 3.05);
+            width: calc(100% / 3.06);
             height: 280px; } }
 
 .footercontainer {
