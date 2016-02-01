@@ -727,7 +727,8 @@ th {
         @media (min-width: 1100px) {
           .skillgreybox .bigskillbox2 .wrapper .design {
             display: inline-block;
-            width: calc(100% / 3.04); } }
+            width: calc(100% / 3.04);
+            height: 280px; } }
       .skillgreybox .bigskillbox2 .wrapper .research {
         vertical-align: top;
         display: block;
