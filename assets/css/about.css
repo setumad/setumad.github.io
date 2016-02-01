@@ -607,10 +607,12 @@ th {
     padding: 0 1em 1em 1em;
     text-align: center;
     width: 100%;
-    padding: 2rem 0 3.5rem 0; }
+    padding: 2rem 0 3.5rem 0;
+    margin: 0 auto; }
     @media (min-width: 768px) {
       .headerimage .myname {
-        font-size: 2.5rem; } }
+        font-size: 2.5rem;
+        width: 500px; } }
     .headerimage .myname .setu {
       transition: 0.1s all ease-in-out;
       color: #3d3d3d;
@@ -620,127 +622,133 @@ th {
         display: none; } }
 
 .aboutcontainer {
-  max-width: 1100px;
+  width: 100%;
+  background-color: #f5f5f5;
   margin: 0 auto;
-  padding: 0rem 2rem 4rem 2rem; }
+  padding: 2em 0 4em 0; }
+  @media (min-width: 1100px) {
+    .aboutcontainer {
+      margin-top: 2em; } }
   .aboutcontainer .aboutme {
-    width: 100%;
-    max-width: 85%;
-    margin: 0 auto;
-    padding: 2em 0;
-    font-family: "Muli", sans-serif;
-    font-size: 1.2em;
-    text-align: justify;
-    line-height: 1.8;
-    color: #3d3d3d; }
-  @media (min-width: 1100px) {
-    .aboutcontainer .left {
-      width: 100%; } }
-  .aboutcontainer .left .bigskillbox {
-    max-width: 100%;
-    margin: 0 auto; }
-    .aboutcontainer .left .bigskillbox #skilltext {
-      font-size: 2rem;
-      text-align: center;
-      padding-top: 3rem;
-      font-family: "Lato", sans-serif;
-      font-weight: 700;
-      color: #3d3d3d;
-      padding-bottom: 1rem; }
-      @media (min-width: 1100px) {
-        .aboutcontainer .left .bigskillbox #skilltext {
-          padding-bottom: 0rem; } }
-    .aboutcontainer .left .bigskillbox .skillcontainer {
-      margin: 0 auto;
-      text-align: center;
-      max-width: 1000px;
-      font-size: 1.1rem;
-      font-weight: 700;
-      font-family: "Muli", sans-serif;
-      color: #3d3d3d;
-      line-height: 1.8rem; }
-      .aboutcontainer .left .bigskillbox .skillcontainer .skillbox1 {
-        width: 80%;
-        margin: 0 auto;
-        position: relative;
-        top: 3.5em; }
-        @media (min-width: 768px) {
-          .aboutcontainer .left .bigskillbox .skillcontainer .skillbox1 {
-            width: 32%;
-            display: inline-block; } }
-        .aboutcontainer .left .bigskillbox .skillcontainer .skillbox1 .skills {
-          width: 75%;
-          margin: 0 auto;
-          position: relative;
-          font-family: "Muli", sans-serif;
-          font-weight: 300; }
-      .aboutcontainer .left .bigskillbox .skillcontainer .skillbox2 {
-        padding-top: 4em;
-        vertical-align: top; }
-        @media (min-width: 768px) {
-          .aboutcontainer .left .bigskillbox .skillcontainer .skillbox2 {
-            width: 32%;
-            display: inline-block; } }
-        .aboutcontainer .left .bigskillbox .skillcontainer .skillbox2 .skills {
-          width: 75%;
-          margin: 0 auto;
-          position: relative;
-          font-family: "Muli", sans-serif;
-          font-weight: 300; }
-      .aboutcontainer .left .bigskillbox .skillcontainer .skillbox3 {
-        padding-top: 3em;
-        position: relative;
-        top: 1em; }
-        @media (min-width: 700px) {
-          .aboutcontainer .left .bigskillbox .skillcontainer .skillbox3 {
-            top: -1em; } }
-        @media (min-width: 800px) {
-          .aboutcontainer .left .bigskillbox .skillcontainer .skillbox3 {
-            top: 1em; } }
-        @media (min-width: 768px) {
-          .aboutcontainer .left .bigskillbox .skillcontainer .skillbox3 {
-            width: 32%;
-            display: inline-block; } }
-        .aboutcontainer .left .bigskillbox .skillcontainer .skillbox3 .skills {
-          width: 75%;
-          margin: 0 auto;
-          position: relative;
-          font-family: "Muli", sans-serif;
-          font-weight: 300; }
-  @media (min-width: 1100px) {
-    .aboutcontainer .right {
-      width: 75%;
-      margin: 0 auto; } }
-  .aboutcontainer .right #storytext {
-    font-size: 1.9rem;
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    color: #3d3d3d; }
-    @media (min-width: 768px) {
-      .aboutcontainer .right #storytext {
-        padding-top: 2rem; } }
-  .aboutcontainer .right .storycontent {
     font-size: 1rem;
     line-height: 1.8;
     font-weight: 300;
     font-family: "Muli", sans-serif;
     margin: 0 auto;
     width: 85%;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    overflow: auto;
+    color: #3d3d3d;
+    font-weight: 400; }
+    @media (min-width: 768px) {
+      .aboutcontainer .aboutme {
+        max-width: 960px;
+        font-size: 1.2em; } }
+
+.right {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
+  .right #storytext {
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #3d3d3d; }
+    @media (min-width: 768px) {
+      .right #storytext {
+        padding-top: 2rem; } }
+  .right .storycontent {
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 300;
+    font-family: "Muli", sans-serif;
+    color: #3d3d3d;
+    font-weight: 100;
+    margin: 0 auto;
+    width: 85%;
     padding: 30px 0;
     text-align: justify;
     overflow: auto; }
-    .aboutcontainer .right .storycontent a {
+    .right .storycontent a {
       text-decoration: none;
       color: #246742;
       font-weight: bold; }
     @media (min-width: 768px) {
-      .aboutcontainer .right .storycontent {
+      .right .storycontent {
         width: 85%;
         font-size: 1.1rem; } }
     @media (min-width: 1100px) {
-      .aboutcontainer .right .storycontent {
-        width: 100%; } }
+      .right .storycontent {
+        width: 100%;
+        font-size: 1.2em; } }
+
+.skillgreybox {
+  background-color: #f5f5f5; }
+  .skillgreybox .bigskillbox2 {
+    width: 100%;
+    margin-top: 3em;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2em 0 4em 0; }
+    .skillgreybox .bigskillbox2 h1 {
+      text-align: center;
+      padding-bottom: 1em; }
+    .skillgreybox .bigskillbox2 .wrapper {
+      padding: 0 4.5em; }
+      @media (min-width: 1100px) {
+        .skillgreybox .bigskillbox2 .wrapper {
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          margin: 0 auto; } }
+      .skillgreybox .bigskillbox2 .wrapper h2 {
+        text-align: center;
+        font-family: "Muli", sans-serif;
+        color: #3d3d3d; }
+      .skillgreybox .bigskillbox2 .wrapper p {
+        font-family: "Muli", sans-serif;
+        font-size: 1em;
+        line-height: 1.8em;
+        color: #3d3d3d;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        font-weight: 300; }
+      .skillgreybox .bigskillbox2 .wrapper .design {
+        display: block;
+        vertical-align: top;
+        border: 2px solid #aaaaaa;
+        height: 280px; }
+        @media (min-width: 1100px) {
+          .skillgreybox .bigskillbox2 .wrapper .design {
+            display: inline-block;
+            width: calc(100% / 3.04); } }
+      .skillgreybox .bigskillbox2 .wrapper .research {
+        vertical-align: top;
+        display: block;
+        margin: 2em 0;
+        border: 2px solid #aaaaaa;
+        height: 240px; }
+        @media (min-width: 1100px) {
+          .skillgreybox .bigskillbox2 .wrapper .research {
+            display: inline-block;
+            width: calc(100% / 3.04);
+            margin: 0;
+            height: 280px; } }
+      .skillgreybox .bigskillbox2 .wrapper .code {
+        display: block;
+        border: 2px solid #aaaaaa;
+        height: 240px; }
+        @media (min-width: 1100px) {
+          .skillgreybox .bigskillbox2 .wrapper .code {
+            display: inline-block;
+            width: calc(100% / 3.05);
+            height: 280px; } }
 
 .footercontainer {
   height: 170px;
