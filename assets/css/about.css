@@ -510,7 +510,7 @@ th {
             float: right;
             left: -155px;
             position: relative;
-            padding-top: 1.5rem;
+            padding-top: 1.1rem;
             font-size: 1.9rem;
             font-family: "Playfair Display", serif;
             letter-spacing: 1.2px;
@@ -706,6 +706,13 @@ th {
           margin: 0;
           width: 100%;
           margin: 0 auto; } }
+      .skillgreybox .bigskillbox2 .wrapper .underline {
+        height: 3px;
+        background-color: #ef4b33;
+        margin: 0 auto;
+        position: relative;
+        top: -1em;
+        opacity: .8; }
       .skillgreybox .bigskillbox2 .wrapper h2 {
         text-align: center;
         font-family: "Muli", sans-serif;
@@ -731,6 +738,8 @@ th {
             display: inline-block;
             width: calc(100% / 3.06);
             height: 280px; } }
+        .skillgreybox .bigskillbox2 .wrapper .design .underline {
+          width: 5.3em; }
       .skillgreybox .bigskillbox2 .wrapper .research {
         vertical-align: top;
         display: block;
@@ -743,6 +752,8 @@ th {
             width: calc(100% / 3.06);
             margin: 0;
             height: 280px; } }
+        .skillgreybox .bigskillbox2 .wrapper .research .underline {
+          width: 7em; }
       .skillgreybox .bigskillbox2 .wrapper .code {
         display: block;
         border: 2px solid #aaaaaa;
@@ -752,6 +763,8 @@ th {
             display: inline-block;
             width: calc(100% / 3.06);
             height: 280px; } }
+        .skillgreybox .bigskillbox2 .wrapper .code .underline {
+          width: 4em; }
 
 .footercontainer {
   height: 170px;

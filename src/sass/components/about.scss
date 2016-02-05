@@ -132,6 +132,15 @@
 				width: 100%;
 				margin: 0 auto;
 			}
+
+			.underline{
+					height: 3px;
+					background-color: $setured;
+					margin: 0 auto;
+					position: relative;
+					top: -1em;
+					opacity: .8;
+				}
 			
 			h2{
 				text-align: center;
@@ -161,6 +170,9 @@
 					width: calc(100% / 3.06);
 					height: 280px;
 				}
+				.underline{
+					width: 5.3em;
+				}
 			}
 			.research{
 				vertical-align: top;
@@ -179,6 +191,9 @@
 					margin: 0;
 					height: 280px
 				}
+				.underline{
+					width: 7em;
+				}
 			}
 			.code{
 				// background-color: red;
@@ -190,6 +205,9 @@
 					// display: table-cell;
 					width: calc(100% / 3.06);
 					height: 280px;
+				}
+				.underline{
+					width: 4em;
 				}
 			}
 		}
