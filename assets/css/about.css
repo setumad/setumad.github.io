@@ -645,6 +645,8 @@ th {
       .aboutcontainer .aboutme {
         max-width: 960px;
         font-size: 1.2em; } }
+    .aboutcontainer .aboutme h2 {
+      text-align: center; }
 
 .right {
   width: 100%;
