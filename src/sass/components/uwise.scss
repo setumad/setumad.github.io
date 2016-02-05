@@ -273,6 +273,10 @@ body{
 				text-align: center;
 				color: $textdark;
 			}
+			h2{
+				text-align: center;
+				
+			}
 			// background-color: green;
 
 			@include breakpoint(tablet){

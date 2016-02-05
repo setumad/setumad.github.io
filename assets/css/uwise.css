@@ -780,6 +780,8 @@ body {
         font-weight: bold;
         text-align: center;
         color: #3d3d3d; }
+      body .contentbox .content h2 {
+        text-align: center; }
       @media (min-width: 768px) {
         body .contentbox .content {
           line-height: 1.8;
