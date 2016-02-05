@@ -716,7 +716,7 @@ body {
       margin: 0 auto;
       width: 85%;
       padding: 30px 0;
-      text-align: justify;
+      text-align: left;
       line-height: 1.8; }
       body .contentbox .content .boldtext {
         font-weight: 600;
@@ -757,7 +757,7 @@ body {
           width: 40%; } }
     body .contentbox .nextprojectlink {
       text-decoration: none;
-      font-family: "Lato", sans-serif;
+      font-family: "Muli", sans-serif;
       color: #f7c9c9; }
       body .contentbox .nextprojectlink .nextproj {
         width: 17em;

@@ -638,9 +638,6 @@ th {
     font-family: "Muli", sans-serif;
     margin: 0 auto;
     width: 85%;
-    text-align: justify;
-    -moz-text-align-last: center;
-    text-align-last: center;
     overflow: auto;
     color: #3d3d3d;
     font-weight: 400; }
@@ -672,7 +669,6 @@ th {
     margin: 0 auto;
     width: 85%;
     padding: 30px 0;
-    text-align: justify;
     overflow: auto; }
     .right .storycontent a {
       text-decoration: none;
