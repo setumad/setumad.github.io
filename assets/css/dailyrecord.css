@@ -448,30 +448,34 @@ th {
             margin: 2rem 0; }
             #header .navigation .navcontainer .nav-list li {
               float: left;
-              margin-left: 50px; }
+              margin-left: 30px; }
               #header .navigation .navcontainer .nav-list li a {
                 transition: 0.2s all ease-in-out;
                 text-decoration: none;
                 font-family: "Lato", sans-serif;
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 14px;
                 color: #aaaaaa; }
                 #header .navigation .navcontainer .nav-list li a .line {
                   opacity: 0;
                   height: 3px;
-                  margin-top: 2.25em;
+                  margin-top: 2.7em;
                   background-color: #ef4b33;
                   transition: opacity 0.3s linear 0s; }
                 #header .navigation .navcontainer .nav-list li a .line1 {
-                  width: 85px;
+                  width: 74px;
                   left: -0.15em;
                   position: relative; }
                 #header .navigation .navcontainer .nav-list li a .line2 {
-                  width: 59px;
+                  width: 55px;
                   left: -0.15em;
                   position: relative; }
                 #header .navigation .navcontainer .nav-list li a .line3 {
-                  width: 68px;
+                  width: 45px;
+                  left: -0.18em;
+                  position: relative; }
+                #header .navigation .navcontainer .nav-list li a .line4 {
+                  width: 60px;
                   left: -0.15em;
                   position: relative; }
               #header .navigation .navcontainer .nav-list li a:hover {
@@ -482,6 +486,8 @@ th {
                 #header .navigation .navcontainer .nav-list li a:hover .line2 {
                   opacity: 1; }
                 #header .navigation .navcontainer .nav-list li a:hover .line3 {
+                  opacity: 1; }
+                #header .navigation .navcontainer .nav-list li a:hover .line4 {
                   opacity: 1; }
               #header .navigation .navcontainer .nav-list li .currentpage {
                 color: #3d3d3d; } }
@@ -570,6 +576,12 @@ th {
           margin-top: 0.5em;
           padding-bottom: 0.5em; }
         #header .navigation .dropdown .dropdown-content #about {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #blog {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #resume {
           margin-top: 0.5em;
           padding-bottom: 0.5em; }
         #header .navigation .dropdown .dropdown-content a {

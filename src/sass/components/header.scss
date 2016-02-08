@@ -39,27 +39,32 @@
 					// background-color: green;
 					li{
 						float: left;
-						margin-left: 50px;
+						margin-left: 30px;
 						a{
 							.line{
 								opacity: 0;
 								height: 3px;
-								margin-top: 2.25em;
+								margin-top: 2.7em;
 								background-color: $setured;
 							    transition: opacity 0.3s linear 0s;
 							}
 							.line1{
-								width: 85px;
+								width: 74px;
 								left: -0.15em;
 								position: relative;
 							}
 							.line2{
-								width: 59px;
+								width: 55px;
 								left: -0.15em;
 								position: relative;
 							}
 							.line3{
-								width: 68px;
+								width: 45px;
+								left: -0.18em;
+								position: relative;
+							}
+							.line4{
+								width: 60px;
 								left: -0.15em;
 								position: relative;
 							}
@@ -68,7 +73,7 @@
 							text-decoration: none;
 							font-family: $lato;
 							font-weight: bold;
-							font-size: 16px;
+							font-size: 14px;
 							color: $lightgrey;
 						}
 						a:hover{
@@ -82,6 +87,9 @@
 								opacity: 1;
 							}
 							.line3{
+								opacity: 1;
+							}
+							.line4{
 								opacity: 1;
 							}
 						}
@@ -200,6 +208,14 @@
 				    	// padding-left: 2.2em;
 				    }
 				    #about{
+				    	margin-top: 0.5em;
+				    	padding-bottom: 0.5em;
+				    }
+				    #blog{
+				    	margin-top: 0.5em;
+				    	padding-bottom: 0.5em;
+				    }
+				    #resume{
 				    	margin-top: 0.5em;
 				    	padding-bottom: 0.5em;
 				    }
