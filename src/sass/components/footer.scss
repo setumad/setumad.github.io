@@ -66,30 +66,46 @@
 					margin: 0 auto;
 					display: table-cell;
 					.twit{
-						width: 30px;
+						width: 28px;
 						fill:$textdark;
 					}
 					.twit:hover{
-						transition: all 0.25s ease-in-out;
+						transition: all 0.20s ease-in-out;
 						fill: $twitter;
 					}
 					.mail{
-						width: 30px;
+						width: 28px;
 						fill:$textdark;
 					}
 					.mail:hover{
-						transition: all 0.25s ease-in-out;
+						transition: all 0.20s ease-in-out;
 						fill: $mail;
 					}
 
 					.in{
-						width: 25px;
+						width: 23.5px;
 						fill:$textdark;
 					}
 					.in:hover{
-						transition: all 0.25s ease-in-out;
+						transition: all 0.20s ease-in-out;
 						fill: $in;
+					}
+					.insta{
+						width: 25px;
+						fill:$textdark;
+					}
+					.insta:hover{
+						transition: all 0.20s ease-in-out;
+						fill: $insta;
+					}
 
+					.blog{
+						width: 26px;
+						fill:$textdark;
+					}
+					.blog:hover{
+						transition: all 0.20s ease-in-out;
+						fill: $wp;
 					}
 				}
 			}

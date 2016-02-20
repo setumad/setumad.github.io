@@ -25,6 +25,8 @@ $lighteventosaur:#9fcef3;
 $twitter:#00b5f4;
 $mail:#f62918;
 $in:#0077b5;
+$insta: #a97862;
+$wp: #00a8dc;
 
 $setured:#ef4b33;
 $lightred:#f58967;
@@ -41,12 +43,6 @@ $lightred:#f58967;
 
 $worksans: 'Work Sans', sans-serif;  //headings
 
-$gothambold:'gothambold',sans-serif;   
-$gothamthin:'gothamthin',sans-serif;
-$gothamlight:'gothamlight',sans-serif;
-$gothammedium:'gothammedium',sans-serif;
-$gothambook:'gothambook',sans-serif; 
-
 $lato: 'Lato', sans-serif;
 $thin: 100;
 $light: 300;
@@ -60,32 +56,13 @@ $crimson:'Crimson Text', serif;
 
 $playfair:'Playfair Display', serif;
 
+$jack:'Jacques Francois', serif;
+
 // body 
 // font-size: 1.2em;
 // letter-spacing: 0.5px;
 // word-spacing: 1.2px;
 
-
-@font-face{
-	font-family: gothambold;
-	src:url("fonts/GOTHAM-BOLD.TTF");
-}
-@font-face{
-	font-family: gothamlight;
-	src:url("fonts/GOTHAM-LIGHT.TTF");
-}
-@font-face{
-	font-family: gothamthin;
-	src:url("fonts/GOTHAM-THIN.TTF");
-}
-@font-face{
-	font-family: gothammedium;
-	src:url("fonts/GOTHAM-MEDIUM.TTF");
-}
-@font-face{
-	font-family: gothambook;
-	src:url("fonts/GOTHAM-BOOK.TTF");
-}
 
 
 // 10px	0.625rem
