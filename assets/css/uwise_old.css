@@ -391,6 +391,194 @@ th {
   .hidden-desktop {
     display: none !important; } }
 
+#header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  height: 75px;
+  transition: opacity 0.3s linear 0s; }
+  @media (min-width: 768px) {
+    #header {
+      height: 95px; } }
+  #header .navigation {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #f5f5f5;
+    border-top: 4px solid #ef4b33; }
+    @media (min-width: 768px) {
+      #header .navigation {
+        height: 90px; } }
+    #header .navigation .navcontainer {
+      max-width: 700px;
+      margin: 0 auto;
+      height: 70px; }
+      @media (min-width: 1100px) {
+        #header .navigation .navcontainer {
+          max-width: 1000px; } }
+      #header .navigation .navcontainer .nav-list {
+        display: none; }
+        @media (min-width: 768px) {
+          #header .navigation .navcontainer .nav-list {
+            display: block;
+            list-style: none;
+            float: right;
+            margin: 2rem 0; }
+            #header .navigation .navcontainer .nav-list li {
+              float: left;
+              margin-left: 30px; }
+              #header .navigation .navcontainer .nav-list li a {
+                transition: 0.2s all ease-in-out;
+                text-decoration: none;
+                font-family: "Lato", sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+                color: #aaaaaa; }
+                #header .navigation .navcontainer .nav-list li a .line {
+                  opacity: 0;
+                  height: 3px;
+                  margin-top: 2.7em;
+                  background-color: #ef4b33;
+                  transition: opacity 0.3s linear 0s; }
+                #header .navigation .navcontainer .nav-list li a .line1 {
+                  width: 74px;
+                  left: -0.15em;
+                  position: relative; }
+                #header .navigation .navcontainer .nav-list li a .line2 {
+                  width: 55px;
+                  left: -0.15em;
+                  position: relative; }
+                #header .navigation .navcontainer .nav-list li a .line3 {
+                  width: 60px;
+                  left: -0.15em;
+                  position: relative; }
+              #header .navigation .navcontainer .nav-list li a:hover {
+                font-weight: bolder;
+                color: #3d3d3d; }
+                #header .navigation .navcontainer .nav-list li a:hover .line1 {
+                  opacity: 1; }
+                #header .navigation .navcontainer .nav-list li a:hover .line2 {
+                  opacity: 1; }
+                #header .navigation .navcontainer .nav-list li a:hover .line3 {
+                  opacity: 1; }
+                #header .navigation .navcontainer .nav-list li a:hover .line4 {
+                  opacity: 1; }
+              #header .navigation .navcontainer .nav-list li .currentpage {
+                color: #3d3d3d; } }
+      #header .navigation .navcontainer #logo {
+        text-align: center; }
+        @media (min-width: 768px) {
+          #header .navigation .navcontainer #logo {
+            text-align: left; } }
+        #header .navigation .navcontainer #logo img {
+          width: 100%;
+          margin-top: 1rem;
+          max-width: 30px; }
+          @media (min-width: 768px) {
+            #header .navigation .navcontainer #logo img {
+              margin: 1rem 0 0 0rem;
+              max-width: 35px; } }
+          @media (min-width: 1100px) {
+            #header .navigation .navcontainer #logo img {
+              margin: 1rem 0 0 0rem;
+              max-width: 35px; } }
+      #header .navigation .navcontainer .myname {
+        display: none; }
+        @media (min-width: 1100px) {
+          #header .navigation .navcontainer .myname {
+            display: block;
+            float: right;
+            left: -255px;
+            position: relative;
+            padding-top: 1.4rem;
+            font-size: 1.9rem;
+            font-family: "Jacques Francois", serif;
+            letter-spacing: 1.5px;
+            color: #f5f5f5;
+            transition: 0.1s all ease-in-out;
+            font-weight: 400; }
+            #header .navigation .navcontainer .myname .setu4char {
+              color: #3d3d3d;
+              font-family: "Jacques Francois", serif;
+              font-weight: 700; } }
+      #header .navigation .navcontainer .myname:hover {
+        color: #aaaaaa; }
+        #header .navigation .navcontainer .myname:hover .setu {
+          transition: 0.3s all ease-in-out;
+          color: #3d3d3d; }
+    #header .navigation .dropdown {
+      width: 100%;
+      opacity: 0.8;
+      margin: 0 auto; }
+      @media (min-width: 768px) {
+        #header .navigation .dropdown {
+          display: none; } }
+      #header .navigation .dropdown .dropbtn {
+        cursor: pointer;
+        width: 30px;
+        position: relative;
+        float: right;
+        top: -3em;
+        right: 1.5em; }
+        @media (min-width: 768px) {
+          #header .navigation .dropdown .dropbtn {
+            cursor: pointer;
+            width: 35px;
+            position: relative;
+            float: right;
+            top: -3em;
+            padding-right: 1.5em; } }
+      #header .navigation .dropdown .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #3d3d3d;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: 0.3s all ease-in-out; }
+        #header .navigation .dropdown .dropdown-content #projects {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em;
+          padding-left: 0.2em; }
+        #header .navigation .dropdown .dropdown-content #uwise {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #dr {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #hb {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #about {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #blog {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content #resume {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+        #header .navigation .dropdown .dropdown-content a {
+          border-bottom: 1px solid black;
+          font-size: 1.2em;
+          color: white;
+          font-family: "Lato", sans-serif;
+          font-weight: 300;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          font-weight: 300; }
+        #header .navigation .dropdown .dropdown-content a:hover {
+          transition: 0.3s all ease-in-out;
+          background-color: grey;
+          font-family: "Lato", sans-serif;
+          font-weight: 700;
+          font-size: 1.2em; }
+      #header .navigation .dropdown .show {
+        display: block; }
+
 body {
   padding-top: 4em; }
   @media (min-width: 768px) {
@@ -863,194 +1051,6 @@ body {
     body .doublecontent .wrapper .pictureintro {
       width: 100%;
       text-align: center; }
-
-#header {
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  background: white;
-  z-index: 1000;
-  height: 75px;
-  transition: opacity 0.3s linear 0s; }
-  @media (min-width: 768px) {
-    #header {
-      height: 95px; } }
-  #header .navigation {
-    width: 100%;
-    height: 70px;
-    border-bottom: 1px solid #f5f5f5;
-    border-top: 4px solid #ef4b33; }
-    @media (min-width: 768px) {
-      #header .navigation {
-        height: 90px; } }
-    #header .navigation .navcontainer {
-      max-width: 700px;
-      margin: 0 auto;
-      height: 70px; }
-      @media (min-width: 1100px) {
-        #header .navigation .navcontainer {
-          max-width: 1000px; } }
-      #header .navigation .navcontainer .nav-list {
-        display: none; }
-        @media (min-width: 768px) {
-          #header .navigation .navcontainer .nav-list {
-            display: block;
-            list-style: none;
-            float: right;
-            margin: 2rem 0; }
-            #header .navigation .navcontainer .nav-list li {
-              float: left;
-              margin-left: 30px; }
-              #header .navigation .navcontainer .nav-list li a {
-                transition: 0.2s all ease-in-out;
-                text-decoration: none;
-                font-family: "Lato", sans-serif;
-                font-weight: bold;
-                font-size: 14px;
-                color: #aaaaaa; }
-                #header .navigation .navcontainer .nav-list li a .line {
-                  opacity: 0;
-                  height: 3px;
-                  margin-top: 2.7em;
-                  background-color: #ef4b33;
-                  transition: opacity 0.3s linear 0s; }
-                #header .navigation .navcontainer .nav-list li a .line1 {
-                  width: 74px;
-                  left: -0.15em;
-                  position: relative; }
-                #header .navigation .navcontainer .nav-list li a .line2 {
-                  width: 55px;
-                  left: -0.15em;
-                  position: relative; }
-                #header .navigation .navcontainer .nav-list li a .line3 {
-                  width: 60px;
-                  left: -0.15em;
-                  position: relative; }
-              #header .navigation .navcontainer .nav-list li a:hover {
-                font-weight: bolder;
-                color: #3d3d3d; }
-                #header .navigation .navcontainer .nav-list li a:hover .line1 {
-                  opacity: 1; }
-                #header .navigation .navcontainer .nav-list li a:hover .line2 {
-                  opacity: 1; }
-                #header .navigation .navcontainer .nav-list li a:hover .line3 {
-                  opacity: 1; }
-                #header .navigation .navcontainer .nav-list li a:hover .line4 {
-                  opacity: 1; }
-              #header .navigation .navcontainer .nav-list li .currentpage {
-                color: #3d3d3d; } }
-      #header .navigation .navcontainer #logo {
-        text-align: center; }
-        @media (min-width: 768px) {
-          #header .navigation .navcontainer #logo {
-            text-align: left; } }
-        #header .navigation .navcontainer #logo img {
-          width: 100%;
-          margin-top: 1rem;
-          max-width: 30px; }
-          @media (min-width: 768px) {
-            #header .navigation .navcontainer #logo img {
-              margin: 1rem 0 0 0rem;
-              max-width: 35px; } }
-          @media (min-width: 1100px) {
-            #header .navigation .navcontainer #logo img {
-              margin: 1rem 0 0 0rem;
-              max-width: 35px; } }
-      #header .navigation .navcontainer .myname {
-        display: none; }
-        @media (min-width: 1100px) {
-          #header .navigation .navcontainer .myname {
-            display: block;
-            float: right;
-            left: -255px;
-            position: relative;
-            padding-top: 1.4rem;
-            font-size: 1.9rem;
-            font-family: "Jacques Francois", serif;
-            letter-spacing: 1.5px;
-            color: #f5f5f5;
-            transition: 0.1s all ease-in-out;
-            font-weight: 400; }
-            #header .navigation .navcontainer .myname .setu4char {
-              color: #3d3d3d;
-              font-family: "Jacques Francois", serif;
-              font-weight: 700; } }
-      #header .navigation .navcontainer .myname:hover {
-        color: #aaaaaa; }
-        #header .navigation .navcontainer .myname:hover .setu {
-          transition: 0.3s all ease-in-out;
-          color: #3d3d3d; }
-    #header .navigation .dropdown {
-      width: 100%;
-      opacity: 0.8;
-      margin: 0 auto; }
-      @media (min-width: 768px) {
-        #header .navigation .dropdown {
-          display: none; } }
-      #header .navigation .dropdown .dropbtn {
-        cursor: pointer;
-        width: 30px;
-        position: relative;
-        float: right;
-        top: -3em;
-        right: 1.5em; }
-        @media (min-width: 768px) {
-          #header .navigation .dropdown .dropbtn {
-            cursor: pointer;
-            width: 35px;
-            position: relative;
-            float: right;
-            top: -3em;
-            padding-right: 1.5em; } }
-      #header .navigation .dropdown .dropdown-content {
-        display: none;
-        position: relative;
-        background-color: #3d3d3d;
-        min-width: 100%;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        transition: 0.3s all ease-in-out; }
-        #header .navigation .dropdown .dropdown-content #projects {
-          margin-top: 0.5em;
-          padding-bottom: 0.5em;
-          padding-left: 0.2em; }
-        #header .navigation .dropdown .dropdown-content #uwise {
-          margin-top: 0.5em;
-          padding-bottom: 0.5em; }
-        #header .navigation .dropdown .dropdown-content #dr {
-          margin-top: 0.5em;
-          padding-bottom: 0.5em; }
-        #header .navigation .dropdown .dropdown-content #hb {
-          margin-top: 0.5em;
-          padding-bottom: 0.5em; }
-        #header .navigation .dropdown .dropdown-content #about {
-          margin-top: 0.5em;
-          padding-bottom: 0.5em; }
-        #header .navigation .dropdown .dropdown-content #blog {
-          margin-top: 0.5em;
-          padding-bottom: 0.5em; }
-        #header .navigation .dropdown .dropdown-content #resume {
-          margin-top: 0.5em;
-          padding-bottom: 0.5em; }
-        #header .navigation .dropdown .dropdown-content a {
-          border-bottom: 1px solid black;
-          font-size: 1.2em;
-          color: white;
-          font-family: "Lato", sans-serif;
-          font-weight: 300;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          font-weight: 300; }
-        #header .navigation .dropdown .dropdown-content a:hover {
-          transition: 0.3s all ease-in-out;
-          background-color: grey;
-          font-family: "Lato", sans-serif;
-          font-weight: 700;
-          font-size: 1.2em; }
-      #header .navigation .dropdown .show {
-        display: block; }
 
 .footercontainer {
   height: 170px;

@@ -615,7 +615,7 @@ th {
 
 .aboutcontainer {
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   margin: 0 auto;
   padding: 2em 0 4em 0; }
   @media (min-width: 1100px) {
@@ -676,7 +676,7 @@ th {
         font-size: 1.2em; } }
 
 .skillgreybox {
-  background-color: #f5f5f5; }
+  background-color: #f9f9f9; }
   .skillgreybox .bigskillbox2 {
     width: 100%;
     margin-top: 3em;
