@@ -50,7 +50,7 @@
 		font-size: 1rem;
 		line-height: 1.8;
 		font-weight: 300;
-		font-family: $muli;
+		font-family: $lato;
 		margin: 0 auto;
 		width: 85%;
 		// text-align: justify;
@@ -89,9 +89,9 @@
 		font-size: 1rem;
 		line-height: 1.8;
 		font-weight: 300;
-		font-family: $muli;
+		font-family: $lato;
 		color: $textdark;
-		font-weight: $thin;
+		font-weight: 200;
 		margin: 0 auto;
 		width: 85%;
 		padding: 30px 0;
@@ -147,11 +147,11 @@
 			
 			h2{
 				text-align: center;
-				font-family: $muli;
+				font-family: $lato;
 				color: $textdark;
 			}
 			p{
-				font-family: $muli;
+				font-family: $lato;
 				font-size: 1em;
 				line-height: 1.8em;
 				color: $textdark;
@@ -217,5 +217,120 @@
 	}
 }
 		
+.skillgreybox2{
+	background-color: white;
+		.bigskillbox2{
+			// background-color: yellow;
+		width: 100%;
+		margin-top: 3em;
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 2em 0 4em 0;
+		h1{
+			text-align: center;
+			padding-bottom: 1em;
+		}
+		.wrapper{
+			// display: table;
+			padding: 0 4.5em;
+			// background-color: red;
+			@include breakpoint(laptop){
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				margin: 0 auto;
+			}
 
+			.underline{
+					height: 3px;
+					background-color: $setured;
+					margin: 0 auto;
+					position: relative;
+					top: -1em;
+					opacity: .8;
+				}
+			
+			h2{
+				text-align: center;
+				font-family: $lato;
+				color: $textdark;
+			}
+			p{
+				font-family: $lato;
+				font-size: 1em;
+				line-height: 1.8em;
+				color: $textdark;
+				margin: 0;
+				padding-top: 1.5em;
+				text-align: center;
+				margin: 0 auto;
+				width: 80%;
+				font-weight: $light;
+			}
+			.interest{
+				display: block;
+				vertical-align: top;
+				border: 2px solid $lightgrey;
+				margin: 0 1em;
+				margin-bottom: 2em;
+				@include breakpoint(tablet){
+					display: inline-block;
+					// display: table-cell;
+					width: calc(100% / 2.28);
+					height: 300px;
+					margin-bottom: 2em;
+				}
+
+				@include breakpoint(laptop){
+					display: inline-block;
+					// display: table-cell;
+					width: calc(100% / 4.67);
+					height: 330px;
+				}
+				#undmusic{
+					width: 4em;
+				}
+				#undaero{
+					width: 10em;
+				}
+				#undphoto{
+					width: 8.8em;
+				}
+				#undhike{
+					width: 4.5em;
+				}
+				.icon{
+					margin: 0 auto;
+					width: 90px;
+					height: 100px;
+					padding-top: 1em;
+					// background-color: red;
+				}
+				#hiking{
+					img{
+					padding-top: 1em;	
+					}
+				}
+				#sukhoi{
+					img{
+						width: 80px;
+						position: relative;
+						bottom: 1em;	
+					}
+				}
+
+				#oly{
+					width: 100px;
+					height: 100px;
+					margin: 0 auto;
+					img{
+						position: relative;
+						padding-top: 1em;
+					}
+				}
+				
+			}
+		}
+	}
+}
 

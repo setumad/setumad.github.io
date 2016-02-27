@@ -625,7 +625,7 @@ th {
     font-size: 1rem;
     line-height: 1.8;
     font-weight: 300;
-    font-family: "Muli", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0 auto;
     width: 85%;
     overflow: auto;
@@ -655,9 +655,9 @@ th {
     font-size: 1rem;
     line-height: 1.8;
     font-weight: 300;
-    font-family: "Muli", sans-serif;
+    font-family: "Lato", sans-serif;
     color: #3d3d3d;
-    font-weight: 100;
+    font-weight: 200;
     margin: 0 auto;
     width: 85%;
     padding: 30px 0;
@@ -703,10 +703,10 @@ th {
         opacity: .8; }
       .skillgreybox .bigskillbox2 .wrapper h2 {
         text-align: center;
-        font-family: "Muli", sans-serif;
+        font-family: "Lato", sans-serif;
         color: #3d3d3d; }
       .skillgreybox .bigskillbox2 .wrapper p {
-        font-family: "Muli", sans-serif;
+        font-family: "Lato", sans-serif;
         font-size: 1em;
         line-height: 1.8em;
         color: #3d3d3d;
@@ -754,6 +754,91 @@ th {
         .skillgreybox .bigskillbox2 .wrapper .code .underline {
           width: 4em; }
 
+.skillgreybox2 {
+  background-color: white; }
+  .skillgreybox2 .bigskillbox2 {
+    width: 100%;
+    margin-top: 3em;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2em 0 4em 0; }
+    .skillgreybox2 .bigskillbox2 h1 {
+      text-align: center;
+      padding-bottom: 1em; }
+    .skillgreybox2 .bigskillbox2 .wrapper {
+      padding: 0 4.5em; }
+      @media (min-width: 1100px) {
+        .skillgreybox2 .bigskillbox2 .wrapper {
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          margin: 0 auto; } }
+      .skillgreybox2 .bigskillbox2 .wrapper .underline {
+        height: 3px;
+        background-color: #ef4b33;
+        margin: 0 auto;
+        position: relative;
+        top: -1em;
+        opacity: .8; }
+      .skillgreybox2 .bigskillbox2 .wrapper h2 {
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        color: #3d3d3d; }
+      .skillgreybox2 .bigskillbox2 .wrapper p {
+        font-family: "Lato", sans-serif;
+        font-size: 1em;
+        line-height: 1.8em;
+        color: #3d3d3d;
+        margin: 0;
+        padding-top: 1.5em;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        font-weight: 300; }
+      .skillgreybox2 .bigskillbox2 .wrapper .interest {
+        display: block;
+        vertical-align: top;
+        border: 2px solid #aaaaaa;
+        margin: 0 1em;
+        margin-bottom: 2em; }
+        @media (min-width: 768px) {
+          .skillgreybox2 .bigskillbox2 .wrapper .interest {
+            display: inline-block;
+            width: calc(100% / 2.28);
+            height: 300px;
+            margin-bottom: 2em; } }
+        @media (min-width: 1100px) {
+          .skillgreybox2 .bigskillbox2 .wrapper .interest {
+            display: inline-block;
+            width: calc(100% / 4.67);
+            height: 330px; } }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest #undmusic {
+          width: 4em; }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest #undaero {
+          width: 10em; }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest #undphoto {
+          width: 8.8em; }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest #undhike {
+          width: 4.5em; }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest .icon {
+          margin: 0 auto;
+          width: 90px;
+          height: 100px;
+          padding-top: 1em; }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest #hiking img {
+          padding-top: 1em; }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest #sukhoi img {
+          width: 80px;
+          position: relative;
+          bottom: 1em; }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest #oly {
+          width: 100px;
+          height: 100px;
+          margin: 0 auto; }
+          .skillgreybox2 .bigskillbox2 .wrapper .interest #oly img {
+            position: relative;
+            padding-top: 1em; }
+
 .footercontainer {
   height: 170px;
   clear: both;
@@ -768,7 +853,7 @@ th {
     margin-bottom: 2rem; }
     .footercontainer .line .contactme {
       padding-top: 1rem;
-      font-family: "Muli", sans-serif;
+      font-family: "Lato", sans-serif;
       font-size: 1.2rem;
       font-weight: 700;
       color: #3d3d3d;
@@ -795,7 +880,7 @@ th {
       padding-bottom: 1rem;
       text-align: center;
       color: #aaaaaa;
-      font-family: "Muli", sans-serif; }
+      font-family: "Lato", sans-serif; }
     .footercontainer .line .socialbox {
       padding-top: 2rem; }
       .footercontainer .line .socialbox ul {
