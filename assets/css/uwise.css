@@ -481,11 +481,12 @@ body {
   body .maincontent {
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    width: 90%;
+    width: 85%;
     text-align: left;
     line-height: 1.6em;
     font-size: 0.8em;
-    padding-top: 2.5em; }
+    padding-top: 2.5em;
+    margin: 0 auto; }
     @media (min-width: 768px) {
       body .maincontent {
         width: 75%;
@@ -498,7 +499,6 @@ body {
         padding-right: 4.5em;
         padding-top: 0; } }
   body .contentcenter {
-    width: 85%;
     padding: 0;
     margin: 0;
     margin: 0 auto; }
@@ -512,10 +512,16 @@ body {
     margin-top: 6em; }
   body .contentideate {
     padding-bottom: 3em;
-    text-align: left; }
+    margin: 0 auto; }
   body #list {
-    width: 55%;
+    width: 100%;
     text-align: left; }
+    @media (min-width: 768px) {
+      body #list {
+        width: 65%; } }
+    @media (min-width: 1100px) {
+      body #list {
+        width: 55%; } }
   body .pictureintro {
     width: 75%;
     font-size: 0.7em;
@@ -602,12 +608,15 @@ body {
     body .contentboxright .pictureright {
       width: 100%;
       padding: 0 2em;
-      position: relative;
-      top: -13em; }
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1; }
       @media (min-width: 1100px) {
         body .contentboxright .pictureright {
           width: 70%;
-          position: static; } }
+          -webkit-order: 2;
+          -ms-flex-order: 2;
+          order: 2; } }
       body .contentboxright .pictureright #picture_problem {
         width: 100%;
         max-width: 550px; }
@@ -618,29 +627,11 @@ body {
         @media (min-width: 1100px) {
           body .contentboxright .pictureright #pic_reserach2 {
             padding-top: 0; } }
-    body .contentboxright #researchpicright {
-      position: relative;
-      top: -18em; }
-      @media (min-width: 1100px) {
-        body .contentboxright #researchpicright {
-          position: static; } }
-    body .contentboxright .testpic {
-      float: right !important; }
     body .contentboxright .rightcont {
-      position: relative;
-      top: 24em;
-      margin: 0 auto; }
-      @media (min-width: 768px) {
-        body .contentboxright .rightcont {
-          top: 24em; } }
-      @media (min-width: 1100px) {
-        body .contentboxright .rightcont {
-          position: static; } }
-    body .contentboxright #researchcontright {
-      top: 28em; }
-      @media (min-width: 1100px) {
-        body .contentboxright #researchcontright {
-          position: static; } }
+      width: 85%;
+      -webkit-order: 2;
+      -ms-flex-order: 2;
+      order: 2; }
     @media (min-width: 1100px) {
       body .contentboxright .maincontent {
         width: 40%;

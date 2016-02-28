@@ -113,11 +113,12 @@ body{
 	.maincontent{
 		font-family: $lato;
 		font-weight: $light;
-		width: 90%;
+		width: 85%;
 		text-align: left;
 		line-height: 1.6em;
 		font-size: 0.8em;
 		padding-top: 2.5em;
+		margin:0 auto;
 		@include breakpoint(tablet){
 			width: 75%;
 			margin: 0 auto;
@@ -132,7 +133,7 @@ body{
 	}
 
 	.contentcenter{
-		width: 85%;
+		// width: 85%;
 		@include breakpoint(tablet){
 			width: 70%;
 		}
@@ -150,12 +151,18 @@ body{
 
 	.contentideate{
 		padding-bottom: 3em;
-		text-align: left;
+		margin: 0 auto;
 	}
 
 	#list{
-		width: 55%;
+		width: 100%;
 		text-align: left;
+		@include breakpoint(tablet){
+			width: 65%;
+		}
+		@include breakpoint(laptop){
+			width: 55%;
+		}
 	}
 
 	.pictureintro{
@@ -249,11 +256,13 @@ body{
 		.pictureright{
 			width: 100%;
 			padding: 0 2em;
-			position: relative;
-			top: -13em;
+			// position: relative;
+			// top: -13em;
+			order: 1;
 			@include breakpoint(laptop){
 				width: 70%;
-				position: static;
+				// position: static;
+				order: 2;
 			}
 			#picture_problem{
 				width: 100%;
@@ -269,40 +278,13 @@ body{
 				}
 			}
 		}
-
-		#researchpicright{
-			position: relative;
-			top: -18em;
-			@include breakpoint(laptop){
-				position: static;
-			}
-		}
-
-		.testpic{
-			float: right!important;
-		}
 		
 		.rightcont{
-			position: relative;
-			top: 24em;
-			margin: 0 auto;
-			@include breakpoint(tablet){
-				// width: 70%;
-				top: 24em;
-			}
-			@include breakpoint(laptop){
-				// width: 70%;
-				position: static;
-			}
+			width: 85%;
+			order: 2;
 		}
 
-		#researchcontright{
-			top:28em;
-			@include breakpoint(laptop){
-				// width: 70%;
-				position: static;
-			}
-		}
+		
 		.maincontent{
 			@include breakpoint(laptop){
 				width: 40%;

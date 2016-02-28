@@ -822,10 +822,11 @@ th {
           width: 4.5em; }
         .skillgreybox2 .bigskillbox2 .wrapper .interest .icon {
           margin: 0 auto;
-          width: 90px;
+          width: 100px;
           height: 100px;
           padding-top: 1em; }
         .skillgreybox2 .bigskillbox2 .wrapper .interest #hiking img {
+          width: 100px;
           padding-top: 1em; }
         .skillgreybox2 .bigskillbox2 .wrapper .interest #sukhoi img {
           width: 80px;
