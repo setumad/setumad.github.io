@@ -613,6 +613,14 @@ th {
       .headerimage .myname {
         display: none; } }
 
+.contheader {
+  padding: 1.5rem 0 2rem 0;
+  font-size: 2.2em;
+  font-family: "Lato", sans-serif;
+  color: #ef4b33;
+  text-align: center;
+  font-weight: 200; }
+
 .aboutcontainer {
   width: 100%;
   background-color: #f9f9f9;
@@ -825,13 +833,23 @@ th {
           width: 100px;
           height: 100px;
           padding-top: 1em; }
-        .skillgreybox2 .bigskillbox2 .wrapper .interest #hiking img {
-          width: 100px;
-          padding-top: 1em; }
-        .skillgreybox2 .bigskillbox2 .wrapper .interest #sukhoi img {
-          width: 80px;
-          position: relative;
-          bottom: 1em; }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest #hiking {
+          width: 100px; }
+          .skillgreybox2 .bigskillbox2 .wrapper .interest #hiking img {
+            width: 100px;
+            padding-top: 1em; }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest #cook {
+          width: 90px; }
+          .skillgreybox2 .bigskillbox2 .wrapper .interest #cook img {
+            width: 110px;
+            position: relative;
+            bottom: 1em; }
+        .skillgreybox2 .bigskillbox2 .wrapper .interest #sukhoi {
+          width: 80px; }
+          .skillgreybox2 .bigskillbox2 .wrapper .interest #sukhoi img {
+            width: 80px;
+            position: relative;
+            bottom: 1em; }
         .skillgreybox2 .bigskillbox2 .wrapper .interest #oly {
           width: 100px;
           height: 100px;

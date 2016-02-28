@@ -38,6 +38,15 @@
 	}
 }
 
+.contheader{
+		padding: 1.5rem 0 2rem 0;
+		font-size: 2.2em;
+		font-family: $lato;
+		color: $setured;
+		text-align: center;
+		font-weight: 200;
+	}
+
 .aboutcontainer{
 	width: 100%;
 	background-color: #f9f9f9;
@@ -307,12 +316,24 @@
 					// background-color: red;
 				}
 				#hiking{
+					width: 100px;
 					img{
 						width: 100px;
 						padding-top: 1em;	
 					}
 				}
+
+				#cook{
+					width: 90px;
+					img{
+						width: 110px;
+						position: relative;
+						bottom: 1em;	
+					}
+				}
+
 				#sukhoi{
+					width: 80px;
 					img{
 						width: 80px;
 						position: relative;
