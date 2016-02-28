@@ -579,6 +579,9 @@ th {
       #header .navigation .dropdown .show {
         display: block; }
 
+#header:hover {
+  opacity: 1; }
+
 body {
   padding-top: 4em; }
   @media (min-width: 768px) {
