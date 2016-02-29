@@ -92,8 +92,9 @@ body{
 		text-align: center;
 		font-weight: 200;
 		@include breakpoint(laptop){
+			font-size: 2em;
 			text-align: left;
-			padding-left: 1.5em;
+			padding-left: 2em;
 			font-weight: 700;
 		}
 	}
@@ -182,6 +183,7 @@ body{
 		}
 	}
 
+	
 
 	// **************************CONTENT BOXES***********************
 
