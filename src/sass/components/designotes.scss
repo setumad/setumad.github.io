@@ -1,0 +1,118 @@
+body{
+	padding-top:5em; 
+	background-color: $backgroundgrey;
+
+	.everything{
+		max-width: 1300px;
+		margin: 0 auto;
+		padding: 0 1em;
+		.ptitle{
+			@include breakpoint(tablet){
+				padding: 2em 0 0 5em;	
+			}
+			#projecttitle{
+				@include breakpoint(tablet){
+					text-align: left;
+				}
+				text-align: center;
+				font-size: 2.5em;
+				color: $setured;
+				margin: 0 auto;
+				font-family: $lato;
+				padding-top: 1em;
+			}
+			
+			.headintro{
+				font-size: 1em;
+				width: 75%;
+				text-align: center;
+				color: $textdark;
+				margin: 0 auto;
+				font-family: $lato;
+				padding: 1.5em 0;
+				font-weight: 200;
+				line-height: 1.6em;
+				@include breakpoint(tablet){
+					text-align: left;
+					width: 100%;
+					font-weight: 200;
+				}
+				
+			}
+		}
+		.contentcontainer{
+			background-color: white;
+			padding-bottom: 6em;
+			// max-width: 1275px;
+			margin: 2em auto;
+			box-shadow:  0 2px 6px rgba(0,0,0,0.1);
+		}
+
+		.contheader{
+			padding-top: 1.5rem;
+			font-family: $lato;
+			color: $uwpurple;
+			text-align: center;
+			font-weight: 200;
+			@include breakpoint(tablet){
+				text-align: left;
+				padding-left: 5.1em;
+			}
+			@include breakpoint(laptop){
+				padding-left: 5.1em;
+			}
+		}
+
+		#introduction{
+			font-size: 1.7em;
+			font-weight: 200;
+			color: $setured;
+			@include breakpoint(tablet){
+				font-size: 1.6em;
+				font-weight: 400;
+			}
+		}
+
+		#date{
+			font-size: 0.8em;
+			padding: 0;
+			margin: 0;
+			font-weight: 200;
+			color: $mediumgrey;
+		}
+
+		.boldtext{
+				font-weight:bold; 
+				font-size: 1.1em;
+			}
+
+		.maincontent{
+
+			text-align: center;
+			width: 85%;
+			margin: 0 auto;
+			padding-top: 2em;
+			@include breakpoint(tablet){
+				width: 80%;
+				padding: 2em 0 0 5.1em;
+				margin: 0;
+			}
+			p{
+				font-family: $lato;
+				font-weight: 200;
+				text-align: left;
+				line-height: 1.6em;
+				font-size: 0.8em;
+				margin:0 auto;
+				@include breakpoint(tablet){
+					margin: 0 auto;
+					font-size: 1.1em;
+					line-height: 1.8em;
+				}
+				@include breakpoint(laptop){
+				}
+			}	
+		}
+	}
+}
+	

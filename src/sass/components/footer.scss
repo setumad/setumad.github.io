@@ -47,6 +47,10 @@
 			text-align: center;
 			color: $lightgrey;
 			font-family: $lato;
+			.designotes{
+				text-decoration: none;
+				color: $setured;
+			}
 		}
 		.socialbox{
 			padding-top: 2rem;

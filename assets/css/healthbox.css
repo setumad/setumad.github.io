@@ -810,6 +810,9 @@ body {
       text-align: center;
       color: #aaaaaa;
       font-family: "Lato", sans-serif; }
+      .footercontainer .line .copyright .designotes {
+        text-decoration: none;
+        color: #ef4b33; }
     .footercontainer .line .socialbox {
       padding-top: 2rem; }
       .footercontainer .line .socialbox ul {
