@@ -579,9 +579,6 @@ th {
       #header .navigation .dropdown .show {
         display: block; }
 
-#header:hover {
-  opacity: 1; }
-
 .bodymain {
   width: 100%;
   padding-top: 8rem; }
