@@ -1,6 +1,6 @@
 body{
 	padding-top:4em; 
-	background-color: #f9f9f9;
+	background-color: $backgroundgrey;
 	@include breakpoint(tablet){
 		padding-top: 5.9rem;
 	}
