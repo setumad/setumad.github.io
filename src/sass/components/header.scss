@@ -7,7 +7,6 @@
     z-index: 1000;
     height: 75px;
     transition: opacity 0.3s linear 0s;
-    // background-color: yellow;
     @include breakpoint(tablet){
     	height: 95px;
     }
@@ -17,6 +16,8 @@
 		height: 70px;
 		border-bottom: 1px solid $superlightgrey;
 		border-top: 4px solid $setured;
+	    max-width: 1300px;
+	    margin: 0 auto;
 		@include breakpoint(tablet){
 				height: 90px;
 			}
