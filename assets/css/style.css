@@ -677,7 +677,7 @@ th {
         .bodymain .container .row .righthalf .drprojectbox {
           height: 400px;
           margin: 0 auto;
-          background-color: #c8e4c4;
+          background-color: #87D3BD;
           margin: 4rem 0;
           transition: 0.3s all ease-in-out;
           margin-bottom: 6rem; }
@@ -685,7 +685,7 @@ th {
             .bodymain .container .row .righthalf .drprojectbox {
               float: right;
               width: 90%;
-              margin-top: 0; } }
+              margin-top: 0em; } }
           .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink {
             text-decoration: none;
             color: #ffffff;
@@ -722,17 +722,13 @@ th {
               @media (min-width: 768px) {
                 .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink #drmac {
                   position: relative;
-                  max-width: 375px;
+                  max-width: 415px;
                   padding: 3em 0; } }
-              @media (min-width: 1100px) {
-                .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink #drmac {
-                  max-width: 375px;
-                  position: relative; } }
             .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover {
-              color: #246742; }
+              color: #003f48; }
               .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover .uiux {
                 opacity: 1;
-                color: #246742;
+                color: #003f48;
                 transition: 0.3s all ease-in-out; }
               .bodymain .container .row .righthalf .drprojectbox #dailyrecordalink:hover #drmac {
                 bottom: 12px; }

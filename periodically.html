@@ -1,0 +1,502 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>UW-ISE | Setu</title>
+		<link type="text/css" rel="stylesheet" href="assets/css/periodically.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DailyRecord | Setu</title>
+		<!-- <link type="text/css" rel="stylesheet" href="assets/css/uwise.css"> -->
+
+		<body>
+			<div class="container">
+				<header id="header">
+					<div class="navigation">
+						<div class="navcontainer">
+							<ul class="nav-list">
+								<li><a href="\">PROJECTS <div class=" line line1">&nbsp;</div></a> </li>
+								<li><a href="about.html">ABOUT<div class="line line2">&nbsp;</div></a> </li>
+								<li><a href="Setumadhava_G_Kathawate_CV.pdf" target="_blank">RESUME<div class="line line3">&nbsp;</div></a> </li>
+								<!-- <li><a href="">BLOG</a></li> -->
+							</ul>
+							<a href="\">
+								<div class="myname"> <span class="setu"><span class="setu4char">Setu</span>madhava Kathawate </div>
+							</a>
+							<div id="logo">
+								<a href="\"><img id="logo" src="assets/img/logo.png" /></a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<div onclick="myFunction()" class="dropbtn"><img src="assets/img/hamburger.svg" /> </div>
+							<div id="myDropdown" class="dropdown-content">
+								<a href="index.html">
+									<div id="projects">PROJECTS</div>
+								</a>
+								<a href="uwise.html">
+									<div id="uwise">UW-ISE</div>
+								</a>
+								<a href="dailyrecord.html">
+									<div id="dr">DAILY RECORD</div>
+								</a>
+								<a href="healthbox.html">
+									<div id="hb">HTC-UA HealthBox</div>
+								</a>
+								<a href="about.html">
+									<div id="about">ABOUT</div>
+								</a>
+								<a href="https://setublogs.wordpress.com" target="_blank">
+									<div id="blog">BLOG</div>
+								</a>
+								<a href="Setumadhava_G_Kathawate_CV.pdf" target="_blank">
+									<div id="resume">RESUME</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</header>
+				<script>
+					function myFunction()
+					{
+						document.getElementById("myDropdown").classList.toggle("show");
+						console.log("In Myfunction");
+					}
+				</script>
+				<script type="text/javascript" src="pdfobject.js"></script>
+				<script type="text/javascript">
+					window.onload = function()
+					{
+						var success = new PDFObject(
+						{
+							url: "Setumadhava_G_Kathawate_CV.pdf"
+						}).embed();
+					};
+				</script>
+				<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+				<script>
+					$(function()
+					{
+						$('a').each(function()
+						{
+							if ($(this).prop('href') == window.location.href)
+							{
+								$(this).addClass('currentpage');
+							}
+						});
+					});
+				</script>
+				<!-- Hide header on scroll. 
+
+	explanation: http://www.yourwebtech.info/tutorial/how-to-detect-vertical-scroll-direction-using-javascript/ -->
+				<script>
+					var lastScrollPosition = 0;
+					window.onscroll = function()
+					{
+						pagetop = document.getElementById('header');
+						var newScrollPosition = window.scrollY;
+						// alert(window.scrollY);
+						if (newScrollPosition < lastScrollPosition)
+						{
+							pagetop.style.opacity = "0.9";
+						}
+						else if (newScrollPosition - lastScrollPosition > 20)
+						{
+							pagetop.style.opacity = "0";
+						}
+						lastScrollPosition = newScrollPosition;
+						return false;
+						//     $('#lengthtracker').text((window.scrollY/135).toFixed(0).toString()+"% Read");
+						// return false;
+					}
+				</script>
+
+				<body>
+					<!-- <div id="lengthtracker">0% Read</div> -->
+					<div class="ptitle">
+						<p id="projecttitle">Periodical.ly
+							<br>
+						</p>
+						<div class="headintro">
+							<p>Periodical.ly is a web service that provides low-cost and easy access to articles from variety of popular online magazines and publications.</p>
+						</div>
+					</div>
+					<div class="maindiv" onclick="bodyfunction()">
+						<div class="contentcontainer">
+							<div class="contheader">
+								<p id="introduction">INTRODUCTION</p>
+							</div>
+							<div class="contentboxleft">
+								<div class="picture_left"> <img id="pic_intro" src="assets/img/periodically/welcome.png" /> </div>
+								<div class="maincontent contentleft">
+									<p>Peridical.ly is a web service that lets reading enthusiasts buy and read articles online without having to frequently encounter multiple paywalls and login forms. With a single log-in, Periodical.ly helps users to bypass paywalls and provides
+										seamless access to their favorite articles and web content. With a unique credit system, Periodical.ly’s goal is to eliminate the friction between a reader and the publishers by getting rid of the paywall. </p>
+								</div>
+							</div>
+							<div class="subheading">
+								<p></p>
+							</div>
+							<div class="triplecontent">
+								<div class="wrapper wireframes" id="introtriple">
+									<div class="one">
+										<div class="pic"> <img src="assets/img/periodically/home.png" />
+											<p class="pictureintro">Discover new articles</p>
+										</div>
+									</div>
+									<div class="one">
+										<div class="pic"> <img src="assets/img/periodically/settings.png" />
+											<p class="pictureintro">Settings page</p>
+										</div>
+									</div>
+									<div class="one">
+										<div class="pic"> <img src="assets/img/periodically/credits.png" />
+											<p class="pictureintro">Credit information</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainer">
+							<div class="contheader">
+								<p id="introduction">PROBLEM</p>
+							</div>
+							<p class="quote"><span id="quotation">"</span>
+								<br>I find it annoying to purchase an entire subscription of National Geographic just to read that one article about Mariana trench for my college project <span id="persona"><br>~ Spencer, a college student</span></p>
+							<div class="contentcenter">
+								<div class="maincontent">
+									<p class="contentproblem">Most premium online magazines have restricted access to the amount of content people can read for free. With a surge in competition in quantity and quality by free content providers, publishers are finding it hard to push across their content
+										to online readers.
+										<br>
+										<br> For the users, they get turned off by the paywalls that prevent them from accessing premium content. Paywalls are digital walls that prevent users from accessing online content without a paid subscription. Also, readers would hesitate to purchase
+										an entire magazine subscription just to read a single article that caught their attention. </p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainer" id="oneone">
+							<div class="contheader">
+								<p id="introduction">USER STORIES</p>
+							</div>
+							<div class="contentcenter">
+								<div class="maincontent">
+									<p>We created users stories to communicate design requirements and understand the perspective of users. </p>
+								</div>
+								<div class="doublecontent">
+									<div class="wrapper wireframes">
+										<div class="boxone">
+											<div class="pic"> <img src="assets/img/periodically/mark.png" /> </div>
+										</div>
+										<div class="boxtwo">
+											<div class="pic"> <img src="assets/img/periodically/claire.png" /> </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainer">
+							<div class="contheader">
+								<p id="introduction">BUSINESS MODEL</p>
+							</div>
+							<div class="contentcenter">
+								<div class="maincontent">
+									<p> For our market analysis, we looked at current strategies that different companies are using for users to pay for exclusive content. </p>
+								</div>
+								<div class="picture_center"> <img class="marketanal" src="assets/img/periodically/marketanal.png" />
+									<p class="pictureintro">Comparison of popular digital publications</p>
+								</div>
+								<div class="maincontent">
+									<p><span class="boldtext">Existing Model</span>
+										<br>
+										<p> To find out the cost-per-credit and the we did a survey of 8 different magazines from the US and UK. Magazines do not sell articles individually and they use an monthly/quarterly/yearly subscription models. By looking at the cost per issue and
+											the number of articles each magazine carries, we were able to find out the cost per article. From the research we discovered that premium magazines like What Mobile, National Geographic and Empire charge as much as 60¢ while magazines like
+											The Forbes and The Macworld charge approximately 30¢ per article in their magazines. The trend showed that cost/article varied between 10¢ and 60¢. </p>
+								</div>
+								<div class="maincontent">
+									<p><span class="boldtext">Periodical.ly Model</span>
+										<br>
+										<p> Looking at the trend, we figured out that each credit can be priced at 33¢ and the articles are priced between 1 and 3 credits. Pricing is dynamic and can be varied depending on the author, publication and popularity of the article.
+											<br>
+											<br> Users can purchase a minimum of 3 credits for $1 and higher based on multiple plans from their Periodical.ly dashboard. </p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainer">
+							<div class="contheader">
+								<p id="introduction">SKETCHING</p>
+							</div>
+							<div class="contentboxleft">
+								<div class="picture_left"> <img id="pic_wf1" src="assets/img/periodically/wireframe1.png" /> </div>
+								<div class="maincontent contentleft">
+									<p>Our target customers were people who read artciles both on the web and mobile devices. And hence we had to create experinces for all screens. We started out sketching prototypes for the website and the app.</p>
+								</div>
+							</div>
+							<div class="picture_center"> <img class="wireframe2" src="assets/img/periodically/wireframe2.png" />
+								<p class="pictureintro">Website Wireframes</p>
+							</div>
+							<div class="contentboxright">
+								<div class="maincontent contentright">
+									<p>Mobile Wireframes for the Periodical.ly app.
+										<br>
+										<br> Our initial idea was to create a website for both single issue articles and magazine subscriptions. People could subscribe to magazines, newspapers and single issue articles using Periodical.ly credits. </p>
+								</div>
+								<div class="picture_right"> <img id="picture_wf3" src="assets/img/periodically/wireframe3.png" />
+									<p class="pictureintro">Mobile Wireframes</p>
+								</div>
+							</div>
+							<div class="picture_center"> <img class="wireframe2" src="assets/img/periodically/wireframe4.png" />
+								<p class="pictureintro">Mobile Wireframes</p>
+							</div>
+						</div>
+						<div class="contentcontainer">
+							<div class="contheader">
+								<p id="introduction">WIREFRAMES</p>
+							</div>
+							<div class="contentcenter">
+								<div class="maincontent">
+									<p><span class="boldtext">Web Wireframes - User Flow</span>
+										<br>
+									</p>
+									<p> Meet Adam, an engineer and a Soccer fan. He uses Periodical.ly Dashboard app the to manage all of his online subscriptions. Today, Adam wants to use the dashboard to check for renewal status and get more information about a new soccer magazine.
+										The flow below shows how he does it. </p>
+								</div>
+								<div class="picture_center"> <img class="pswf" src="assets/img/periodically/pswireframe1.png" /> </div>
+								<div class="picture_center"> <img class="pswf" src="assets/img/periodically/pswireframe2.png" /> </div>
+								<div class="picture_center"> <img class="pswf" src="assets/img/periodically/pswireframe3.png" /> </div>
+								<div class="maincontent">
+									<p><span class="boldtext">Tablet Wireframes - User Flow</span>
+										<br>
+									</p>
+									<p> Meet Peter, an student and a Tennis fan. He uses Periodical.ly mobile app the to manage all of his online subscriptions. Today, Adam wants to renew one of his subscriptions and buy a new magazine. The flow below shows how he does it. </p>
+								</div>
+								<div class="picture_center"> <img class="pswf" src="assets/img/periodically/mobwireframe1.png" /> </div>
+								<div class="picture_center"> <img class="pswf" src="assets/img/periodically/mobwireframe2.png" /> </div>
+							</div>
+						</div>
+						<div class="contentcontainer">
+							<div class="contheader">
+								<p id="introduction">PIVOT</p>
+							</div>
+							<div class="contentcenter">
+								<div class="maincontent">
+									<p> Although the idea of subscribing to magazines, newspapers and other publications along with purchasing single-issue articles was well received, due to time constraints we took a step back to focus on the idea we initially started with - Making
+										single issue articles easily accessible for readers. With the sharpened focus we iterated on our exitsting wireframes and designs and made the app exclusively for purchasing single-issue articles from various digital publications. </p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainer">
+							<div class="contheader">
+								<p id="introduction">FINAL DESIGN</p>
+							</div>
+							<div class="contentcenter">
+								<div class="maincontent">
+									<p> After discussing the idea with our clients, we realised that having an extention that lets people purchase and read the articles was an efficent way to achieve the goal. I created the high-fidelity mock-ups for the web extention and the mobile
+										alongside the website and the mobile app that lets users manage their purchases and buy more credits. </p>
+								</div>
+								<div class="picture_center">
+									<p><span class="boldtext" id="mockuptitle">Web Extention Mockup</span>
+										<br>
+									</p> <img class="webfinal" src="assets/img/periodically/webfinal1.png" />
+									<p class="pictureintro">Users can purchase articles and credits using the Periodical.ly browser extention</p>
+								</div>
+								<div class="picture_center"> <img class="webfinal" src="assets/img/periodically/webfinal2.png" />
+									<p class="pictureintro">Periodical.ly recommends new articles to users based on their interests and reading patterns</p>
+								</div>
+								<div class="picture_center">
+									<p><span class="boldtext" id="mockuptitle">Mobile Mockup</span>
+										<br>
+									</p> <img class="phonefinal" src="assets/img/periodically/phonefinal.png" />
+									<p class="pictureintro">Readers can purchase articles directly from their web browser or out of recommendations from the Periodical.ly app.</p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainer">
+							<div class="contheader">
+								<p id="introduction">RESULTS</p>
+							</div>
+							<div class="contentcenter">
+								<div class="maincontent">
+									<p> We presented the final report and the clients were happy with the proposed the unique business model and the prototypes for Periodical.ly. Further discussions were held to evaluate the future possibilities of developing the prototypes into actual
+										products. Take a look at the beautiful final report created by my teammate, Dorothy Wong. </p>
+								</div>
+								<div class="picture_center">
+									<a href="https://indd.adobe.com/view/d3d1bcef-b8e9-49b5-85a4-1c5e06f2f262"><img class="obama" src="assets/img/periodically/obama.png" /></a>
+									<p class="pictureintro">Periodical.ly report</p>
+								</div>
+								<div class="maincontent" id="findings">
+									<p><span class="boldtext">Findings</span>
+										<br>
+										<p> There were some important takeaways from this project:
+											<ul>
+												<li>I learned how to develop a business model for a viable product using the business model canvas.</li>
+												<li>It's important to not get tempted by feature creep. Our pivot helped me realise that it's very important to stay focused on the idea and the 'MVP'.</li>
+												<li>Learned how to develop a business model for a viable product using the business model canvas.</li>
+												<li>Customer delight and perspectives are most important. Always design with the end user and his conveniences/annoyances in mind.</li>
+											</ul>
+										</p>
+								</div>
+								<div class="maincontent" id="findings">
+									<p><span class="boldtext">Future</span>
+										<br>
+										<p> Some of the future considerations for the project are:
+											<ul>
+												<li>Conduct usability testing on the prototypes and get user feedback</li>
+												<li>Conduct further market analysis to validate the business model and product market fit</li>
+												<li>Develop the MVP and create a working prototype.</li>
+											</ul>
+										</p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainer">
+							<div class="contheader">
+								<p>ROLE</p>
+							</div>
+							<div class="centercontentcontainer">
+								<div class="teammates">
+									<p class="roles">Business Model Generation </p>
+									<p class="roles">User Stories</p>
+									<p class="roles">Market Analysis </p>
+									<p class="roles">Prototyping </p>
+									<p class="roles">Wireframes & High Fidelity Mockups </p>
+								</div>
+							</div>
+						</div>
+						<div class="contentcontainer">
+							<div class="contheader">
+								<p>The Team</p>
+							</div>
+							<div class="centercontentcontainer">
+								<div class="teammates"> <a href="https://www.linkedin.com/in/dorothywong" target="_blank">Dorothy Wong<div class=" line line1">&nbsp;</div></a> <a href="https://www.linkedin.com/in/alyssegallo">Alysse Gallo<div class="line line2">&nbsp;</div></a> <a href="https://www.linkedin.com/in/morgan-duffy-98095765">Morgan Duffy<div class="line line3">&nbsp;</div></a>									<a href="https://www.linkedin.com/in/setumadhavagk">Setumadhava Kathawate<div class="line line4">&nbsp;</div></a> </div>
+							</div>
+						</div>
+					</div>
+					<!-- 	*****************************************************************
+	********************* STATIC IMAGE IN THE MIDDLE ****************
+	***************************************************************** -->
+					<!-- <div class="demobgpicbox">
+			&nbsp;
+		</div> -->
+					<script>
+						function bodyfunction()
+						{
+							console.log("body problem");
+							document.getElementById("myDropdown").classList.remove("show");
+						}
+						var lastScrollPosition = 0;
+						window.onscroll = function()
+							{
+								pagetop = document.getElementById('header');
+								var newScrollPosition = window.scrollY;
+								// alert(window.scrollY);
+								if (newScrollPosition < lastScrollPosition)
+								{
+									pagetop.style.opacity = "1";
+								}
+								else if (newScrollPosition - lastScrollPosition > 20)
+								{
+									pagetop.style.opacity = "0";
+								}
+								lastScrollPosition = newScrollPosition;
+								browserWindowheight = ($(window).height()) / 10;
+								// pageHeight=window.scrollY/100;
+								$('#lengthtracker').text((window.scrollY / browserWindowheight).toFixed(0).toString() + "% Read");
+							}
+							(function(i, s, o, g, r, a, m)
+							{
+								i['GoogleAnalyticsObject'] = r;
+								i[r] = i[r] || function()
+								{
+									(i[r].q = i[r].q || []).push(arguments)
+								}, i[r].l = 1 * new Date();
+								a = s.createElement(o),
+									m = s.getElementsByTagName(o)[0];
+								a.async = 1;
+								a.src = g;
+								m.parentNode.insertBefore(a, m)
+							})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+						ga('create', 'UA-73216162-1', 'auto');
+						ga('send', 'pageview');
+					</script>
+				</body>
+			</div>
+		</body>
+		<footer class="myfoot">
+			<div class="footercontainer">
+				<div class="line">
+					<div class="contactme">
+						<p>Let's Get In Touch</p>
+					</div>
+					<div class="vline"><img src="assets/img/footer/vline.svg" /></div>
+					<div class="socialbox">
+						<ul>
+							<li>
+								<a href="http://www.twitter.com/setumad" target="_blank">
+									<svg class="twit" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 294 245.5" enable-background="new 0 0 294 245.5" xml:space="preserve">
+										<path d="M294,28.5c-10.8,4.8-22.4,8.1-34.6,9.6c12.5-7.5,22-19.4,26.5-33.6c-11.7,7-24.6,12-38.3,14.7
+						C236.6,7.4,220.9,0,203.6,0c-33.3,0-60.3,27.2-60.3,60.7c0,4.8,0.5,9.4,1.6,13.8C94.7,72,50.2,47.8,20.5,11.1
+						c-5.2,9-8.2,19.4-8.2,30.5c0,21.1,10.6,39.6,26.8,50.5c-9.9-0.3-19.2-3-27.3-7.6c0,0.3,0,0.5,0,0.8c0,29.4,20.8,53.9,48.4,59.5
+						c-5.1,1.4-10.4,2.1-15.9,2.1c-3.9,0-7.7-0.4-11.3-1.1c7.7,24.1,30,41.6,56.3,42.1c-20.6,16.3-46.7,26-74.9,26
+						c-4.9,0-9.7-0.3-14.4-0.8c26.7,17.2,58.4,27.3,92.5,27.3c110.9,0,171.6-92.5,171.6-172.6c0-2.6-0.1-5.2-0.2-7.9
+						C275.7,51.3,285.9,40.6,294,28.5z" /> </svg>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:setugk@uw.edu">
+									<svg class="mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 143.1 114.4" enable-background="new 0 0 143.1 114.4" xml:space="preserve">
+										<g>
+											<polygon points="42.1,62.6 0.2,13.7 42.1,62.6 14.5,90.2 	" />
+											<path d="M132.3,113.8c0.1,0,0.1,0,0.2,0l-5.8-5.7l-25.6-25.4l-9.3-9.3L79.7,87.6L71.6,97L51.5,73.4l-7.9,7.9
+						l-32.7,32.5c0.1,0,0.1,0,0.2,0l-0.2,0.2l0.2-0.2c1.1,0.3,2.3,0.2,3.5,0.2h114.3C130,114,131.2,114.1,132.3,113.8l0.2,0.2
+						c0,0,0,0,0,0L132.3,113.8z" />
+											<polygon points="71.6,75 134.6,1.5 71.6,75 29.7,26 	" />
+											<path d="M14.5,90.2l27.7-27.6l-42-48.9C0.1,14,0,14.3,0,14.6v85.7c0,1.3,0.3,2.5,0.6,3.7l0.1-0.1c0,0,0,0,0,0.1l0,0
+						c0,0,0,0,0-0.1L14.5,90.2z" />
+											<path d="M29.7,26l42,49l63-73.5c-1.8-0.8-3.8-1.4-5.8-1.4H14.5c-2,0-4,0.6-5.8,1.4l0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0
+						L29.7,26z" />
+											<path d="M143,13.7l-41.9,48.9l41.4,41.4c0.3-1.2,0.5-2.4,0.5-3.7l0-85.7C143.1,14.3,143.1,14,143,13.7z" />
+											<polygon points="0.7,104 0.7,104 14.5,90.2 	" />
+											<path d="M29.7,26L8.7,1.5c0,0,0,0,0,0L29.7,26z" />
+											<path d="M132.5,114L132.5,114c-1.2,0.3-2.4,0.4-3.7,0.4C130.1,114.4,131.3,114.3,132.5,114z" />
+										</g>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/setumadhavagk" target="_blank">
+									<svg class="in" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 165.4 183.8" enable-background="new 0 0 165.4 183.8" xml:space="preserve">
+										<path d="M36.8,183.8H0V55.1h36.8V183.8z M18.4,36.8C8.2,36.8,0,28.5,0,18.4S8.2,0,18.4,0s18.4,8.2,18.4,18.4
+						S28.5,36.8,18.4,36.8z M165.4,183.8h-36.8v-73.5c0-10.1-8.2-18.4-18.4-18.4s-18.4,8.2-18.4,18.4v73.5H55.1V55.1h36.8v22.8
+						C99.5,67.5,111,55.1,124,55.1c22.8,0,41.3,20.6,41.3,45.9L165.4,183.8L165.4,183.8z" /> </svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/kathavates/" target="_blank">
+									<svg class="insta" version="1.1" id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="323.9 195.8 376.1 376.3" enable-background="new 323.9 195.8 376.1 376.3" xml:space="preserve">
+										<path d="M658.7,195.8H365.3c-22.8,0-41.4,18.5-41.4,41.4v293.5c0,22.9,18.5,41.4,41.4,41.4h293.4
+							c22.8,0,41.4-18.5,41.4-41.4V237.2C700.1,214.4,681.5,195.8,658.7,195.8z M511.8,311.7c39.8,0,72,32.3,72,72c0,39.8-32.2,72-72,72
+							s-72-32.3-72-72S472,311.7,511.8,311.7z M656,513.1c0,8.3-6.7,15-15,15H382.7c-8.3,0-15-6.7-15-15V355.4h32.7
+							c-2.3,9-3.5,18.5-3.5,28.2c0,63.8,51.7,115.5,115.4,115.5s115.4-51.7,115.4-115.5c0-9.7-1.2-19.2-3.5-28.2H656V513.1L656,513.1z
+							 M657,296.2c0,8.3-6.7,15-15,15h-42.7c-8.3,0-15-6.7-15-15v-42.7c0-8.3,6.7-15,15-15H642c8.3,0,15,6.7,15,15V296.2z" /> </svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://setublogs.wordpress.com/" target="_blank">
+									<svg class="blog" version="1.1" id="wordpress" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="323.8 195.8 376.3 376.3" enable-background="new 323.8 195.8 376.3 376.3" xml:space="preserve">
+										<path d="M370.9,384c0,54.4,32.5,101.4,79.5,123.7l-67.3-179.6C375.3,345.2,370.9,364.1,370.9,384L370.9,384z
+							 M607.3,377.1c0-17-6.3-28.8-11.6-37.9c-7.2-11.3-13.9-20.9-13.9-32.2c0-12.6,9.8-24.4,23.7-24.4c0.6,0,1.2,0.1,1.8,0.1
+							c-25.1-22.4-58.6-36.1-95.3-36.1c-49.3,0-92.7,24.6-117.9,62c3.3,0.1,6.4,0.2,9.1,0.2c14.8,0,37.6-1.7,37.6-1.7
+							c7.6-0.4,8.5,10.4,0.9,11.3c0,0-7.6,0.9-16.2,1.3l51.4,148.9l30.9-90.2l-22-58.7c-7.6-0.4-14.8-1.3-14.8-1.3
+							c-7.6-0.4-6.7-11.8,0.9-11.3c0,0,23.3,1.7,37.2,1.7c14.8,0,37.6-1.7,37.6-1.7c7.6-0.4,8.5,10.4,0.9,11.3c0,0-7.7,0.9-16.2,1.3
+							l51,147.7l14.1-45.8C602.6,402.5,607.3,388.8,607.3,377.1L607.3,377.1z M514.5,396l-42.3,119.8c12.6,3.6,26,5.6,39.9,5.6
+							c16.4,0,32.2-2.8,46.9-7.8c-0.4-0.6-0.7-1.2-1-1.9L514.5,396L514.5,396z M635.8,318.1c0.6,4.4,1,9.1,1,14.1
+							c0,13.9-2.7,29.6-10.7,49.2l-43.1,121.4c42-23.8,70.2-68.1,70.2-118.8C653.1,360.1,646.8,337.6,635.8,318.1L635.8,318.1z M512,195.8
+							c-103.9,0-188.2,84.2-188.2,188.2S408.1,572.2,512,572.2S700.2,487.9,700.2,384S615.9,195.8,512,195.8z M512,548.6
+							c-90.9,0-164.6-73.7-164.6-164.6S421.1,219.4,512,219.4S676.6,293.1,676.6,384S602.9,548.6,512,548.6z" /> </svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="copyright">Self Taught & Handcrafted Website&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copyright © 2016 Setumadhava G Kathawate&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a class="designotes" href="designotes.html">Design Notes</a></div>
+				</div>
+			</div>
+		</footer>
+
+</html>

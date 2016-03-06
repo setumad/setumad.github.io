@@ -1,0 +1,625 @@
+body{
+	padding-top:4em; 
+	background-color: $backgroundgrey;
+	@include breakpoint(tablet){
+		padding-top: 5.9rem;
+	}
+	
+	.ptitle{
+		height: 600px;
+		background-image: url(/assets/img/periodically/hero3.png);
+		background-position: center center;
+		background-repeat:  no-repeat;
+		background-attachment: fixed;
+		background-size:  cover;
+		background-color: #999;
+
+		#projecttitle{
+			font-size: 4em;
+			text-align: center;
+			color: $superlightgrey;
+			margin: 0 auto;
+			padding-top: 3em;
+			font-family: $lato;
+			@include breakpoint(tablet){
+				font-size: 5em;
+				padding-top: 2em;
+			}
+
+		}
+		.headintro{
+			width: 80%;
+			margin: 0 auto;
+			font-family: $lato;
+			color: white;
+			text-align: center;
+			font-size: 1.2em;
+			line-height: 1.5em;
+			font-weight: 200;
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			@include breakpoint(tablet){
+				width: 60%;
+				font-size: 1.5em;
+				font-weight: 200;
+				line-height: 2em;
+				padding: 1em 0 0 0;
+			}
+			@include breakpoint(laptop){
+				padding-bottom: 1.5em;
+			}
+			
+		}
+	}
+
+// **********************************************HEADER*************************
+	
+	.contentcontainer{
+		background-color: white;
+		padding-bottom: 6em;
+		max-width: 1300px;
+		margin: 2em auto;
+		box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+	}
+
+	.contheader{
+		padding: 1.5em 0 2em 0;
+		font-size: 2.2em;
+		font-family: $lato;
+		color: $perigreendark;
+		text-align: center;
+		font-weight: 200;
+		@include breakpoint(laptop){
+			font-size: 2em;
+			text-align: left;
+			padding-left: 2em;
+			font-weight: 700;
+		}
+	}
+
+	.boldtext{
+			font-weight:bold; 
+			font-size: 1.1em;
+		}
+
+
+	.maincontent{
+		font-family: $lato;
+		font-weight: $light;
+		width: 85%;
+		text-align: left;
+		line-height: 1.6em;
+		font-size: 0.8em;
+		margin:0 auto;
+		@include breakpoint(tablet){
+			padding-top: 2.5em;
+			width: 95%;
+			margin: 0 auto;
+			font-size: 1.1em;
+			line-height: 1.8em;
+		}
+		@include breakpoint(laptop){
+			width: 50%;
+			padding-top: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		li:before{
+			content: "‣";
+			padding-right: 0.5em;
+		}
+	}
+
+	.contentright{
+		@include breakpoint(laptop){
+			padding-right: 4.5em;
+		}
+	}
+
+	.contentleft{
+		@include breakpoint(laptop){
+			padding-right: 4.5em;
+		}
+	}
+
+	.quote{
+		font-size: 1em;
+		font-weight: 600;
+		width: 75%;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 2em;
+		color: $perigreendark;
+		padding-top:1.5em; 
+		@include breakpoint(tablet){
+			font-size: 1.5em;
+			padding-top: 2em;
+		}
+		#quotation{
+			position: absolute;
+			font-weight: 200;
+			font-family: $coustard;
+			font-size: 6em;
+			@include breakpoint(tablet){
+				left: 1.4em;
+			}
+			left: 1em;
+		}
+		#persona{
+			font-size: 0.7em;
+			font-weight: 300;
+		}
+	}
+
+	#findings{
+		padding-top: 3em;
+	}
+
+	.contentproblem{
+		padding-top: 3em;
+		margin: 0 auto;
+		@include breakpoint(tablet){
+			left: 5em;
+		}
+	}
+
+	.contentcenter{
+		// width: 85%;
+		@include breakpoint(tablet){
+			width: 70%;
+		}
+		@include breakpoint(laptop){
+			width: 100%;
+		}
+		padding: 0;
+		margin: 0;
+		margin: 0 auto;
+		.role{
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+
+
+	
+	.pictureintro{
+		width: 75%;
+		font-size: 0.7em;
+		line-height: 1.8em;
+		font-family: $lato;
+		font-weight: 200;
+		color: $textdark;
+		padding-top: 1em;
+		text-align: center;
+		margin: 0 auto;
+		@include breakpoint(tablet){
+			font-size: 0.9em;
+		}
+	}
+
+	
+
+	// **************************CONTENT BOXES***********************
+
+	.contentboxleft{
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		@include breakpoint(laptop){
+			width: 100%;
+			margin: 0 auto;
+			flex-wrap: nowrap;
+		}
+		.picture_left{
+			width: 100%;
+			margin: 0 auto;
+			@include breakpoint(laptop){
+				width: 70%;
+			}
+			#pic_intro{
+				max-width: 190px;
+				width: 100%;
+				padding-bottom: 3em;
+				@include breakpoint(tablet){
+					max-width: 250px;
+					padding-bottom: 0;
+				}
+			}
+			#pic_wf1{
+				max-width: 550px;
+				width: 100%;
+			}
+		}
+
+			
+	}
+
+
+	.contentboxright{
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		@include breakpoint(laptop){
+			width: 100%;
+			margin: 0 auto;
+			flex-wrap: nowrap;
+		}
+		.picture_right{
+			width: 100%;
+			padding: 0 2em;
+			// position: relative;
+			// top: -13em;
+			order: 1;
+			@include breakpoint(laptop){
+				width: 70%;
+				// position: static;
+				order: 2;
+			}
+			#picture_wf3{
+				padding-top: 3em;
+				width: 100%;
+				max-width: 250px;
+				@include breakpoint(tablet){
+					max-width: 450px;
+				}
+			}
+		}
+		
+		.contentright{
+			width: 85%;
+			order: 2;
+			text-align: left;
+			@include breakpoint(laptop){
+				margin-left: 1em;
+			}
+		}
+
+		
+		.maincontent{
+			@include breakpoint(laptop){
+				width: 40%;
+				padding-left: 4.5em;
+			}
+		}
+	}
+	
+
+	// .PI{
+	// 	display: none;
+	// 	@include breakpoint(tablet){
+	// 		display: block;
+	// 		height: 600px;
+	// 		background-position: center center;
+	// 		background-repeat:  no-repeat;
+	// 		background-attachment: fixed;
+	// 		background-size:  cover;
+	// 		background-color: #999;
+	// 	}
+	// }
+	// .nikhilnathanPI{
+	// 		background-image: url(/assets/img/uwise/work1.png);	
+	// }
+	// .personaPI{
+	// 		background-image: url(/assets/img/uwise/persona2.png);
+	// }
+	
+	.picture_center{
+		width: 90%;
+		margin: 0 auto;
+		padding: 3em 0;
+		max-width: 1250px;
+		text-align: center;
+		@include breakpoint(tablet){
+			width: 100%;
+		}
+		
+		.marketanal{
+			max-width: 850px;
+			width: 100%;
+		}
+
+		.wireframe2{
+			padding: 2em 0;
+			width: 100%;
+			@include breakpoint(tablet){
+				padding: 6em 0 3em 0;
+				max-width: 1100px;
+				width: 90%;
+			}
+		}
+		.pswf{
+			max-width: 1200px;
+			width: 100%;
+		}
+		.webfinal{
+			max-width: 1000px;
+			width: 100%;
+			padding-top: 2em;
+		}
+		.obama{
+			max-width: 250px;
+			width: 100%;
+			cursor: pointer;
+		}
+		.phonefinal{
+			padding: 3em 0;
+			width: 100%;
+			max-width: 800px;
+		}
+	}
+
+	.centercontentcontainer{
+		width: 90%;
+		margin: 0 auto;
+		.mockup{
+		text-align: center;
+			#pic_mockup{
+				width: 100%;
+				max-width: 1150px;
+				padding-bottom: 2em;
+			}
+		}
+
+		.teammates{
+			margin-bottom: 4em;
+			text-align: center;
+			a, p{
+				text-decoration: none;
+				font-size: 0.9em;
+				font-family: $lato;
+				font-weight: 300;
+				display: block;
+				padding: 1.5em;
+				color: $textdark;
+				cursor: pointer;
+				@include breakpoint (laptop){
+					display: inline-block;
+					font-size: 1.1em;
+					padding: 1em;
+				}
+				
+				.line{
+					opacity: 0;
+					height: 3px;
+					margin-top: 0.6em;
+					background-color: $setured;
+				    transition: opacity 0.3s linear 0s;
+				}
+				.line1{
+					margin: 0 auto;
+					width: 145px;
+					margin-top: 0.5em;
+				}
+				.line2{
+					margin: 0 auto;
+					width: 135px;
+					margin-top: 0.5em;
+				}
+				.line3{	
+					margin: 0 auto;				
+					width: 105px;
+					margin-top: 0.5em;
+				}
+				.line4{
+					margin: 0 auto;
+					width: 215px;
+					margin-top: 0.5em;
+				}
+			}
+			a:hover{
+				color: $perigreendark;
+				font-weight: 600;
+				cursor: pointer;
+				.line1{
+					opacity: 1;
+				}
+				.line2{
+					opacity: 1;
+				}
+				.line3{
+					opacity: 1;
+				}
+				.line4{
+					opacity: 1;
+				}
+			}	
+		}
+	}
+	
+		
+	.triplecontent{
+		width: 100%;
+		margin-top: 3em;
+		// height: 500px;
+		margin: 0 auto;
+		
+		@include breakpoint(laptop){
+			padding-top: 3em;
+		}
+	
+		#introtriple{
+			padding-top: 8em;
+		}
+		.wrapper{
+			padding: 0 4.5em;
+			@include breakpoint(laptop){
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				margin: 0 auto;
+			}
+			.pic{
+				width: 200px;
+				margin: 0 auto;
+				img{
+					max-width: 200px;
+					width: 100%;
+					margin: 0 auto;
+				}
+			}
+				
+			p{
+				width: 85%;
+				margin: 0;
+				padding: 0;
+				margin: 0 auto;
+				padding: 3em 0 3em 0;
+				@include breakpoint(tablet){
+					width: 70%;
+				}
+			}
+			.one{
+				display: block;
+				@include breakpoint(laptop){
+					display: inline-block;
+					width: calc(100% / 3.06);
+					padding-bottom: 0;
+				}					
+			}	
+		}
+	}
+
+
+	.doublecontent{
+		width: 90%;
+		margin-top: 4em;
+		margin: 0 auto;
+		padding: 2em 0 0em 0;
+	
+		.wireframes{
+			position: relative;
+			top: -2em;
+		}
+		.wrapper{
+			// padding: 0 4.5em;
+			@include breakpoint(laptop){
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				margin: 0 auto;
+			}
+			.pic{
+				max-width: 500px;
+				margin: 0 auto;
+				padding-top: 4em;
+
+				img{
+					max-width: 500px;
+					width: 100%;
+					margin: 0 auto;
+				}
+			}
+			h2{
+				text-align: center;
+				font-family: $lato;
+				font-weight: 300;
+				color: $textdark;
+				padding-top: 1em;
+			}
+				
+			p{
+				width: 85%;
+				margin: 0;
+				padding: 0;
+				margin: 0 auto;
+				padding-top: 2em;
+				@include breakpoint(tablet){
+					width: 65%;
+				}
+			}
+			.boxone{
+				display: block;
+				font-size: 0.8em;
+				
+				@include breakpoint(laptop){
+					display: inline-block;
+					width: calc(100% / 2);
+				}
+				@include breakpoint(tablet){
+					font-size: 1em;
+				}					
+			}
+			.boxtwo{
+				display: block;
+				vertical-align: top;
+				font-size: 0.8em;
+				
+				@include breakpoint(laptop){
+					display: inline-block;
+					width: calc(100% / 2.06);
+					margin: 0;
+				}
+				@include breakpoint(tablet){
+					font-size: 1em;
+				}
+			}
+			.pictureintro{
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	.nextprojectlink{
+			text-decoration: none;
+			font-family: $lato;
+			color: $lightgreenexcel;
+			cursor: pointer;
+			text-align: center;
+			.nextproj{
+			width: 15em;
+			height: 5em;
+			border: 2px solid $lightgreenexcel;
+			margin: 4em auto;
+			cursor: pointer;
+			transition: all 0.2s linear 0s;
+			border-radius: 4px;
+				#nexttext{
+					position: relative;
+					top: 0.5em;
+					font-size: 0.8em;
+					padding: 0;
+					margin: 0;
+				}
+				#drtext{
+					position: relative;
+					bottom: 0.5em;
+					font-size: 1.6em;
+					font-weight: bold;
+				}
+			}
+			.nextproj:hover{
+				
+				border: 2px solid $darkgreenexcel ;
+				color: $darkgreenexcel;
+				transition: all 0.3s linear 0s;
+			}
+		}
+	
+}
+
+	// *****************************************************************
+	// ********************* STATIC IMAGE IN THE MIDDLE ****************
+	// *****************************************************************
+
+	// // .demobgpicbox{
+	// // 	height: 600px;
+	// // 	background-image: url(http://www.iangoldwyn.com/wp-content/uploads/2015/05/grand-canyon-wallpaper-qmd.jpg);
+	// // 		background-position: center center;
+	// // 		background-repeat:  no-repeat;
+	// // 		background-attachment: fixed;
+	// // 		background-size:  cover;
+	// // 		background-color: #999;
+
+	// // }
+	// *****************************************************************
+	// ********************* STATIC IMAGE IN THE MIDDLE ****************
+	// *****************************************************************
+	
