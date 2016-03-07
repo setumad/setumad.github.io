@@ -588,7 +588,8 @@ th {
 
 .bodymain {
   width: 100%;
-  padding-top: 8rem; }
+  padding-top: 8rem;
+  height: 1500px; }
   .bodymain .container {
     margin: 0 auto; }
     @media (min-width: 768px) {
@@ -674,6 +675,67 @@ th {
               font-weight: 900; }
             .bodymain .container .row .righthalf .biodiv .smallbio a:hover {
               color: #ef4b33; }
+        .bodymain .container .row .righthalf .drprojectbox2 {
+          height: 400px;
+          margin: 0 auto;
+          background-color: #c8e4c4;
+          margin: 4rem 0;
+          transition: 0.3s all ease-in-out;
+          margin-bottom: 6rem; }
+          @media (min-width: 1100px) {
+            .bodymain .container .row .righthalf .drprojectbox2 {
+              float: right;
+              width: 90%;
+              margin-top: 13em; } }
+          .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink {
+            text-decoration: none;
+            color: #ffffff;
+            transition: 0.3s all ease-in-out; }
+            .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink .uiux {
+              float: left;
+              padding: 1.6em 0 0 1em;
+              font-size: 1.1em;
+              font-family: "Lato", sans-serif;
+              opacity: 0.5; }
+            .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink .dailyrecord {
+              width: 60%;
+              padding-right: 1.4rem;
+              padding-top: 0.4rem;
+              float: right;
+              text-align: right; }
+              .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink .dailyrecord .dr_title {
+                font-size: 1.5rem;
+                font-family: "Lato", sans-serif;
+                letter-spacing: 0.8px;
+                font-weight: 600; }
+              .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink .dailyrecord .dr_desc {
+                font-size: 1.1rem;
+                line-height: 1.5em;
+                font-family: "Lato", sans-serif; }
+            .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink #drmac {
+              display: block;
+              margin: 0 auto;
+              width: 100%;
+              max-width: 350px;
+              padding: 4.2em 0;
+              transition: 0.5s all ease-in-out;
+              bottom: 0; }
+              @media (min-width: 768px) {
+                .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink #drmac {
+                  position: relative;
+                  max-width: 415px;
+                  padding: 3em 0; } }
+            .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink:hover {
+              color: #246742; }
+              .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink:hover .uiux {
+                opacity: 1;
+                color: #246742;
+                transition: 0.3s all ease-in-out; }
+              .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink:hover #drmac {
+                bottom: 12px; }
+                @media (min-width: 768px) {
+                  .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink:hover #drmac {
+                    bottom: 11px; } }
         .bodymain .container .row .righthalf .drprojectbox {
           height: 400px;
           margin: 0 auto;

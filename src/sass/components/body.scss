@@ -1,6 +1,7 @@
 .bodymain{
 	width: 100%;
 	padding-top: 8rem;
+	height: 1500px;
 	// background-color: yellow;
 	.container{
 		// width: 85%;
@@ -14,6 +15,7 @@
 		@include breakpoint (laptop){
 			max-width: 1000px;
 		}
+
 		.headline{
 			text-align: center;
 			font-family: $lato;
@@ -104,6 +106,86 @@
 						}
 						a:hover{
 							color: $setured;
+						}
+					}
+				}
+
+				.drprojectbox2{
+					height: 400px;
+					margin: 0 auto;
+					background-color: $lightgreenexcel;
+					margin: 4rem 0;
+					transition: 0.3s all ease-in-out;
+					margin-bottom: 6rem;
+
+					@include breakpoint(laptop){
+					float: right;
+					width: 90%;
+					margin-top: 13em;
+					}
+
+					#dailyrecordalink{
+						text-decoration: none;
+						color: #ffffff;
+						transition: 0.3s all ease-in-out;
+						.uiux{
+							float: left;
+							padding: 1.6em 0 0 1em;
+							font-size: 1.1em;
+							font-family: $lato;
+							opacity: 0.5;
+						}
+						.dailyrecord{
+							width: 60%;
+							padding-right: 1.4rem;
+							padding-top: 0.4rem;
+							float: right;
+							text-align: right;
+
+							.dr_title{
+								font-size: 1.5rem;
+								font-family: $lato;
+								letter-spacing: 0.8px;
+								font-weight: 600;
+							}
+							.dr_desc{
+								font-size: 1.1rem;
+								line-height: 1.5em;
+								font-family: $lato;
+							}
+						}
+						#drmac{
+							display: block;
+							margin: 0 auto;
+							width: 100%;
+							max-width: 350px;
+							padding: 4.2em 0;
+							transition: 0.5s all ease-in-out;
+							bottom:0;
+							
+
+							@include breakpoint(tablet){
+								position: relative;
+								max-width: 415px;
+								padding: 3em 0;
+								
+							}
+							
+						}
+						&:hover{
+							color: $darkgreenexcel;
+							.uiux{
+								opacity: 1;
+								color: $darkgreenexcel;
+								transition: 0.3s all ease-in-out;
+							}
+							#drmac{
+								bottom: 12px;
+								@include breakpoint (tablet){
+									bottom: 11px;
+								}
+							}
+							
 						}
 					}
 				}
