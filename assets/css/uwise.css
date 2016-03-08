@@ -443,7 +443,8 @@ body {
           padding: 1em 0 0 0; } }
       @media (min-width: 1100px) {
         body .ptitle .headintro {
-          padding-bottom: 1.5em; } }
+          padding-bottom: 1.5em;
+          padding-top: 2em; } }
     body .ptitle .role {
       font-family: "Lato", sans-serif;
       font-weight: 200;
