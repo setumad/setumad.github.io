@@ -589,7 +589,13 @@ th {
 .bodymain {
   width: 100%;
   padding-top: 8rem;
-  height: 1500px; }
+  height: 2800px; }
+  @media (min-width: 768px) {
+    .bodymain {
+      height: 2700px; } }
+  @media (min-width: 1100px) {
+    .bodymain {
+      height: 1500px; } }
   .bodymain .container {
     margin: 0 auto; }
     @media (min-width: 768px) {
@@ -676,17 +682,19 @@ th {
             .bodymain .container .row .righthalf .biodiv .smallbio a:hover {
               color: #ef4b33; }
         .bodymain .container .row .righthalf .drprojectbox2 {
-          height: 425px;
+          height: 475px;
           margin: 0 auto;
           background-color: #c8e4c4;
           margin: 4rem 0;
           transition: 0.3s all ease-in-out;
-          margin-bottom: 6rem; }
+          margin-bottom: 6rem;
+          margin-top: 43em; }
           @media (min-width: 1100px) {
             .bodymain .container .row .righthalf .drprojectbox2 {
               float: right;
               width: 90%;
-              margin-top: 13em; } }
+              margin-top: 13em;
+              height: 425px; } }
           .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink {
             text-decoration: none;
             color: #ffffff;

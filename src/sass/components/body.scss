@@ -1,7 +1,13 @@
 .bodymain{
 	width: 100%;
 	padding-top: 8rem;
-	height: 1500px;
+	height: 2800px;
+	@include breakpoint(tablet) {
+	    height: 2700px;
+	}
+	@include breakpoint(laptop) {
+	    height: 1500px;
+	}
 	// background-color: yellow;
 	.container{
 		// width: 85%;
@@ -111,17 +117,19 @@
 				}
 
 				.drprojectbox2{
-					height: 425px;
+					height: 475px;
 					margin: 0 auto;
 					background-color: $lightgreenexcel;
 					margin: 4rem 0;
 					transition: 0.3s all ease-in-out;
 					margin-bottom: 6rem;
+					margin-top: 43em;
 
 					@include breakpoint(laptop){
 					float: right;
 					width: 90%;
 					margin-top: 13em;
+					height: 425px;
 					}
 
 					#dailyrecordalink{
