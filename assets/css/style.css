@@ -590,7 +590,7 @@ th {
   width: 100%;
   padding-top: 8rem;
   height: 2800px; }
-  @media (min-width: 768px) {
+  @media (min-width: 414px) {
     .bodymain {
       height: 2700px; } }
   @media (min-width: 1100px) {
@@ -682,13 +682,16 @@ th {
             .bodymain .container .row .righthalf .biodiv .smallbio a:hover {
               color: #ef4b33; }
         .bodymain .container .row .righthalf .drprojectbox2 {
-          height: 475px;
+          height: 415px;
           margin: 0 auto;
           background-color: #c8e4c4;
           margin: 4rem 0;
           transition: 0.3s all ease-in-out;
           margin-bottom: 6rem;
-          margin-top: 43em; }
+          margin-top: 47em; }
+          @media (min-width: 768px) {
+            .bodymain .container .row .righthalf .drprojectbox2 {
+              height: 425px; } }
           @media (min-width: 1100px) {
             .bodymain .container .row .righthalf .drprojectbox2 {
               float: right;
@@ -745,12 +748,15 @@ th {
                   .bodymain .container .row .righthalf .drprojectbox2 #dailyrecordalink:hover #drmac {
                     bottom: 11px; } }
         .bodymain .container .row .righthalf .drprojectbox {
-          height: 400px;
+          height: 410px;
           margin: 0 auto;
           background-color: #87D3BD;
           margin: 4rem 0;
           transition: 0.3s all ease-in-out;
           margin-bottom: 6rem; }
+          @media (min-width: 768px) {
+            .bodymain .container .row .righthalf .drprojectbox {
+              height: 400px; } }
           @media (min-width: 1100px) {
             .bodymain .container .row .righthalf .drprojectbox {
               float: right;

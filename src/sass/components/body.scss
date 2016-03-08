@@ -2,9 +2,12 @@
 	width: 100%;
 	padding-top: 8rem;
 	height: 2800px;
-	@include breakpoint(tablet) {
+	@include breakpoint(phone-lg) {
 	    height: 2700px;
 	}
+	// @include breakpoint(tablet) {
+	//     height: 2700px;
+	// }
 	@include breakpoint(laptop) {
 	    height: 1500px;
 	}
@@ -117,14 +120,16 @@
 				}
 
 				.drprojectbox2{
-					height: 475px;
+					height: 415px;
 					margin: 0 auto;
 					background-color: $lightgreenexcel;
 					margin: 4rem 0;
 					transition: 0.3s all ease-in-out;
 					margin-bottom: 6rem;
-					margin-top: 43em;
-
+					margin-top: 47em;
+					@include breakpoint(tablet) {
+					    height: 425px;
+					}
 					@include breakpoint(laptop){
 					float: right;
 					width: 90%;
@@ -199,12 +204,15 @@
 				}
 
 				.drprojectbox{
-					height: 400px;
+					height: 410px;
 					margin: 0 auto;
 					background-color: $perigreenlight;
 					margin: 4rem 0;
 					transition: 0.3s all ease-in-out;
 					margin-bottom: 6rem;
+					@include breakpoint(tablet) {
+					    height: 400px;
+					}
 
 					@include breakpoint(laptop){
 					float: right;
