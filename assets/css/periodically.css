@@ -690,6 +690,8 @@ body {
     body .centercontentcontainer .teammates {
       margin-bottom: 4em;
       text-align: center; }
+      body .centercontentcontainer .teammates .roles {
+        cursor: default; }
       body .centercontentcontainer .teammates a, body .centercontentcontainer .teammates p {
         text-decoration: none;
         font-size: 0.9em;

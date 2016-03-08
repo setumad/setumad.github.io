@@ -363,7 +363,10 @@ body{
 		.teammates{
 			margin-bottom: 4em;
 			text-align: center;
-			a{
+			.roles{
+				cursor: default;
+			}
+			a, p{
 				text-decoration: none;
 				font-size: 0.9em;
 				font-family: $lato;
@@ -374,10 +377,10 @@ body{
 				cursor: pointer;
 				@include breakpoint (laptop){
 					display: inline-block;
-					font-size: 1.2em;
+					font-size: 1.1em;
 					padding: 1em;
 				}
-
+				
 				.line{
 					opacity: 0;
 					height: 3px;
@@ -407,8 +410,9 @@ body{
 				}
 			}
 			a:hover{
-				color: $uwpurple;
+				color: $perigreendark;
 				font-weight: 600;
+				cursor: pointer;
 				.line1{
 					opacity: 1;
 				}

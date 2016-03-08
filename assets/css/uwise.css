@@ -695,7 +695,9 @@ body {
     body .centercontentcontainer .teammates {
       margin-bottom: 4em;
       text-align: center; }
-      body .centercontentcontainer .teammates a {
+      body .centercontentcontainer .teammates .roles {
+        cursor: default; }
+      body .centercontentcontainer .teammates a, body .centercontentcontainer .teammates p {
         text-decoration: none;
         font-size: 0.9em;
         font-family: "Lato", sans-serif;
@@ -705,35 +707,36 @@ body {
         color: #3d3d3d;
         cursor: pointer; }
         @media (min-width: 1100px) {
-          body .centercontentcontainer .teammates a {
+          body .centercontentcontainer .teammates a, body .centercontentcontainer .teammates p {
             display: inline-block;
-            font-size: 1.2em;
+            font-size: 1.1em;
             padding: 1em; } }
-        body .centercontentcontainer .teammates a .line {
+        body .centercontentcontainer .teammates a .line, body .centercontentcontainer .teammates p .line {
           opacity: 0;
           height: 3px;
           margin-top: 0.6em;
           background-color: #ef4b33;
           transition: opacity 0.3s linear 0s; }
-        body .centercontentcontainer .teammates a .line1 {
+        body .centercontentcontainer .teammates a .line1, body .centercontentcontainer .teammates p .line1 {
           margin: 0 auto;
           width: 145px;
           margin-top: 0.5em; }
-        body .centercontentcontainer .teammates a .line2 {
+        body .centercontentcontainer .teammates a .line2, body .centercontentcontainer .teammates p .line2 {
           margin: 0 auto;
           width: 135px;
           margin-top: 0.5em; }
-        body .centercontentcontainer .teammates a .line3 {
+        body .centercontentcontainer .teammates a .line3, body .centercontentcontainer .teammates p .line3 {
           margin: 0 auto;
           width: 105px;
           margin-top: 0.5em; }
-        body .centercontentcontainer .teammates a .line4 {
+        body .centercontentcontainer .teammates a .line4, body .centercontentcontainer .teammates p .line4 {
           margin: 0 auto;
           width: 215px;
           margin-top: 0.5em; }
       body .centercontentcontainer .teammates a:hover {
-        color: #4b2e83;
-        font-weight: 600; }
+        color: #003f48;
+        font-weight: 600;
+        cursor: pointer; }
         body .centercontentcontainer .teammates a:hover .line1 {
           opacity: 1; }
         body .centercontentcontainer .teammates a:hover .line2 {
