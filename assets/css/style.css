@@ -673,6 +673,9 @@ th {
                 float: right;
                 padding-right: 1.4rem;
                 padding-top: 1.5rem; } }
+            .bodymain .container .row .righthalf .biodiv .smallbio #taglineaccent {
+              font-weight: 400;
+              color: #ef4b33; }
             .bodymain .container .row .righthalf .biodiv .smallbio a {
               text-decoration: none;
               color: #3d3d3d;
