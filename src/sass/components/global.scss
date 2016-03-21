@@ -1,0 +1,50 @@
+.col_33 {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    // @include breakpoint(phone-lg) {
+    //     width: calc(100% - 64px);
+    //     margin: 15px;
+    // }
+    @include breakpoint(tablet) {
+        margin: 15px;
+        width: calc(33.333% - 64px);
+        vertical-align: top;     //To prevent divs from going on top when you put content in them
+    }
+}
+
+.col_50 {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    // @include breakpoint(phone-lg) {
+    //     width: calc(100% - 64px);
+        
+    //     margin: 15px;
+    // }
+    @include breakpoint(tablet) {
+        margin: 15px;
+        width: calc(50% - 64px);
+        vertical-align: top;
+    }
+}
+
+.col_66 {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    // @include breakpoint(phone-lg) {
+    //     width: calc(100% - 64px);
+    //     margin: 15px;
+    // }
+    @include breakpoint(tablet) {
+        margin: 15px;
+        width: calc(66.666% - 64px);
+        vertical-align: top;
+    }
+}
+
+.bodymain{
+	font-family: $lato;
+    text-align: center;
+}

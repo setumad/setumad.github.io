@@ -1,96 +1,88 @@
-
 <div class="bodymain" onclick="bodyfunction()">
-
-	<div class="container">
-
-		<div class="headline">
-			<div class="myname">
-					<span class="setu">Setumadhava</span> Kathawate
-			</div>
-			<p>User Experience Designer based out
-				of Seattle</p>
-		</div>
-
-		<div class="row">
-			<div class="righthalf">
-				<div class="biodiv">
-					<div class="smallbio">I am Passionate About
-						<span id="taglineaccent">Solving Problems</span> In Users’ Lives
-						Through <span id="taglineaccent">Research Backed Design.</span> <br><a href="about.html">&#187; More about me</a></div>
-				</div>
-			</div>
-
-
-			<div class="lefthalf">
-				<div class="uwiseprojectbox">
-					<a id="uwisealink"href="uwise.html">
-
-						<span class="uiux">UX Design</span>
-						<div class="uwise">
-							<p><span class="uwise_title">UW-ISE <br><br></span><span class="uwise_desc">Find reliable off-campus<br> accommodation easily</span></p>
-						</div>
-						<img id="uwisephone" src="assets/img/body/uwise_phone2.png"/>
-					</a>
-				</div>
-			</div>
-
-			<div class="righthalf">
-				<div class="drprojectbox">
-					<a id="dailyrecordalink" href="periodically.html">
-						<span class="uiux">UX Design</span>
-						<div class="dailyrecord">
-							<p><span class="dr_title">Periodical.ly<br><br></span><span class="dr_desc">Read articles without subscriptions<br></span></p>
-						</div>
-						<img id="drmac" src="assets/img/body/macperi.png"/>
-					</a>
-				</div>
-			</div>
-
-			<div class="lefthalf">
-				<div class="healthboxbox">
-					<a id="hblink"href="healthbox.html">
-						<span class="uiux">Usability Testing</span>
-						<div class="hbtext">
-							<p><span class="hb_title">HTC/UA HealthBox<br><br></span><span class="hb_desc">A system of connected smart health devices</span></p>
-						</div>
-						<img id="hbkit" src="assets/img/body/healthbox.png"/>
-					</a>
-				</div>
-			</div>
-
-			<div class="righthalf">
-				<div class="drprojectbox2">
-					<a id="dailyrecordalink" href="dailyrecord.html">
-						<span class="uiux">UX Design</span>
-						<div class="dailyrecord">
-							<p><span class="dr_title">Daily Record<br><br></span><span class="dr_desc">An efficient tool to manage<br>project data<br></span></p>
-						</div>
-						<img id="drmac" src="assets/img/body/drmacbook.png"/>
-					</a>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
+    <!-- <div class="tagline">
+        <div class="myname">
+            <span class="setu">Setumadhava</span> Kathawate
+        </div>
+        <p class="shortlineaboutme">User Experience Designer based out of Seattle</p>
+    </div> -->
+    <div class="col_33" id="biobox">
+        <p class="bio">I am Passionate About
+            <span id="taglineaccent">Solving Problems</span> In Users’ Lives Through <span id="taglineaccent">Research Backed Design.</span>
+            <br>
+            <a href="about.html">
+                <br> &#187; &nbsp;&nbsp;More about me</a>
+        </p>
+    </div>
+    <div class="col_66" id="uwise">
+        <div class="container">
+            <a href="uwise.html">
+            <div class="bg">&nbsp;</div>
+            <div class="innertext">
+                <p class="roles">User Research | Prototyping | Ideation | Prototyping | Sketching </p>
+                <h1 class="laptoptitle">UW-ISE</h1>
+                <p class="projectdesc">App to help international students find off-campus accommodation & roommates easily.</p>
+            </div>
+            </a>
+        </div>
+    </div>
+    <div class="col_66" id="periodically">
+        <div class="container">
+            <a href="periodically.html">
+            <div class="bg">&nbsp;</div>
+            <div class="innertext">
+                <p class="roles">Business Model Generation | User Stories | Market Analysis | Prototyping | Wireframes | High Fidelity Mockups</p>
+                <h1 class="laptoptitle">Periodical.ly</h1>
+                <p class="projectdesc">Read your favorite articles without having to purchase expensive subscriptions.</p>
+            </div>
+             </a>
+        </div>
+    </div>
+    <div class="col_33" id="healthbox">
+        <div class="container">
+            <a href="healthbox.html">
+            <div class="bg">&nbsp;</div>
+            <div class="innertext">
+                <p class="roles">Usability Studies</p>
+                <h1 class="laptoptitle">HealthBox<br><br></h1>
+                <p class="projectdesc">Usability testing of the <br>HTC - Under Armour HealthBox.</p>
+            </div>
+        </a>
+        </div>
+    </div>
+    <div class="col_50" id="dailyrecord">
+        <div class="container">
+            <a href="dailyrecord.html">
+            <div class="bg">&nbsp;</div>
+            <div class="innertext">
+                <p class="roles">Design Thinking | User Research | Development</p>
+                <h1 class="laptoptitle">Daily Record<br><br></h1>
+                <p class="projectdesc">An smart data management tool designed to automate data tracking process.</p>
+            </div>
+        </a>
+        </div>
+    </div>
+    <div class="col_50" id="comingsoon">
+        &nbsp;
+    </div>
 </div>
-	
-
-
 <script>
-	function bodyfunction(){
-		console.log("body problem");
-		document.getElementById("myDropdown").classList.remove("show");
-	}
+function bodyfunction() {
+    console.log("body problem");
+    document.getElementById("myDropdown").classList.remove("show");
+}
 
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-73216162-1', 'auto');
-  ga('send', 'pageview');
-
+ga('create', 'UA-73216162-1', 'auto');
+ga('send', 'pageview');
 </script>
-
-

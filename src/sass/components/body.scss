@@ -1,459 +1,407 @@
-.bodymain{
-	width: 100%;
-	padding-top: 8rem;
-	height: 2800px;
-	@include breakpoint(phone-lg) {
-	    height: 2700px;
-	}
-	// @include breakpoint(tablet) {
-	//     height: 2700px;
-	// }
-	@include breakpoint(laptop) {
-	    height: 1500px;
-	}
-	// background-color: yellow;
-	.container{
-		// width: 85%;
-		// background-color: orange;
-		margin: 0 auto;
-		@include breakpoint(tablet){
-			max-width: 700px;
-			// background-color: yellow;
-			margin: 0 auto;
-		}
-		@include breakpoint (laptop){
-			max-width: 1000px;
-		}
+.bodymain {
+    max-width: 1300px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 8em;
+    .tagline {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        @include breakpoint(laptop) {
+            padding: 1em 0;
+        }
+        .shortlineaboutme {
+            font-size: 1.8em;
+            font-weight: 600;
+            display: none;
+            @include breakpoint(laptop) {
+                display: block;
+                padding: 3em 0;
+            }
+        }
+        .myname {
+            font-size: 2.4em;
+            font-weight: 700;
+            padding: 3em 0;
+            @include breakpoint(laptop) {
+                display: none;
+            }
+        }
+    }
+    #biobox {
+        background-color: $superlightgrey;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+    #uwise {
+        background: url('../img/body/uwisebg.png') center center no-repeat;
+        background-size: cover;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+    #periodically {
+        background: url('../img/body/periodicallybg.png') center center no-repeat;
+        background-size: cover;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+    #healthbox {
+        background: url('../img/body/healthboxbg.png') center center no-repeat;
+        background-size: cover;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+    #dailyrecord {
+        background: url('../img/body/drbg.png') center center no-repeat;
+        background-size: cover;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+    .col_66 {
+        height: 350px;
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .bg{
+                height: inherit;
+                width: inherit;
+                background: $textdark;
+                opacity: 0;
+                width: 95%;
+                height: 90%;
+                transform:translateX(2.5%);
+                margin-top: 1.1em;
+            }
+            
+            .innertext {
+                position: absolute;
+                top: 0em;
+                width: 100%;
+                color: white;
+                transform: translateY(-15px);
+                @include breakpoint(laptop) {
+                    opacity: 0;
+                }
+                .roles {
+                    position: absolute;
+                    font-size: 1em;
+                    line-height: 1.6em;
+                    padding: 0 2em;
+                    width: 80%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 16em;
+                    opacity: 0;
+                    @include breakpoint(laptop) {
+                        top: 0.8em;
+                        position: relative;
+                        opacity: 1;
+                    }
+                }
+                .laptoptitle {
+                    font-size: 2.5em;
+                    position: absolute;
+                    top: 6.5em;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                    background-color: $textdark;
+                    width: 75%;
+                    opacity: 0.7;
+                    height: 50px;
+                    @include breakpoint(laptop) {
+                        position: relative;
+                        top: 1.3em;
+                        background-color: transparent;
+                        opacity: 1;
+                    }
+                    
+                }
+                .projectdesc {
+                    font-weight: 400;
+                    line-height: 1.6em;
+                    font-size: 1.2em;
+                    margin: 0 auto;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include breakpoint(tablet) {
+                        padding: 0 1em;
+                        font-size: 1.1em;
+                        position: relative;
+                        top: 4.5em;
+                        padding: 0 8em;
+                    }
+                    opacity: 0;
+                    @include breakpoint(laptop) {
+                        opacity: 1;
+                    }
+                }
+            }
+            * {
+                transition: 0.35s all ease-in-out;
+                transition-delay: 0.1s;
+            }
+        }
+    }
+    .col_66:hover {
+        .container {
+            visibility: visible;
+            @include breakpoint(laptop) {
+               .bg {
+                    opacity: 0.65;
+                } 
+                .innertext {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+        }
+    }
+    .col_33 {
+        height: 350px;
+        .bio {
+            width: 85%;
+            margin: 0 auto;
+            font-size: 1.3em;
+            padding-top: 5em;
+            line-height: 1.6em;
+            text-align: left;
+            
+            @include breakpoint(tablet) {
+                font-size: 1em;
+            }
+            @include breakpoint(laptop) {
+                font-size: 1.3em;
+                padding-top: 4em;
+            }
+            a {
+                text-decoration: none;
+                color: $textdark;
+                font-size: 1.3rem;
+                font-family: $lato;
+                font-weight: $bolder;
+                transition: 0.3s all ease-in-out;
+                @include breakpoint(tablet) {
+                    font-size: 1em;
+                }
+            }
+            a:hover {
+                color: $setured;
+                transition: 0.3s all ease-in-out;
+            }
+            #taglineaccent {
+                font-weight: 400;
+                color: $setured;
+            }
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .bg{
+                height: inherit;
+                width: inherit;
+                width: 90%;
+                height: 90%;
+                transform:translateX(5%);
+                margin-top: 1em;
+                background: $textdark;
+                opacity: 0;
 
-		.headline{
-			text-align: center;
-			font-family: $lato;
-			font-weight: $normal;
-			color: $textdark;
-			padding: 2rem 3rem 2rem 3rem;
-			font-size: 1.8em;
-			max-width: 750px;
-			margin: 0 auto;
-			line-height: 50px;
-			.myname{
-				font-size: 2.4rem;
-				font-family: $jack;
-				font-weight: $thin;
-				letter-spacing: 1.2px;
-				color: $lightgrey;
-				padding-bottom: 1em;
-				.setu{
-				transition: 0.1s all ease-in-out;
-				color: $textdark;
-				font-weight: $bold;
-				}
-				@include breakpoint (laptop){
-					display: none;
-				}
-			}
-		}
+            }
+            .innertext {
+                position: absolute;
+                top: 0em;
+                width: 100%;
+                color: white;
+                transform: translateY(-15px);
+                @include breakpoint(laptop) {
+                    opacity: 0;
+                }
+                .roles {
+                    position: absolute;
+                    font-size: 1em;
+                    line-height: 1.6em;
+                    padding: 0 2em;
+                    width: 80%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 19em;
+                    opacity: 0;
+                    @include breakpoint(laptop) {
+                        top: 0.8em;
+                        position: relative;
+                        opacity: 1;
+                    }
+                }
+                .laptoptitle {
+                    position: absolute;
+                    top: 8.3em;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                    background-color: $textdark;
+                    width: 75%;
+                    opacity: 0.7;
+                    height: 50px;
+                    @include breakpoint(laptop) {
+                        position: relative;
+                        top: 1.9em;
+                        background-color: transparent;
+                        opacity: 1;
+                    }
+                    
+                }
+                .projectdesc {
+                    font-weight: 400;
+                    line-height: 1.6em;
+                    font-size: 1.2em;
+                    position: absolute;
+                    top: 13em;
+                    width: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include breakpoint(laptop) {
+                        font-size: 1.1em;
+                        position: relative;
+                        top: 6em;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    opacity: 0;
+                    @include breakpoint(laptop) {
+                        opacity: 1;
+                    }
+                }
+            }
+            * {
+                transition: 0.35s all ease-in-out;
+                transition-delay: 0.1s;
+            }
+        }
+    }
 
-		.row{
-			// background-color: yellow;
-			height: 900px;
-			// width: 75%;
-			margin: 0 auto;
-			max-width: 1000px;
-			.righthalf{
-				background-color: transparent;
-				height: 300px;
-				width: 90%;
-				margin: 0 auto;
-				@include breakpoint(laptop){
-					width: 50%;
-					float: right;
-				}
-				.biodiv{
+    .col_33:hover {
+        .container {
+            visibility: visible;
+             @include breakpoint(laptop) {
+               .bg {
+                    opacity: 0.65;
+                } 
+                .innertext {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+        }
+    }
 
-					height: 200px;
-					margin: 0 auto;
-					background-color: $superlightgrey;
-					margin: 2rem 0;
-					transition: 0.3s all ease-in-out;
+    #comingsoon{
+        display: none;
+        @include breakpoint(tablet) {
+            display: inline-block;
+        }
+    }
 
-					@include breakpoint(laptop){
-					float: right;
-					width: 90%;
-					margin-top: 0;
-					}
+    .col_50 {
+        height: 350px;
+        
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .bg{
+                height: inherit;
+                width: inherit;
+                background: $textdark;
+                opacity: 0;
+                width: 91.5%;
+                height: 90%;
+                transform:translateX(5%);
+                margin-top: 1.1em;
+            }
+            .innertext {
+                position: absolute;
+                top: 0em;
+                width: 100%;
+                color: white;
+                transform: translateY(-15px);
+                @include breakpoint(laptop) {
+                    opacity: 0;
+                }
+                .roles {
+                    position: absolute;
+                    font-size: 1em;
+                    line-height: 1.6em;
+                    padding: 0 2em;
+                    width: 80%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 19em;
+                    opacity: 0;
+                    @include breakpoint(laptop) {
+                        top: 0.8em;
+                        position: relative;
+                        opacity: 1;
+                    }
+                }
+                .laptoptitle {
+                    font-size: 2.5em;
+                    position: absolute;
+                    top: 6.5em;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                    background-color: $textdark;
+                    width: 75%;
+                    opacity: 0.7;
+                    height: 50px;
+                    @include breakpoint(laptop) {
+                        position: relative;
+                        top: 1.3em;
+                        background-color: transparent;
+                        opacity: 1;
+                    }
+                    
+                }
+                .projectdesc {
+                    font-weight: 400;
+                    line-height: 1.6em;
+                    font-size: 1.2em;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 13em;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include breakpoint(tablet) {
+                        padding: 0 3.5em;
+                        font-size: 1.1em;
+                        position: relative;
+                        top: 6em;
+                    }
+                    opacity: 0;
+                    @include breakpoint(laptop) {
+                        opacity: 1;
+                    }
+                }
+            }
+            * {
+                transition: 0.35s all ease-in-out;
+                transition-delay: 0.1s;
+            }
+        }
+    }
 
-
-					.smallbio{
-
-						// background-color: blue;
-						max-width: 366px;
-						font-size: 1.3rem;
-						font-family:$lato;
-						color: $textdark;
-						line-height: 2.3rem;
-						padding-left: 1.4rem;
-						padding-top: 1.5rem;
-						@include breakpoint(tablet){
-							text-align: left;
-							float: left;
-							padding-left: 1.4rem;
-							padding-top: 1.6rem;
-						}
-						@include breakpoint(laptop){
-							text-align: right;
-							float: right;
-							padding-right: 1.4rem;
-							padding-top: 1.5rem;
-
-						}
-						#taglineaccent{
-							font-weight: 400;
-							color: $setured;
-						}
-						a{
-							text-decoration: none;
-							color: $textdark;
-							font-size: 1.3rem;
-							font-family:$lato;
-							font-weight: $bolder;
-						}
-						a:hover{
-							color: $setured;
-						}
-					}
-				}
-
-				.drprojectbox2{
-					height: 415px;
-					margin: 0 auto;
-					background-color: $lightgreenexcel;
-					margin: 4rem 0;
-					transition: 0.3s all ease-in-out;
-					margin-bottom: 6rem;
-					margin-top: 47em;
-					@include breakpoint(tablet) {
-					    height: 425px;
-					}
-					@include breakpoint(laptop){
-					float: right;
-					width: 90%;
-					margin-top: 13em;
-					height: 425px;
-					}
-
-					#dailyrecordalink{
-						text-decoration: none;
-						color: #ffffff;
-						transition: 0.3s all ease-in-out;
-						.uiux{
-							float: left;
-							padding: 1.6em 0 0 1em;
-							font-size: 1.1em;
-							font-family: $lato;
-							opacity: 0.5;
-						}
-						.dailyrecord{
-							width: 60%;
-							padding-right: 1.4rem;
-							padding-top: 0.4rem;
-							float: right;
-							text-align: right;
-
-							.dr_title{
-								font-size: 1.5rem;
-								font-family: $lato;
-								letter-spacing: 0.8px;
-								font-weight: 600;
-							}
-							.dr_desc{
-								font-size: 1.1rem;
-								line-height: 1.5em;
-								font-family: $lato;
-							}
-						}
-						#drmac{
-							display: block;
-							margin: 0 auto;
-							width: 100%;
-							max-width: 350px;
-							padding: 4.2em 0;
-							transition: 0.5s all ease-in-out;
-							bottom:0;
-							
-
-							@include breakpoint(tablet){
-								position: relative;
-								max-width: 415px;
-								padding: 3em 0;
-								
-							}
-							
-						}
-						&:hover{
-							color: $darkgreenexcel;
-							.uiux{
-								opacity: 1;
-								color: $darkgreenexcel;
-								transition: 0.3s all ease-in-out;
-							}
-							#drmac{
-								bottom: 12px;
-								@include breakpoint (tablet){
-									bottom: 11px;
-								}
-							}
-							
-						}
-					}
-				}
-
-				.drprojectbox{
-					height: 410px;
-					margin: 0 auto;
-					background-color: $perigreenlight;
-					margin: 4rem 0;
-					transition: 0.3s all ease-in-out;
-					margin-bottom: 6rem;
-					@include breakpoint(tablet) {
-					    height: 400px;
-					}
-
-					@include breakpoint(laptop){
-					float: right;
-					width: 90%;
-					margin-top: 0em;
-					}
-
-					#dailyrecordalink{
-						text-decoration: none;
-						color: #ffffff;
-						transition: 0.3s all ease-in-out;
-						.uiux{
-							float: left;
-							padding: 1.6em 0 0 1em;
-							font-size: 1.1em;
-							font-family: $lato;
-							opacity: 0.5;
-						}
-						.dailyrecord{
-							width: 60%;
-							padding-right: 1.4rem;
-							padding-top: 0.4rem;
-							float: right;
-							text-align: right;
-
-							.dr_title{
-								font-size: 1.5rem;
-								font-family: $lato;
-								letter-spacing: 0.8px;
-								font-weight: 600;
-							}
-							.dr_desc{
-								font-size: 1.1rem;
-								line-height: 1.5em;
-								font-family: $lato;
-							}
-						}
-						#drmac{
-							display: block;
-							margin: 0 auto;
-							width: 100%;
-							max-width: 350px;
-							padding: 4.2em 0;
-							transition: 0.5s all ease-in-out;
-							bottom:0;
-							
-
-							@include breakpoint(tablet){
-								position: relative;
-								max-width: 415px;
-								padding: 3em 0;
-								
-							}
-							
-						}
-						&:hover{
-							color: $perigreendark;
-							.uiux{
-								opacity: 1;
-								color: $perigreendark;
-								transition: 0.3s all ease-in-out;
-							}
-							#drmac{
-								bottom: 12px;
-								@include breakpoint (tablet){
-									bottom: 11px;
-								}
-							}
-							
-						}
-					}
-				}
-			}
-			.lefthalf{
-				background-color: transparent;
-				width: 90%;
-				margin: 0 auto;
-
-				@include breakpoint(laptop){
-					width: 50%;
-					float: left;
-				}
-				.uwiseprojectbox{
-					height: 420px;
-					margin: 0 auto;
-					background-color: $lightpurple;
-					transition: 0.3s all ease-in-out;
-					margin-bottom: 6rem;
-
-					@include breakpoint(laptop){
-						float: left;
-						width: 90%;
-						// margin-bottom: 8rem;
-					}
-
-					#uwisealink{
-						text-decoration: none;
-						color: #ffffff;
-						transition: 0.3s all ease-in-out;
-						.uiux{
-							float: right;
-							padding: 1.6em 1em 0 0;
-							font-size: 1.1em;
-							font-family: $lato;
-							opacity: 0.5;
-						}
-
-						.uwise{
-							width: 60%;
-							padding-left: 1.4rem;
-							padding-top: 0.4rem;
-							// padding-bottom: 0.5rem;
-
-							.uwise_title{
-								font-size: 1.5rem;
-								font-family: $lato;
-								letter-spacing: 0.8px;
-								font-weight: 600;
-							}
-							.uwise_desc{
-								font-size: 1.1rem;
-								line-height: 1.5em;
-								font-family: $lato;
-							}
-
-						}
-
-						#uwisephone{
-							display: block;
-							margin: 0 auto;
-							width: 100%;
-							max-width: 150px;
-							padding: 1em 0;
-							transition: 0.5s all ease-in-out;
-							bottom:0;
-
-							@include breakpoint(tablet){
-								position: relative;
-								max-width: 150px;
-							}
-							@include breakpoint(laptop){
-								max-width: 150px;
-								position: relative;
-							}
-						}
-						&:hover{
-							color: $uwpurple;
-							.uiux{
-								opacity: 1;
-								color: $uwpurple;
-								transition: 0.3s all ease-in-out;
-							}
-							#uwisephone{
-								bottom: 1em;
-							}
-						}
-					}
-				}
-
-				.healthboxbox{
-					height: 400px;
-					margin: 0 auto;
-					background-color: $hblightred;
-					transition: 0.3s all ease-in-out;
-					float: left;
-					width: 100%;
-					margin-top: 12rem;
-					margin-bottom: 10rem;
-
-
-					@include breakpoint(laptop){
-						float: left;
-						width: 90%;
-						margin-top: 0;
-					}
-
-					#hblink{
-						text-decoration: none;
-						color: #ffffff;
-						transition: 0.3s all ease-in-out;
-						.uiux{
-							float: right;
-							padding: 1.6em 1em 0 0;
-							font-size: 1.1em;
-							font-family: $lato;
-							opacity: 0.5;
-							width: 80px;
-						}
-						.hbtext{
-							width: 60%;
-							padding-left: 1.4rem;
-							padding-top: 0.4rem;
-							// padding-bottom: 0.5rem;
-
-							.hb_title{
-								font-size: 1.5rem;
-								font-family: $lato;
-								letter-spacing: 0.8px;
-								font-weight: 600;
-							}
-							.hb_desc{
-								font-size: 1.1rem;
-								line-height: 1.5em;
-								font-family: $lato;
-							}
-						}
-						#hbkit{
-							display: block;
-							margin: 0 auto;
-							width: 100%;
-							max-width: 280px;
-							transition: 0.5s all ease-in-out;
-							bottom:0;
-							padding-top: 4.7em;
-
-
-							@include breakpoint(tablet){
-								position: relative;
-								max-width: 280px;
-								padding-top: 4.7em;
-							}
-							// @include breakpoint(laptop){
-							// 	max-width: 140px;
-							// 	position: relative;
-							// }
-						}
-						
-						&:hover{
-							color: $hbdarkred;
-							#hbkit{
-								bottom: 1em;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+     .col_50:hover {
+        .container {
+            visibility: visible;
+             @include breakpoint(laptop) {
+               .bg {
+                    opacity: 0.65;
+                } 
+                .innertext {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+        }
+    }
 }
-
