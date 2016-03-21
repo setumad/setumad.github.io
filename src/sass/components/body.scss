@@ -3,7 +3,10 @@
     margin: 0 auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    margin-top: 8em;
+    margin-top: 5em;
+    @include breakpoint(laptop) {
+       margin-top: 12em; 
+    }
     .tagline {
         width: 80%;
         margin: 0 auto;
@@ -12,12 +15,18 @@
             padding: 1em 0;
         }
         .shortlineaboutme {
-            font-size: 1.8em;
+            // font-size: 1.8em;
             font-weight: 600;
-            display: none;
+            position: relative;
+            top: -3em;
+            font-size: 1.3em;
+            font-weight: 400;
+
             @include breakpoint(laptop) {
                 display: block;
-                padding: 3em 0;
+                padding-top: 2em;
+                font-size: 1.8em;
+                font-weight: 600;
             }
         }
         .myname {
