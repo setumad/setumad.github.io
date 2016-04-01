@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -587,191 +588,592 @@ th {
         display: block; }
 
 body {
-  padding-top: 4.7em; }
+  padding-top: 4em;
+  background-color: #f1f1f1; }
   @media (min-width: 768px) {
     body {
-      padding-top: 6rem; } }
+      padding-top: 5.9rem; } }
+  body * {
+    font-family: "Lato", sans-serif; }
   body .ptitle {
-    width: 100%;
-    height: 220px;
-    background-color: #fd110e; }
-    @media (min-width: 768px) {
-      body .ptitle {
-        height: 280px;
-        transition: 0.2s all ease-in-out; } }
+    height: 600px;
+    background-image: url(/assets/img/periodically/hero3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999; }
     body .ptitle #projecttitle {
-      font-size: 1.8rem;
+      font-size: 4em;
       text-align: center;
       color: #f5f5f5;
       margin: 0 auto;
-      padding-top: 1.8em;
-      letter-spacing: 0.8px;
-      font-family: "Lato", sans-serif;
-      font-weight: 700; }
-      body .ptitle #projecttitle img {
-        width: 100%;
-        max-width: 600px; }
-    body .ptitle .role {
-      position: relative;
-      top: -3em;
-      font-family: "Lato", sans-serif;
-      letter-spacing: 0.8px;
-      font-weight: 300;
-      font-size: 0.8rem;
-      transition: 0.2s all ease-in-out;
-      color: #f5f5f5; }
+      padding-top: 3em;
+      font-family: "Lato", sans-serif; }
       @media (min-width: 768px) {
-        body .ptitle .role {
-          top: 1em;
-          transition: 0.2s all ease-in-out;
-          font-size: 1rem;
-          color: #f5f5f5; } }
-    body .ptitle .inprogress {
-      font-size: 0.8em;
+        body .ptitle #projecttitle {
+          font-size: 5em;
+          padding-top: 2em; } }
+    body .ptitle .headintro {
+      width: 80%;
+      margin: 0 auto;
       font-family: "Lato", sans-serif;
+      color: white;
       text-align: center;
-      position: relative;
-      bottom: 5em;
-      color: #f5f5f5;
-      font-weight: 300; }
+      font-size: 1.2em;
+      line-height: 1.5em;
+      font-weight: 200;
+      padding-top: 1.5em;
+      padding-bottom: 1.5em; }
       @media (min-width: 768px) {
-        body .ptitle .inprogress {
-          top: 0em; } }
-  body .contentcontainerwhite {
-    background-color: white; }
-  body .contentcontainergrey {
-    background-color: #f9f9f9; }
-  body .contentbox {
-    width: 90%;
+        body .ptitle .headintro {
+          width: 60%;
+          font-size: 1.5em;
+          font-weight: 200;
+          line-height: 2em;
+          padding: 1em 0 0 0; } }
+      @media (min-width: 1100px) {
+        body .ptitle .headintro {
+          padding-bottom: 1.5em; } }
+  body .contentcontainer {
+    background-color: white;
+    max-width: 1300px;
+    width: 95%;
+    margin: 2em auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    position: relative;
+    top: -6em; }
+  body .halfboxesparent {
+    background-color: transparent;
+    box-shadow: none; }
+    body .halfboxesparent .halfbox {
+      width: 100%;
+      margin: 0;
+      display: inline-block;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
+      @media (min-width: 1100px) {
+        body .halfboxesparent .halfbox {
+          width: calc(50% - 15px);
+          vertical-align: top; } }
+    @media (min-width: 768px) {
+      body .halfboxesparent .roleteambox {
+        height: 35em; } }
+    @media (min-width: 1100px) {
+      body .halfboxesparent .methoddatabox {
+        height: 45em; } }
+    body .halfboxesparent .rightbox {
+      margin-top: 2em; }
+      @media (min-width: 1100px) {
+        body .halfboxesparent .rightbox {
+          margin-top: 0;
+          float: right; } }
+  body .contheader {
+    padding: 1.5em 0 2em 0;
+    font-size: 2.2em;
+    font-family: "Lato", sans-serif;
+    color: #fd110e;
+    text-align: center;
+    font-weight: 200; }
+    @media (min-width: 1100px) {
+      body .contheader {
+        font-size: 2em;
+        text-align: left;
+        padding-left: 2em;
+        font-weight: 700; } }
+  body .boldtext {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #fd110e; }
+  body .subheading {
+    font-weight: 600;
+    position: relative;
+    left: 1.5em;
+    padding-bottom: 3em;
+    font-size: 1.1em; }
+  body .maincontent {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    width: 85%;
+    text-align: left;
+    line-height: 1.6em;
+    font-size: 0.8em;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      body .maincontent {
+        padding-top: 2.5em;
+        width: 95%;
+        margin: 0 auto;
+        font-size: 1.1em;
+        line-height: 1.8em; } }
+    @media (min-width: 1100px) {
+      body .maincontent {
+        width: 50%;
+        padding-top: 0; } }
+    body .maincontent ul {
+      list-style: none; }
+    body .maincontent li:before {
+      content: "‣";
+      padding-right: 0.5em; }
+  body .lastcontentofthebox {
+    padding-bottom: 5em; }
+  @media (min-width: 1100px) {
+    body .contentright {
+      padding-right: 4.5em; } }
+  @media (min-width: 1100px) {
+    body .contentleft {
+      padding-right: 4.5em; } }
+  body .quote {
+    font-size: 1em;
+    font-weight: 600;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2em;
+    color: #003f48;
+    padding-top: 1.5em; }
+    @media (min-width: 768px) {
+      body .quote {
+        font-size: 1.5em;
+        padding-top: 2em; } }
+    body .quote #quotation {
+      position: absolute;
+      font-weight: 200;
+      font-family: "Coustard", serif;
+      font-size: 6em;
+      left: 1em; }
+      @media (min-width: 768px) {
+        body .quote #quotation {
+          left: 1.4em; } }
+    body .quote #persona {
+      font-size: 0.7em;
+      font-weight: 300; }
+  body #findings {
+    padding-top: 3em; }
+  body .contentproblem {
+    padding-top: 3em;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      body .contentproblem {
+        left: 5em; } }
+  body .contentcenter {
+    padding: 0;
+    margin: 0;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      body .contentcenter {
+        width: 70%; } }
+    @media (min-width: 1100px) {
+      body .contentcenter {
+        width: 100%; } }
+    body .contentcenter .role {
+      width: 100%;
+      margin: 0 auto; }
+    body .contentcenter .pictureintro {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 5em; }
+    body .contentcenter .halfboxcontent {
+      width: 80%; }
+  body .pictureintro {
+    width: 75%;
+    font-size: 0.7em;
+    line-height: 1.8em;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    color: #3d3d3d;
+    padding-top: 1em;
     text-align: center;
     margin: 0 auto; }
+    @media (min-width: 768px) {
+      body .pictureintro {
+        font-size: 0.9em; } }
+  body .contentboxleft {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
     @media (min-width: 1100px) {
-      body .contentbox {
+      body .contentboxleft {
         width: 100%;
-        margin: 0 auto; } }
-    body .contentbox .contheader {
-      padding: 1rem 0 2rem 0;
-      font-size: 2.2rem;
-      font-family: "Lato", sans-serif;
-      color: #fd110e; }
-    body .contentbox hr.thin {
-      margin-top: 0.5em;
-      margin-bottom: 3em;
-      width: 10%; }
-    body .contentbox hr.thin2 {
-      margin-top: 3.5em;
-      margin-bottom: 3em;
-      width: 10%; }
-    body .contentbox .picture_intro img {
+        margin: 0 auto;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; } }
+    body .contentboxleft .picture_left {
       width: 100%;
-      max-width: 550px; }
-    body .contentbox .picture_interaction img {
-      width: 100%;
-      max-width: 850px;
-      padding-top: 2em; }
-    body .contentbox .content {
-      font-size: 0.9rem;
-      font-family: "Lato", sans-serif;
-      font-weight: 300;
-      margin: 0 auto;
-      width: 85%;
-      padding: 30px 0;
-      text-align: justify;
-      line-height: 1.8; }
-      body .contentbox .content a {
-        text-decoration: none;
-        color: #fd110e; }
-      body .contentbox .content .boldtext {
-        font-weight: 600;
-        color: #fd110e; }
-      body .contentbox .content .demotext {
-        font-weight: bold;
-        text-align: center;
-        color: #3d3d3d; }
-      @media (min-width: 768px) {
-        body .contentbox .content {
-          line-height: 1.8;
-          font-size: 1rem; } }
+      margin: 0 auto; }
       @media (min-width: 1100px) {
-        body .contentbox .content {
-          width: 40%; } }
-    body .contentbox .teammates {
-      margin-bottom: 7em; }
-      body .contentbox .teammates a {
+        body .contentboxleft .picture_left {
+          width: 70%; } }
+      body .contentboxleft .picture_left #pic_intro {
+        max-width: 190px;
+        width: 100%;
+        padding-bottom: 3em; }
+        @media (min-width: 768px) {
+          body .contentboxleft .picture_left #pic_intro {
+            max-width: 550px;
+            padding-bottom: 0; } }
+      body .contentboxleft .picture_left #pic_wf1 {
+        max-width: 550px;
+        width: 100%; }
+  body .contentboxright {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (min-width: 1100px) {
+      body .contentboxright {
+        width: 100%;
+        margin: 0 auto;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; } }
+    body .contentboxright .picture_right {
+      width: 100%;
+      padding: 0 2em;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1; }
+      @media (min-width: 1100px) {
+        body .contentboxright .picture_right {
+          width: 70%;
+          -webkit-order: 2;
+          -ms-flex-order: 2;
+          order: 2; } }
+      body .contentboxright .picture_right #picture_wf3 {
+        padding-top: 3em;
+        width: 100%;
+        max-width: 250px; }
+        @media (min-width: 768px) {
+          body .contentboxright .picture_right #picture_wf3 {
+            max-width: 450px; } }
+    body .contentboxright .contentright {
+      width: 85%;
+      -webkit-order: 2;
+      -ms-flex-order: 2;
+      order: 2;
+      text-align: left; }
+      @media (min-width: 1100px) {
+        body .contentboxright .contentright {
+          margin-left: 1em; } }
+    @media (min-width: 1100px) {
+      body .contentboxright .maincontent {
+        width: 40%;
+        padding-left: 4.5em; } }
+  body .picture_center {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3em 0;
+    max-width: 1250px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      body .picture_center {
+        width: 100%; } }
+    body .picture_center .participants {
+      max-width: 850px;
+      width: 100%; }
+    body .picture_center .posfind1 {
+      max-width: 350px;
+      width: 100%; }
+    body .picture_center .posfind2 {
+      max-width: 150px;
+      width: 100%; }
+      @media (min-width: 768px) {
+        body .picture_center .posfind2 {
+          max-width: 232px; } }
+    body .picture_center .posfind3 {
+      max-width: 150px;
+      width: 100%; }
+      @media (min-width: 768px) {
+        body .picture_center .posfind3 {
+          max-width: 232px; } }
+    body .picture_center .posfind4 {
+      max-width: 250px;
+      width: 100%; }
+      @media (min-width: 768px) {
+        body .picture_center .posfind4 {
+          max-width: 400px; } }
+    body .picture_center .negfind1 {
+      max-width: 150px;
+      width: 100%; }
+      @media (min-width: 768px) {
+        body .picture_center .negfind1 {
+          max-width: 342px; } }
+    body .picture_center .negfind2 {
+      max-width: 150px;
+      width: 100%; }
+      @media (min-width: 768px) {
+        body .picture_center .negfind2 {
+          max-width: 250px; } }
+    body .picture_center .negfind3 {
+      max-width: 150px;
+      width: 100%; }
+      @media (min-width: 768px) {
+        body .picture_center .negfind3 {
+          max-width: 390px; } }
+    body .picture_center .negfind4 {
+      max-width: 250px;
+      width: 100%; }
+      @media (min-width: 768px) {
+        body .picture_center .negfind4 {
+          max-width: 300px; } }
+    body .picture_center .wireframe2 {
+      padding: 2em 0;
+      width: 100%; }
+      @media (min-width: 768px) {
+        body .picture_center .wireframe2 {
+          padding: 6em 0 3em 0;
+          max-width: 1100px;
+          width: 90%; } }
+    body .picture_center .pswf {
+      max-width: 1200px;
+      width: 100%; }
+    body .picture_center .webfinal {
+      max-width: 1000px;
+      width: 100%;
+      padding-top: 2em; }
+    body .picture_center .obama {
+      max-width: 250px;
+      width: 100%;
+      cursor: pointer; }
+    body .picture_center .phonefinal {
+      padding: 3em 0;
+      width: 100%;
+      max-width: 800px; }
+    body .picture_center .interactionmap {
+      max-width: 800px;
+      width: 100%;
+      padding-bottom: 5em; }
+      @media (min-width: 768px) {
+        body .picture_center .interactionmap {
+          padding: 0 2em 5em; } }
+    body .picture_center .interactionmap2 {
+      max-width: 800px;
+      width: 100%; }
+  body .centercontentcontainer {
+    width: 90%;
+    margin: 0 auto; }
+    body .centercontentcontainer .mockup {
+      text-align: center; }
+      body .centercontentcontainer .mockup #pic_mockup {
+        width: 100%;
+        max-width: 1150px;
+        padding-bottom: 2em; }
+    body .centercontentcontainer .teammates {
+      margin-bottom: 4em;
+      text-align: center; }
+      body .centercontentcontainer .teammates a, body .centercontentcontainer .teammates p {
         text-decoration: none;
-        font-size: 1em;
+        font-size: 0.9em;
         font-family: "Lato", sans-serif;
         font-weight: 300;
         display: block;
         padding: 1.5em;
-        color: #3d3d3d;
-        cursor: pointer; }
-        @media (min-width: 768px) {
-          body .contentbox .teammates a {
-            display: inline-block;
-            font-size: 1.2em;
+        color: #3d3d3d; }
+        @media (min-width: 1100px) {
+          body .centercontentcontainer .teammates a, body .centercontentcontainer .teammates p {
+            display: block;
+            font-size: 1.1em;
             padding: 1em; } }
-        body .contentbox .teammates a .line {
+        body .centercontentcontainer .teammates a .line, body .centercontentcontainer .teammates p .line {
           opacity: 0;
           height: 3px;
           margin-top: 0.6em;
           background-color: #ef4b33;
           transition: opacity 0.3s linear 0s; }
-        body .contentbox .teammates a .line1 {
+        body .centercontentcontainer .teammates a .line1, body .centercontentcontainer .teammates p .line1 {
           margin: 0 auto;
           width: 145px;
           margin-top: 0.5em; }
-        body .contentbox .teammates a .line2 {
+        body .centercontentcontainer .teammates a .line2, body .centercontentcontainer .teammates p .line2 {
           margin: 0 auto;
           width: 135px;
           margin-top: 0.5em; }
-        body .contentbox .teammates a .line3 {
+        body .centercontentcontainer .teammates a .line3, body .centercontentcontainer .teammates p .line3 {
           margin: 0 auto;
           width: 105px;
           margin-top: 0.5em; }
-        body .contentbox .teammates a .line4 {
+        body .centercontentcontainer .teammates a .line4, body .centercontentcontainer .teammates p .line4 {
           margin: 0 auto;
           width: 215px;
           margin-top: 0.5em; }
-      body .contentbox .teammates a:hover {
-        color: #fd110e;
-        font-weight: 700; }
-        body .contentbox .teammates a:hover .line1 {
+      body .centercontentcontainer .teammates a:hover {
+        color: #003f48;
+        font-weight: 600;
+        cursor: pointer; }
+        body .centercontentcontainer .teammates a:hover .line1 {
           opacity: 1; }
-        body .contentbox .teammates a:hover .line2 {
+        body .centercontentcontainer .teammates a:hover .line2 {
           opacity: 1; }
-        body .contentbox .teammates a:hover .line3 {
+        body .centercontentcontainer .teammates a:hover .line3 {
           opacity: 1; }
-        body .contentbox .teammates a:hover .line4 {
+        body .centercontentcontainer .teammates a:hover .line4 {
           opacity: 1; }
-    body .contentbox .nextprojectlink {
-      text-decoration: none;
-      font-family: "Lato", sans-serif;
-      color: #d5c9f4; }
-      body .contentbox .nextprojectlink .nextproj {
-        width: 14em;
-        height: 5em;
-        border: 2px solid #d5c9f4;
-        margin: 0 auto;
-        cursor: pointer;
-        transition: all 0.2s linear 0s;
-        margin-top: 3em;
-        border-radius: 4px; }
-        body .contentbox .nextprojectlink .nextproj #nexttext {
-          position: relative;
-          top: 0.5em;
-          font-size: 0.8em;
+    @media (min-width: 1100px) {
+      body .centercontentcontainer #actualteammates {
+        position: relative; } }
+  body .triplecontent {
+    width: 100%;
+    margin-top: 3em;
+    margin: 0 auto; }
+    @media (min-width: 1100px) {
+      body .triplecontent {
+        padding-top: 3em; } }
+    body .triplecontent #introtriple {
+      padding-top: 8em; }
+    body .triplecontent .wrapper {
+      padding: 0 4.5em; }
+      @media (min-width: 1100px) {
+        body .triplecontent .wrapper {
           padding: 0;
-          margin: 0; }
-        body .contentbox .nextprojectlink .nextproj #drtext {
-          position: relative;
-          bottom: 0.4em;
-          font-size: 1.6em;
-          font-weight: bold; }
-      body .contentbox .nextprojectlink .nextproj:hover {
-        border: 2px solid #4b2e83;
-        color: #4b2e83;
-        transition: all 0.2s linear 0s; }
+          margin: 0;
+          width: 100%;
+          margin: 0 auto; } }
+      body .triplecontent .wrapper .pic {
+        width: 200px;
+        margin: 0 auto; }
+        body .triplecontent .wrapper .pic img {
+          max-width: 200px;
+          width: 100%;
+          margin: 0 auto; }
+      body .triplecontent .wrapper p {
+        width: 85%;
+        margin: 0;
+        padding: 0;
+        margin: 0 auto;
+        padding: 3em 0 3em 0; }
+        @media (min-width: 768px) {
+          body .triplecontent .wrapper p {
+            width: 70%; } }
+      body .triplecontent .wrapper .one {
+        display: block; }
+        @media (min-width: 1100px) {
+          body .triplecontent .wrapper .one {
+            display: inline-block;
+            width: calc(100% / 3.06);
+            padding-bottom: 0; } }
+  body #thestudy p {
+    text-align: center; }
+  body #thestudy #bandfitness {
+    max-width: 150px;
+    width: 100%; }
+    @media (min-width: 768px) {
+      body #thestudy #bandfitness {
+        max-width: 250px; } }
+  @media (min-width: 1100px) {
+    body #thestudy {
+      padding-top: 8em; } }
+  body .doublecontentdiv {
+    width: 90%;
+    margin-top: 4em;
+    margin: 0 auto;
+    padding: 2em 0 0em 0; }
+    body .doublecontentdiv .wireframes {
+      position: relative;
+      top: -2em; }
+    body .doublecontentdiv #doublecontentbox {
+      width: 100%; }
+    @media (min-width: 1100px) {
+      body .doublecontentdiv .wrapper {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        margin: 0 auto; } }
+    body .doublecontentdiv .wrapper .pic {
+      max-width: 500px;
+      margin: 0 auto;
+      padding-top: 4em; }
+      body .doublecontentdiv .wrapper .pic img {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto; }
+    body .doublecontentdiv .wrapper h2 {
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      color: #3d3d3d;
+      padding-top: 1em; }
+    body .doublecontentdiv .wrapper p {
+      width: 85%;
+      margin: 0;
+      padding: 0;
+      margin: 0 auto;
+      padding-top: 2em; }
+      @media (min-width: 768px) {
+        body .doublecontentdiv .wrapper p {
+          width: 65%; } }
+    body .doublecontentdiv .wrapper .boxone {
+      display: block;
+      font-size: 0.8em; }
+      @media (min-width: 1100px) {
+        body .doublecontentdiv .wrapper .boxone {
+          display: inline-block;
+          width: calc(100% / 2); } }
+      @media (min-width: 768px) {
+        body .doublecontentdiv .wrapper .boxone {
+          font-size: 1em; } }
+    body .doublecontentdiv .wrapper .boxtwo {
+      display: block;
+      vertical-align: top;
+      font-size: 0.8em; }
+      @media (min-width: 1100px) {
+        body .doublecontentdiv .wrapper .boxtwo {
+          display: inline-block;
+          width: calc(100% / 2.06);
+          margin: 0; } }
+      @media (min-width: 768px) {
+        body .doublecontentdiv .wrapper .boxtwo {
+          font-size: 1em; } }
+    body .doublecontentdiv .wrapper .pictureintro {
+      width: 100%;
+      text-align: center;
+      padding-top: 3em; }
+  body .nextprojectlink {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    color: #c8e4c4;
+    cursor: pointer;
+    text-align: center; }
+    body .nextprojectlink .nextproj {
+      width: 15em;
+      height: 5em;
+      border: 2px solid #c8e4c4;
+      margin: 4em auto;
+      cursor: pointer;
+      transition: all 0.2s linear 0s;
+      border-radius: 4px; }
+      body .nextprojectlink .nextproj #nexttext {
+        position: relative;
+        top: 0.5em;
+        font-size: 0.8em;
+        padding: 0;
+        margin: 0; }
+      body .nextprojectlink .nextproj #drtext {
+        position: relative;
+        bottom: 0.5em;
+        font-size: 1.6em;
+        font-weight: bold; }
+    body .nextprojectlink .nextproj:hover {
+      border: 2px solid #246742;
+      color: #246742;
+      transition: all 0.3s linear 0s; }
 
 .footercontainer {
   height: 170px;
