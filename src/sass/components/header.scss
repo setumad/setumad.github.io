@@ -118,13 +118,16 @@
 			.myname{
 				display: none;
 				@include breakpoint(laptop){
+					.setu{
+						font-family: $jack;
+					}
 					display: block;
 					float: right;
 					left: -255px;
 					position: relative;
 					padding-top: 1.4rem;
 					font-size: 1.9rem;
-					font-family: $jack;
+					font-family: $lato;
 					letter-spacing: 1.5px;
 					color: $lightgrey;
 					transition: 0.1s all ease-in-out;
