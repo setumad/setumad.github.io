@@ -644,7 +644,8 @@ body {
     margin: 2em auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     position: relative;
-    top: -6em; }
+    top: -6em;
+    padding-bottom: 3em; }
   body .halfboxesparent {
     background-color: transparent;
     box-shadow: none; }
@@ -717,8 +718,6 @@ body {
     body .maincontent li:before {
       content: "‣";
       padding-right: 0.5em; }
-  body .lastcontentofthebox {
-    padding-bottom: 5em; }
   @media (min-width: 1100px) {
     body .contentright {
       padding-right: 4.5em; } }

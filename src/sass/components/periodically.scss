@@ -54,13 +54,16 @@ body{
 
 // **********************************************HEADER*************************
 	
-	.contentcontainer{
-		background-color: white;
-		padding-bottom: 6em;
-		max-width: 1300px;
-		margin: 2em auto;
-		box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-	}
+	.contentcontainer {
+        background-color: white;
+        max-width: 1300px;
+        width: 95%;
+        margin: 2em auto;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        position: relative;
+        top: -6em;
+        padding-bottom: 3em;
+    }
 
 	.contheader{
 		padding: 1.5em 0 2em 0;
