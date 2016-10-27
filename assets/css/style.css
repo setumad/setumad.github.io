@@ -642,6 +642,10 @@ th {
     background: url("../img/body/drbg.png") center center no-repeat;
     background-size: cover;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); }
+  .bodymain #expedia {
+    background: url("../img/body/expedia_cover.png") center center no-repeat;
+    background-size: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); }
   .bodymain .col_66 {
     height: 350px; }
     .bodymain .col_66 .container {
