@@ -558,7 +558,7 @@ body {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: orangered;
+    background-color: #ff4500;
     max-width: 1300px;
     margin: 0 auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
