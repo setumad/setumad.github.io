@@ -406,12 +406,271 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto; }
 
 /* grid vs flex base styles */
 /* flex styles */
-@media screen and (min-width: 1000px) {
+/*########### MOBILE & TABLET #################*/
+/*    ########## TYPE ############*/
+article {
+  font-size: 1.1em;
+  line-height: 1.8em;
+  font-weight: 300; }
+
+li {
+  padding-bottom: 0.8em;
+  font-size: 1em; }
+
+.subhedaar {
+  font-weight: 400;
+  margin: 1.5em 0 1em 2.25em;
+  color: #C49D00; }
+
+.designprocess li {
+  list-style-type: none;
+  padding-left: 0.2em; }
+
+.sectionheader {
+  font-size: 1.8em;
+  padding: 1.5rem 0 3rem 1.5em;
+  color: #062F54; }
+
+.boldtext {
+  font-weight: 500; }
+
+.noticecontent {
+  color: white;
+  font-weight: 800;
+  /*text-align: center;*/
+  /*padding-left: 13em;*/ }
+
+/*    ########## END TYPE ############*/
+/*######### LAYOUT ##########*/
+.wrapper {
+  width: 95%; }
+
+.ptitle {
+  height: 600px;
+  background-image: url(/assets/img/expedia/hotel_room.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999; }
+  .ptitle .projecttitle {
+    font-size: 5em;
+    text-align: center;
+    color: #f5f5f5;
+    margin: 0 auto;
+    padding-top: 2.8em;
+    font-family: "Lato", sans-serif; }
+    .ptitle .projecttitle #summerinternship {
+      font-size: 0.4em;
+      font-weight: 300; }
+  .ptitle .headintro {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+    @media (min-width: 768px) {
+      .ptitle .headintro {
+        width: 60%;
+        font-size: 1.5em;
+        font-weight: 200;
+        line-height: 2em;
+        padding: 1em 0 0 0; } }
+    @media (min-width: 1100px) {
+      .ptitle .headintro {
+        padding-bottom: 1.5em;
+        padding-top: 2em; } }
+
+#container {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: white;
+  max-width: 1300px;
+  margin: 2em auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding-bottom: 3em; }
+
+.designcontainer {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: white;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 54em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding-bottom: 3em; }
+
+article {
+  padding: 10px;
+  box-sizing: border-box; }
+
+.contentbox {
+  /*            display: flex;*/
+  /*            flex-wrap: wrap;*/ }
+
+.patternsbox {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.introbox {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 2em; }
+
+.contentcenter {
+  margin: 1em 0 2em 1.85em;
+  width: 85%; }
+
+.rolediv {
+  width: 60%;
+  margin: 0 auto; }
+
+.rolelist {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: -2.8em; }
+
+.rolelist li {
+  padding: 0 2em;
+  font-weight: 600;
+  font-size: 1.1em; }
+
+.introcontent {
+  width: 100%;
+  margin-top: 2em; }
+
+.patterns {
+  -webkit-flex: 0 1 45%;
+  -ms-flex: 0 1 45%;
+  flex: 0 1 45%; }
+
+.patternscontent {
+  margin: 0 auto;
+  padding: 2em 0; }
+
+#notice {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #ff4500;
+  max-width: 1300px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
+
+/*######### END LAYOUT ##########*/
+/*######### PICTURES ##########*/
+#intropicdiv {
+  width: 100%; }
+
+#intro_pic {
+  width: 100%; }
+
+#ca {
+  width: 90%;
+  margin: 0 auto; }
+
+#ca img {
+  width: 100%; }
+
+#wiresdiv {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4em; }
+
+#wires {
+  width: 100%; }
+
+#pattern1div {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 3em; }
+
+#finaldesigndiv {
+  width: 90%;
+  margin: 0 auto; }
+
+#final_designs {
+  width: 100%; }
+
+#freemandiv {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 3em; }
+
+#freeman {
+  width: 100%; }
+
+.PI {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: none;
+  display: block;
+  height: 800px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999; }
+
+.walle {
+  background-image: url(/assets/img/expedia/wall2.jpg); }
+
+/*######### END PICTURES #########*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*########### MOBILE & TABLET #################*/
+/*############## LAPTOP and ABOVE #############*/
+@media screen and (min-width: 1024px) {
   /*    ########## TYPE ############*/
   article {
     font-size: 1.1em;
@@ -433,13 +692,10 @@ body {
     color: #062F54; }
   .boldtext {
     font-weight: 500; }
-  .noticecontent {
-    color: white;
-    font-weight: 800;
-    /*text-align: center;*/
-    /*padding-left: 13em;*/ }
   /*    ########## END TYPE ############*/
   /*######### LAYOUT ##########*/
+  .wrapper {
+    width: 80%; }
   .ptitle {
     height: 600px;
     background-image: url(/assets/img/expedia/hotel_room.jpg);
@@ -469,19 +725,19 @@ body {
       font-weight: 200;
       padding-top: 1.5em;
       padding-bottom: 1.5em; } }
-    @media screen and (min-width: 1000px) and (min-width: 768px) {
+    @media screen and (min-width: 1024px) and (min-width: 768px) {
       .ptitle .headintro {
         width: 60%;
         font-size: 1.5em;
         font-weight: 200;
         line-height: 2em;
         padding: 1em 0 0 0; } }
-    @media screen and (min-width: 1000px) and (min-width: 1100px) {
+    @media screen and (min-width: 1024px) and (min-width: 1100px) {
       .ptitle .headintro {
         padding-bottom: 1.5em;
         padding-top: 2em; } }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   #container {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
