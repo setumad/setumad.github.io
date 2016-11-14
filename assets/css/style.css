@@ -643,7 +643,7 @@ th {
     background-size: cover;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); }
   .bodymain #expedia {
-    background: url("../img/body/expedia_cover.png") center center no-repeat;
+    background: url("../img/body/expedia_cover_live.png") center center no-repeat;
     background-size: cover;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); }
   .bodymain .col_66 {
@@ -1048,9 +1048,9 @@ th {
           position: relative;
           top: 2.5rem; } }
     .footercontainer .line .copyright {
-      font-size: 0.6rem;
-      padding-top: 2rem;
-      padding-bottom: 1rem;
+      font-size: 0.8em;
+      padding-top: 6rem;
+      padding-bottom: 4em;
       text-align: center;
       color: #aaaaaa;
       font-family: "Lato", sans-serif; }
