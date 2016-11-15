@@ -614,7 +614,8 @@ article {
 #freemandiv {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
 
 #freeman {
   width: 100%; }
@@ -828,7 +829,8 @@ article {
     width: 75%;
     margin: 0 auto; }
   #ca img {
-    width: 100%; }
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
   #wiresdiv {
     width: 75%;
     margin: 0 auto;
@@ -847,7 +849,8 @@ article {
   #freemandiv {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 3em; }
+    padding-bottom: 3em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
   #freeman {
     width: 100%; }
   .PI {
