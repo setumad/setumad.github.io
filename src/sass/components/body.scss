@@ -140,7 +140,7 @@
                     visibility: hidden;
                     font-size: 2.5em;
                     position: absolute;
-                    top: 6.5em;
+                    top: 6em;
                     left: 50%;
                     transform: translateX(-50%);
                     color: white;
@@ -194,6 +194,10 @@
                     @include breakpoint(laptop) {
                         opacity: 1;
                     }
+                }
+                .expediadesc{
+                    top: 2.2em;
+                    /*font-size: 3em;*/
                 }
             }
             * {
