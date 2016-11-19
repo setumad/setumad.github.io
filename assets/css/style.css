@@ -638,6 +638,10 @@ th {
     background: url("../img/body/healthboxbg.png") center center no-repeat;
     background-size: cover;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); }
+  .bodymain #datescout {
+    background: url("../img/body/datescout.png") center center no-repeat;
+    background-size: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); }
   .bodymain #dailyrecord {
     background: url("../img/body/drbg.png") center center no-repeat;
     background-size: cover;
@@ -706,6 +710,45 @@ th {
           height: 50px; }
           @media (min-width: 1100px) {
             .bodymain .col_66 .container .innertext .laptoptitle {
+              position: relative;
+              top: 1.3em;
+              background-color: transparent;
+              opacity: 1; } }
+        .bodymain .col_66 .container .innertext .expedialaptoptitle {
+          visibility: hidden;
+          font-size: 2.5em;
+          position: absolute;
+          top: 6.5em;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          color: white;
+          background-color: #3d3d3d;
+          width: 75%;
+          opacity: 0.7;
+          height: 50px; }
+          @media (min-width: 1100px) {
+            .bodymain .col_66 .container .innertext .expedialaptoptitle {
+              position: relative;
+              top: 1.3em;
+              background-color: transparent;
+              opacity: 1; } }
+        .bodymain .col_66 .container .innertext .expediamobiletitle {
+          font-size: 2em;
+          position: absolute;
+          top: 7.5em;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          color: white;
+          background-color: #3d3d3d;
+          width: 75%;
+          opacity: 0.7;
+          height: 50px; }
+          @media (min-width: 1100px) {
+            .bodymain .col_66 .container .innertext .expediamobiletitle {
               position: relative;
               top: 1.3em;
               background-color: transparent;
