@@ -56,7 +56,15 @@
         background: url('../img/body/healthboxbg.png') center center no-repeat;
         background-size: cover;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+
     }
+
+    #datescout {
+        background: url('../img/body/datescout.png') center center no-repeat;
+        background-size: cover;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
     #dailyrecord {
         background: url('../img/body/drbg.png') center center no-repeat;
         background-size: cover;
@@ -113,6 +121,45 @@
                     font-size: 2.5em;
                     position: absolute;
                     top: 6.5em;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                    background-color: $textdark;
+                    width: 75%;
+                    opacity: 0.7;
+                    height: 50px;
+                    @include breakpoint(laptop) {
+                        position: relative;
+                        top: 1.3em;
+                        background-color: transparent;
+                        opacity: 1;
+                    }
+                    
+                }
+                .expedialaptoptitle {
+                    visibility: hidden;
+                    font-size: 2.5em;
+                    position: absolute;
+                    top: 6.5em;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                    background-color: $textdark;
+                    width: 75%;
+                    opacity: 0.7;
+                    height: 50px;
+                    @include breakpoint(laptop) {
+                        position: relative;
+                        top: 1.3em;
+                        background-color: transparent;
+                        opacity: 1;
+                    }
+                    
+                }
+                .expediamobiletitle {
+                    font-size: 2em;
+                    position: absolute;
+                    top: 7.5em;
                     left: 50%;
                     transform: translateX(-50%);
                     color: white;
