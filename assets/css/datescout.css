@@ -529,6 +529,20 @@ body {
     margin: 2em auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     padding-bottom: 3em; }
+  .notice {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 2em auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding-bottom: 3em;
+    height: 20px;
+    background-color: #EC5555; }
+    .notice p {
+      padding-top: 0.5em;
+      font-weight: 600;
+      color: white; }
   .patterncontainerbottom {
     margin-bottom: 0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
