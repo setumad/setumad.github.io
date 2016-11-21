@@ -9,7 +9,6 @@
     }
     
     .wrapper {
-        width: 100%;
         max-width: 90%;
         margin: 0 auto;
     }
@@ -300,6 +299,14 @@
     /*########### MOBILE & TABLET #################*/
     /*########### MOBILE & TABLET #################*/
     /*########### MOBILE & TABLET #################*/
+
+
+
+
+
+
+
+
     /*############## LAPTOP and ABOVE #############*/
     
     @media screen and (min-width: 1024px) {
@@ -332,9 +339,7 @@
         }
         /*    ########## END TYPE ############*/
         /*######### LAYOUT ##########*/
-        .wrapper {
-            width: 80%;
-        }
+    
         .ptitle {
             height: 600px;
             background-image: url(/assets/img/expedia/hotel_room.jpg);
