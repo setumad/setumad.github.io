@@ -412,229 +412,6 @@ body {
 /* flex styles */
 /*########### MOBILE & TABLET #################*/
 /*    ########## TYPE ############*/
-article {
-  font-size: 1.1em;
-  line-height: 1.8em;
-  font-weight: 300; }
-
-li {
-  padding-bottom: 0.8em;
-  font-size: 1em; }
-
-.subhedaar {
-  font-weight: 400;
-  margin: 1.5em 0 1em 2.25em;
-  color: #C49D00; }
-
-.designprocess li {
-  list-style-type: none;
-  padding-left: 0.2em; }
-
-.sectionheader {
-  font-size: 1.8em;
-  padding: 1.5rem 0 3rem 1.5em;
-  color: #062F54; }
-
-.boldtext {
-  font-weight: 500; }
-
-.noticecontent {
-  color: white;
-  font-weight: 800;
-  /*text-align: center;*/
-  /*padding-left: 13em;*/ }
-
-/*    ########## END TYPE ############*/
-/*######### LAYOUT ##########*/
-.wrapper {
-  width: 95%; }
-
-.ptitle {
-  height: 600px;
-  background-image: url(/assets/img/expedia/hotel_room.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #999; }
-  .ptitle .projecttitle {
-    font-size: 5em;
-    text-align: center;
-    color: #f5f5f5;
-    margin: 0 auto;
-    padding-top: 2.8em;
-    font-family: "Lato", sans-serif; }
-    .ptitle .projecttitle #summerinternship {
-      font-size: 0.4em;
-      font-weight: 300; }
-  .ptitle .headintro {
-    width: 80%;
-    margin: 0 auto;
-    font-family: "Lato", sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    font-weight: 200;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em; }
-    @media (min-width: 768px) {
-      .ptitle .headintro {
-        width: 60%;
-        font-size: 1.5em;
-        font-weight: 200;
-        line-height: 2em;
-        padding: 1em 0 0 0; } }
-    @media (min-width: 1100px) {
-      .ptitle .headintro {
-        padding-bottom: 1.5em;
-        padding-top: 2em; } }
-
-#container {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: white;
-  max-width: 1300px;
-  margin: 2em auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  padding-bottom: 3em; }
-
-.designcontainer {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: white;
-  max-width: 1300px;
-  margin: auto;
-  margin-top: 54em;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  padding-bottom: 3em; }
-
-article {
-  padding: 10px;
-  box-sizing: border-box; }
-
-.contentbox {
-  /*            display: flex;*/
-  /*            flex-wrap: wrap;*/ }
-
-.patternsbox {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.introbox {
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0 2em; }
-
-.contentcenter {
-  margin: 1em 0 2em 1.85em;
-  width: 85%; }
-
-.rolediv {
-  width: 60%;
-  margin: 0 auto; }
-
-.rolelist {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: -2.8em; }
-
-.rolelist li {
-  padding: 0 2em;
-  font-weight: 600;
-  font-size: 1.1em; }
-
-.introcontent {
-  width: 100%;
-  margin-top: 2em; }
-
-.patterns {
-  -webkit-flex: 0 1 45%;
-  -ms-flex: 0 1 45%;
-  flex: 0 1 45%; }
-
-.patternscontent {
-  margin: 0 auto;
-  padding: 2em 0; }
-
-#notice {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #ff4500;
-  max-width: 1300px;
-  margin: 0 auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
-
-/*######### END LAYOUT ##########*/
-/*######### PICTURES ##########*/
-#intropicdiv {
-  width: 100%; }
-
-#intro_pic {
-  width: 100%; }
-
-#ca {
-  width: 90%;
-  margin: 0 auto; }
-
-#ca img {
-  width: 100%; }
-
-#wiresdiv {
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 4em; }
-
-#wires {
-  width: 100%; }
-
-#pattern1div {
-  width: 60%;
-  margin: 0 auto;
-  margin-bottom: 3em; }
-
-#finaldesigndiv {
-  width: 90%;
-  margin: 0 auto; }
-
-#final_designs {
-  width: 100%; }
-
-#freemandiv {
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 3em;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
-
-#freeman {
-  width: 100%; }
-
-.PI {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  display: none;
-  display: block;
-  height: 800px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #999; }
-
-.walle {
-  background-image: url(/assets/img/expedia/wall2.jpg); }
-
 /*######### END PICTURES #########*/
 /*########### MOBILE & TABLET #################*/
 /*########### MOBILE & TABLET #################*/
@@ -672,31 +449,41 @@ article {
 /*############## LAPTOP and ABOVE #############*/
 @media screen and (min-width: 1024px) {
   /*    ########## TYPE ############*/
-  article {
+  .contentcenter {
     font-size: 1.1em;
     line-height: 1.8em;
-    font-weight: 300; }
+    font-weight: 300;
+    margin: 0em 0 2em 2em;
+    width: 65%;
+    padding: 10px;
+    box-sizing: border-box; }
+  .introcontent {
+    width: 55%; }
   li {
     padding-bottom: 0.8em;
     font-size: 1em; }
-  .subhedaar {
-    font-weight: 400;
-    margin: 1.5em 0 1em 2.25em;
-    color: #C49D00; }
-  .designprocess li {
-    list-style-type: none;
-    padding-left: 0.2em; }
   .sectionheader {
     font-size: 1.8em;
-    padding: 1.5rem 0 3rem 1.5em;
-    color: #062F54; }
+    padding: 2.5rem 0 3rem 1.5em;
+    color: #363535; }
+  h3 {
+    font-weight: 400;
+    margin: 1.5em 0 1em 2.25em;
+    color: #FF0068; }
+  .ideacontent {
+    width: 55%;
+    margin-right: 2em; }
+  #protolink {
+    text-decoration: none;
+    font-weight: 600;
+    color: #FF0068; }
   .boldtext {
-    font-weight: 500; }
+    font-weight: 400; }
   /*    ########## END TYPE ############*/
   /*######### LAYOUT ##########*/
   .ptitle {
     height: 600px;
-    background-image: url(/assets/img/expedia/hotel_room.jpg);
+    background-image: url(/assets/img/datescout/couplepic.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -709,9 +496,6 @@ article {
       margin: 0 auto;
       padding-top: 2.8em;
       font-family: "Lato", sans-serif; }
-      .ptitle .projecttitle #summerinternship {
-        font-size: 0.4em;
-        font-weight: 300; }
     .ptitle .headintro {
       width: 80%;
       margin: 0 auto;
@@ -745,20 +529,12 @@ article {
     margin: 2em auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     padding-bottom: 3em; }
-  .designcontainer {
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: white;
-    max-width: 1300px;
-    margin: auto;
-    margin-top: 54em;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    padding-bottom: 3em; }
-  article {
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box; }
+  .patterncontainerbottom {
+    margin-bottom: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
+  .prototypecontainer {
+    margin-top: 0;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); }
   .contentbox {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -766,7 +542,7 @@ article {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .patternsbox {
+  .designpattern {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
@@ -775,10 +551,8 @@ article {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0 2em; }
-  .contentcenter {
-    margin: 1em 0 2em 1.85em;
-    width: 65%; }
   .rolelist {
+    width: 130%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -787,83 +561,71 @@ article {
     -ms-flex-pack: center;
     justify-content: center; }
   .rolelist li {
-    padding: 0 3em;
-    font-weight: 600;
+    padding: 0 2em;
+    font-weight: 400;
     font-size: 1.1em; }
-  .introcontent {
-    width: 45%; }
-  .designprocess {
-    width: 65%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 0 auto; }
-  .patterns {
-    -webkit-flex: 0 1 45%;
-    -ms-flex: 0 1 45%;
-    flex: 0 1 45%; }
-  .patternscontent {
-    margin: 0 auto;
-    padding: 2em 0; }
-  #notice {
+  .taskbox {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #ff4500;
-    max-width: 1300px;
-    margin: 0 auto;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
+    justify-content: center; }
+  .taskdiv {
+    width: 45%;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.8em; }
+  .specialnote {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
   /*######### END LAYOUT ##########*/
   /*######### PICTURES ##########*/
-  #intropicdiv {
-    width: 40%; }
-  #intro_pic {
-    width: 100%; }
-  #ca {
-    width: 75%;
-    margin: 0 auto; }
-  #ca img {
-    width: 100%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
-  #wiresdiv {
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 4em; }
-  #wires {
-    width: 100%; }
-  #pattern1div {
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 3em; }
-  #finaldesigndiv {
-    width: 70%;
-    margin: 0 auto; }
-  #final_designs {
-    width: 100%; }
-  #freemandiv {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 3em;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
-  #freeman {
-    width: 100%; }
   .PI {
-    position: absolute;
     width: 100%;
-    left: 0;
     display: none;
     display: block;
-    height: 800px;
+    min-height: 300px;
+    background-size: 1000px;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    background-color: #999; }
-  .walle {
-    background-image: url(/assets/img/expedia/wall2.jpg); }
+    background-color: #EEEEEE; }
+  .screengroupa {
+    background-image: url(/assets/img/datescout/screengroupa.png);
+    padding: 12em 0; }
+  .screengroupb {
+    background-image: url(/assets/img/datescout/screengroupb.png);
+    padding: 12em 0; }
+  #intropicdiv {
+    max-width: 40%; }
+  #intro_pic {
+    width: 100%; }
+  #oldideadiv {
+    max-width: 35%; }
+  #oldidea {
+    width: 100%; }
+  .imagecenter {
+    padding: 2em 0;
+    width: 55%;
+    margin: 0 auto; }
+  #sitemap {
+    width: 100%; }
+  .designpatterndiv {
+    width: 35%;
+    padding: 4em 4em; }
+  .designpatterndiv img {
+    width: 100%; }
+  .personadiv {
+    width: 93%;
+    margin: 0 auto; }
+  #persona {
+    width: 100%; }
+  #evolution {
+    padding: 6em; }
+  #exclaimdiv {
+    width: 8%;
+    padding-right: 0.8em; }
+  #exclaim {
+    width: 100%; }
   /*######### END PICTURES #########*/ }
 
 /* end media 768 */

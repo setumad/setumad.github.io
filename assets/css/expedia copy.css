@@ -405,6 +405,7 @@ body {
   color: #333; }
 
 .wrapper {
+  width: 100%;
   max-width: 90%;
   margin: 0 auto; }
 
@@ -694,6 +695,8 @@ article {
     font-weight: 500; }
   /*    ########## END TYPE ############*/
   /*######### LAYOUT ##########*/
+  .wrapper {
+    width: 80%; }
   .ptitle {
     height: 600px;
     background-image: url(/assets/img/expedia/hotel_room.jpg);
