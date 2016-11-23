@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Datescout | Setu</title>
 		<link type="text/css" rel="stylesheet" href="assets/css/datescout.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- <title>DailyRecord | Setu</title> -->
 		<!-- <link type="text/css" rel="stylesheet" href="assets/css/uwise.css"> -->
 
@@ -119,6 +120,9 @@
 						</div>
 					</div>
 					<div class="wrapper">
+						<div class="fabdiv">
+							<p id="fab">Prototype</p>
+						</div>
 						<section class="notice">
 							<article class="contentcenter">
 								<p> Page renders best on Chrome browser. Mobile optimization in progress.</p>
@@ -129,42 +133,122 @@
 							<div class="contentbox introbox">
 								<div id="intropicdiv"> <img id="intro_pic" src="assets/img/datescout/intropic.png" /> </div>
 								<article class="contentcenter introcontent">
-									<p>Datescout is an activity centric dating app that connects people based on their interests and activities they are doing.
-										<br>
-										<br>This app was designed and prototyped as a part of my Interaction Design course. This was an individual project.</p>
+									<p>Datescout is an <b>activity centric dating app</b> concept that's designed to connect people based on their interests and activities they are doing. This app was designed and prototyped as a part of my Interaction Design course. </p>
 								</article>
 							</div>
 						</section>
-						<section id="container">
+						<section class="patterncontainerbottom">
 							<h2 class="sectionheader">Design process</h2>
-							<article class="contentcenter">
-								<p>The design process involved:
-									<br>
-									<br> </p>
-								<ul class="rolelist">
-									<li>Initial research</li>
-									<li> Sketching</li>
-									<li> Visual Design</li>
-									<li> Interaction Design</li>
-								</ul>
-							</article>
+							<div class="processflex">
+								<div class="processitem">
+									<h3>Processes followed</h3>
+									<article class="contentcenter processcontent">
+										<p> Initial research </p>
+										<p> Sketching</p>
+										<p> Visual Design </p>
+										<p> Interaction Design</p>
+									</article>
+								</div>
+								<div class="processitem">
+									<h3>Time taken</h3>
+									<article class="contentcenter processcontent">
+										<p>2 weeks. </p>
+									</article>
+								</div>
+								<div class="processitem">
+									<h3>Tools used</h3>
+									<article class="contentcenter processcontent">
+										<p> Sketch - Designing </p>
+										<p> Framer - Prototyping </p>
+									</article>
+								</div>
+								<div class="processitem">
+									<h3>Team</h3>
+									<article class="contentcenter processcontent">
+										<p>Individual project </p>
+									</article>
+								</div>
+							</div>
+						</section>
+						<div class="screengroupa PI"> &nbsp; </div>
+						<div class="screengroupb PI"> &nbsp; </div>
+						<section class="prototypecontainer">
+							<h2 class="sectionheader">Design patterns</h2>
 							<h3>Design Language</h3>
 							<article class="contentcenter">
 								<p>For this app I used Google’s material design as the design language and used patterns suggested by the Material design guidelines. </p>
 							</article>
-							<h3>Time taken</h3>
+							<div class="contentbox designpattern">
+								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%204.png" /> </div>
+								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%205.png" /> </div>
+							</div>
+							<div class="contentbox designpattern">
+								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%206.png" /> </div>
+								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%207.png" /> </div>
+							</div>
+							<div class="contentbox designpattern">
+								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%208.png" /> </div>
+								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%209.png" /> </div>
+							</div>
+						</section>
+						<!-- <section class="prototypecontainer">
+            <h2 class="sectionheader">Prototype</h2>
+            <article class="contentcenter">
+
+                <p>Click <a id="protolink" href="http://share.framerjs.com/libaql2xrw6j/" target="_blank">here</a> for the prototype </p>
+            </article>
+
+            <article class="contentcenter specialnote">
+                <div id="exclaimdiv"><img id="exclaim" src="assets/img/datescout/exclaim.png" /> </div>
+                <p>Please note that the interactions are mostly confined to the scenario and not all links and interactions may work. </p>
+
+            </article>
+
+            <div class="contentbox taskbox">
+
+                <div class="taskdiv">
+                    <h3>Onboarding</h3>
+                    <ol>
+                        <li>Sign-up using facebook. </li>
+                        <li>Click on the bio box to add bio.</li>
+                        <li>Mark is interested in dating females. Click on the females switch.</li>
+                        <li>Click on the location field to add location </li>
+                        <li>Proceed to choose interests </li>
+                        <li>Pick Traveling, Entrepreneurship and Technology (in that order) as interests. </li>
+                        <li>Proceed to start scouting. </li>
+                    </ol>
+                </div>
+                <div class="taskdiv">
+                    <h3>Scouting</h3>
+
+                    <ol>
+                        <li>The app prompts Mark to add his first picture. Skip it for now. </li>
+                        <li>In the feed, click on Kate’s profile to visit her profile. </li>
+                        <li>Click on Kate’s black and white picture enlarge. (The horizontal ‘cover-flow’ swipe interactions for pictures do not work) </li>
+                        <li>Explore Kate’s ‘Common’ and ‘About’ page.</li>
+                        <li>Go to Kate’s ‘Activity’ tab. </li>
+                        <li>Click on the puppy’s picture to enlarge the picture. (The horizontal ‘cover-flow’ swipe interactions for pictures do not work) </li>
+                        <li>Return to kate’s profile page. </li>
+                        <li>Press the ‘Heart’ button to indicate interest in matching with her. Assume there is a delay in Kate viewing Mark’s profile and pressing the ‘Heart’ button on her app </li>
+                        <li>When kate presses the heart FAB on her app, Mark gets a notification on the navbar. Click on the pink Heart icon. </li>
+                        <li>There is a new chat request by Kate. </li>
+                        <li>Click on her chathead to view chat and continue conversation. Assume the conversation has been started </li>
+                        <li>Return to home page from the chat page.</li>
+                    </ol>
+                </div>
+            </div>
+
+
+
+
+
+        </section> -->
+						<section id="container">
+							<h2 class="sectionheader">Site map</h2>
 							<article class="contentcenter">
-								<p>2 weeks. </p>
+								<p>After I knew which direction I would be heading with the idea, and who I'm building it for, I created a site map to help me stay focused on what pages to create and build the navigational flow structure. </p>
 							</article>
-							<h3>Tools used</h3>
-							<article class="contentcenter">
-								<p> Sketch - Designing </p>
-								<p> Framer - Prototyping </p>
-							</article>
-							<h3>Team</h3>
-							<article class="contentcenter">
-								<p>I was the only person working on this project. </p>
-							</article>
+							<div class="imagecenter"> <img id="sitemap" src="assets/img/datescout/sitemap.png" /> </div>
 						</section>
 						<section id="container">
 							<h2 class="sectionheader">Persona</h2>
@@ -181,83 +265,15 @@
 								<div id="oldideadiv"> <img id="oldidea" src="assets/img/datescout/oldpicsgroup.png" /> </div>
 							</div>
 						</section>
-						<section id="container">
-							<h2 class="sectionheader">Site map</h2>
-							<article class="contentcenter">
-								<p>After I knew which direction I would be heading with the idea, and who I'm building it for, I created a site map to help me stay focused on what pages to create and build the navigational flow structure. </p>
-							</article>
-							<div class="imagecenter"> <img id="sitemap" src="assets/img/datescout/sitemap.png" /> </div>
-						</section>
-						<section class="patterncontainerbottom">
-							<h2 class="sectionheader">Design patterns</h2>
-							<div class="contentbox designpattern">
-								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%204.png" /> </div>
-								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%205.png" /> </div>
-							</div>
-							<div class="contentbox designpattern">
-								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%206.png" /> </div>
-								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%207.png" /> </div>
-							</div>
-							<div class="contentbox designpattern">
-								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%208.png" /> </div>
-								<div class="designpatterndiv"> <img src="assets/img/datescout/Group%209.png" /> </div>
-							</div>
-						</section>
-						<div class="screengroupa PI"> &nbsp; </div>
-						<div class="screengroupb PI"> &nbsp; </div>
-						<section class="prototypecontainer">
-							<h2 class="sectionheader">Prototype</h2>
-							<article class="contentcenter">
-								<p>Click <a id="protolink" href="http://share.framerjs.com/libaql2xrw6j/" target="_blank">here</a> for the prototype </p>
-							</article>
-							<article class="contentcenter specialnote">
-								<div id="exclaimdiv"><img id="exclaim" src="assets/img/datescout/exclaim.png" /> </div>
-								<p>Please note that the interactions are mostly confined to the scenario and not all links and interactions may work. </p>
-							</article>
-							<div class="contentbox taskbox">
-								<div class="taskdiv">
-									<h3>Onboarding</h3>
-									<ol>
-										<li>Sign-up using facebook. </li>
-										<li>Click on the bio box to add bio.</li>
-										<li>Mark is interested in dating females. Click on the females switch.</li>
-										<li>Click on the location field to add location </li>
-										<li>Proceed to choose interests </li>
-										<li>Pick Traveling, Entrepreneurship and Technology (in that order) as interests. </li>
-										<li>Proceed to start scouting. </li>
-									</ol>
-								</div>
-								<div class="taskdiv">
-									<h3>Scouting</h3>
-									<ol>
-										<li>The app prompts Mark to add his first picture. Skip it for now. </li>
-										<li>In the feed, click on Kate’s profile to visit her profile. </li>
-										<li>Click on Kate’s black and white picture enlarge. (The horizontal ‘cover-flow’ swipe interactions for pictures do not work) </li>
-										<li>Explore Kate’s ‘Common’ and ‘About’ page.</li>
-										<li>Go to Kate’s ‘Activity’ tab. </li>
-										<li>Click on the puppy’s picture to enlarge the picture. (The horizontal ‘cover-flow’ swipe interactions for pictures do not work) </li>
-										<li>Return to kate’s profile page. </li>
-										<li>Press the ‘Heart’ button to indicate interest in matching with her. Assume there is a delay in Kate viewing Mark’s profile and pressing the ‘Heart’ button on her app </li>
-										<li>When kate presses the heart FAB on her app, Mark gets a notification on the navbar. Click on the pink Heart icon. </li>
-										<li>There is a new chat request by Kate. </li>
-										<li>Click on her chathead to view chat and continue conversation. Assume the conversation has been started </li>
-										<li>Return to home page from the chat page.</li>
-									</ol>
-								</div>
-							</div>
-						</section>
 						<section id="container" class="reflectionbox">
 							<h2 class="sectionheader">Challenges faced</h2>
 							<article class="contentcenter">
 								<p>Some of the main challenges I faced during this project:
 									<br>
-									<br>1. <span class="boldtext">Choosing the right navigation pattern</span> - Each screen presented different information. It took me a while to study and implement navigation structure across every page that would not be comfusing to the users.
-									<br>
-									<br>2. <span class="boldtext">Choosing the right platform to build the prototype</span> - I tried to create the prototype using Axure, Flinto and Framer before settling with Framer as code-based tool gave me the most flexibility to prototype. However
-									the tool soon got very resource intensive and the process got very slow, and I had to eventually compromise on complicated interactions.
-									<br>
-									<br>3. <span class="boldtext">Creating animations</span> - I wanted to explore some level of animations for transitions and other interactions where animations help in communicating the content better (Eg: Pictures expanding into full screen). Unfortunately
-									due to the lack of time, I wasn't able to explore this part. </p>
+									<p>1. <span class="boldtext">Choosing the right navigation pattern</span> - Each screen presented different information. It took me a while to study and implement navigation structure across every page that would not be comfusing to the users. </p>
+									<p>2. <span class="boldtext">Choosing the right platform to build the prototype</span> - I tried to create the prototype using Axure, Flinto and Framer before settling with Framer as code-based tool gave me the most flexibility to prototype. However
+										the tool soon got very resource intensive and the process got very slow, and I had to eventually compromise on complicated interactions. </p>
+								</p>
 							</article>
 						</section>
 						<section id="container" class="reflectionbox">
@@ -319,6 +335,8 @@
 					</script>
 				</body>
 			</div>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript" src="js/materialize.min.js"></script>
 		</body>
 		<footer class="myfoot">
 			<div class="footercontainer">

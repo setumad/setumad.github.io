@@ -1,6 +1,7 @@
     * {
         font-family: lato;
         margin: 0;
+        /*font-size: 1.1em;*/
     }
     
     body {
@@ -11,6 +12,7 @@
     .wrapper {
         max-width: 90%;
         margin: 0 auto;
+        /*background-color: yellow;*/
     }
     /* grid vs flex base styles */
     /* flex styles */
@@ -55,8 +57,8 @@
     @media screen and (min-width: 1024px) {
         /*    ########## TYPE ############*/
         .contentcenter {
-            font-size: 1.1em;
-            line-height: 1.8em;
+            font-size: 1.3em;
+            line-height: 2.1em;
             font-weight: 300;
             margin: 0em 0 2em 2em;
             width: 65%;
@@ -66,10 +68,10 @@
         .introcontent {
             width: 56%;
         }
-        li {
+        /*li {
             padding-bottom: 0.8em;
             font-size: 1em;
-        }
+        }*/
         .sectionheader {
             font-size: 1.8em;
             padding: 2.5rem 0 3rem 1.5em;
@@ -138,6 +140,7 @@
         #container {
             justify-content: center;
             background-color: white;
+            border-radius: 2px;
             max-width: 1300px;
             margin: 2em auto;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -146,13 +149,13 @@
         .notice{
             justify-content: center;
             max-width: 1300px;
+            border-radius: 2px;
             margin: 2em auto;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
             padding-bottom: 3em;
             height: 20px;
-            background-color: #EC5555;
+            background-color: $setured;
             p{
-                padding-top: 0.5em;
                 font-weight: 600;
                 color:white;
             }
@@ -166,6 +169,20 @@
             padding-bottom: 3em;
             margin-bottom: 0;
         }
+        .processflex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            padding-top: 2em;
+            margin-left: 1.5em;
+            }
+            .processitem{
+                width: 25%;
+            }
+            .processcontent{
+                margin-left: 1.6em;
+            }
         .prototypecontainer {
             justify-content: center;
             background-color: white;
@@ -175,6 +192,8 @@
             padding-bottom: 3em;
             
         }
+
+
         .contentbox {
             display: flex;
             flex-wrap: wrap;
@@ -187,15 +206,13 @@
             margin: 0 2em;
         }
         .rolelist {
-            width: 130%;
-            display: flex;
             list-style: none;
             justify-content: center;
         }
         .rolelist li {
-            padding: 0 2em;
-            font-weight: 400;
-            font-size: 1.1em;
+            padding: 0.4em 0;
+            font-weight: 300;
+            font-size: 1.3em;
         }
         .taskbox {
             justify-content: center;
@@ -208,6 +225,32 @@
         }
         .specialnote {
             display: flex;
+        }
+
+        .fabdiv{
+            position: fixed;
+            width: 150px;
+            height: 60px;
+            background-color: white;
+            font-weight: 500;
+            font-size: 1.1em;
+            border-radius: 4px;
+            right: 5em;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+        .fabdiv:hover{
+            background-color: #FF0068;
+            transition: 0.3s all ease-in-out;
+            color: white;
+            font-weight: 800;
+            font-size: 1.105em;
+            box-shadow: 0 6px 12px rgba(0, 0, 0.5, 0.25);
+
+        }
+        #fab{
+            text-align: center;
+            padding-top: 1em;
+            cursor: default;
         }
         /*######### END LAYOUT ##########*/
         /*######### PICTURES ##########*/
