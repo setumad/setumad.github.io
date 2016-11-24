@@ -594,6 +594,8 @@ body {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  .designpatternlast {
+    margin-left: 4.25em; }
   .introbox {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
