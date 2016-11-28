@@ -13,6 +13,12 @@
 
 	 <div class="wrapper">
 
+        <section class ="notice">
+            <article class="contentcenter">
+                <p> Page renders best on Chrome browser. Mobile optimization in progress.</p>
+            </article>
+        </section>
+
         <section id="container">
             <h2 class="sectionheader">INTRODUCTION</h2>
             <div class="contentbox introbox">
@@ -25,18 +31,40 @@
             </div>
         </section>
 
-        <section id="container">
-            <h2 class="sectionheader">Role</h2>
+        <section class="patterncontainerbottom">
+            <h2 class="sectionheader">Design process</h2>
+            <div class = "processflex">
+                <div class="processitem">
+                <h3 class="subhedaar">Processes followed</h3>
+                <article class="contentcenter processcontent">
+                    <p> Research </p>
+                    <p> Ideation</p>
+                    <p> Design </p>
+                </article>
+                </div>
 
-            <article class="contentcenter">
-                <p>I was the only person working on this project. I was involved in the following activities: </p>
-            </article>
-            <div class="rolediv">
-                <ul class="rolelist">
-                    <li>Research</li>
-                    <li class="roleli"> Interaction Design</li>
-                    <li class="roleli"> Visual Design</li>
-                </ul>
+                <div class="processitem">
+                <h3 class="subhedaar">Time taken</h3>
+                <article class="contentcenter processcontent">
+                    <p>12 weeks </p>
+                </article>
+                </div>
+
+                <div  class="processitem">
+                <h3 class="subhedaar">Tools used</h3>
+                <article class="contentcenter processcontent">
+                    <p> Designing - Sketch </p>
+                    <p> Prototyping - Paper & Framer  </p>
+                </article>
+                </div>
+
+                <div  class="processitem">
+                <h3 class="subhedaar">Team</h3>
+                <article class="contentcenter processcontent">
+                    <p>Individual project </p>
+                </article>
+                </div>
+
             </div>
         </section>
 
@@ -48,6 +76,10 @@
                     <p>When booking multiple hotel rooms for a large group of guests, users cannot choose different room of their choice within a hotel. Also, they cannot not accommodate their group into multiple rooms based on their needs and preference. When shopping for multiple rooms, they are limited to a small set of choices provided by the website.</p>
                 </article>
             </div>
+            <div class="existingproblems">
+                <div class="probpicdiv"><img class="probpic" src="assets/img/expedia/probpic1.png"/></div>
+                <div class="probpicdiv2"><img class="probpic" src="assets/img/expedia/probpic2.png"/></div>
+            </div>  
 
 
             <h3 class="subhedaar">Project Goals</h3>
@@ -65,6 +97,25 @@
         </section>
 
         <section id="container">
+            <h2 class="sectionheader">Proposed Solution</h2>
+
+            <div>
+                <article class="contentcenter">After exploring multiple variants and possible flows, I came up with a final design recommendation that made use of multiple patterns I had explored.
+
+                </article>
+                <div id="finaldesigndiv">
+                    <img id="final_designs" src="assets/img/expedia/final_designs2.png" />
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="walle PI">
+            &nbsp;
+        </div>
+
+        <section class="designprocesscontainer">
             <h2 class="sectionheader">Design Process</h2>
 
             <div class="contentbox designprocess">
@@ -150,12 +201,16 @@
             <h3 class="subhedaar">Sketching & Wireframes</h3>
             <div>
 
-                <article class="contentcenter">Based on the research findings, I started creating wireframes for the new flow. I created multiple variants of the flow to test which process would users find the easiest. Below are wireframes for one of the process flow for shopping multiple hotel rooms.
+                <article class="contentcenter">Based on the research findings, I started creating wireframes for the new flow. I created multiple variants of the flow to test which process would users find the easiest.<br><br>During my early exploration I designed two variants to test which process would solve the problem better.
                 </article>
                 <div id="wiresdiv">
-                    <img id="wires" src="assets/img/expedia/wires.jpg" />
+                    <img id="wires" src="assets/img/expedia/wires.png" />
                 </div>
 
+                <div class="existingproblems">
+                    <div class="probpicdiv"><img class="probpic" src="assets/img/expedia/variant1.png"/></div>
+                    <div class="variantpicdiv2"><img class="probpic" src="assets/img/expedia/variant2.png"/></div>
+                </div> 
 
                 <h3 class="subhedaar">Design patterns and rationale</h3>
 
@@ -203,29 +258,7 @@
                 </article>
             </div>
         </section>
-
-
-
-        <div class="walle PI">
-            &nbsp;
-        </div>
-
-
-
-
-        <section class="designcontainer">
-            <h2 class="sectionheader">Design</h2>
-
-            <div>
-                <article class="contentcenter">After exploring multiple variants and possible flows, I came up with a final design recommendation that made use of multiple patterns I had explored.
-
-                </article>
-                <div id="finaldesigndiv">
-                    <img id="final_designs" src="assets/img/expedia/final_designs2.png" />
-                </div>
-
-            </div>
-        </section>
+        
 
         <section id="container">
             <h2 class="sectionheader">Takeaways</h2>
@@ -282,7 +315,7 @@
         pagetop = document.getElementById('header');
         var newScrollPosition = window.scrollY;
         // alert(window.scrollY);
-        if (newScrollPosition < lastScrollPosition){
+        if (newScrollPosition < lastScrollPosition+10){
             pagetop.style.opacity= "1";
         }else if (newScrollPosition - lastScrollPosition>20){
             pagetop.style.opacity = "0";

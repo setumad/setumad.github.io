@@ -55,6 +55,11 @@
         /*text-align: center;*/
         /*padding-left: 13em;*/
     }
+    h3 {
+            font-weight: 400;
+            margin: 1.5em 0 1em 2.25em;
+            color: #C49D00;
+        }
     /*    ########## END TYPE ############*/
     /*######### LAYOUT ##########*/
     
@@ -115,8 +120,22 @@
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
         padding-bottom: 3em;
     }
+    .notice{
+            justify-content: center;
+            max-width: 1300px;
+            border-radius: 2px;
+            margin: 2em auto;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            padding-bottom: 3em;
+            height: 20px;
+            background-color: $setured;
+            p{
+                font-weight: 600;
+                color:white;
+            }
+        }
     
-    .designcontainer {
+    .designprocesscontainer {
         justify-content: center;
         background-color: white;
         max-width: 1300px;
@@ -263,6 +282,19 @@
     .walle {
         background-image: url(/assets/img/expedia/wall2.jpg);
     }
+
+    .existingproblems{
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 2em;
+            justify-content: space-around;
+        }
+        .probpicdiv{
+            width: 25%;
+        }
+        .probpic{
+            width: 100%;
+        }
     
   
     /*######### END PICTURES #########*/
@@ -312,18 +344,20 @@
     @media screen and (min-width: 1024px) {
         /*    ########## TYPE ############*/
         article {
-            font-size: 1.1em;
-            line-height: 1.8em;
+            font-size: 1.3em;
+            line-height: 2.1em;
             font-weight: 300;
         }
         li {
-            padding-bottom: 0.8em;
-            font-size: 1em;
+            padding: 1em 0;
+            /*font-size: 1.1em;*/
+
         }
         .subhedaar {
             font-weight: 400;
             margin: 1.5em 0 1em 2.25em;
             color: #C49D00;
+            font-size: 1.3em;
         }
         .designprocess li {
             list-style-type: none;
@@ -337,6 +371,7 @@
         .boldtext {
             font-weight: 500;
         }
+
         /*    ########## END TYPE ############*/
         /*######### LAYOUT ##########*/
     
@@ -392,6 +427,56 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
             padding-bottom: 3em;
         }
+
+        .notice{
+            justify-content: center;
+            max-width: 1300px;
+            border-radius: 2px;
+            margin: 2em auto;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            padding-bottom: 3em;
+            height: 20px;
+            background-color: $setured;
+            p{
+                font-weight: 600;
+                color:white;
+            }
+        }
+
+        .patterncontainerbottom {
+            justify-content: center;
+            background-color: white;
+            max-width: 1300px;
+            margin: 2em auto;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            padding-bottom: 3em;
+            margin-bottom: 0;
+        }
+
+        .patterncontainerbottom {
+            justify-content: center;
+            background-color: white;
+            max-width: 1300px;
+            margin: 2em auto;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            padding-bottom: 3em;
+            margin-bottom: 0;
+        }
+        .processflex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            padding-top: 2em;
+            margin-left: 1.5em;
+            }
+        .processitem{
+            width: 25%;
+        }
+        .processcontent{
+            margin-left: 0.6em;
+        }
+
         .designcontainer {
             justify-content: center;
             background-color: white;
@@ -419,7 +504,7 @@
         }
         .contentcenter {
             margin: 1em 0 2em 1.85em;
-            width: 65%;
+            width: 80%;
         }
         .rolelist {
             display: flex;
@@ -429,7 +514,7 @@
         .rolelist li {
             padding: 0 3em;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 1.3em;
         }
         .introcontent {
             width: 45%;
@@ -484,6 +569,7 @@
             margin-bottom: 3em;
         }
         #finaldesigndiv {
+            padding: 6em 0;
             width: 70%;
             margin: 0 auto;
         }
@@ -515,6 +601,28 @@
         .walle {
             background-image: url(/assets/img/expedia/wall2.jpg);
         }
+
+        .existingproblems{
+            display: block;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .probpicdiv{
+            padding-top: 6em;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .probpicdiv2{
+            padding: 12em 0;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .variantpicdiv2{
+            padding: 12em 0 6em 0;
+            width: 50%;
+            margin: 0 auto;
+        }
+        
         /*######### END PICTURES #########*/
     }
     /* end media 768 */
