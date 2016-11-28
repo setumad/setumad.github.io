@@ -184,7 +184,7 @@
                     left: 50%;
                     transform: translateX(-50%);
                     @include breakpoint(tablet) {
-                        padding: 0 1em;
+                        padding: 0 1.5em;
                         font-size: 1.1em;
                         position: relative;
                         top: 4.5em;
@@ -193,12 +193,15 @@
                     opacity: 0;
                     @include breakpoint(laptop) {
                         opacity: 1;
+
                     }
                 }
+                
                 .expediadesc{
                     top: 2.2em;
                     /*font-size: 3em;*/
                 }
+
             }
             * {
                 transition: 0.35s all ease-in-out;
@@ -327,7 +330,7 @@
                     @include breakpoint(laptop) {
                         font-size: 1.1em;
                         position: relative;
-                        top: 6em;
+                        top: 3em;
                         left: 50%;
                         transform: translateX(-50%);
                     }
