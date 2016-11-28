@@ -891,13 +891,6 @@ article {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0 auto; }
-  .patterns {
-    -webkit-flex: 0 1 45%;
-    -ms-flex: 0 1 45%;
-    flex: 0 1 45%; }
-  .patternscontent {
-    margin: 0 auto;
-    padding: 2em 0; }
   #notice {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -924,10 +917,6 @@ article {
     margin-bottom: 4em; }
   #wires {
     width: 100%; }
-  #pattern1div {
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 3em; }
   #finaldesigndiv {
     padding: 6em 0;
     width: 70%;
