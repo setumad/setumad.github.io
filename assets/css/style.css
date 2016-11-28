@@ -766,7 +766,7 @@ th {
           opacity: 0; }
           @media (min-width: 768px) {
             .bodymain .col_66 .container .innertext .projectdesc {
-              padding: 0 1em;
+              padding: 0 1.5em;
               font-size: 1.1em;
               position: relative;
               top: 4.5em;
@@ -899,7 +899,7 @@ th {
             .bodymain .col_33 .container .innertext .projectdesc {
               font-size: 1.1em;
               position: relative;
-              top: 6em;
+              top: 3em;
               left: 50%;
               -webkit-transform: translateX(-50%);
               -ms-transform: translateX(-50%);
