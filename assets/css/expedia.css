@@ -444,6 +444,11 @@ li {
   /*text-align: center;*/
   /*padding-left: 13em;*/ }
 
+h3 {
+  font-weight: 400;
+  margin: 1.5em 0 1em 2.25em;
+  color: #C49D00; }
+
 /*    ########## END TYPE ############*/
 /*######### LAYOUT ##########*/
 .wrapper {
@@ -500,7 +505,22 @@ li {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   padding-bottom: 3em; }
 
-.designcontainer {
+.notice {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 1300px;
+  border-radius: 2px;
+  margin: 2em auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding-bottom: 3em;
+  height: 20px;
+  background-color: #ef4b33; }
+  .notice p {
+    font-weight: 600;
+    color: white; }
+
+.designprocesscontainer {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -635,6 +655,24 @@ article {
 .walle {
   background-image: url(/assets/img/expedia/wall2.jpg); }
 
+.existingproblems {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 2em;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.probpicdiv {
+  width: 25%; }
+
+.probpic {
+  width: 100%; }
+
 /*######### END PICTURES #########*/
 /*########### MOBILE & TABLET #################*/
 /*########### MOBILE & TABLET #################*/
@@ -673,16 +711,17 @@ article {
 @media screen and (min-width: 1024px) {
   /*    ########## TYPE ############*/
   article {
-    font-size: 1.1em;
-    line-height: 1.8em;
+    font-size: 1.3em;
+    line-height: 2.1em;
     font-weight: 300; }
   li {
-    padding-bottom: 0.8em;
-    font-size: 1em; }
+    padding: 1em 0;
+    /*font-size: 1.1em;*/ }
   .subhedaar {
     font-weight: 400;
     margin: 1.5em 0 1em 2.25em;
-    color: #C49D00; }
+    color: #C49D00;
+    font-size: 1.3em; }
   .designprocess li {
     list-style-type: none;
     padding-left: 0.2em; }
@@ -745,6 +784,57 @@ article {
     margin: 2em auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     padding-bottom: 3em; }
+  .notice {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 1300px;
+    border-radius: 2px;
+    margin: 2em auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding-bottom: 3em;
+    height: 20px;
+    background-color: #ef4b33; }
+    .notice p {
+      font-weight: 600;
+      color: white; }
+  .patterncontainerbottom {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: white;
+    max-width: 1300px;
+    margin: 2em auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding-bottom: 3em;
+    margin-bottom: 0; }
+  .patterncontainerbottom {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: white;
+    max-width: 1300px;
+    margin: 2em auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding-bottom: 3em;
+    margin-bottom: 0; }
+  .processflex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2em;
+    margin-left: 1.5em; }
+  .processitem {
+    width: 25%; }
+  .processcontent {
+    margin-left: 0.6em; }
   .designcontainer {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -777,7 +867,7 @@ article {
     margin: 0 2em; }
   .contentcenter {
     margin: 1em 0 2em 1.85em;
-    width: 65%; }
+    width: 80%; }
   .rolelist {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -789,7 +879,7 @@ article {
   .rolelist li {
     padding: 0 3em;
     font-weight: 600;
-    font-size: 1.1em; }
+    font-size: 1.3em; }
   .introcontent {
     width: 45%; }
   .designprocess {
@@ -839,6 +929,7 @@ article {
     margin: 0 auto;
     margin-bottom: 3em; }
   #finaldesigndiv {
+    padding: 6em 0;
     width: 70%;
     margin: 0 auto; }
   #final_designs {
@@ -864,6 +955,24 @@ article {
     background-color: #999; }
   .walle {
     background-image: url(/assets/img/expedia/wall2.jpg); }
+  .existingproblems {
+    display: block;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%; }
+  .probpicdiv {
+    padding-top: 6em;
+    width: 50%;
+    margin: 0 auto; }
+  .probpicdiv2 {
+    padding: 12em 0;
+    width: 50%;
+    margin: 0 auto; }
+  .variantpicdiv2 {
+    padding: 12em 0 6em 0;
+    width: 50%;
+    margin: 0 auto; }
   /*######### END PICTURES #########*/ }
 
 /* end media 768 */
