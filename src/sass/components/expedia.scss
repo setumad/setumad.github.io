@@ -283,7 +283,7 @@
         background-image: url(/assets/img/expedia/wall2.jpg);
     }
 
-    .existingproblems{
+    /*.existingproblems{
             display: flex;
             flex-wrap: wrap;
             padding-top: 2em;
@@ -294,7 +294,7 @@
         }
         .probpic{
             width: 100%;
-        }
+        }*/
     
   
     /*######### END PICTURES #########*/
@@ -595,25 +595,51 @@
         }
 
         .existingproblems{
-            display: block;
+            display: flex;
             flex-wrap: wrap;
-            width: 100%;
+            padding: 6em 0;
+            /*background-color: yellow;*/
+
+            /*justify-content: space-around;*/
+            
         }
         .probpicdiv{
+            /*margin: 0 2em;*/
+            margin: 0 auto;
+            width: 25%;
+        }
+        #probpic1{
+                width: 73.8%;
+            }
+        #probpic2{
+                width: 80%;
+            }
+
+       
+        
+
+        .earlydesigns{
+            display: block;
+            /*width: 100%;*/
+        }
+        
+
+        .variantpicdiv1{
             padding-top: 6em;
             width: 50%;
             margin: 0 auto;
         }
-        .probpicdiv2{
-            padding: 12em 0;
-            width: 50%;
-            margin: 0 auto;
+
+        .varpic{
+            width: 100%;
         }
+       
         .variantpicdiv2{
             padding: 12em 0 6em 0;
             width: 50%;
             margin: 0 auto;
         }
+
         
         /*######### END PICTURES #########*/
     }

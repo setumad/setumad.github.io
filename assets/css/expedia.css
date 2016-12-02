@@ -655,24 +655,18 @@ article {
 .walle {
   background-image: url(/assets/img/expedia/wall2.jpg); }
 
-.existingproblems {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-top: 2em;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-
-.probpicdiv {
-  width: 25%; }
-
-.probpic {
-  width: 100%; }
-
+/*.existingproblems{
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 2em;
+            justify-content: space-around;
+        }
+        .probpicdiv{
+            width: 25%;
+        }
+        .probpic{
+            width: 100%;
+        }*/
 /*######### END PICTURES #########*/
 /*########### MOBILE & TABLET #################*/
 /*########### MOBILE & TABLET #################*/
@@ -945,19 +939,32 @@ article {
   .walle {
     background-image: url(/assets/img/expedia/wall2.jpg); }
   .existingproblems {
-    display: block;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 100%; }
+    padding: 6em 0;
+    /*background-color: yellow;*/
+    /*justify-content: space-around;*/ }
   .probpicdiv {
+    /*margin: 0 2em;*/
+    margin: 0 auto;
+    width: 25%; }
+  #probpic1 {
+    width: 73.8%; }
+  #probpic2 {
+    width: 80%; }
+  .earlydesigns {
+    display: block;
+    /*width: 100%;*/ }
+  .variantpicdiv1 {
     padding-top: 6em;
     width: 50%;
     margin: 0 auto; }
-  .probpicdiv2 {
-    padding: 12em 0;
-    width: 50%;
-    margin: 0 auto; }
+  .varpic {
+    width: 100%; }
   .variantpicdiv2 {
     padding: 12em 0 6em 0;
     width: 50%;
