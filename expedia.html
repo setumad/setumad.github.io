@@ -113,9 +113,13 @@
 				<body>
 					<!-- <div id="lengthtracker">0% Read</div> -->
 					<div class="ptitle">
-						<p class="projecttitle">EXPEDIA <span id="summerinternship">(Summer Internship)</span></p>
+						<p class="projecttitle">EXPEDIA</p>
 						<div class="headintro">
-							<p>In the summer of 2016, I interned at Expedia Inc as an Interaction Design intern working on their Hotels shopping experience </p>
+							<p>Interaction Designer internship redesigning Expedia’s hotel shopping experience.</p>
+						</div>
+						<div class="datebox">
+							<p id="datetext">June 2016 - September 2016
+								<p>
 						</div>
 					</div>
 					<div class="wrapper">
@@ -129,8 +133,7 @@
 							<div class="contentbox introbox">
 								<div id="intropicdiv"> <img id="intro_pic" src="assets/img/expedia/coverphone.png" /> </div>
 								<article class="introcontent">
-									<p>Expedia’s website lets users shop for hotel rooms from a choice of multiple hotels based on the destination. However, when users require two or more rooms, they cannot pick and choose rooms of their choice or customize their bed types. During
-										my Summer (2016) internship at Expedia, I was tasked with exploring ways to provide a better hotel shopping experience by letting users customize their beds and occupancy configurations while booking hotel rooms.</p>
+									<p><span class="boldtext">How can Expedia's customers customize bed and occupancy configurations while shopping for hotel rooms?</span></p>
 								</article>
 							</div>
 						</section>
@@ -171,24 +174,22 @@
 							<h3 class="subhedaar">The problem</h3>
 							<div class="contentbox">
 								<article class="contentcenter">
-									<p>When booking multiple hotel rooms for a large group of guests, users cannot choose different room of their choice within a hotel. Also, they cannot not accommodate their group into multiple rooms based on their needs and preference. When shopping
-										for multiple rooms, they are limited to a small set of choices provided by the website.</p>
+									<p>When shopping for multiple hotel rooms for a large group of guests (>4 members), users cannot choose hotel rooms of different types and customize them individually based on their specific needs.</p>
 								</article>
 							</div>
 							<div class="existingproblems">
-								<div class="probpicdiv"> <img id="probpic1" src="assets/img/expedia/probpic1.png" /> </div>
-								<div class="probpicdiv"> <img id="probpic2" src="assets/img/expedia/probpic2.png" /> </div>
+								<div class="probpicdiv1"> <img id="probpic1" src="assets/img/expedia/probpic1.png" /> </div>
+								<div class="probpicdiv2"> <img id="probpic2" src="assets/img/expedia/probpic2.png" /> </div>
 							</div>
 							<h3 class="subhedaar">Project Goals</h3>
 							<div class="contentbox">
-								<article class="contentcenter">I was asked to come up with design recommendations to solve the beds and occupancy problem. After having an initial discussion with the stakeholders about the problem and the requirements, I shortlisted the following goals for the project:
-									<br>
-									<br>
+								<article class="contentcenter">
+									<!-- I was asked to come up with design recommendations to solve the beds and occupancy problem. After having an initial discussion with the stakeholders about the problem and the requirements, I shortlisted the following goals for the project:<br><br> -->
 									<ul>
-										<li>Help users shop for different hotel rooms and rates in the same booking session.</li>
-										<li>Provide a clear understanding of available bed types within the room(s) for users when booking hotel rooms.</li>
-										<li> Provide an ability to filter and choose rooms with different bed types.</li>
-										<li>Improve the hotel shopping experience.</li>
+										<li>Help users shop for hotel rooms of <span class="boldtext">multiple types and rates</span> in the same booking session.</li>
+										<li>Provide a clear understanding of <span class="boldtext">available bed types within the room(s)</span> for users when shopping for hotel rooms.</li>
+										<li> Provide an ability to <span class="boldtext">filter and choose rooms</span> with different bed types.</li>
+										<li>Improve the<span class="boldtext"> overall hotel shopping experience.</span></li>
 									</ul>
 								</article>
 							</div>
@@ -231,48 +232,49 @@
 						</section>
 						<section id="container">
 							<h2 class="sectionheader">Research</h2>
-							<h3 class="subhedaar"> Literature survey </h3>
-							<article class="contentcenter">To understand the problem space better, I commenced the project by doing literature survey of the studies Expedia had conducted in their labs. Some of the key findings of the literature survey are:
-								<br>
-								<br>
-								<ul>
-									<li>On an average 6 out of 10 people chose 2 or more rooms when shopping for hotel rooms for themselves and their family & friends</li>
-									<li>Users want to be able to search or ﬁlter based on their preferred bed type</li>
-									<li>Bed type is the highest reason for customer calls</li>
-								</ul>
-							</article>
 							<div>
-								<h3 class="subhedaar"> Competitve Teardown Analysis </h3>
-								<article class="contentcenter">Along with literature survey, I also did competitive tear-downs of other online travel agencies to understand the methods employed by them to solve the same problem. </article>
+								<!-- <h3 class="subhedaar"> Competitve Teardown Analysis </h3> -->
+								<article class="contentcenter">Conducted Literature survey of previous study reports and tear-downs of other online travel agencies to understand the hotel shopping processes used by them. </article>
 								<br>
 								<div id="ca"> <img src="assets/img/expedia/ca.png" /> </div>
 							</div>
-						</section>
-						<section id="container">
-							<h2 class="sectionheader">Research Questions</h2>
-							<article class="contentcenter"> The top research questions that I decided to focus on after the research are:
-								<br>
-								<br>
-								<ol>
-									<li>How can users select multiple rooms and rates in the Hotel info page?</li>
-									<li>What is the best place to distribute guests, Homepage or Hotel info page?</li>
-									<li>How can users customize their rooms with different bed types?</li>
-								</ol>
-							</article>
-						</section>
+							<!-- <h3 class="subhedaar"> Literature survey </h3>
+
+            <article class="contentcenter">To understand the problem space better, I commenced the project by doing literature survey of the studies Expedia had conducted in their labs. Some of the key findings of the literature survey are:
+                <br>
+                <br>
+                <ul>
+                    <li>On an average 6 out of 10 people chose 2 or more rooms when shopping for hotel rooms for themselves and their family & friends</li>
+                    <li>Users want to be able to search or ﬁlter based on their preferred bed type</li>
+                    <li>Bed type is the highest reason for customer calls</li>
+                </ul>
+            </article> --></section>
+						<!-- <section id="container">
+            <h2 class="sectionheader">Research Questions</h2>
+
+            <article class="contentcenter">
+                The top research questions that I decided to focus on after the research are:
+                <br>
+                <br>
+                <ol>
+                    <li>How can users select multiple rooms and rates in the Hotel info page?</li>
+                    <li>What is the best place to distribute guests, Homepage or Hotel info page?</li>
+                    <li>How can users customize their rooms with different bed types?</li>
+                </ol>
+            </article>
+        </section> -->
 						<section id="container">
 							<h2 class="sectionheader">Ideation</h2>
 							<div>
 								<h3 class="subhedaar">Personas</h3>
-								<article class="contentcenter">The reserach data helped me understand the target market I would be focsuing on. I created a persona to help me guide the design process and remind me of who I'm designing for</article>
+								<!-- <article class="contentcenter">Research data synthesized into a user persona to inform future design decisions. </article> -->
 								<br>
 								<div id="freemandiv"> <img id="freeman" src="assets/img/expedia/freeman_persona.png" /> </div>
 							</div>
 							<h3 class="subhedaar">Wireframes & Early Explorations</h3>
 							<div>
-								<article class="contentcenter">Based on the research findings, I started creating wireframes for the new flow. I created multiple variants of the flow to test which process would users find the easiest.
-									<br>
-									<br>During my early exploration I designed two variants to test which process would solve the problem better. </article>
+								<!-- <article class="contentcenter">Based on the research findings, I started creating wireframes for the new flow. I created multiple variants of the flow to test which process would users find the easiest.<br><br>During my early exploration I designed two variants to test which process would solve the problem better.
+                </article> -->
 								<div id="wiresdiv"> <img id="wires" src="assets/img/expedia/wires.png" /> </div>
 								<div class="earlydesigns">
 									<div class="variantpicdiv1"><img class="varpic" src="assets/img/expedia/variant1.png" /></div>
@@ -303,33 +305,29 @@
 
                     </div> -->
 								<!-- </div> -->
-								<article class="contentcenter">I quickly tested these wireframes with my colleagues and website users to get their feedback on the process flow to inform my further iterations. </article>
+								<!-- <article class="contentcenter">I quickly tested these wireframes with my colleagues and website users to get their feedback on the process flow to inform my further iterations.
+                </article> -->
 							</div>
 						</section>
 						<section id="container">
 							<h2 class="sectionheader">Takeaways</h2>
 							<div>
-								<article class="contentcenter">Working with a team of very smart and talented designers was a great experience for me. This was the first time I was working with a design team and a product this large and I was able to understand the nuances of working in such conditions. Some
-									of my takeaways are:
-									<br>
-									<br>
+								<article class="contentcenter">
 									<ul>
-										<li>Focusing on the problem and the users while designing.</li>
-										<li>Creating multiple variants of the same design to explore different design possibilities and comparing them with each other to find the most appropriate solution.</li>
-										<li>Asking yourself a lot of ‘Why’s while designing helps get to the problem faster and stay focused on the same.</li>
-										<li>Attention to detail - Thinking about the purpose behind a design, how it would affect a user's decision making process. Design should help reduce confusion in users' minds and help them get to their goals faster. </li>
-										<li>Designing for accessibility - Accessibility is a huge factor while designing interactions. All possible users and their limitations must be considered & the design should help everyone achieve their goals equally easily. </li>
+										<li>The internship helped refine my overall design process and problem solving methods. </li>
+										<li>Learned techniques to desig better interactions with users' goals and brand guidelines in mind.</li>
+										<li>Designing for accessibility and all possible edge cases. </li>
 									</ul>
 								</article>
 							</div>
-							<h3 class="subhedaar"> What I would do differently</h3>
-							<article class="contentcenter">
-								<ul>
-									<li>Work with a team of at least 2 or 3 members so that the research phase can be done faster and generate a broader set of ideas. Being the only person in the team, it was a challenge to handle all the processes of UX for a project of this magnitude.</li>
-									<li>Get a better understanding of the business and accessibility limitations before designing. In this project there were certain design patterns that had accessibility concerns due to which I had to redesign some elements and explore different patterns.</li>
-								</ul>
-							</article>
-						</section>
+							<!-- <h3 class="subhedaar"> What I would do differently</h3>
+            <article class="contentcenter">
+                <ul>
+                    <li>Work with a team of at least 2 or 3 members so that the research phase can be done faster and generate a broader set of ideas. Being the only person in the team, it was a challenge to handle all the processes of UX for a project of this magnitude.</li>
+                    <li>Get a better understanding of the business and accessibility limitations before designing. In this project there were certain design patterns that had accessibility concerns due to which I had to redesign some elements and explore different patterns.</li>
+
+                </ul>
+            </article> --></section>
 						<!--    END OF WRAPPER DIV-->
 					</div>
 					<script>

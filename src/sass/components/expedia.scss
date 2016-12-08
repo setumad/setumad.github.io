@@ -87,29 +87,7 @@
                 font-weight: 300;
             }
         }
-        .headintro {
-            width: 80%;
-            margin: 0 auto;
-            font-family: $lato;
-            color: white;
-            text-align: center;
-            font-size: 1.2em;
-            line-height: 1.5em;
-            font-weight: 200;
-            padding-top: 1.5em;
-            padding-bottom: 1.5em;
-            @include breakpoint(tablet) {
-                width: 60%;
-                font-size: 1.5em;
-                font-weight: 200;
-                line-height: 2em;
-                padding: 1em 0 0 0;
-            }
-            @include breakpoint(laptop) {
-                padding-bottom: 1.5em;
-                padding-top: 2em;
-            }
-        }
+        
     }
     
     #container {
@@ -232,7 +210,7 @@
     #wiresdiv {
         width: 90%;
         margin: 0 auto;
-        margin-bottom: 4em;
+        padding: 4em 0;
     }
     
     #wires {
@@ -349,7 +327,7 @@
             font-weight: 300;
         }
         li {
-            padding: 1em 0;
+            /*padding: 1em 0;*/
             /*font-size: 1.1em;*/
 
         }
@@ -407,7 +385,7 @@
                 padding-top: 1.5em;
                 padding-bottom: 1.5em;
                 @include breakpoint(tablet) {
-                    width: 60%;
+                    width: 45%;
                     font-size: 1.5em;
                     font-weight: 200;
                     line-height: 2em;
@@ -419,6 +397,20 @@
                 }
             }
         }
+        .datebox{
+            margin: 0 auto;
+            width: 300px;
+            height: 3em;
+            opacity: 0.85;
+            border-radius: 2px;
+            background-image: url("/assets/img/expedia/datebg.png")
+        }
+        #datetext{
+                text-align: center;
+                color: white;
+                font-size: 1em;
+                padding-top: 0.8em;
+            }
         #container {
             justify-content: center;
             background-color: white;
@@ -552,8 +544,7 @@
         }
         #wiresdiv {
             width: 75%;
-            margin: 0 auto;
-            margin-bottom: 4em;
+            padding: 3em auto;
         }
         #wires {
             width: 100%;
@@ -570,8 +561,9 @@
         }
         #freemandiv {
             width: 80%;
-            margin: 0 auto;
+            /*margin: 0 auto;*/
             padding-bottom: 3em;
+            margin: 3em auto 8em auto;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
         }
         #freeman {
@@ -598,21 +590,21 @@
             display: flex;
             flex-wrap: wrap;
             padding: 6em 0;
-            /*background-color: yellow;*/
-
-            /*justify-content: space-around;*/
             
         }
-        .probpicdiv{
-            /*margin: 0 2em;*/
+        .probpicdiv1{
+            margin: 0 auto;
+            width: 21.3%;
+        }
+        .probpicdiv2{
             margin: 0 auto;
             width: 25%;
         }
         #probpic1{
-                width: 73.8%;
+                width: 100%;
             }
         #probpic2{
-                width: 80%;
+                width: 100%;
             }
 
        
