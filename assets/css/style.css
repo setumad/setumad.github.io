@@ -775,8 +775,9 @@ th {
             .bodymain .col_66 .container .innertext .projectdesc {
               opacity: 1; } }
         .bodymain .col_66 .container .innertext .expediadesc {
-          top: 2.2em;
-          /*font-size: 3em;*/ }
+          top: 2.2em; }
+        .bodymain .col_66 .container .innertext .periodicallydesc {
+          font-size: 2.2em; }
       .bodymain .col_66 .container * {
         transition: 0.35s all ease-in-out;
         transition-delay: 0.1s; }

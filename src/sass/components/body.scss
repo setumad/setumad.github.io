@@ -91,6 +91,7 @@
                 transform:translateX(2.5%);
                 margin-top: 1.1em;
             }
+
             
             .innertext {
                 position: absolute;
@@ -199,10 +200,14 @@
                 
                 .expediadesc{
                     top: 2.2em;
-                    /*font-size: 3em;*/
                 }
-
+                .periodicallydesc{
+                    font-size: 2.2em;
+                }
             }
+
+
+
             * {
                 transition: 0.35s all ease-in-out;
                 transition-delay: 0.1s;
