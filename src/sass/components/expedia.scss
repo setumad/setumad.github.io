@@ -9,8 +9,19 @@
     }
     
     .wrapper {
-        max-width: 90%;
+        @include breakpoint(laptop){
+            /*max-width: 98%;*/
+        }
         margin: 0 auto;
+    }
+
+    #container {
+            justify-content: center;
+            background-color: white;
+            width: 100%;
+            margin: 2em auto;
+            /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);*/
+            padding-bottom: 3em;
     }
     /* grid vs flex base styles */
     /* flex styles */
@@ -51,7 +62,7 @@
             font-size: 1.2em;
             }
             @include breakpoint(laptop){
-            font-weight: 400;
+            font-weight: 600;
             margin: 1.5em 0 1em 2.25em;
             color: #C49D00;
             font-size: 1.3em;
@@ -78,16 +89,25 @@
             color: #062F54;
             text-align: center;
             padding: 1em 0;
-            @include breakpoint(laptop){
+            font-weight: 400;
+            @include breakpoint(tablet){
                 padding: 1.5rem 0 3rem 1.5em;
                 text-align: left;
             }
         }
+
         .boldtext {
             font-weight: 800;
         }
 
-       
+       #titlebar{
+            width: 100%;
+            height: 8em;
+            background-color: #FFC600;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+            margin-bottom: 2em;
+            
+        }
 
         /*    ########## END TYPE ############*/
         /*######### LAYOUT ##########*/
@@ -120,20 +140,19 @@
                 text-align: center;
                 font-size: 1.2em;
                 line-height: 1.5em;
-                font-weight: 200;
+                font-weight: 300;
                 padding-top: 1.5em;
                 padding-bottom: 1.5em;
                 @include breakpoint(tablet) {
                     width: 45%;
                     font-size: 1.5em;
-                    font-weight: 200;
+                    font-weight: 300;
                     line-height: 2em;
                     padding: 1em 0 0 0;
                 }
                 @include breakpoint(laptop) {
                     padding-bottom: 1.5em;
                     padding-top: 2em;
-                    font-weight: 300;
                 }
             }
         }
@@ -151,26 +170,11 @@
                 font-size: 1em;
                 padding-top: 0.8em;
             }
-        #container {
-            justify-content: center;
-            background-color: white;
-            max-width: 1300px;
-            margin: 2em auto;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-            padding-bottom: 3em;
-        }
+        
 
        
 
-        .patterncontainerbottom {
-            justify-content: center;
-            background-color: white;
-            max-width: 1300px;
-            margin: 2em auto;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-            padding-bottom: 3em;
-            margin-bottom: 0;
-        }
+        
         .processflex{
 
             @include breakpoint(tablet) {
@@ -413,7 +417,7 @@
             }
             @include breakpoint(laptop){
                 margin: 0 auto;
-                width: 22%;
+                width: 18%;
             }
             
         }
@@ -426,7 +430,7 @@
             }
             @include breakpoint(laptop){
                 margin: 0 auto;
-                width: 22%;
+                width: 18%;
             }
             
         }
