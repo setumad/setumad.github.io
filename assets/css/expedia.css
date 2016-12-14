@@ -412,48 +412,66 @@ body {
 /* flex styles */
 /*########### MOBILE & TABLET #################*/
 /*    ########## TYPE ############*/
+/*############## LAPTOP and ABOVE #############*/
+/*@media screen and (min-width: 1024px) {*/
+/*    ########## TYPE ############*/
 article {
-  font-size: 1.1em;
-  line-height: 1.8em;
-  font-weight: 300; }
-
-li {
-  padding-bottom: 0.8em;
-  font-size: 1em; }
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: 400; }
+  @media (min-width: 768px) {
+    article {
+      font-size: 1.1em;
+      line-height: 2.1em;
+      margin-bottom: 20px;
+      padding: 10px;
+      box-sizing: border-box; } }
+  @media (min-width: 1100px) {
+    article {
+      font-size: 1.2em; } }
 
 .subhedaar {
   font-weight: 400;
-  margin: 1.5em 0 1em 2.25em;
-  color: #C49D00; }
+  margin: 1.5em 0 1em 2em;
+  color: #C49D00;
+  font-size: 1.2em; }
+  @media (min-width: 1100px) {
+    .subhedaar {
+      font-weight: 400;
+      margin: 1.5em 0 1em 2.25em;
+      color: #C49D00;
+      font-size: 1.3em; } }
+
+.processsubhedaar {
+  font-weight: 400;
+  margin: 1.5em 0 1em 1em;
+  color: #C49D00;
+  font-size: 1.2em; }
+  @media (min-width: 1100px) {
+    .processsubhedaar {
+      font-weight: 400;
+      color: #C49D00;
+      font-size: 1.3em; } }
 
 .designprocess li {
   list-style-type: none;
-  padding-left: 0.2em; }
+  padding-left: 0.4em; }
 
 .sectionheader {
   font-size: 1.8em;
-  padding: 1.5rem 0 3rem 1.5em;
-  color: #062F54; }
+  color: #062F54;
+  text-align: center;
+  padding: 1em 0; }
+  @media (min-width: 1100px) {
+    .sectionheader {
+      padding: 1.5rem 0 3rem 1.5em;
+      text-align: left; } }
 
 .boldtext {
-  font-weight: 500; }
-
-.noticecontent {
-  color: white;
-  font-weight: 800;
-  /*text-align: center;*/
-  /*padding-left: 13em;*/ }
-
-h3 {
-  font-weight: 400;
-  margin: 1.5em 0 1em 2.25em;
-  color: #C49D00; }
+  font-weight: 800; }
 
 /*    ########## END TYPE ############*/
 /*######### LAYOUT ##########*/
-.wrapper {
-  width: 95%; }
-
 .ptitle {
   height: 600px;
   background-image: url(/assets/img/expedia/hotel_room.jpg);
@@ -472,6 +490,43 @@ h3 {
     .ptitle .projecttitle #summerinternship {
       font-size: 0.4em;
       font-weight: 300; }
+  .ptitle .headintro {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+    @media (min-width: 768px) {
+      .ptitle .headintro {
+        width: 45%;
+        font-size: 1.5em;
+        font-weight: 200;
+        line-height: 2em;
+        padding: 1em 0 0 0; } }
+    @media (min-width: 1100px) {
+      .ptitle .headintro {
+        padding-bottom: 1.5em;
+        padding-top: 2em;
+        font-weight: 300; } }
+
+.datebox {
+  margin: 0 auto;
+  width: 300px;
+  height: 3em;
+  opacity: 0.6;
+  border-radius: 2px;
+  background-image: url("/assets/img/expedia/datebg2.png"); }
+
+#datetext {
+  text-align: center;
+  color: black;
+  font-size: 1em;
+  padding-top: 0.8em; }
 
 #container {
   -webkit-justify-content: center;
@@ -498,43 +553,127 @@ h3 {
     font-weight: 600;
     color: white; }
 
-.designprocesscontainer {
+.patterncontainerbottom {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-color: white;
   max-width: 1300px;
-  margin: auto;
-  margin-top: 54em;
+  margin: 2em auto;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  margin-bottom: 0; }
 
-article {
-  padding: 10px;
-  box-sizing: border-box; }
+@media (min-width: 768px) {
+  .processflex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2em;
+    margin-left: 3.5em; } }
 
+@media (min-width: 1100px) {
+  .processflex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2em;
+    margin-left: 1.5em; } }
+
+.processitem {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .processitem {
+      width: 50%; } }
+  @media (min-width: 1100px) {
+    .processitem {
+      width: 25%; } }
+
+.processcontent {
+  margin-left: 0.6em; }
+
+/*.designprocesscontainer {
+            justify-content: center;
+            background-color: white;
+            max-width: 1300px;
+            margin: auto;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            padding-bottom: 3em;
+            @include breakpoint(laptop){
+                margin-top: 54em;
+            }
+        }*/
 .contentbox {
-  /*            display: flex;*/
-  /*            flex-wrap: wrap;*/ }
+  /*background-color: beige;*/ }
+  @media (min-width: 1100px) {
+    .contentbox {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+
+.goals {
+  padding: 1em 0; }
+
+@media (min-width: 1100px) {
+  .introbox {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 2em; } }
+
+#intropicdiv {
+  width: 100%; }
+  @media (min-width: 768px) {
+    #intropicdiv {
+      width: 60%;
+      margin: 0 auto;
+      padding-top: 2em; } }
+  @media (min-width: 1100px) {
+    #intropicdiv {
+      width: 50%; } }
+
+#intro_pic {
+  width: 100%;
+  padding: 2em 0; }
+
+.introcontent {
+  width: 90%;
+  margin-left: 1em; }
+  @media (min-width: 768px) {
+    .introcontent {
+      width: 60%;
+      margin: 0 auto; } }
+  @media (min-width: 1100px) {
+    .introcontent {
+      width: 55%;
+      margin: 0 0 0 0; } }
 
 .patternsbox {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
 
-.introbox {
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0 2em; }
-
-.contentcenter {
-  margin: 1em 0 2em 1.85em;
-  width: 85%; }
-
-.rolediv {
-  width: 60%;
-  margin: 0 auto; }
+@media (min-width: 768px) {
+  .contentcenter {
+    margin: 1em 0 2em 1.85em;
+    width: 60%; } }
 
 .rolelist {
   display: -webkit-flex;
@@ -543,26 +682,22 @@ article {
   list-style: none;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: -2.8em; }
+  justify-content: center; }
 
 .rolelist li {
-  padding: 0 2em;
+  padding: 0 3em;
   font-weight: 600;
-  font-size: 1.1em; }
+  font-size: 1.3em; }
 
-.introcontent {
-  width: 100%;
-  margin-top: 2em; }
-
-.patterns {
-  -webkit-flex: 0 1 45%;
-  -ms-flex: 0 1 45%;
-  flex: 0 1 45%; }
-
-.patternscontent {
-  margin: 0 auto;
-  padding: 2em 0; }
+.designprocess {
+  width: 65%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto; }
 
 #notice {
   -webkit-justify-content: center;
@@ -575,35 +710,43 @@ article {
 
 /*######### END LAYOUT ##########*/
 /*######### PICTURES ##########*/
-#intropicdiv {
-  width: 100%; }
-
-#intro_pic {
-  width: 100%; }
-
 #ca {
-  width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 90%; }
+  @media (min-width: 1100px) {
+    #ca {
+      width: 75%;
+      margin: 0 auto; } }
 
 #ca img {
-  width: 100%; }
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
 
 #wiresdiv {
   width: 90%;
   margin: 0 auto;
-  padding: 4em 0; }
+  padding: 2em 0; }
+  @media (min-width: 768px) {
+    #wiresdiv {
+      width: 90%;
+      padding-top: 4em; } }
+  @media (min-width: 1100px) {
+    #wiresdiv {
+      width: 75%;
+      padding: 3em auto; } }
 
 #wires {
   width: 100%; }
 
-#pattern1div {
-  width: 60%;
-  margin: 0 auto;
-  margin-bottom: 3em; }
-
 #finaldesigndiv {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 2em; }
+  @media (min-width: 1100px) {
+    #finaldesigndiv {
+      padding: 6em 0;
+      width: 70%;
+      margin: 0 auto; } }
 
 #final_designs {
   width: 100%; }
@@ -611,8 +754,13 @@ article {
 #freemandiv {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 3em;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
+  padding-bottom: 2em; }
+  @media (min-width: 1100px) {
+    #freemandiv {
+      width: 80%;
+      padding-bottom: 3em;
+      margin: 3em auto 8em auto;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); } }
 
 #freeman {
   width: 100%; }
@@ -631,336 +779,94 @@ article {
   background-color: #999; }
 
 .walle {
-  background-image: url(/assets/img/expedia/wall2.jpg); }
+  display: none; }
+  @media (min-width: 1100px) {
+    .walle {
+      background-image: url(/assets/img/expedia/wall2.jpg); } }
 
-/*.existingproblems{
-            display: flex;
-            flex-wrap: wrap;
-            padding-top: 2em;
-            justify-content: space-around;
-        }
-        .probpicdiv{
-            width: 25%;
-        }
-        .probpic{
-            width: 100%;
-        }*/
+.existingproblems {
+  padding: 2em 0; }
+  @media (min-width: 1100px) {
+    .existingproblems {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 6em 0; } }
+
+.probpicdiv1 {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 4em; }
+  @media (min-width: 768px) {
+    .probpicdiv1 {
+      margin: 0 auto;
+      width: 25%; } }
+  @media (min-width: 1100px) {
+    .probpicdiv1 {
+      margin: 0 auto;
+      width: 22%; } }
+
+.probpicdiv2 {
+  width: 50%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .probpicdiv2 {
+      margin: 0 auto;
+      width: 25%; } }
+  @media (min-width: 1100px) {
+    .probpicdiv2 {
+      margin: 0 auto;
+      width: 22%; } }
+
+#probpic1 {
+  width: 100%; }
+
+#probpic2 {
+  width: 100%; }
+
+.earlydesigns {
+  padding: 4em 0; }
+  @media (min-width: 1100px) {
+    .earlydesigns {
+      display: block; } }
+
+.variantpicdiv1 {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 6em; }
+  @media (min-width: 768px) {
+    .variantpicdiv1 {
+      padding-top: 2em;
+      width: 50%;
+      margin: 0 auto; } }
+  @media (min-width: 1100px) {
+    .variantpicdiv1 {
+      padding-top: 4em;
+      width: 50%;
+      margin: 0 auto; } }
+
+.varpic {
+  width: 100%; }
+
+.variantpicdiv2 {
+  width: 90%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .variantpicdiv2 {
+      padding-top: 2em;
+      width: 50%;
+      margin: 0 auto; } }
+  @media (min-width: 1100px) {
+    .variantpicdiv2 {
+      padding-top: 4em;
+      width: 50%;
+      margin: 0 auto; } }
+
 /*######### END PICTURES #########*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*########### MOBILE & TABLET #################*/
-/*############## LAPTOP and ABOVE #############*/
-@media screen and (min-width: 1024px) {
-  /*    ########## TYPE ############*/
-  article {
-    font-size: 1.3em;
-    line-height: 2.1em;
-    font-weight: 300; }
-  li {
-    /*padding: 1em 0;*/
-    /*font-size: 1.1em;*/ }
-  .subhedaar {
-    font-weight: 400;
-    margin: 1.5em 0 1em 2.25em;
-    color: #C49D00;
-    font-size: 1.3em; }
-  .designprocess li {
-    list-style-type: none;
-    padding-left: 0.4em; }
-  .sectionheader {
-    font-size: 1.8em;
-    padding: 1.5rem 0 3rem 1.5em;
-    color: #062F54; }
-  .boldtext {
-    font-weight: 500; }
-  /*    ########## END TYPE ############*/
-  /*######### LAYOUT ##########*/
-  .ptitle {
-    height: 600px;
-    background-image: url(/assets/img/expedia/hotel_room.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #999; }
-    .ptitle .projecttitle {
-      font-size: 5em;
-      text-align: center;
-      color: #f5f5f5;
-      margin: 0 auto;
-      padding-top: 2.8em;
-      font-family: "Lato", sans-serif; }
-      .ptitle .projecttitle #summerinternship {
-        font-size: 0.4em;
-        font-weight: 300; }
-    .ptitle .headintro {
-      width: 80%;
-      margin: 0 auto;
-      font-family: "Lato", sans-serif;
-      color: white;
-      text-align: center;
-      font-size: 1.2em;
-      line-height: 1.5em;
-      font-weight: 200;
-      padding-top: 1.5em;
-      padding-bottom: 1.5em; } }
-    @media screen and (min-width: 1024px) and (min-width: 768px) {
-      .ptitle .headintro {
-        width: 45%;
-        font-size: 1.5em;
-        font-weight: 200;
-        line-height: 2em;
-        padding: 1em 0 0 0; } }
-    @media screen and (min-width: 1024px) and (min-width: 1100px) {
-      .ptitle .headintro {
-        padding-bottom: 1.5em;
-        padding-top: 2em; } }
-
-@media screen and (min-width: 1024px) {
-  .datebox {
-    margin: 0 auto;
-    width: 300px;
-    height: 3em;
-    opacity: 0.6;
-    border-radius: 2px;
-    background-image: url("/assets/img/expedia/datebg2.png"); }
-  #datetext {
-    text-align: center;
-    color: black;
-    font-size: 1em;
-    padding-top: 0.8em; }
-  #container {
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: white;
-    max-width: 1300px;
-    margin: 2em auto;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    padding-bottom: 3em; }
-  .notice {
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    max-width: 1300px;
-    border-radius: 2px;
-    margin: 2em auto;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    padding-bottom: 3em;
-    height: 20px;
-    background-color: #ef4b33; }
-    .notice p {
-      font-weight: 600;
-      color: white; }
-  .patterncontainerbottom {
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: white;
-    max-width: 1300px;
-    margin: 2em auto;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    padding-bottom: 3em;
-    margin-bottom: 0; }
-  .patterncontainerbottom {
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: white;
-    max-width: 1300px;
-    margin: 2em auto;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    padding-bottom: 3em;
-    margin-bottom: 0; }
-  .processflex {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 2em;
-    margin-left: 1.5em; }
-  .processitem {
-    width: 25%; }
-  .processcontent {
-    margin-left: 0.6em; }
-  .designcontainer {
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: white;
-    max-width: 1300px;
-    margin: auto;
-    margin-top: 54em;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    padding-bottom: 3em; }
-  article {
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box; }
-  .contentbox {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-  .patternsbox {
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .introbox {
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 0 2em; }
-  .contentcenter {
-    margin: 1em 0 2em 1.85em;
-    width: 80%; }
-  .rolelist {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .rolelist li {
-    padding: 0 3em;
-    font-weight: 600;
-    font-size: 1.3em; }
-  .introcontent {
-    width: 45%; }
-  .designprocess {
-    width: 65%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 0 auto; }
-  #notice {
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #ff4500;
-    max-width: 1300px;
-    margin: 0 auto;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
-  /*######### END LAYOUT ##########*/
-  /*######### PICTURES ##########*/
-  #intropicdiv {
-    width: 40%; }
-  #intro_pic {
-    width: 100%; }
-  #ca {
-    width: 75%;
-    margin: 0 auto; }
-  #ca img {
-    width: 100%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
-  #wiresdiv {
-    width: 75%;
-    padding: 3em auto; }
-  #wires {
-    width: 100%; }
-  #finaldesigndiv {
-    padding: 6em 0;
-    width: 70%;
-    margin: 0 auto; }
-  #final_designs {
-    width: 100%; }
-  #freemandiv {
-    width: 80%;
-    /*margin: 0 auto;*/
-    padding-bottom: 3em;
-    margin: 3em auto 8em auto;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
-  #freeman {
-    width: 100%; }
-  .PI {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    display: none;
-    display: block;
-    height: 800px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #999; }
-  .walle {
-    background-image: url(/assets/img/expedia/wall2.jpg); }
-  .existingproblems {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 6em 0; }
-  .probpicdiv1 {
-    margin: 0 auto;
-    width: 21.3%; }
-  .probpicdiv2 {
-    margin: 0 auto;
-    width: 25%; }
-  #probpic1 {
-    width: 100%; }
-  #probpic2 {
-    width: 100%; }
-  .earlydesigns {
-    display: block;
-    /*width: 100%;*/ }
-  .variantpicdiv1 {
-    padding-top: 6em;
-    width: 50%;
-    margin: 0 auto; }
-  .varpic {
-    width: 100%; }
-  .variantpicdiv2 {
-    padding: 12em 0 6em 0;
-    width: 50%;
-    margin: 0 auto; }
-  /*######### END PICTURES #########*/ }
-
+/*}*/
 /* end media 768 */
 #header {
   top: 0;
