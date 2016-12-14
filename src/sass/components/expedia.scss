@@ -17,325 +17,51 @@
     /*########### MOBILE & TABLET #################*/
     /*    ########## TYPE ############*/
     
-    article {
-        font-size: 1.1em;
-        line-height: 1.8em;
-        font-weight: 300;
-    }
-    
-    li {
-        padding-bottom: 0.8em;
-        font-size: 1em;
-    }
-    
-    .subhedaar {
-        font-weight: 400;
-        margin: 1.5em 0 1em 2.25em;
-        color: #C49D00;
-    }
-    
-    .designprocess li {
-        list-style-type: none;
-        padding-left: 0.2em;
-    }
-    
-    .sectionheader {
-        font-size: 1.8em;
-        padding: 1.5rem 0 3rem 1.5em;
-        color: #062F54;
-    }
-    
-    .boldtext {
-        font-weight: 500;
-    }
-    
-    .noticecontent {
-        color: white;
-        font-weight: 800;
-        /*text-align: center;*/
-        /*padding-left: 13em;*/
-    }
-    h3 {
-            font-weight: 400;
-            margin: 1.5em 0 1em 2.25em;
-            color: #C49D00;
-        }
-    /*    ########## END TYPE ############*/
-    /*######### LAYOUT ##########*/
-    
-    .wrapper {
-        width: 95%;
-    }
-    
-    .ptitle {
-        height: 600px;
-        background-image: url(/assets/img/expedia/hotel_room.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-color: #999;
-        .projecttitle {
-            font-size: 5em;
-            text-align: center;
-            color: $superlightgrey;
-            margin: 0 auto;
-            padding-top: 2.8em;
-            font-family: $lato;
-            #summerinternship {
-                font-size: 0.4em;
-                font-weight: 300;
-            }
-        }
-        
-    }
-    
-    #container {
-        justify-content: center;
-        background-color: white;
-        max-width: 1300px;
-        margin: 2em auto;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        padding-bottom: 3em;
-    }
-    .notice{
-            justify-content: center;
-            max-width: 1300px;
-            border-radius: 2px;
-            margin: 2em auto;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-            padding-bottom: 3em;
-            height: 20px;
-            background-color: $setured;
-            p{
-                font-weight: 600;
-                color:white;
-            }
-        }
-    
-    .designprocesscontainer {
-        justify-content: center;
-        background-color: white;
-        max-width: 1300px;
-        margin: auto;
-        margin-top: 54em;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        padding-bottom: 3em;
-    }
-    
-    article {
-        padding: 10px;
-        box-sizing: border-box;
-    }
-    
-    .contentbox {
-        /*            display: flex;*/
-        /*            flex-wrap: wrap;*/
-    }
-    
-    .patternsbox {
-        justify-content: center;
-    }
-    
-    .introbox {
-        justify-content: space-between;
-        margin: 0 2em;
-    }
-    
-    .contentcenter {
-        margin: 1em 0 2em 1.85em;
-        width: 85%;
-    }
-    
-    .rolediv {
-        width: 60%;
-        margin: 0 auto;
-    }
-    
-    .rolelist {
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        margin-left: -2.8em;
-    }
-    
-    .rolelist li {
-        padding: 0 2em;
-        font-weight: 600;
-        font-size: 1.1em;
-    }
-
-
-    .introcontent {
-        width: 100%;
-        margin-top: 2em;
-    }
-    
-    .patterns {
-        flex: 0 1 45%;
-    }
-    
-    .patternscontent {
-        margin: 0 auto;
-        padding: 2em 0;
-    }
-    
-    #notice {
-        justify-content: center;
-        background-color: #ff4500;
-        max-width: 1300px;
-        margin: 0 auto;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    }
-    /*######### END LAYOUT ##########*/
-    /*######### PICTURES ##########*/
-    
-    #intropicdiv {
-        width: 100%;
-    }
-    
-    #intro_pic {
-        width: 100%;
-    }
-    
-    #ca {
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    #ca img {
-        width: 100%;
-    }
-    
-    #wiresdiv {
-        width: 90%;
-        margin: 0 auto;
-        padding: 4em 0;
-    }
-    
-    #wires {
-        width: 100%;
-    }
-    
-    #pattern1div {
-        width: 60%;
-        margin: 0 auto;
-        margin-bottom: 3em;
-    }
-    
-    #finaldesigndiv {
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    #final_designs {
-        width: 100%;
-    }
-    
-    #freemandiv {
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 3em;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    }
-    
-    #freeman {
-        width: 100%;
-    }
-    
-    .PI {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        display: none;
-        display: block;
-        height: 800px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-color: #999;
-    }
-    
-    .walle {
-        background-image: url(/assets/img/expedia/wall2.jpg);
-    }
-
-    /*.existingproblems{
-            display: flex;
-            flex-wrap: wrap;
-            padding-top: 2em;
-            justify-content: space-around;
-        }
-        .probpicdiv{
-            width: 25%;
-        }
-        .probpic{
-            width: 100%;
-        }*/
-    
-  
-    /*######### END PICTURES #########*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-    /*########### MOBILE & TABLET #################*/
-
-
-
-
-
-
-
 
     /*############## LAPTOP and ABOVE #############*/
     
-    @media screen and (min-width: 1024px) {
+    /*@media screen and (min-width: 1024px) {*/
         /*    ########## TYPE ############*/
         article {
-            font-size: 1.3em;
-            line-height: 2.1em;
-            font-weight: 300;
+            font-size: 1em;
+            line-height: 2em;
+            font-weight: 400;
+            @include breakpoint(tablet){
+                font-size: 1.1em;
+                line-height: 2.1em;
+                margin-bottom: 20px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            @include breakpoint(laptop){
+                font-size: 1.2em;
+            }
+            
         }
-        li {
-            /*padding: 1em 0;*/
-            /*font-size: 1.1em;*/
-
-        }
+        
         .subhedaar {
+            font-weight: 400;
+            margin: 1.5em 0 1em 2em;
+            color: #C49D00;
+            font-size: 1.2em;
+            @include breakpoint(laptop){
             font-weight: 400;
             margin: 1.5em 0 1em 2.25em;
             color: #C49D00;
             font-size: 1.3em;
+            }
+        }
+        .processsubhedaar {
+            font-weight: 400;
+            margin: 1.5em 0 1em 1em;
+            color: #C49D00;
+            font-size: 1.2em;
+            @include breakpoint(laptop){
+            font-weight: 400;
+            color: #C49D00;
+            font-size: 1.3em;
+            }
+
         }
         .designprocess li {
             list-style-type: none;
@@ -343,12 +69,19 @@
         }
         .sectionheader {
             font-size: 1.8em;
-            padding: 1.5rem 0 3rem 1.5em;
             color: #062F54;
+            text-align: center;
+            padding: 1em 0;
+            @include breakpoint(laptop){
+                padding: 1.5rem 0 3rem 1.5em;
+                text-align: left;
+            }
         }
         .boldtext {
-            font-weight: 500;
+            font-weight: 800;
         }
+
+       
 
         /*    ########## END TYPE ############*/
         /*######### LAYOUT ##########*/
@@ -394,6 +127,7 @@
                 @include breakpoint(laptop) {
                     padding-bottom: 1.5em;
                     padding-top: 2em;
+                    font-weight: 300;
                 }
             }
         }
@@ -444,59 +178,109 @@
             padding-bottom: 3em;
             margin-bottom: 0;
         }
-
-        .patterncontainerbottom {
-            justify-content: center;
-            background-color: white;
-            max-width: 1300px;
-            margin: 2em auto;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-            padding-bottom: 3em;
-            margin-bottom: 0;
-        }
         .processflex{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            width: 100%;
-            padding-top: 2em;
-            margin-left: 1.5em;
+
+            @include breakpoint(tablet) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                padding-top: 2em;
+                margin-left: 3.5em;
             }
+
+            @include breakpoint(laptop) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                padding-top: 2em;
+                margin-left: 1.5em;
+            }
+        }
         .processitem{
-            width: 25%;
+            width: 100%;
+            @include breakpoint(tablet) {
+                width: 50%;
+
+            }
+            @include breakpoint(laptop) {
+                width: 25%;
+            }
         }
         .processcontent{
             margin-left: 0.6em;
         }
 
-        .designcontainer {
+        /*.designprocesscontainer {
             justify-content: center;
             background-color: white;
             max-width: 1300px;
             margin: auto;
-            margin-top: 54em;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
             padding-bottom: 3em;
-        }
-        article {
-            margin-bottom: 20px;
-            padding: 10px;
-            box-sizing: border-box;
-        }
+            @include breakpoint(laptop){
+                margin-top: 54em;
+            }
+        }*/
+  
+        
         .contentbox {
-            display: flex;
-            flex-wrap: wrap;
+            /*background-color: beige;*/
+            @include breakpoint(laptop){
+                display: flex;
+                flex-wrap: wrap;    
+            }
+
         }
+        .goals{
+            padding: 1em 0;
+        }
+        .introbox {
+            @include breakpoint(laptop){
+                justify-content: space-between;
+                margin: 0 2em;
+            }
+        }
+        #intropicdiv {
+            width: 100%;
+            @include breakpoint(tablet){
+            width: 60%;
+            margin: 0 auto;
+            padding-top: 2em;
+            }
+            @include breakpoint(laptop){
+            width: 50%;
+            }
+        }
+        #intro_pic {
+            width: 100%;
+            padding: 2em 0;
+        }
+        .introcontent {
+            width: 90%;
+            margin-left: 1em;
+            
+            @include breakpoint(tablet){
+            width: 60%;
+            margin: 0 auto;
+            }
+            @include breakpoint(laptop){
+            width: 55%;
+            margin: 0 0 0 0;
+            }
+        }
+
         .patternsbox {
             justify-content: center;
         }
-        .introbox {
-            justify-content: space-between;
-            margin: 0 2em;
-        }
+
         .contentcenter {
-            margin: 1em 0 2em 1.85em;
-            width: 80%;
+            @include breakpoint(tablet){
+                margin: 1em 0 2em 1.85em;
+                width: 60%;
+            }
+            
         }
         .rolelist {
             display: flex;
@@ -508,9 +292,7 @@
             font-weight: 600;
             font-size: 1.3em;
         }
-        .introcontent {
-            width: 45%;
-        }
+        
         .designprocess {
             width: 65%;
             display: flex;
@@ -528,23 +310,33 @@
         }
         /*######### END LAYOUT ##########*/
         /*######### PICTURES ##########*/
-        #intropicdiv {
-            width: 40%;
-        }
-        #intro_pic {
-            width: 100%;
-        }
+        
         #ca {
-            width: 75%;
             margin: 0 auto;
+            width: 90%;
+            @include breakpoint(laptop){
+                width: 75%;
+                margin: 0 auto;
+            }
         }
         #ca img {
             width: 100%;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
         }
+
+
         #wiresdiv {
-            width: 75%;
-            padding: 3em auto;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2em 0;
+            @include breakpoint(tablet){
+                width: 90%;
+                padding-top: 4em;
+            }
+            @include breakpoint(laptop){
+                width: 75%;
+                padding: 3em auto;
+            }
         }
         #wires {
             width: 100%;
@@ -552,19 +344,30 @@
         
        
         #finaldesigndiv {
-            padding: 6em 0;
-            width: 70%;
+            width: 90%;
             margin: 0 auto;
+            padding-top: 2em;
+            @include breakpoint(laptop){
+                padding: 6em 0;
+                width: 70%;
+                margin: 0 auto;
+            }
+            
         }
         #final_designs {
+
             width: 100%;
         }
         #freemandiv {
-            width: 80%;
-            /*margin: 0 auto;*/
-            padding-bottom: 3em;
-            margin: 3em auto 8em auto;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 2em;
+            @include breakpoint(laptop){
+                width: 80%;
+                padding-bottom: 3em;
+                margin: 3em auto 8em auto;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            }
         }
         #freeman {
             width: 100%;
@@ -576,6 +379,7 @@
             display: none;
             display: block;
             height: 800px;
+
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -583,22 +387,46 @@
             background-color: #999;
         }
         .walle {
+            display: none;
+            @include breakpoint(laptop){
             background-image: url(/assets/img/expedia/wall2.jpg);
+            }
         }
 
         .existingproblems{
-            display: flex;
-            flex-wrap: wrap;
-            padding: 6em 0;
-            
+            padding: 2em 0;
+            @include breakpoint(laptop){
+                display: flex;
+                flex-wrap: wrap;
+                padding: 6em 0;
+            }    
         }
         .probpicdiv1{
+            width: 50%;
             margin: 0 auto;
-            width: 21.3%;
+            padding-bottom: 4em;
+            @include breakpoint(tablet){
+                margin: 0 auto;
+                width: 25%;
+            }
+            @include breakpoint(laptop){
+                margin: 0 auto;
+                width: 22%;
+            }
+            
         }
         .probpicdiv2{
+            width: 50%;
             margin: 0 auto;
-            width: 25%;
+            @include breakpoint(tablet){
+                margin: 0 auto;
+                width: 25%;
+            }
+            @include breakpoint(laptop){
+                margin: 0 auto;
+                width: 22%;
+            }
+            
         }
         #probpic1{
                 width: 100%;
@@ -611,15 +439,27 @@
         
 
         .earlydesigns{
-            display: block;
-            /*width: 100%;*/
+            padding: 4em 0;
+            @include breakpoint(laptop){
+                display: block;
+            }
         }
         
 
         .variantpicdiv1{
-            padding-top: 6em;
-            width: 50%;
+            width: 90%;
             margin: 0 auto;
+            padding-bottom: 6em;
+            @include breakpoint(tablet){
+                padding-top: 2em;
+                width: 50%;
+                margin: 0 auto;
+            }
+            @include breakpoint(laptop){
+                padding-top: 4em;
+                width: 50%;
+                margin: 0 auto;
+            }
         }
 
         .varpic{
@@ -627,12 +467,21 @@
         }
        
         .variantpicdiv2{
-            padding: 12em 0 6em 0;
-            width: 50%;
+            width: 90%;
             margin: 0 auto;
+            @include breakpoint(tablet){
+                padding-top: 2em;
+                width: 50%;
+                margin: 0 auto;
+            }
+            @include breakpoint(laptop){
+                padding-top: 4em;
+                width: 50%;
+                margin: 0 auto;
+            }
         }
 
         
         /*######### END PICTURES #########*/
-    }
+    /*}*/
     /* end media 768 */
