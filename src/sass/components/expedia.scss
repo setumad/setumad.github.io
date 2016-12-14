@@ -41,9 +41,15 @@
         
         .subhedaar {
             font-weight: 400;
+            margin: 1.5em 0 1em 1em;
+            color: #C49D00;
+            font-size: 1.2em;
+            @include breakpoint(tablet){
+            font-weight: 400;
             margin: 1.5em 0 1em 2em;
             color: #C49D00;
             font-size: 1.2em;
+            }
             @include breakpoint(laptop){
             font-weight: 400;
             margin: 1.5em 0 1em 2.25em;
@@ -154,20 +160,7 @@
             padding-bottom: 3em;
         }
 
-        .notice{
-            justify-content: center;
-            max-width: 1300px;
-            border-radius: 2px;
-            margin: 2em auto;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-            padding-bottom: 3em;
-            height: 20px;
-            background-color: $setured;
-            p{
-                font-weight: 600;
-                color:white;
-            }
-        }
+       
 
         .patterncontainerbottom {
             justify-content: center;
@@ -209,7 +202,14 @@
             }
         }
         .processcontent{
-            margin-left: 0.6em;
+            margin-left: 1.35em;
+            @include breakpoint(tablet) {
+                margin-left: 0.6em;
+
+            }
+            @include breakpoint(laptop) {
+                margin-left: 0.6em;
+            }
         }
 
         /*.designprocesscontainer {
@@ -276,6 +276,8 @@
         }
 
         .contentcenter {
+            margin: 1em 0 2em 1.35em;
+            width: 80%;
             @include breakpoint(tablet){
                 margin: 1em 0 2em 1.85em;
                 width: 60%;
