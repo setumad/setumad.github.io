@@ -405,8 +405,20 @@ body {
   color: #333; }
 
 .wrapper {
-  max-width: 90%;
   margin: 0 auto; }
+  @media (min-width: 1100px) {
+    .wrapper {
+      /*max-width: 98%;*/ } }
+
+#container {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  margin: 2em auto;
+  /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);*/
+  padding-bottom: 3em; }
 
 /* grid vs flex base styles */
 /* flex styles */
@@ -432,12 +444,18 @@ article {
 
 .subhedaar {
   font-weight: 400;
-  margin: 1.5em 0 1em 2em;
+  margin: 1.5em 0 1em 1em;
   color: #C49D00;
   font-size: 1.2em; }
-  @media (min-width: 1100px) {
+  @media (min-width: 768px) {
     .subhedaar {
       font-weight: 400;
+      margin: 1.5em 0 1em 2em;
+      color: #C49D00;
+      font-size: 1.2em; } }
+  @media (min-width: 1100px) {
+    .subhedaar {
+      font-weight: 600;
       margin: 1.5em 0 1em 2.25em;
       color: #C49D00;
       font-size: 1.3em; } }
@@ -449,8 +467,6 @@ article {
   font-size: 1.2em; }
   @media (min-width: 1100px) {
     .processsubhedaar {
-      font-weight: 400;
-      color: #C49D00;
       font-size: 1.3em; } }
 
 .designprocess li {
@@ -461,14 +477,22 @@ article {
   font-size: 1.8em;
   color: #062F54;
   text-align: center;
-  padding: 1em 0; }
-  @media (min-width: 1100px) {
+  padding: 1em 0;
+  font-weight: 400; }
+  @media (min-width: 768px) {
     .sectionheader {
       padding: 1.5rem 0 3rem 1.5em;
       text-align: left; } }
 
 .boldtext {
   font-weight: 800; }
+
+#titlebar {
+  width: 100%;
+  height: 8em;
+  background-color: #FFC600;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  margin-bottom: 4em; }
 
 /*    ########## END TYPE ############*/
 /*######### LAYOUT ##########*/
@@ -498,21 +522,20 @@ article {
     text-align: center;
     font-size: 1.2em;
     line-height: 1.5em;
-    font-weight: 200;
+    font-weight: 300;
     padding-top: 1.5em;
     padding-bottom: 1.5em; }
     @media (min-width: 768px) {
       .ptitle .headintro {
         width: 45%;
         font-size: 1.5em;
-        font-weight: 200;
+        font-weight: 300;
         line-height: 2em;
         padding: 1em 0 0 0; } }
     @media (min-width: 1100px) {
       .ptitle .headintro {
         padding-bottom: 1.5em;
-        padding-top: 2em;
-        font-weight: 300; } }
+        padding-top: 2em; } }
 
 .datebox {
   margin: 0 auto;
@@ -527,42 +550,6 @@ article {
   color: black;
   font-size: 1em;
   padding-top: 0.8em; }
-
-#container {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: white;
-  max-width: 1300px;
-  margin: 2em auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  padding-bottom: 3em; }
-
-.notice {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 1300px;
-  border-radius: 2px;
-  margin: 2em auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  padding-bottom: 3em;
-  height: 20px;
-  background-color: #ef4b33; }
-  .notice p {
-    font-weight: 600;
-    color: white; }
-
-.patterncontainerbottom {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: white;
-  max-width: 1300px;
-  margin: 2em auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  padding-bottom: 3em;
-  margin-bottom: 0; }
 
 @media (min-width: 768px) {
   .processflex {
@@ -604,7 +591,13 @@ article {
       width: 25%; } }
 
 .processcontent {
-  margin-left: 0.6em; }
+  margin-left: 1.35em; }
+  @media (min-width: 768px) {
+    .processcontent {
+      margin-left: 0.6em; } }
+  @media (min-width: 1100px) {
+    .processcontent {
+      margin-left: 0.6em; } }
 
 /*.designprocesscontainer {
             justify-content: center;
@@ -670,10 +663,13 @@ article {
   -ms-flex-pack: center;
   justify-content: center; }
 
-@media (min-width: 768px) {
-  .contentcenter {
-    margin: 1em 0 2em 1.85em;
-    width: 60%; } }
+.contentcenter {
+  margin: 1em 0 2em 1.35em;
+  width: 80%; }
+  @media (min-width: 768px) {
+    .contentcenter {
+      margin: 1em 0 2em 1.85em;
+      width: 60%; } }
 
 .rolelist {
   display: -webkit-flex;
@@ -807,7 +803,7 @@ article {
   @media (min-width: 1100px) {
     .probpicdiv1 {
       margin: 0 auto;
-      width: 22%; } }
+      width: 18%; } }
 
 .probpicdiv2 {
   width: 50%;
@@ -819,7 +815,7 @@ article {
   @media (min-width: 1100px) {
     .probpicdiv2 {
       margin: 0 auto;
-      width: 22%; } }
+      width: 18%; } }
 
 #probpic1 {
   width: 100%; }

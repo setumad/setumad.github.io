@@ -130,7 +130,8 @@
             </article>
         </section> -->
 						<section id="container">
-							<h2 class="sectionheader">INTRODUCTION</h2>
+							<div id="titlebar">
+								<h2 class="sectionheader">INTRODUCTION</h2> </div>
 							<div class="contentbox introbox">
 								<article class="introcontent">
 									<p>How can Expedia's customers customize bed and occupancy configurations while shopping for hotel rooms?</span>
@@ -139,8 +140,9 @@
 								<div id="intropicdiv"> <img id="intro_pic" src="assets/img/expedia/coverphone.png" /> </div>
 							</div>
 						</section>
-						<section class="patterncontainerbottom">
-							<h2 class="sectionheader">Design process</h2>
+						<section id="container">
+							<div id="titlebar">
+								<h2 class="sectionheader">DESIGN PROCESS</h2> </div>
 							<div class="processflex">
 								<div class="processitem">
 									<h3 class="processsubhedaar">Processes followed</h3>
@@ -172,7 +174,8 @@
 							</div>
 						</section>
 						<section id="container">
-							<h2 class="sectionheader">Problem & Goals</h2>
+							<div id="titlebar">
+								<h2 class="sectionheader">PROBLEM & GOALS</h2> </div>
 							<h3 class="subhedaar">The problem</h3>
 							<div class="contentbox">
 								<article class="contentcenter">
@@ -194,7 +197,8 @@
 							</div>
 						</section>
 						<section id="container">
-							<h2 class="sectionheader">Proposed Solution</h2>
+							<div id="titlebar">
+								<h2 class="sectionheader">PROPOSED SOLUTION</h2> </div>
 							<div>
 								<article class="contentcenter">After exploring multiple variants and possible flows, I came up with a final design recommendation that made use of multiple patterns I had explored. </article>
 								<div id="finaldesigndiv"> <img id="final_designs" src="assets/img/expedia/final_designs2.png" /> </div>
@@ -231,7 +235,8 @@
             </div>
         </section> -->
 						<section id="container">
-							<h2 class="sectionheader">Research</h2>
+							<div id="titlebar">
+								<h2 class="sectionheader">RESEARCH</h2> </div>
 							<div>
 								<!-- <h3 class="subhedaar"> Competitve Teardown Analysis </h3> -->
 								<article class="contentcenter">Conducted Literature survey of previous study reports and tear-downs of other online travel agencies to understand the hotel shopping processes used by them. </article>
@@ -264,7 +269,8 @@
             </article>
         </section> -->
 						<section id="container">
-							<h2 class="sectionheader">Ideation</h2>
+							<div id="titlebar">
+								<h2 class="sectionheader">IDEATION</h2> </div>
 							<div>
 								<h3 class="subhedaar">Personas</h3>
 								<!-- <article class="contentcenter">Research data synthesized into a user persona to inform future design decisions. </article> -->
@@ -310,7 +316,8 @@
 							</div>
 						</section>
 						<section id="container">
-							<h2 class="sectionheader">Takeaways</h2>
+							<div id="titlebar">
+								<h2 class="sectionheader">TAKEAWAYS</h2> </div>
 							<div>
 								<article class="contentcenter">
 									<p class="goals">The internship helped refine my overall design process and problem solving methods. </p>
@@ -340,11 +347,11 @@
 								pagetop = document.getElementById('header');
 								var newScrollPosition = window.scrollY;
 								// alert(window.scrollY);
-								if (newScrollPosition < lastScrollPosition + 10)
+								if (newScrollPosition < lastScrollPosition + 5)
 								{
 									pagetop.style.opacity = "1";
 								}
-								else if (newScrollPosition - lastScrollPosition > 20)
+								else if (newScrollPosition - lastScrollPosition > 5)
 								{
 									pagetop.style.opacity = "0";
 								}
