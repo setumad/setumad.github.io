@@ -386,7 +386,7 @@
             @include breakpoint(tablet){
                 min-height: 200px;
                 background-size: 700px;
-                
+
                 display: block;
             }
         }
@@ -495,7 +495,7 @@
                 margin: 8em auto;
             } 
             @include breakpoint(laptop){
-                width: 30%;
+                width: 35%;
             }  
         }
         
