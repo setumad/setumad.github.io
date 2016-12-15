@@ -499,7 +499,7 @@ h3 {
   background-size: cover;
   background-color: #999; }
   .ptitle .projecttitle {
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     color: white;
     margin: 0 auto;
@@ -507,7 +507,8 @@ h3 {
     font-family: "Lato", sans-serif; }
     @media (min-width: 768px) {
       .ptitle .projecttitle {
-        font-size: 5em; } }
+        font-size: 5em;
+        font-size: 4em; } }
   .ptitle .headintro {
     width: 65%;
     margin: 0 auto;
@@ -786,7 +787,7 @@ h3 {
   width: 100%;
   display: none;
   display: block;
-  min-height: 300px;
+  min-height: 150px;
   background-size: 250px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -800,6 +801,10 @@ h3 {
 
 .screengrpmoba {
   background-image: url(/assets/img/datescout/imggrpmob1.png);
+  padding: 12em 0; }
+
+.screengrpmobb {
+  background-image: url(/assets/img/datescout/imggrpmob2.png);
   padding: 12em 0; }
 
 .secondimagegroup {
