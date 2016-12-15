@@ -10,7 +10,7 @@
     }
     
     .wrapper {
-        max-width: 90%;
+        /*max-width: 90%;*/
         margin: 0 auto;
         /*background-color: yellow;*/
     }
@@ -54,37 +54,42 @@
     /*########### MOBILE & TABLET #################*/
     /*############## LAPTOP and ABOVE #############*/
     
-    @media screen and (min-width: 1024px) {
+
         /*    ########## TYPE ############*/
         .contentcenter {
-            font-size: 1.3em;
-            line-height: 2.1em;
-            font-weight: 300;
-            margin: 0em 0 2em 2em;
-            width: 65%;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        .introcontent {
-            width: 56%;
-        }
-        /*li {
-            padding-bottom: 0.8em;
             font-size: 1em;
-        }*/
-        .sectionheader {
-            font-size: 1.8em;
-            padding: 2.5rem 0 3rem 1.5em;
-            color: #363535;
+            line-height: 2em;
+            font-weight: 400;
+            width: 90%;
+            margin: 0 auto;
+            @include breakpoint(tablet){
+                font-size: 1.1em;
+                line-height: 2.1em;
+                margin-bottom: 20px;
+                padding: 10px;
+                box-sizing: border-box;
+                margin: 1em 0 2em 1.85em;
+                width: 60%;
+
+            }
+            @include breakpoint(laptop){
+                font-size: 1.2em;
+                width: 50%;
+            } 
         }
+
+        
         h3 {
             font-weight: 400;
             margin: 1.5em 0 1em 2.25em;
             color: #FF0068;
         }
         .ideacontent {
-            width: 55%;
-            margin-right: 2em;
+            @include breakpoint(laptop){
+                width: 50%;
+                margin-right: 2em;
+            }
+            
         }
         #protolink {
             text-decoration: none;
@@ -106,12 +111,15 @@
             background-size: cover;
             background-color: #999;
             .projecttitle {
-                font-size: 5em;
+                font-size: 4em;
                 text-align: center;
-                color: $superlightgrey;
+                color: white;
                 margin: 0 auto;
                 padding-top: 2.8em;
                 font-family: $lato;
+                @include breakpoint(tablet) {
+                    font-size: 5em;
+                }
             }
             .headintro {
                 width: 80%;
@@ -121,13 +129,13 @@
                 text-align: center;
                 font-size: 1.2em;
                 line-height: 1.5em;
-                font-weight: 200;
+                font-weight: 300;
                 padding-top: 1.5em;
                 padding-bottom: 1.5em;
                 @include breakpoint(tablet) {
                     width: 60%;
                     font-size: 1.5em;
-                    font-weight: 200;
+                    font-weight: 300;
                     line-height: 2em;
                     padding: 1em 0 0 0;
                 }
@@ -137,56 +145,150 @@
                 }
             }
         }
+
+        .datebox{
+            
+            margin: 5em auto auto auto;
+            width: 300px;
+            height: 3em;
+            opacity: 0.6;
+            border-radius: 2px;
+            background-image: url("/assets/img/expedia/datebg2.png");
+            @include breakpoint(laptop) {
+                margin: 1em auto auto auto;
+            }
+        }
+        #datetext{
+            text-align: center;
+            color: black;
+            font-size: 1em;
+            padding-top: 0.8em;
+        }
+
         #container {
             justify-content: center;
             background-color: white;
             border-radius: 2px;
-            max-width: 1300px;
+            /*max-width: 1300px;*/
             margin: 2em auto;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);*/
             padding-bottom: 3em;
         }
-        .notice{
-            justify-content: center;
-            max-width: 1300px;
-            border-radius: 2px;
-            margin: 2em auto;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-            padding-bottom: 3em;
-            height: 20px;
-            background-color: $setured;
-            p{
-                font-weight: 600;
-                color:white;
+        
+        #titlebar{
+            width: 100%;
+            height: 8em;
+            background-color: #363535;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+            margin-bottom: 4em; 
+        }
+        .sectionheader {
+            font-size: 1.8em;
+            color: #FF0068;
+            text-align: center;
+            padding: 1em 0;
+            font-weight: 400;
+            @include breakpoint(tablet){
+                padding: 1.5rem 0 3rem 1.5em;
+                text-align: left;
             }
         }
         .patterncontainerbottom {
             justify-content: center;
             background-color: white;
-            max-width: 1300px;
+            /*max-width: 1300px;*/
             margin: 2em auto;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
             padding-bottom: 3em;
             margin-bottom: 0;
         }
+
+
+
+
+
+
+
+
         .processflex{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            width: 100%;
-            padding-top: 2em;
-            margin-left: 1.5em;
+
+            @include breakpoint(tablet) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                padding-top: 2em;
+                margin-left: 3.5em;
             }
+
+            @include breakpoint(laptop) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                padding-top: 2em;
+                margin-left: 1.5em;
+            }
+        }
         .processitem{
-            width: 25%;
+            width: 100%;
+            @include breakpoint(tablet) {
+                width: 50%;
+
+            }
+            @include breakpoint(laptop) {
+                width: 25%;
+            }
         }
         .processcontent{
-            margin-left: 1.6em;
+            margin-left: 1.3em;
+            @include breakpoint(tablet) {
+                margin-left: 0.6em;
+            }
+            @include breakpoint(laptop) {
+                margin-left: 0.6em;
+            }
         }
+        .processsubhedaar {
+            font-weight: 400;
+            margin: 1.5em 0 1em 1em;
+            color: #FF0068;
+            font-size: 1.2em;
+            @include breakpoint(laptop){
+            font-size: 1.3em;
+            }
+
+        }
+
+
+
+        .subhedaar {
+            font-weight: 400;
+            margin: 1.5em 0 1em 1em;
+            color: #FF0068;
+            font-size: 1.2em;
+            @include breakpoint(tablet){
+            font-weight: 400;
+            margin: 1.5em 0 1em 2em;
+            color: #FF0068;
+            font-size: 1.2em;
+            }
+            @include breakpoint(laptop){
+            font-weight: 600;
+            margin: 1.5em 0 1em 2.25em;
+            color: #FF0068;
+            font-size: 1.3em;
+            }
+        }
+
+
+
+
+
         .prototypecontainer {
             justify-content: center;
             background-color: white;
-            max-width: 1300px;
+            /*max-width: 1300px;*/
             margin: 0 auto 2em;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
             padding-bottom: 3em;
@@ -195,18 +297,27 @@
 
 
         .contentbox {
-            display: flex;
-            flex-wrap: wrap;
+            /*background-color: beige;*/
+            @include breakpoint(laptop){
+                display: flex;
+                flex-wrap: wrap;    
+            }
+
         }
         .designpattern {
-            justify-content: center;
+            @include breakpoint(laptop){
+                justify-content: center;   
+            }
         }
         .designpatternlast{
             margin-left: 4.25em;
         }
         .introbox {
-            justify-content: space-between;
-            margin: 0 2em;
+            @include breakpoint(laptop){
+                justify-content: space-between;
+                margin: 0 2em;
+            }
+            
         }
         .rolelist {
             list-style: none;
@@ -261,12 +372,23 @@
             width: 100%;
             display: none;
             display: block;
-            min-height: 300px;
-            background-size: 1000px;
+            min-height: 70px;
+            background-size: 400px;
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-color: #EEEEEE;
+            background-color: #363636;
+            display: none;
+            @include breakpoint(laptop){
+                min-height: 300px;
+                background-size: 1000px;
+            }
+            @include breakpoint(tablet){
+                min-height: 200px;
+                background-size: 700px;
+                
+                display: block;
+            }
         }
         .screengroupa {
             background-image: url(/assets/img/datescout/screengroupa.png);
@@ -276,43 +398,164 @@
             background-image: url(/assets/img/datescout/screengroupb.png);
             padding: 12em 0;
         }
+
+        .PI2 {
+            width: 100%;
+            display: none;
+            display: block;
+            min-height: 300px;
+            background-size: 250px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #363636;
+            
+            @include breakpoint(tablet){
+                min-height: 200px;
+                background-size: 700px;
+                display: none;
+            }
+        }
+        .screengrpmoba {
+            background-image: url(/assets/img/datescout/imggrpmob1.png);
+            padding: 12em 0;
+        }
+        .screengrpmobb {
+            background-image: url(/assets/img/datescout/imggrpmob2.png);
+            padding: 12em 0;
+        }
+
+
+
+
+        .secondimagegroup{
+            display: none;
+            display: block;
+            min-height: 600px;
+            background-size: 600px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-image: url(/assets/img/datescout/imagegroup1.png);
+            background-color: #363636;
+            @include breakpoint(laptop){
+                background-size: 1200px;
+                min-height: 800px;
+
+            }
+        }
         #intropicdiv {
-            max-width: 40%;
+            padding-bottom: 3em;
+            width: 90%;
+            margin: 0 auto;
+            @include breakpoint(tablet){
+                max-width: 60%;
+            }
+            @include breakpoint(laptop){
+                max-width: 40%;
+            }
         }
         #intro_pic {
             width: 100%;
         }
         #oldideadiv {
-            max-width: 35%
+            width: 90%;
+            margin: 0 auto;
+            @include breakpoint(tablet){
+                max-width: 65%
+            }
+            @include breakpoint(laptop){
+                max-width: 35%
+            }
+            
         }
         #oldidea {
             width: 100%;
         }
         .imagecenter {
-            padding: 2em 0;
-            width: 55%;
-            margin: 0 auto;
+            margin: 4em auto;
+            width: 90%;
+
+            @include breakpoint(laptop){
+                padding: 4em 0;
+                width: 45%;
+                margin: 0 auto;
+            } 
+            
         }
         #sitemap {
             width: 100%;
         }
         .designpatterndiv {
-            width: 35%;
-            padding: 4em 4em;
+            /*margin: 0 auto;*/
+            width: 90%;
+            margin: 4em auto;
+            @include breakpoint(tablet){
+                width: 60%;
+                margin: 8em auto;
+            } 
+            @include breakpoint(laptop){
+                width: 30%;
+            }  
         }
+        
         .designpatterndiv img {
             width: 100%;
         }
+
+        .imagegroupdiv {
+            width: 100%;
+
+            @include breakpoint(laptop){
+                width: 80%;
+                /*margin: 0 auto;*/
+            }
+        }
+        #imagegroup {
+            width: 150%;
+        }
+
         .personadiv {
-            width: 93%;
-            margin: 0 auto;
+            margin: 3em auto;
+            width: 95%;
+
+            @include breakpoint(laptop){
+                width: 93%;
+                margin: 0 auto;
+            }
         }
         #persona {
             width: 100%;
         }
-        #evolution {
-            padding: 6em;
+
+
+        .evolutiondivmob {
+            width: 70%;
+            margin: 4em auto;
+            @include breakpoint(tablet){
+                width: 50%;
+            } 
+            @include breakpoint(laptop){
+                display: none;
+            }   
         }
+        .evolutionmob{
+            width: 100%;
+        }
+        .evolutionlap{
+            display: none;
+            @include breakpoint(laptop){
+                width: 55%;
+                display: block;
+                padding: 6em;
+            }
+        }
+
+        #oldidea {
+            width: 100%;
+        }
+
+
         #exclaimdiv {
             width: 8%;
             padding-right: 0.8em;
@@ -321,5 +564,5 @@
             width: 100%;
         }
         /*######### END PICTURES #########*/
-    }
+    
     /* end media 768 */
