@@ -203,7 +203,7 @@
             justify-content: center;
             background-color: white;
             /*max-width: 1300px;*/
-            margin: 2em auto;
+            margin-top: 2em;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
             padding-bottom: 3em;
             margin-bottom: 0;
@@ -433,7 +433,42 @@
 
     
 
+        .imagegrpcontainer{
+            background-color: #242424;
+            padding-bottom: 3em;
+        }
 
+        .screengrpscroll{
+            display: none;
+            @include breakpoint(laptop){
+                width: 60%;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+
+        .screengrpscrollmob{
+            margin: 0 auto;
+            width: 50%;
+            @include breakpoint(laptop){
+                width: 60%;
+                margin: 0 auto;
+                display: none;
+            }
+        }
+
+        .screengrpscroll img{
+            width: 100%;
+            margin: 8em 0;
+        }
+        .screengrpscrollmob img{
+            width: 100%;
+            margin: 2em 0;
+        }
+
+        #grpa{
+            margin-top: 4em;
+        }
 
 
         .secondimagegroup{
