@@ -174,14 +174,12 @@
 
         
         .processflex{
-
             @include breakpoint(tablet) {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 width: 100%;
                 padding-top: 2em;
-                margin-left: 3.5em;
             }
 
             @include breakpoint(laptop) {
@@ -190,17 +188,19 @@
                 justify-content: space-between;
                 width: 100%;
                 padding-top: 2em;
-                margin-left: 1.5em;
+                margin-left: 0em;
             }
         }
         .processitem{
             width: 100%;
             @include breakpoint(tablet) {
-                width: 50%;
+                width: 45%;
+                margin-left: 1em;
 
             }
             @include breakpoint(laptop) {
                 width: 25%;
+                margin-left: 0em;
             }
         }
         .processcontent{
