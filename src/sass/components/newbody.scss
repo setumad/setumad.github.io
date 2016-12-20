@@ -1,0 +1,134 @@
+.header {
+    width: 100%;
+    height: 6em;
+    background-color: deepskyblue;
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    background-image: url(/assets/img/newbody/homebg1.jpg);
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 50em;
+}
+
+#overlay {
+    background: black;
+    margin: 0;
+    padding: 0;
+    height: 50em;
+    opacity: 0.5;
+}
+
+.introtext {
+    position: relative;
+    bottom: 7em;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-size: 4em;
+    color: white;
+    @include breakpoint(tablet){
+        width: 35%;     
+    }
+}
+
+
+.projectsection{
+    /*margin-bottom: 10em;*/
+    width: 100%;
+}
+
+.projbox{
+    background-color: red;
+
+    @include breakpoint(laptop){
+        height: 40em;     
+    }
+
+    @include breakpoint(1400px){
+        height: 50em;     
+    } 
+    display: flex;
+}
+.one{
+    background-color: #001460;
+}
+#expediadiv{
+    @include breakpoint(laptop){
+        width: 30%;
+        margin: 10em 0 0 10em;
+    }
+    @include breakpoint(1400px){
+        width: 25%;
+        margin: 10em 0 0 15em;
+    }
+}
+#expediaimg{
+    width: 100%;
+}
+
+.projdescsection{
+    @include breakpoint(laptop){
+        width: 55%;
+        margin: 8em 0 0 12em;
+    }
+
+    @include breakpoint(1400px){
+        width: 35%;
+        margin: 8em 0 0 20em;
+    }
+}
+.projectsection p{
+    color: white;
+}
+.title{
+    font-weight: 200;
+    @include breakpoint(1400px){
+        font-size: 2em;
+    }
+    @include breakpoint(laptop){
+        font-size: 1.8em;
+    }
+    
+}
+.line{
+    width: 100px;
+    background: #FFCA01;
+    margin: 0em 0 4em 0;
+    @include breakpoint(1400px){
+        height: 5px
+    }
+    @include breakpoint(laptop){
+        height: 3.5px;
+    }
+}
+.projdesc{
+    line-height: 1.8em;
+    width: 70%;
+}
+.readmore{
+    border: 2px solid #178CBB;
+    text-align: center;
+    @include breakpoint(1400px){
+        margin-top: 9em;
+        width: 160px;
+    }
+    @include breakpoint(laptop){
+        margin-top: 6em; 
+        font-size: 0.9em;
+        width: 140px; 
+    }
+}
+
+.two{
+    background-color: #007284;
+}
+.three{
+    background-color: #A4085E;
+}
