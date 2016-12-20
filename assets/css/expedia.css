@@ -402,6 +402,7 @@ th {
 
 body {
   background: #eee;
+  /*background: white;*/
   color: #333; }
 
 .wrapper {
@@ -443,20 +444,18 @@ article {
       font-size: 1.2em; } }
 
 .subhedaar {
-  font-weight: 400;
+  font-weight: 600;
   margin: 1.5em 0 1em 1em;
   color: #C49D00;
   font-size: 1.2em; }
   @media (min-width: 768px) {
     .subhedaar {
-      font-weight: 400;
-      margin: 1.5em 0 1em 2em;
+      margin: 1.5em 0 1em 3em;
       color: #C49D00;
       font-size: 1.2em; } }
   @media (min-width: 1100px) {
     .subhedaar {
-      font-weight: 600;
-      margin: 1.5em 0 1em 2.25em;
+      margin: 1.5em 0 1em 7.5em;
       color: #C49D00;
       font-size: 1.3em; } }
 
@@ -481,7 +480,13 @@ article {
   font-weight: 400; }
   @media (min-width: 768px) {
     .sectionheader {
-      padding: 1.5rem 0 3rem 1.5em;
+      font-size: 1.8em;
+      padding: 1.5rem 0 3rem 2em;
+      text-align: left; } }
+  @media (min-width: 1100px) {
+    .sectionheader {
+      font-size: 2.4em;
+      padding: 1.5rem 0 3rem 4em;
       text-align: left; } }
 
 .boldtext {
@@ -489,10 +494,16 @@ article {
 
 #titlebar {
   width: 100%;
-  height: 8em;
+  height: 6em;
   background-color: #FFC600;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
   margin-bottom: 4em; }
+  @media (min-width: 768px) {
+    #titlebar {
+      height: 5.4em; } }
+  @media (min-width: 1100px) {
+    #titlebar {
+      height: 6.5em; } }
 
 /*    ########## END TYPE ############*/
 /*######### LAYOUT ##########*/
@@ -562,8 +573,9 @@ article {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 100%;
-    padding-top: 2em; } }
+    width: 90%;
+    padding-top: 2em;
+    margin: 0 auto; } }
 
 @media (min-width: 1100px) {
   .processflex {
@@ -576,9 +588,10 @@ article {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
     padding-top: 2em;
-    margin-left: 0em; } }
+    margin-left: 0em;
+    margin: 0 auto; } }
 
 .processitem {
   width: 100%; }
@@ -641,7 +654,7 @@ article {
       padding-top: 2em; } }
   @media (min-width: 1100px) {
     #intropicdiv {
-      width: 50%; } }
+      width: 40%; } }
 
 #intro_pic {
   width: 100%;
@@ -657,7 +670,12 @@ article {
   @media (min-width: 1100px) {
     .introcontent {
       width: 55%;
-      margin: 0 0 0 0; } }
+      margin: 0 0 0 6em; } }
+  @media (min-width: 1400px) {
+    .introcontent {
+      width: 30%;
+      margin: 0 0 0 6em;
+      padding-top: 4em; } }
 
 .patternsbox {
   -webkit-justify-content: center;
@@ -671,6 +689,13 @@ article {
     .contentcenter {
       margin: 1em 0 2em 1.85em;
       width: 60%; } }
+  @media (min-width: 1100px) {
+    .contentcenter {
+      margin: 1em 0 2em 7.5em;
+      width: 60%; } }
+  @media (min-width: 1400px) {
+    .contentcenter {
+      width: 35%; } }
 
 .rolelist {
   display: -webkit-flex;
@@ -731,6 +756,10 @@ article {
     #wiresdiv {
       width: 75%;
       padding: 3em auto; } }
+  @media (min-width: 1400px) {
+    #wiresdiv {
+      width: 65%;
+      padding: 3em auto; } }
 
 #wires {
   width: 100%; }
@@ -742,8 +771,11 @@ article {
   @media (min-width: 1100px) {
     #finaldesigndiv {
       padding: 6em 0;
-      width: 70%;
+      width: 60%;
       margin: 0 auto; } }
+  @media (min-width: 1400px) {
+    #finaldesigndiv {
+      width: 50%; } }
 
 #final_designs {
   width: 100%; }
@@ -758,6 +790,9 @@ article {
       padding-bottom: 3em;
       margin: 3em auto 8em auto;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); } }
+  @media (min-width: 1400px) {
+    #freemandiv {
+      width: 65%; } }
 
 #freeman {
   width: 100%; }
@@ -842,8 +877,11 @@ article {
   @media (min-width: 1100px) {
     .variantpicdiv1 {
       padding-top: 4em;
-      width: 50%;
+      width: 40%;
       margin: 0 auto; } }
+  @media (min-width: 1400px) {
+    .variantpicdiv1 {
+      width: 35%; } }
 
 .varpic {
   width: 100%; }
@@ -859,8 +897,11 @@ article {
   @media (min-width: 1100px) {
     .variantpicdiv2 {
       padding-top: 4em;
-      width: 50%;
+      width: 40%;
       margin: 0 auto; } }
+  @media (min-width: 1400px) {
+    .variantpicdiv2 {
+      width: 35%; } }
 
 /*######### END PICTURES #########*/
 /*}*/
