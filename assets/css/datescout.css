@@ -472,7 +472,8 @@ body {
   @media (min-width: 1400px) {
     .contentcenter {
       font-size: 1.2em;
-      width: 35%; } }
+      width: 35%;
+      margin-left: 9.5em; } }
 
 h3 {
   font-weight: 400;
@@ -483,6 +484,10 @@ h3 {
   .ideacontent {
     width: 50%;
     margin-right: 2em; } }
+
+@media (min-width: 1400px) {
+  .ideacontent {
+    width: 35%; } }
 
 #protolink {
   text-decoration: none;
@@ -566,10 +571,16 @@ h3 {
 
 #titlebar {
   width: 100%;
-  height: 8em;
+  height: 6em;
   background-color: #363535;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
   margin-bottom: 4em; }
+  @media (min-width: 768px) {
+    #titlebar {
+      height: 5.4em; } }
+  @media (min-width: 1100px) {
+    #titlebar {
+      height: 6.5em; } }
 
 .sectionheader {
   font-size: 1.8em;
@@ -580,6 +591,11 @@ h3 {
   @media (min-width: 768px) {
     .sectionheader {
       padding: 1.5rem 0 3rem 1.5em;
+      text-align: left; } }
+  @media (min-width: 1400px) {
+    .sectionheader {
+      font-size: 2.4em;
+      padding: 1.5rem 0 3rem 5em;
       text-align: left; } }
 
 .patterncontainerbottom {
@@ -619,9 +635,10 @@ h3 {
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      width: 100%;
+      width: 90%;
       padding-top: 2em;
-      margin-left: 0em; } }
+      margin-left: 0em;
+      margin: 0 auto; } }
 
 .processitem {
   width: 100%; }
@@ -670,6 +687,9 @@ h3 {
       margin: 1.5em 0 1em 2.25em;
       color: #FF0068;
       font-size: 1.3em; } }
+  @media (min-width: 1400px) {
+    .subhedaar {
+      margin: 1.5em 0 1em 9.3em; } }
 
 .prototypecontainer {
   -webkit-justify-content: center;
@@ -707,6 +727,30 @@ h3 {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0 2em; } }
+
+.introbox .introcontent {
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: 400;
+  width: 90%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .introbox .introcontent {
+      font-size: 1.1em;
+      line-height: 2.1em;
+      margin-bottom: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 1em 0 2em 1.85em;
+      width: 60%; } }
+  @media (min-width: 1100px) {
+    .introbox .introcontent {
+      font-size: 1.2em;
+      width: 50%; } }
+  @media (min-width: 1400px) {
+    .introbox .introcontent {
+      width: 35%;
+      margin: 0 auto; } }
 
 .rolelist {
   list-style: none;
