@@ -1,3 +1,7 @@
+/** {
+        font-family: lucidaconsole;
+        margin: 0;
+    }*/
 .header {
     width: 100%;
     height: 6em;
@@ -7,76 +11,187 @@
 }
 
 .intro {
-    background-image: url(/assets/img/newbody/homebg1.jpg);
+    background-image: url(/assets/img/newbody/backgrounds/blacklaptop.png);
     width: 100%;
     display: block;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    height: 50em;
+    @include breakpoint(laptop){
+        height: 43em;
+    }
+    @include breakpoint(1400px){
+        height: 55em;
+    }
 }
 
 #overlay {
     background: black;
     margin: 0;
     padding: 0;
-    height: 50em;
-    opacity: 0.5;
+    @include breakpoint(laptop){
+        height: 43em;
+    }
+    @include breakpoint(1400px){
+        height: 50em;
+    }
+    opacity: 0;
 }
 
-.introtext {
+.introcontent{
+    @include breakpoint(laptop){
+        bottom: 32em;
+        position: relative;
+        left: 8em;
+    }
+}
+.arrowdowndiv{
     position: relative;
-    bottom: 7em;
     margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    font-size: 4em;
+    width: 0.1%;
+    @include breakpoint(laptop){
+        bottom: 22em;
+    }
+    @include breakpoint(1400px){
+        bottom: 20em;
+    }
+}
+
+.introtitle {
+    font-size: 3em;
     color: white;
+    width: 20%;
+    @include breakpoint(tablet){
+        width: 50%;     
+    }
+}
+
+#setu{
+    color: #17DECB;
+}
+
+.introbody{
+    font-size: 1.1em;
+    color: white;
+    line-height: 2em;
+    @include breakpoint(1400px){
+        max-width: 20%;
+    }
+    @include breakpoint(laptop){
+        width: 25%;     
+    }
     @include breakpoint(tablet){
         width: 35%;     
     }
 }
 
-
 .projectsection{
-    /*margin-bottom: 10em;*/
     width: 100%;
 }
 
 .projbox{
-    background-color: red;
-
+    display: flex;
+    flex-wrap: wrap;
     @include breakpoint(laptop){
         height: 40em;     
     }
-
     @include breakpoint(1400px){
         height: 50em;     
-    } 
-    display: flex;
+    }
 }
+
+/*************************** EXPEDIA ****************************/
+
+
 .one{
-    background-color: #001460;
+    background-image: url(/assets/img/newbody/backgrounds/expediabg.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 #expediadiv{
     @include breakpoint(laptop){
         width: 30%;
-        margin: 10em 0 0 10em;
+        padding: 3em 0em 0 8em;
     }
     @include breakpoint(1400px){
-        width: 25%;
-        margin: 10em 0 0 15em;
+        width: 22%;
+        padding: 6em 4em 0 8em;
     }
 }
-#expediaimg{
+.image{
     width: 100%;
 }
 
-.projdescsection{
+
+
+.title{
+    font-weight: 100;
     @include breakpoint(laptop){
-        width: 55%;
-        margin: 8em 0 0 12em;
+        font-size: 2.5em;
+    }
+    @include breakpoint(1400px){
+        font-size: 3em;
+    }
+    
+}
+.line{
+    width: 100px;
+    margin: 0em 0 4em 0;
+    @include breakpoint(1400px){
+        height: 5px;
+    }
+    @include breakpoint(laptop){
+        height: 3.5px;
+    }
+}
+.expedialine{ 
+    background: #FFCA01;
+}
+.projdesc{
+    line-height: 1.8em;
+
+    @include breakpoint(laptop){
+        width: 70%;
+    }
+    @include breakpoint(1400px){
+        width: 60%;
+    }
+}
+.title, .projdesc, .readmore{
+    color: white;
+}
+
+.readmore{
+    text-align: center;
+    @include breakpoint(1400px){
+        margin-top: 9em;
+        width: 160px;
+    }
+    @include breakpoint(laptop){
+        margin-top: 6em;
+        width: 140px; 
+    }
+}
+.expediacta{
+    border: 2px solid #FFCA01;
+}
+.expediatag{
+    color: #FFCA01;
+    margin-top: 8em;
+}
+
+
+
+/**************************** COMMON ********************************/
+
+.projdescsectionright{
+    @include breakpoint(laptop){
+        width: 45%;
+        margin: 4em 0 0 8em;
     }
 
     @include breakpoint(1400px){
@@ -84,51 +199,237 @@
         margin: 8em 0 0 20em;
     }
 }
-.projectsection p{
-    color: white;
-}
-.title{
-    font-weight: 200;
-    @include breakpoint(1400px){
-        font-size: 2em;
-    }
+
+.projdescsectionleft{
     @include breakpoint(laptop){
-        font-size: 1.8em;
+        width: 45%;
+        margin: 4em 0 0 8em;
     }
-    
+
+    @include breakpoint(1400px){
+        width: 35%;
+        margin: 8em 0 0 8.5em;
+    }
 }
+
+
+/*************************** DATESCOUT ****************************/
+
+
+
+.two{
+    background-image: url(/assets/img/newbody/backgrounds/datescoutbg.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+#datescoutdiv{
+    @include breakpoint(laptop){
+        width: 20%;
+        padding: 10em 4em 0 8em;
+    }
+    @include breakpoint(1400px){
+        width: 18%;
+        padding: 10em 4em 0 8em;
+    }
+}
+.image{
+    width: 100%;
+}
+
 .line{
     width: 100px;
-    background: #FFCA01;
     margin: 0em 0 4em 0;
     @include breakpoint(1400px){
-        height: 5px
+        height: 5px;
     }
     @include breakpoint(laptop){
         height: 3.5px;
     }
 }
+.datescoutline{ 
+    background: #FC136A;
+}
 .projdesc{
     line-height: 1.8em;
-    width: 70%;
+
+    @include breakpoint(laptop){
+        width: 70%;
+    }
+    @include breakpoint(1400px){
+        width: 60%;
+    }
 }
+.title, .projdesc, .readmore{
+    color: white;
+}
+
 .readmore{
-    border: 2px solid #178CBB;
     text-align: center;
     @include breakpoint(1400px){
         margin-top: 9em;
         width: 160px;
     }
     @include breakpoint(laptop){
-        margin-top: 6em; 
-        font-size: 0.9em;
+        margin-top: 6em;
         width: 140px; 
     }
 }
-
-.two{
-    background-color: #007284;
+.datescoutcta{
+    border: 2px solid #FC136A;
 }
+.datescouttag{
+    color: #FC136A;
+    margin-top: 8em;
+}
+
+/*************************** EVENTOSAUR ****************************/
+
+
 .three{
-    background-color: #A4085E;
+    background-image: url(/assets/img/newbody/backgrounds/eventosaurbg2.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    z-index: 10;
+}
+#eventosaurdiv{
+    @include breakpoint(laptop){
+        width: 35%;
+        padding: 10em 0em 0 4em;
+    }
+    @include breakpoint(1400px){
+        max-width: 32.5%;
+        padding: 8em 0em 0 8em;
+    }
+}
+.image{
+    width: 100%;
+}
+
+.line{
+    width: 100px;
+    margin: 0em 0 4em 0;
+    @include breakpoint(1400px){
+        height: 5px;
+    }
+    @include breakpoint(laptop){
+        height: 3.5px;
+    }
+}
+.eventosaurline{ 
+    background: #4AFF01;
+}
+.projdesc{
+    line-height: 1.8em;
+
+    @include breakpoint(laptop){
+        width: 70%;
+    }
+    @include breakpoint(1400px){
+        width: 60%;
+    }
+}
+.title, .projdesc, .readmore{
+    color: white;
+}
+
+.readmore{
+    text-align: center;
+    @include breakpoint(1400px){
+        margin-top: 9em;
+        width: 160px;
+    }
+    @include breakpoint(laptop){
+        margin-top: 6em;
+        width: 140px; 
+    }
+}
+.eventosaurcta{
+    border: 2px solid #4AFF01;
+}
+.eventosaurtag{
+    color: #4AFF01;
+    margin-top: 8em;
+}
+
+/*************************** SMART HOME ****************************/
+
+
+.four{
+    background-image: url(/assets/img/newbody/backgrounds/homebg.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    position: relative;
+    bottom: 4em;
+    z-index: 1;
+}
+#homediv{
+    @include breakpoint(laptop){
+        width: 35%;
+        padding: 10em 4em 0 0em;
+        position: relative;
+        left: 8em;
+    }
+    @include breakpoint(1400px){
+        width: 35%;
+        padding: 10em 0em 0 8em;
+        left: 12em;
+    }
+}
+.image{
+    width: 100%;
+}
+
+.line{
+    width: 100px;
+    margin: 0em 0 4em 0;
+    @include breakpoint(1400px){
+        height: 5px;
+    }
+    @include breakpoint(laptop){
+        height: 3.5px;
+    }
+}
+.homeline{ 
+    background: #2938E7;
+}
+.projdesc{
+    line-height: 1.8em;
+
+    @include breakpoint(laptop){
+        width: 70%;
+    }
+    @include breakpoint(1400px){
+        width: 60%;
+    }
+}
+.title, .projdesc, .readmore{
+    color: white;
+}
+
+.readmore{
+    text-align: center;
+    @include breakpoint(1400px){
+        margin-top: 9em;
+        width: 160px;
+    }
+    @include breakpoint(laptop){
+        margin-top: 6em;
+        width: 140px; 
+    }
+}
+.homecta{
+    border: 2px solid #2938E7;
+}
+.hometag{
+    color: #2938E7;
+    margin-top: 8em;
 }
