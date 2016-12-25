@@ -885,7 +885,7 @@ p {
 @media (min-width: 1100px) {
   #datescoutdiv {
     width: 20%;
-    padding: 8em 4em 0 8em; } }
+    padding: 8em 4em 0 0em; } }
 
 @media (min-width: 1400px) {
   #datescoutdiv {
@@ -939,7 +939,7 @@ p {
 @media (min-width: 1100px) {
   #eventosaurdiv {
     width: 40%;
-    /*padding: 8em 0em 0 4em;*/
+    padding-left: 4em;
     position: static; } }
 
 @media (min-width: 1400px) {
@@ -1047,7 +1047,8 @@ p {
   margin: 5em 0;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  border-radius: 6px; }
   @media (min-width: 768px) {
     .titlebox {
       width: 100%; } }

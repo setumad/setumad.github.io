@@ -316,7 +316,7 @@ p{
     }
     @include breakpoint(laptop){
         width: 20%;
-        padding: 8em 4em 0 8em;
+        padding: 8em 4em 0 0em;
     }
     @include breakpoint(1400px){
         width: 18%;
@@ -375,7 +375,7 @@ p{
     }
     @include breakpoint(laptop){
         width: 40%;
-        /*padding: 8em 0em 0 4em;*/
+        padding-left: 4em;
         position: static;
     }
     @include breakpoint(1400px){
@@ -505,6 +505,7 @@ p{
     background-color: #292929;
     margin: 5em 0;
     display: flex;
+    border-radius: 6px;
 }
 
 #mushdidiv{
