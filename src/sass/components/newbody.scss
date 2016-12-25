@@ -2,13 +2,13 @@
         font-family: lato;
         margin: 0;
     }*/
-.header {
+/*.header {
     width: 100%;
     height: 6em;
     background-color: deepskyblue;
     margin: 0;
     padding: 0;
-}
+}*/
 
 .intro {
     background-image: url(/assets/img/newbody/backgrounds/blacklaptop.png);
@@ -18,6 +18,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    height: 43em;
     @include breakpoint(tablet){
         height: 43em;
     }
@@ -30,9 +31,12 @@
 }
 
 #overlay {
+
     background: black;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 42em;
     @include breakpoint(tablet){
         height: 42em;
     }
@@ -46,6 +50,10 @@
 }
 
 .introcontent{
+    width: 80%;
+    bottom: 35em;
+    position: relative;
+    left: 3em;
     @include breakpoint(tablet){
         bottom: 35em;
         position: relative;
@@ -65,8 +73,10 @@
 .arrowdowndiv{
     position: relative;
     margin: 0 auto;
-    width: 0.1%;
+    width: 12%;
+    bottom: 31em;
     @include breakpoint(tablet){
+        width: 0.1%;
         bottom: 30em;
     }
     @include breakpoint(laptop){
@@ -95,7 +105,8 @@
 }
 
 .introbody{
-    font-size: 1.1em;
+
+    font-size: 0.8em;
     color: white;
     line-height: 2em;
     @include breakpoint(1400px){
@@ -106,6 +117,7 @@
     }
     @include breakpoint(tablet){
         width: 40%;     
+        font-size: 1.1em;
     }
 }
 
@@ -115,10 +127,10 @@
 
 .projbox{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
-    /*background-color: red;*/
-    justify-content: space-around;
+    
     @include breakpoint(tablet){
         height: 40em;
         width: 100%;     
@@ -137,9 +149,13 @@
 /**************************** COMMON ********************************/
 
 .projdescsectionright{
+    order: 1;
+    width: 85%;
+    padding: 4em 0;
     @include breakpoint(tablet){
         width: 45%;
         padding-top: 6em;
+        order: 2;
     }
     @include breakpoint(laptop){
         width: 45%;
@@ -153,6 +169,8 @@
 }
 
 .projdescsectionleft{
+    width: 85%;
+    padding: 4em 0;
     @include breakpoint(tablet){
         width: 45%;
         padding-top: 6em;
@@ -163,6 +181,10 @@
     }
 
     @include breakpoint(1400px){
+        width: 35%;
+        margin: 0em 0 0 4em;
+    }
+    @include breakpoint(1820px){
         width: 35%;
         margin: 0em 0 0 8.5em;
     }
@@ -178,7 +200,8 @@ p{
     @include breakpoint(laptop){
         width: 70%;
     }
-    @include breakpoint(1400px){
+    
+    @include breakpoint(1820px){
         width: 60%;
     }
 }
@@ -187,7 +210,8 @@ p{
 }
 
 .readmore{
-    text-align: center;
+    display: none;
+
     @include breakpoint(1400px){
         margin-top: 9em;
         width: 160px;
@@ -200,6 +224,8 @@ p{
         margin-top: 3em;
         width: 140px; 
         height: 50px;
+        text-align: center;
+        display: block;
     }
 }
 .readmoretext{
@@ -214,6 +240,7 @@ p{
 
 .title{
     font-weight: 300;
+    font-size: 1.8em;
     @include breakpoint(tablet){
         font-size: 2.5em;
     }
@@ -228,6 +255,7 @@ p{
 .line{
     width: 100px;
     margin: 0em 0 4em 0;
+    height: 5px;
     @include breakpoint(tablet){
         height: 5px;
     }
@@ -243,6 +271,7 @@ p{
 
 
 .one{
+    background-image: url(/assets/img/newbody/backgrounds/expediabgmob.png);
     @include breakpoint(laptop){
         background-image: url(/assets/img/newbody/backgrounds/expediabg.png);
     }
@@ -256,16 +285,26 @@ p{
     background-attachment: scroll;
 }
 #expediadiv{
+    order: 2;
+    width: 85%;
+    position: relative;
+    top: 3em;
     @include breakpoint(tablet){
         width: 35%;
         padding-top: 8em;
+        position: static;
+        order: 1;
     }
     @include breakpoint(laptop){
         width: 30%;
         padding: 3em 0em 0 8em;
     }
     @include breakpoint(1400px){
-        width: 22%;
+        width: 27%;
+        padding: 6em 4em 0 4em;
+    }
+    @include breakpoint(1820px){
+        width: 25%;
         padding: 6em 4em 0 8em;
     }
 }
@@ -293,7 +332,7 @@ p{
 
 
 .two{
-    
+    background-image: url(/assets/img/newbody/backgrounds/datescoutbgmob.png);
     @include breakpoint(laptop){
         background-image: url(/assets/img/newbody/backgrounds/datescoutbg.png);
     }
@@ -307,22 +346,30 @@ p{
     background-attachment: scroll;
 }
 #datescoutdiv{
+    width: 55%;
+    /*margin-left: 12em;*/
     @include breakpoint(tablet){
         width: 35%;
         padding-top: 6em;
+        display: block;
     }
     @include breakpoint(900px){
         width: 25%;
     }
     @include breakpoint(laptop){
         width: 20%;
-        padding: 8em 4em 0 0em;
+        padding: 6em 4em 0 0em;
     }
     @include breakpoint(1400px){
-        width: 18%;
+        width: 22%;
         padding: 10em 4em 0 8em;
     }
+    @include breakpoint(1820px){
+        width: 20%;
+        padding: 6em 4em 0 8em;
+    }
 }
+
 
 .datescoutline{ 
     background: #FC136A;
@@ -345,7 +392,7 @@ p{
 
 
 .three{
-    
+    background-image: url(/assets/img/newbody/backgrounds/eventosaurbgmob.png);
     @include breakpoint(laptop){
         background-image: url(/assets/img/newbody/backgrounds/eventosaurbg.png);
     }
@@ -357,7 +404,6 @@ p{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    z-index: 10;
     @include breakpoint(tablet){
         height: 45em;
     }
@@ -366,21 +412,31 @@ p{
     }
 }
 #eventosaurdiv{
+    order: 2;
+    width: 90%;
+    position: relative;
+    top: 2em;
     @include breakpoint(tablet){
         width: 50%;
         padding-top: 6em;
-        position: relative;
         right: 4em;
         top: 10em;
+        order: 1;
     }
     @include breakpoint(laptop){
         width: 40%;
-        padding-left: 4em;
         position: static;
     }
+    @include breakpoint(1280px){
+        padding-left: 4em;
+    }
     @include breakpoint(1400px){
-        max-width: 32.5%;
+        max-width: 38%;
         padding: 8em 0em 0 0em;
+    }
+    @include breakpoint(1820px){
+        width: 35%;
+        padding: 6em 4em 0 4em;
     }
 }
 /*.esaurfull{
@@ -417,7 +473,8 @@ p{
 
 
 .four{
-    
+    order: 10;
+    background-image: url(/assets/img/newbody/backgrounds/homebgmob.png);
     @include breakpoint(laptop){
         background-image: url(/assets/img/newbody/backgrounds/homebg.png);
     }
@@ -430,16 +487,16 @@ p{
     background-repeat: no-repeat;
     background-attachment: scroll;
     position: relative;
-    bottom: 4em;
-    z-index: 1;
 }
 #homediv{
+    position: relative;
+    width: 80%;
+    margin-left: -8em;
+    top: 2em;
     @include breakpoint(tablet){
-
         position: relative;
         width: 50%;
         top: 26em;
-
     }
     @include breakpoint(laptop){
         width: 43%;
@@ -450,7 +507,7 @@ p{
         width: 50%;
         position: relative;
         top: 17em;
-        left: 8em;
+        left: 10em;
     }
     @include breakpoint(1600px){
         width: 50%;
@@ -492,23 +549,27 @@ p{
     }
 }
 .titlebox{
+    border-radius: 0px;
+    height: 12em;
+    background-color: #292929;
+    margin: 8em 0 4em 0;
+    display: flex;
     @include breakpoint(tablet){
         width: 100%;
+        margin: 6em 0;
     }
     @include breakpoint(laptop){
         width: 70%;
+        border-radius: 2px;
     }
     @include breakpoint(1400px){
         width: 60%;
     }
-    height: 12em;
-    background-color: #292929;
-    margin: 5em 0;
-    display: flex;
-    border-radius: 6px;
+    
 }
 
 #mushdidiv{
+    margin: 2em 0 0 2em;
     @include breakpoint(tablet){
         margin: 2.5em 0 0 4em;
     }
@@ -518,33 +579,37 @@ p{
 }
 
 #mushdi{
-    @include breakpoint(tablet){
-        width: 80%;
-    }
-    @include breakpoint(laptop){
-        width: 80%;
-    }
+    width: 80%;
 }
 
 #aboutmetitle{
     font-family: 'Roboto Mono', monospace;
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
-    
+    width: 55%;
+    margin: 3em 20px 0 0;
     @include breakpoint(tablet){
+        font-size: 2em;
         padding: 40px 0 0 5em;
+        margin: 0;
+        width: 40%;
     }
     @include breakpoint(laptop){
-        padding: 40px 0 0 8em;
+        padding: 2.2em 0 0 8em;
     }
     @include breakpoint(1400px){
-        padding: 40px 0 0 10em;
+        padding: 2.2em 0 0 10em;
     }
 }
 
 .aboutmecontentdiv{
-    width: 70%;
-    padding: 3em 0 3em 8em;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 6em;
+    @include breakpoint(tablet){
+        width: 70%;
+        padding: 3em 0 3em 8em;
+    }
 }
 .aboutmecontent{
     @include breakpoint(tablet){
@@ -572,8 +637,11 @@ p{
 .getintouch{
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.5em;
+    font-size: 1em;
+    padding: 3em 0;
+    text-align: center;
     @include breakpoint(tablet){
+        font-size: 1.5em;
         padding: 3em 0;
         text-align: center;
     }
@@ -583,20 +651,38 @@ p{
     }
 }
 
-.iconsgroup{
-    
+.iconsflex{
+    display: flex;
+    flex-wrap: wrap;
     @include breakpoint(tablet){
-        width: 66%;
+        display: inline-block;
+    }
+}
+
+.iconsgroup{
+    width: 48%;
+    margin: 0 auto;
+    @include breakpoint(tablet){
+        width: 76%;
         margin: 0 auto;
         padding-left: 0em;
     }
     @include breakpoint(laptop){
-        padding-left: 6em;
-        width: 100%;
+        width: 80%;
+        margin-left: 6em;
     }
 }
 .icons{
-    padding: 0 2em;
+    padding: 2em;
+    margin-bottom: 2em;
+    @include breakpoint(tablet){
+        padding: 0 2em;
+    }
+}
+.gmail{
+    width: 35px;
+    height: 25px;
+
 }
 
 .resumeline{
@@ -604,6 +690,8 @@ p{
     color: white;
     font-size: 1em;
     margin: 0;
+    text-align: center;
+    padding-bottom: 3em;
     @include breakpoint(tablet){
         padding: 3em 0;
         text-align: center;
@@ -617,6 +705,22 @@ p{
     }
 }
 
+.arrowup{
+    width: 50px;
+    margin: 0 auto;
+    padding: 2em 0 3em 0; 
+    @include breakpoint(tablet){
+        margin-left: 43em;
+        
+    }
+    @include breakpoint(laptop){
+        /*position: relative;
+        left: 72em;
+        bottom: 5em;*/
+        margin-left: 73em;
+    }
+}
+
 
 
 
@@ -626,12 +730,22 @@ p{
 .copyrightdiv{
     width: 100%;
     background-color: #3E3E3E;
+    /*height: 25px;*/
 }
 
 .copyright{
-    margin: 0;
+    font-family: lato;
+    padding: 0.8em 0;
+    text-align: center;
     color: #ABABAB;
-    padding: 0.8em 0 0.8em 8em;
+    font-size: 0.8em;
+    margin: 0 auto;
+    @include breakpoint(laptop){
+        padding: 0.8em 0 0.8em 10em;
+        text-align: left;
+    }
+ 
+    
 }
 
 
