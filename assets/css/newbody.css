@@ -1018,19 +1018,151 @@ p {
     left: 8em; } }
 
 .homeline {
-  background: #2938E7; }
+  background: #F8E81C; }
 
 .homecta {
-  border: 2px solid #2938E7; }
+  border: 2px solid #F8E81C; }
 
 .hometag {
-  color: #2938E7; }
+  color: #F8E81C; }
   @media (min-width: 768px) {
     .hometag {
       margin-top: 5em; } }
   @media (min-width: 1100px) {
     .hometag {
       margin-top: 8em; } }
+
+/**********************  About me  **********************/
+@media (min-width: 1100px) {
+  .aboutsection {
+    padding: 4em 0; } }
+
+@media (min-width: 1400px) {
+  .aboutsection {
+    padding: 8em 0; } }
+
+.titlebox {
+  height: 12em;
+  background-color: #292929;
+  margin: 5em 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 768px) {
+    .titlebox {
+      width: 100%; } }
+  @media (min-width: 1100px) {
+    .titlebox {
+      width: 70%; } }
+  @media (min-width: 1400px) {
+    .titlebox {
+      width: 60%; } }
+
+@media (min-width: 768px) {
+  #mushdidiv {
+    margin: 2.5em 0 0 4em; } }
+
+@media (min-width: 1100px) {
+  #mushdidiv {
+    margin: 2.5em 0 0 7em; } }
+
+@media (min-width: 768px) {
+  #mushdi {
+    width: 80%; } }
+
+@media (min-width: 1100px) {
+  #mushdi {
+    width: 80%; } }
+
+#aboutmetitle {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2em;
+  color: white; }
+  @media (min-width: 768px) {
+    #aboutmetitle {
+      padding: 40px 0 0 5em; } }
+  @media (min-width: 1100px) {
+    #aboutmetitle {
+      padding: 40px 0 0 8em; } }
+  @media (min-width: 1400px) {
+    #aboutmetitle {
+      padding: 40px 0 0 10em; } }
+
+.aboutmecontentdiv {
+  width: 70%;
+  padding: 3em 0 3em 8em; }
+
+.aboutmecontent {
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #313131; }
+  @media (min-width: 768px) {
+    .aboutmecontent {
+      width: 65%; } }
+  @media (min-width: 1100px) {
+    .aboutmecontent {
+      width: 55%; } }
+  @media (min-width: 1400px) {
+    .aboutmecontent {
+      width: 35%; } }
+
+/**************************** FOOTER ***********************/
+.footerdiv {
+  background-color: #292929;
+  width: 100%; }
+
+.getintouch {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5em; }
+  @media (min-width: 768px) {
+    .getintouch {
+      padding: 3em 0;
+      text-align: center; } }
+  @media (min-width: 1100px) {
+    .getintouch {
+      text-align: left;
+      padding: 3em 0 3em 5.25em; } }
+
+@media (min-width: 768px) {
+  .iconsgroup {
+    width: 66%;
+    margin: 0 auto;
+    padding-left: 0em; } }
+
+@media (min-width: 1100px) {
+  .iconsgroup {
+    padding-left: 6em;
+    width: 100%; } }
+
+.icons {
+  padding: 0 2em; }
+
+.resumeline {
+  font-family: lato;
+  color: white;
+  font-size: 1em;
+  margin: 0; }
+  @media (min-width: 768px) {
+    .resumeline {
+      padding: 3em 0;
+      text-align: center; } }
+  @media (min-width: 1100px) {
+    .resumeline {
+      text-align: left;
+      padding: 3em 0 3em 8em; } }
+  .resumeline #resume {
+    color: #D92A1C; }
+
+/******************* COPYRIGHT *********************/
+.copyrightdiv {
+  width: 100%;
+  background-color: #3E3E3E; }
+
+.copyright {
+  margin: 0;
+  color: #ABABAB;
+  padding: 0.8em 0 0.8em 8em; }
 
 .col_33 {
   width: 100%;

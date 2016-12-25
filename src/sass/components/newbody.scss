@@ -461,14 +461,14 @@ p{
 }
 
 .homeline{ 
-    background: #2938E7;
+    background: #F8E81C;
 }
 
 .homecta{
-    border: 2px solid #2938E7;
+    border: 2px solid #F8E81C;
 }
 .hometag{
-    color: #2938E7;
+    color: #F8E81C;
     @include breakpoint(tablet){
         margin-top: 5em;
     }
@@ -476,3 +476,161 @@ p{
         margin-top: 8em;
     }
 }
+
+
+
+
+/**********************  About me  **********************/
+
+
+.aboutsection{
+    @include breakpoint(laptop){
+        padding: 4em 0;
+    }
+    @include breakpoint(1400px){
+        padding: 8em 0;
+    }
+}
+.titlebox{
+    @include breakpoint(tablet){
+        width: 100%;
+    }
+    @include breakpoint(laptop){
+        width: 70%;
+    }
+    @include breakpoint(1400px){
+        width: 60%;
+    }
+    height: 12em;
+    background-color: #292929;
+    margin: 5em 0;
+    display: flex;
+}
+
+#mushdidiv{
+    @include breakpoint(tablet){
+        margin: 2.5em 0 0 4em;
+    }
+    @include breakpoint(laptop){
+        margin: 2.5em 0 0 7em;
+    }
+}
+
+#mushdi{
+    @include breakpoint(tablet){
+        width: 80%;
+    }
+    @include breakpoint(laptop){
+        width: 80%;
+    }
+}
+
+#aboutmetitle{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    color: white;
+    
+    @include breakpoint(tablet){
+        padding: 40px 0 0 5em;
+    }
+    @include breakpoint(laptop){
+        padding: 40px 0 0 8em;
+    }
+    @include breakpoint(1400px){
+        padding: 40px 0 0 10em;
+    }
+}
+
+.aboutmecontentdiv{
+    width: 70%;
+    padding: 3em 0 3em 8em;
+}
+.aboutmecontent{
+    @include breakpoint(tablet){
+        width: 65%;
+    }
+    @include breakpoint(laptop){
+        width: 55%;
+    }
+    @include breakpoint(1400px){
+        width: 35%;
+    }
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #313131;
+}
+
+
+/**************************** FOOTER ***********************/
+
+.footerdiv{
+    background-color: #292929;
+    width: 100%;
+}
+
+.getintouch{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5em;
+    @include breakpoint(tablet){
+        padding: 3em 0;
+        text-align: center;
+    }
+    @include breakpoint(laptop){
+        text-align: left;
+        padding: 3em 0 3em 5.25em;
+    }
+}
+
+.iconsgroup{
+    
+    @include breakpoint(tablet){
+        width: 66%;
+        margin: 0 auto;
+        padding-left: 0em;
+    }
+    @include breakpoint(laptop){
+        padding-left: 6em;
+        width: 100%;
+    }
+}
+.icons{
+    padding: 0 2em;
+}
+
+.resumeline{
+    font-family: lato;
+    color: white;
+    font-size: 1em;
+    margin: 0;
+    @include breakpoint(tablet){
+        padding: 3em 0;
+        text-align: center;
+    }
+    @include breakpoint(laptop){
+        text-align: left;
+        padding: 3em 0 3em 8em;
+    }
+    #resume{
+        color: #D92A1C;
+    }
+}
+
+
+
+
+
+/******************* COPYRIGHT *********************/
+
+.copyrightdiv{
+    width: 100%;
+    background-color: #3E3E3E;
+}
+
+.copyright{
+    margin: 0;
+    color: #ABABAB;
+    padding: 0.8em 0 0.8em 8em;
+}
+
+
