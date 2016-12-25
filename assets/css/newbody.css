@@ -644,6 +644,12 @@ th {
     position: relative;
     left: 8em; } }
 
+@media (min-width: 1400px) {
+  .introcontent {
+    bottom: 38em;
+    position: relative;
+    left: 8em; } }
+
 .arrowdowndiv {
   position: relative;
   margin: 0 auto;
@@ -654,9 +660,6 @@ th {
   @media (min-width: 1100px) {
     .arrowdowndiv {
       bottom: 28em; } }
-  @media (min-width: 1400px) {
-    .arrowdowndiv {
-      bottom: 20em; } }
 
 .introtitle {
   font-size: 3em;
@@ -682,7 +685,7 @@ th {
   line-height: 2em; }
   @media (min-width: 1400px) {
     .introbody {
-      max-width: 20%; } }
+      max-width: 23%; } }
   @media (min-width: 1100px) {
     .introbody {
       width: 25%; } }
@@ -732,7 +735,7 @@ th {
 @media (min-width: 1400px) {
   .projdescsectionright {
     width: 35%;
-    margin: 8em 0 0 20em; } }
+    margin: 0em 0 0 20em; } }
 
 @media (min-width: 768px) {
   .projdescsectionleft {
@@ -747,7 +750,7 @@ th {
 @media (min-width: 1400px) {
   .projdescsectionleft {
     width: 35%;
-    margin: 8em 0 0 8.5em; } }
+    margin: 0em 0 0 8.5em; } }
 
 p {
   font-family: lato; }
@@ -936,13 +939,13 @@ p {
 @media (min-width: 1100px) {
   #eventosaurdiv {
     width: 40%;
-    padding: 8em 0em 0 4em;
+    /*padding: 8em 0em 0 4em;*/
     position: static; } }
 
 @media (min-width: 1400px) {
   #eventosaurdiv {
     max-width: 32.5%;
-    padding: 8em 0em 0 8em; } }
+    padding: 8em 0em 0 0em; } }
 
 /*.esaurfull{
     display: block;
@@ -990,24 +993,29 @@ p {
 
 @media (min-width: 768px) {
   #homediv {
+    position: relative;
     width: 50%;
-    top: 26em;
-    /*left: 3em;*/
-    position: relative; } }
+    top: 26em; } }
 
 @media (min-width: 1100px) {
   #homediv {
-    width: 35%;
-    position: static;
-    padding: 10em 4em 0 0em;
-    position: relative;
-    left: 8em; } }
+    width: 43%;
+    padding-top: 10em;
+    position: static; } }
 
 @media (min-width: 1400px) {
   #homediv {
-    width: 45%;
-    padding: 10em 0em 0 8em;
-    left: 12em; } }
+    width: 50%;
+    position: relative;
+    top: 17em;
+    left: 8em; } }
+
+@media (min-width: 1600px) {
+  #homediv {
+    width: 50%;
+    position: relative;
+    top: 8em;
+    left: 8em; } }
 
 .homeline {
   background: #2938E7; }
