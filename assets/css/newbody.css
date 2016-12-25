@@ -913,8 +913,7 @@ p {
       background-image: url(/assets/img/newbody/backgrounds/datescoutbgtab.png); } }
 
 #datescoutdiv {
-  width: 55%;
-  /*margin-left: 12em;*/ }
+  width: 55%; }
   @media (min-width: 768px) {
     #datescoutdiv {
       width: 35%;
@@ -1209,7 +1208,7 @@ p {
       display: inline-block; } }
 
 .iconsgroup {
-  width: 48%;
+  width: 58%;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .iconsgroup {

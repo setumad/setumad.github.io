@@ -347,7 +347,6 @@ p{
 }
 #datescoutdiv{
     width: 55%;
-    /*margin-left: 12em;*/
     @include breakpoint(tablet){
         width: 35%;
         padding-top: 6em;
@@ -660,7 +659,7 @@ p{
 }
 
 .iconsgroup{
-    width: 48%;
+    width: 58%;
     margin: 0 auto;
     @include breakpoint(tablet){
         width: 76%;
