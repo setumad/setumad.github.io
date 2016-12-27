@@ -199,9 +199,8 @@
         .iframe{
             width: 90%;
             margin: 0 auto;
-            /*height: 500px;*/
             @include breakpoint(laptop){
-                height: 500px;
+                height: 550px;
             }
             @include breakpoint(1400px){
                 height: 800px;
@@ -210,6 +209,7 @@
 
         .factbox{
             background-color: #EEEEEE;
+            border-radius: 3px;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
