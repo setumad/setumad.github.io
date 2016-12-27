@@ -1,0 +1,294 @@
+    * {
+        font-family: lato;
+        margin: 0;
+        /*font-size: 1.1em;*/
+    }
+    
+    
+    
+    .wrapper {
+        margin: 0 auto;
+    }
+    
+
+        
+        h3 {
+            font-weight: 400;
+            margin: 1.5em 0 1em 2.25em;
+            color: #FF0068;
+        }
+        .ideacontent {
+            @include breakpoint(laptop){
+                width: 50%;
+                margin-right: 2em;
+            }
+            @include breakpoint(1400px){
+                width: 35%;
+            }
+            
+        }
+        #protolink {
+            text-decoration: none;
+            font-weight: 600;
+            color: #FF0068;
+        }
+        .boldtext {
+            font-weight: 400;
+        }
+        /*    ########## END TYPE ############*/
+        /*######### LAYOUT ##########*/
+
+        .ptitle {
+            height: 900px;
+            background-image: url(/assets/img/smarthome/homeimg2.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #999;
+            .projecttitle {
+                font-size: 3em;
+                text-align: center;
+                color: white;
+                margin: 0 auto;
+                padding-top: 2.8em;
+                font-family: $lato;
+                @include breakpoint(tablet) {
+                    padding-top: 4.8em;
+                    font-size: 5em;
+                    font-size: 4em;
+                }
+            }
+            .headintro {
+                width: 65%;
+                margin: 0 auto;
+                font-family: $lato;
+                color: white;
+                text-align: center;
+                font-size: 1.2em;
+                line-height: 1.5em;
+                font-weight: 300;
+                padding-top: 1.5em;
+                padding-bottom: 1.5em;
+                @include breakpoint(tablet) {
+                    width: 60%;
+                    font-size: 1.5em;
+                    font-weight: 300;
+                    line-height: 2em;
+                    padding: 1em 0 0 0;
+                }
+                @include breakpoint(laptop) {
+                    padding-bottom: 1.5em;
+                    padding-top: 6em;
+                }
+            }
+        }
+
+        
+        .datebox{
+            
+            margin: 5em auto auto auto;
+            width: 300px;
+            height: 3em;
+            opacity: 0.6;
+            border-radius: 2px;
+            background-image: url("/assets/img/expedia/datebg2.png");
+            @include breakpoint(laptop) {
+                margin: 1em auto auto auto;
+            }
+        }
+        #datetext{
+            text-align: center;
+            color: black;
+            font-size: 1em;
+            padding-top: 0.8em;
+        }
+
+        #container {
+            background-color: white;
+            border-radius: 2px;
+            margin: 2em auto;
+            padding-bottom: 3em;
+        }
+
+
+        
+        #titlebarintro{
+            width: 100%;
+            height: 1em;
+            background-color: #F8E81C;
+            margin-bottom: 4em;
+            z-index: 1;
+            @include breakpoint(tablet){
+                height: 5.4em;
+                position: relative;
+            } 
+            @include breakpoint(laptop){
+                height: 0.6em;
+                width: 14em;
+                bottom: 4em;
+                margin: 0 auto;
+            }
+        }
+        #titlebarfeatures{
+            width: 100%;
+            height: 1em;
+            background-color: #F8E81C;
+            margin-bottom: 4em;
+            z-index: 1;
+            @include breakpoint(tablet){
+                height: 5.4em;
+                position: relative;
+            } 
+            @include breakpoint(laptop){
+                height: 0.6em;
+                width: 8em;
+                bottom: 4em;
+                margin: 0 auto;
+            }
+        }
+        .sectionheader {
+            font-size: 1.8em;
+            color: #051094;
+            text-align: center;
+            padding: 1em 0;
+            font-weight: 400;
+            z-index: 30;
+            position: relative;
+            @include breakpoint(tablet){
+                font-size: 3em;
+                text-align: center;
+            }
+            @include breakpoint(1400px){
+                font-size: 3em;
+                /*padding: 1.5rem 0 3rem 5em;*/
+                text-align: center;
+            }
+        }
+        
+    
+
+        .introbox {
+            display: block;
+            margin: 0 2em;
+        .introcontent{
+            font-size: 1em;
+            line-height: 2em;
+            font-weight: 400;
+            width: 90%;
+            margin: 0 auto;
+
+            @include breakpoint(tablet){
+                font-size: 1.1em;
+                line-height: 2.1em;
+                padding: 2em 0;
+                box-sizing: border-box;
+                width: 60%;
+            }
+            @include breakpoint(laptop){
+                width: 48%;
+            }
+            @include breakpoint(1400px){
+                width: 35%;
+                font-size: 1.2em;
+            }
+        }  
+            
+        }
+
+        .iframe{
+            width: 90%;
+            margin: 0 auto;
+            /*height: 500px;*/
+            @include breakpoint(laptop){
+                height: 500px;
+            }
+            @include breakpoint(1400px){
+                height: 800px;
+            } 
+        }
+
+        .factbox{
+            background-color: #EEEEEE;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            @include breakpoint(laptop){
+                width: 85%;
+            }
+            @include breakpoint(1400px){
+                width: 70%;
+            }
+        }
+        .subhedaar{
+            font-weight: 600;
+            font-size: 1.2em;
+            color: #061094;
+        }
+
+        .ideasubhedaar{
+            padding: 3em 0;
+        }
+        .factcontent{
+            padding: 3em 0;
+        }
+        .facts{
+            line-height: 2.1em;
+            padding-top: 3em;
+        }
+        #systdiagramdiv{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #cktdiagramdiv{
+            width: 60%;
+            margin: 0 auto;
+        }
+        #cktdiagram{
+            width: 100%;
+        }
+        #systdiagram{
+            width: 100%;
+        }
+
+
+        #photocontainer{
+            background-color: #242424;
+        }
+
+        .photosdiv{
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+        }
+
+        .photo{
+            padding: 2em 0;
+        }
+
+        .photogrp{
+            margin: 5em 0;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    /* end media 768 */
