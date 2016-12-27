@@ -40,7 +40,7 @@
 
         .ptitle {
             height: 900px;
-            background-image: url(/assets/img/smarthome/homeimg2.png);
+            background-image: url(/assets/img/smarthome/homeimg2.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -254,27 +254,38 @@
         }
 
 
-        #photocontainer{
+        #photocontainerbig{
             background-color: #242424;
         }
 
-        .photosdiv{
-            max-width: 1000px;
-            display: flex;
-            justify-content: space-around;
+        #photosmob{
+            display: block;
+            width: 90%;
             margin: 0 auto;
+            @include breakpoint(tablet){
+                display: none;
+            }
+        }
+        
+        #photosbig{
+            display: none;
+            margin: 3em auto;
+            @include breakpoint(tablet){
+                display: block;
+                width: 90%;
+            }
+            @include breakpoint(laptop){
+                width: 80%;
+            }
+            @include breakpoint(1400px){
+                width: 70%;
+            }
         }
 
-        .photo{
-            padding: 2em 0;
+        .photos{
+            padding: 5em 0;
+            width: 100%;
         }
-
-        .photogrp{
-            margin: 5em 0;
-        }
-
-
-
 
 
 

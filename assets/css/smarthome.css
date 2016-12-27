@@ -430,7 +430,7 @@ h3 {
 /*######### LAYOUT ##########*/
 .ptitle {
   height: 900px;
-  background-image: url(/assets/img/smarthome/homeimg2.png);
+  background-image: url(/assets/img/smarthome/homeimg2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -629,24 +629,34 @@ h3 {
 #systdiagram {
   width: 100%; }
 
-#photocontainer {
+#photocontainerbig {
   background-color: #242424; }
 
-.photosdiv {
-  max-width: 1000px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+#photosmob {
+  display: block;
+  width: 90%;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    #photosmob {
+      display: none; } }
 
-.photo {
-  padding: 2em 0; }
+#photosbig {
+  display: none;
+  margin: 3em auto; }
+  @media (min-width: 768px) {
+    #photosbig {
+      display: block;
+      width: 90%; } }
+  @media (min-width: 1100px) {
+    #photosbig {
+      width: 80%; } }
+  @media (min-width: 1400px) {
+    #photosbig {
+      width: 70%; } }
 
-.photogrp {
-  margin: 5em 0; }
+.photos {
+  padding: 5em 0;
+  width: 100%; }
 
 /* end media 768 */
 #header {
