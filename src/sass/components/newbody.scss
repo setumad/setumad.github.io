@@ -77,7 +77,7 @@
     bottom: 31em;
     @include breakpoint(tablet){
         width: 0.1%;
-        bottom: 30em;
+        bottom: 33em;
     }
     @include breakpoint(laptop){
         bottom: 28em;
@@ -197,7 +197,7 @@ p{
 .projdesc{
     line-height: 1.8em;
 
-    @include breakpoint(laptop){
+    @include breakpoint(tablet){
         width: 70%;
     }
     
@@ -495,7 +495,13 @@ p{
     @include breakpoint(tablet){
         position: relative;
         width: 50%;
-        top: 26em;
+        top: 27em;
+        left: 3em;
+    }
+    @include breakpoint(1024px){
+        position: relative;
+        width: 50%;
+        top: 22em;
     }
     @include breakpoint(laptop){
         width: 43%;
@@ -555,7 +561,12 @@ p{
     display: flex;
     @include breakpoint(tablet){
         width: 100%;
-        margin: 6em 0;
+        margin-top: 6em;
+    }
+    @include breakpoint(1024px){
+        margin-top: 10em;
+        width: 70%;
+        border-radius: 2px;
     }
     @include breakpoint(laptop){
         width: 70%;
@@ -578,7 +589,7 @@ p{
 }
 
 #mushdi{
-    width: 80%;
+    width: 90%;
 }
 
 #aboutmetitle{
@@ -589,10 +600,11 @@ p{
     margin: 3em 20px 0 0;
     @include breakpoint(tablet){
         font-size: 2em;
-        padding: 40px 0 0 5em;
+        padding: 2.2em 0 0 5em;
         margin: 0;
         width: 40%;
     }
+
     @include breakpoint(laptop){
         padding: 2.2em 0 0 8em;
     }
@@ -605,16 +617,21 @@ p{
     width: 90%;
     margin: 0 auto;
     padding-bottom: 6em;
+    
     @include breakpoint(tablet){
+        font-size: 1.1em;
         width: 70%;
         padding: 3em 0 3em 8em;
+    }
+    @include breakpoint(1024px){
+        width: 70%;
     }
 }
 .aboutmecontent{
     @include breakpoint(tablet){
-        width: 65%;
+        width: 85%;
     }
-    @include breakpoint(laptop){
+    @include breakpoint(1024px){
         width: 55%;
     }
     @include breakpoint(1400px){

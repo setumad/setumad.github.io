@@ -664,7 +664,7 @@ th {
   @media (min-width: 768px) {
     .arrowdowndiv {
       width: 0.1%;
-      bottom: 30em; } }
+      bottom: 33em; } }
   @media (min-width: 1100px) {
     .arrowdowndiv {
       bottom: 28em; } }
@@ -777,7 +777,7 @@ p {
 
 .projdesc {
   line-height: 1.8em; }
-  @media (min-width: 1100px) {
+  @media (min-width: 768px) {
     .projdesc {
       width: 70%; } }
   @media (min-width: 1820px) {
@@ -1058,7 +1058,13 @@ p {
     #homediv {
       position: relative;
       width: 50%;
-      top: 26em; } }
+      top: 27em;
+      left: 3em; } }
+  @media (min-width: 1024px) {
+    #homediv {
+      position: relative;
+      width: 50%;
+      top: 22em; } }
   @media (min-width: 1100px) {
     #homediv {
       width: 43%;
@@ -1112,7 +1118,12 @@ p {
   @media (min-width: 768px) {
     .titlebox {
       width: 100%;
-      margin: 6em 0; } }
+      margin-top: 6em; } }
+  @media (min-width: 1024px) {
+    .titlebox {
+      margin-top: 10em;
+      width: 70%;
+      border-radius: 2px; } }
   @media (min-width: 1100px) {
     .titlebox {
       width: 70%;
@@ -1131,7 +1142,7 @@ p {
       margin: 2.5em 0 0 7em; } }
 
 #mushdi {
-  width: 80%; }
+  width: 90%; }
 
 #aboutmetitle {
   font-family: 'Roboto Mono', monospace;
@@ -1142,7 +1153,7 @@ p {
   @media (min-width: 768px) {
     #aboutmetitle {
       font-size: 2em;
-      padding: 40px 0 0 5em;
+      padding: 2.2em 0 0 5em;
       margin: 0;
       width: 40%; } }
   @media (min-width: 1100px) {
@@ -1158,8 +1169,12 @@ p {
   padding-bottom: 6em; }
   @media (min-width: 768px) {
     .aboutmecontentdiv {
+      font-size: 1.1em;
       width: 70%;
       padding: 3em 0 3em 8em; } }
+  @media (min-width: 1024px) {
+    .aboutmecontentdiv {
+      width: 70%; } }
 
 .aboutmecontent {
   font-weight: 400;
@@ -1167,8 +1182,8 @@ p {
   color: #313131; }
   @media (min-width: 768px) {
     .aboutmecontent {
-      width: 65%; } }
-  @media (min-width: 1100px) {
+      width: 85%; } }
+  @media (min-width: 1024px) {
     .aboutmecontent {
       width: 55%; } }
   @media (min-width: 1400px) {
