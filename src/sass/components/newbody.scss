@@ -9,6 +9,15 @@
     margin: 0;
     padding: 0;
 }*/
+html, body, .container{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .intro {
     background-image: url(/assets/img/newbody/backgrounds/blacklaptop.png);
@@ -18,16 +27,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    height: 43em;
-    @include breakpoint(tablet){
-        height: 43em;
-    }
-    @include breakpoint(laptop){
-        height: 43em;
-    }
-    @include breakpoint(1400px){
-        height: 55em;
-    }
+    height: 100%;
+    
 }
 
 #overlay {
@@ -71,16 +72,19 @@
     }
 }
 .arrowdowndiv{
-    position: relative;
+    position: absolute;
     margin: 0 auto;
-    width: 12%;
-    bottom: 31em;
+    width: 40px;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
     @include breakpoint(tablet){
-        width: 0.1%;
-        bottom: 33em;
+        /*width: 0.1%;*/
+        /*bottom: 33em;*/
     }
     @include breakpoint(laptop){
-        bottom: 28em;
+        /*bottom: 28em;*/
     }
 }
 

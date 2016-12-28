@@ -599,6 +599,14 @@ th {
     margin: 0;
     padding: 0;
 }*/
+html, body, .container {
+  height: 100%;
+  width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
 .intro {
   background-image: url(/assets/img/newbody/backgrounds/blacklaptop.png);
   width: 100%;
@@ -607,16 +615,7 @@ th {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  height: 43em; }
-  @media (min-width: 768px) {
-    .intro {
-      height: 43em; } }
-  @media (min-width: 1100px) {
-    .intro {
-      height: 43em; } }
-  @media (min-width: 1400px) {
-    .intro {
-      height: 55em; } }
+  height: 100%; }
 
 #overlay {
   background: black;
@@ -657,17 +656,21 @@ th {
       left: 8em; } }
 
 .arrowdowndiv {
-  position: relative;
+  position: absolute;
   margin: 0 auto;
-  width: 12%;
-  bottom: 31em; }
+  width: 40px;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
   @media (min-width: 768px) {
     .arrowdowndiv {
-      width: 0.1%;
-      bottom: 33em; } }
+      /*width: 0.1%;*/
+      /*bottom: 33em;*/ } }
   @media (min-width: 1100px) {
     .arrowdowndiv {
-      bottom: 28em; } }
+      /*bottom: 28em;*/ } }
 
 .introtitle {
   font-size: 3em;

@@ -399,7 +399,12 @@ th {
 * {
   font-family: lato;
   margin: 0;
+  padding: 0;
   /*font-size: 1.1em;*/ }
+
+html, body {
+  height: 100%;
+  width: 100%; }
 
 .wrapper {
   margin: 0 auto; }
@@ -445,9 +450,12 @@ h3 {
     font-family: "Lato", sans-serif; }
     @media (min-width: 768px) {
       .ptitle .projecttitle {
-        padding-top: 4.8em;
-        font-size: 5em;
+        padding-top: 3.2em;
         font-size: 4em; } }
+    @media (min-width: 1400px) {
+      .ptitle .projecttitle {
+        padding-top: 4.8em;
+        font-size: 5em; } }
   .ptitle .headintro {
     width: 65%;
     margin: 0 auto;

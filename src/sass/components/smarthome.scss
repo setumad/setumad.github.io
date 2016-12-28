@@ -1,9 +1,14 @@
     * {
         font-family: lato;
         margin: 0;
+        padding: 0;
         /*font-size: 1.1em;*/
     }
     
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
     
     
     .wrapper {
@@ -54,9 +59,12 @@
                 padding-top: 2.8em;
                 font-family: $lato;
                 @include breakpoint(tablet) {
+                    padding-top: 3.2em;
+                    font-size: 4em;
+                }
+                @include breakpoint(1400px) {
                     padding-top: 4.8em;
                     font-size: 5em;
-                    font-size: 4em;
                 }
             }
             .headintro {
